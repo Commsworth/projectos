@@ -1,0 +1,31 @@
+sudo: required
+services:
+  - docker
+env:
+  global:
+    - SHA=$(git rev-parse HEAD)
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+    
+before_install: 
+  # -  openssl aes-256-cbc -K $encrypted_20796f3491c5_key -iv $encrypted_20796f3491c5_iv -in config.json.enc -out config.json -d
+  - curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+  - az login --service-principal -u $appID --password $password --tenant $tenant
+  - az aks get-credentials --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME
+  -  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  - curl -L https://git.io/get_helm.sh | bash
+  - chmod +x ./kubectl
+  - sudo mv ./kubectl /usr/local/bin/kubectl
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t commsworth/projectos:latest  -f  ./Dockerfile .
+  
+script:
+  - docker run -it -d commsworth/projectos
+
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: kubernetes-projectos
+
+
+

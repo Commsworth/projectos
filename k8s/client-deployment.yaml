@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projectos-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: web
+  template:
+    metadata:
+      labels:
+        component: web
+    spec:
+      containers:
+        - name: projectos
+          image: commsworthdevops/projectos
+          ports:
+            - containerPort: 3000
+          # env:
+          #   - name: REACT_APP_GRAPHQL_API_URL
+          #     value: "https://staging.commslog.com/auth/graphql"
