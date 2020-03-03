@@ -1,0 +1,47 @@
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    .option {
+        padding: 0px 15px;
+      }
+    .option1 {
+        padding: 0px 15px;
+        border-right: 1px solid white;
+      }
+    
+  
+    // .logo-container {
+    //   height: 100%;
+    //   width: 70px;
+    //   padding: 25px;
+    // }
+  
+    .options {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .option {
+        padding: 10px 15px;
+
+        .demo{
+          // background: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-right: 10px;
+          border: 0;
+          color: white;
+          cursor: pointer;
+          background: #0A80F6;
+          border-radius: 5px;
+        }
+      }
+    }
+  }

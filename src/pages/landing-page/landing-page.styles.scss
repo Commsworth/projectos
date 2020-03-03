@@ -1,0 +1,160 @@
+.main-div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+.midtop{
+    text-align: center;
+    background: #000000;
+    color: white;
+    
+
+    .two-buttons{
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 213px;
+        background: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        // padding-left: 5px;
+        // padding-right: 10px;
+        border: 0;
+        background: #0A80F6;
+        border-radius: 2px;
+        color: white;
+        cursor: pointer;
+        font-size: small;
+        text-align: center;
+    }
+
+    p{
+        font-size: x-small;
+    }
+}
+
+.title-color{
+    color: #0E82F8;
+}
+h1{
+    margin-top: 0px;
+}
+
+h6{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    .slide-button{
+        background: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    }
+}
+
+small{
+    text-align: center;
+}
+
+.card-grid{
+    display: flex;
+    justify-content: center;
+    // display: flex;
+    // justify-content: space-around;
+    // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    // margin: 0px 150px 40px;
+    gap: 30px;
+}
+.feature-grid{
+    display: flex;
+    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    // margin: 0px 12rem 40px;
+    gap: 30px;
+
+    .feature-buttons{
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // padding-left: 10px;
+    // padding-right: 0px;
+    margin: 0px 10px;
+    border: 0;
+    color: #3C3C41;
+    cursor: pointer;
+    font-size: medium;
+    line-height: 20px !important;
+    font-weight: 600;
+    // font-size: small;
+    text-align: center;
+    // border-left: 1px solid white;
+    border-bottom: 3px solid transparent;
+    }
+
+    .feature-buttons:hover{
+        border-bottom: 3px solid #0E82F8;
+        // transition: border-bottom 0.5s;        
+        transition: border-bottom 0.3s ease-out;        
+    }
+    
+    .active{
+        border-bottom: 3px solid #0E82F8;
+        color: #000000;
+        // transition: border-bottom 0.5s;        
+        transition: border-bottom 0.3s ease-out;        
+            // transform: translate(0);
+            // transition: border-bottom 0.05s ease-out;        
+    }
+}
+.features{
+    display: flex;
+    justify-content: center;
+
+    .schedule-a-demo{
+        width: 244px;
+        height: 26px;
+    }
+
+    h2{
+        text-align: left;
+    }
+
+    .feature-blue-line{
+        border-bottom: 5px solid #0E82F8;
+        width: 88px;
+    }
+}
+
+.featurelist{
+    margin-left: 20px;
+    width: 29%;
+    p{
+        font-size: small;
+    }
+}
+
+.feature-flex{
+    display: flex;
+    // justify-content: start;
+}
+.search-center{
+    text-align: center;
+}
+.search{
+    // margin-left: 5%;
+    display: inline-block
+}
+@media screen and (max-width: 570px) {
+    /* comes into effect for screens less than or equal to 570 pixels */
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        margin: 0px 150px 40px;
+        gap: 30px;
+    }
+}
+}

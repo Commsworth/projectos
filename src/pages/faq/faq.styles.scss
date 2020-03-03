@@ -1,0 +1,20 @@
+.faq{
+    h1,small{
+        text-align: center;
+    }
+    a{
+        text-decoration: underline;
+        color: #046BD3;
+    }
+    .sidebar{
+        width: fit-content;
+        position: absolute;
+        left: 1vw;
+    }
+    .faq-flex{
+        display: flex;
+        justify-content: space-evenly;
+        // grid-template-columns: 50% 50%;
+        // justify-content: flex-start;
+    }
+}

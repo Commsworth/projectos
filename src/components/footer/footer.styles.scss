@@ -1,0 +1,14 @@
+ul{
+list-style: none;
+}
+
+.footer-grid{
+    color: white;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px;
+}

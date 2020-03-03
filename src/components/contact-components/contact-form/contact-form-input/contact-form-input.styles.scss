@@ -1,0 +1,17 @@
+.contact-form-input-flex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DDDDDD;
+    width:596px;
+    padding-top: 25px;
+    border-bottom-width: 1px;
+    padding-bottom: 25px;
+
+    .contact-input{
+        border: 0;
+        width: 23rem;
+    }
+    .contact-input:focus{
+        outline: none;
+}
+}

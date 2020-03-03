@@ -1,0 +1,50 @@
+.row{
+    display: grid;
+    grid-template-columns: max-content;
+    gap: 40px;
+}
+// .table-flex{
+//     display: flex;
+//     justify-content: inherit;
+// }
+
+td{
+    // border: 1px solid #dddddd;
+    text-align: center;
+    // padding: 20px;
+}
+.btn{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.white{
+    background: #ffffff;
+}
+
+.grey{
+    background: #f4f4f4;
+}
+
+
+// .btn{
+//     position: absolute;
+//     left: 0%;
+// }
+// .title{
+//     position: absolute;
+//     left: 15%;
+// }
+// .normal{
+//     position: absolute;
+//     left: 50%;
+// }
+// .premium{
+//     position: absolute;
+//     left: 75%;
+// }
+// }
+// .content{
+//     position: relative;
+// }
