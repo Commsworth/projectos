@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: projectos
+      component: web
   template:
     metadata:
       labels:
-        component: projectos
+        component: web
     spec:
       containers:
         - name: projectos
