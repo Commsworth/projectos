@@ -24,10 +24,8 @@ script:
 deploy:
   provider: script
   script: bash ./deploy.sh
-  branches: 
-    only:  
-    - kubernetes-projectos
-    - projectos
+  on:
+    branch: kubernetes-projectos
 
 
 
