@@ -13,6 +13,12 @@
     "react-scripts": "3.4.0",
     "tachyons": "^4.11.1"
   },
+  "homepage": "./",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Commsworth/siwp-frontend.git"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

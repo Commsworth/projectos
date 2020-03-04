@@ -35,7 +35,7 @@
           padding-bottom: 10px;
           padding-left: 10px;
           padding-right: 10px;
-          margin-right: 10px;
+          // margin-right: 10px;
           border: 0;
           color: white;
           cursor: pointer;
@@ -45,3 +45,67 @@
       }
     }
   }
+.dropdown{
+  // background: none;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  background: #0A80F6;
+  border-radius: 5px;
+  display: none;
+}
+.header2 {
+    // height: 50px;
+    display: none;
+    width: 100%;
+    // justify-content: space-between;
+    background: #000000;
+    .header2--flex{
+      display: grid;
+      gap: 30px;
+      .option {
+        line-height: 3vw;
+        padding: 0px 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+          
+          .demo{
+            // background: none;
+            line-height: 3vw;
+            // padding-top: 10px;
+            // padding-bottom: 10px;
+            // padding-left: 10px;
+            // padding-right: 10px;
+            // margin-right: 10px;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            background: #0A80F6;
+            border-radius: 5px;
+          }
+        }
+  }
+
+  @media screen and (max-width: 570px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  .dropdown{
+    display: inline;
+  }
+  .header2{
+    display: block;
+  }
+  .options{
+    .option,.option1{
+      display: none;
+      line-height: 2vh;
+    }
+  }
+}
