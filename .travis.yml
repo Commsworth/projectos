@@ -16,7 +16,7 @@ before_install:
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
   - echo "$dockerPassword" | docker login -u "$dockerUsername" --password-stdin
-  - docker build -t commsworth/commsworth:latest  -f  ./Dockerfile .
+  - docker build -t commsworth/projectos:latest  -f  ./Dockerfile .
   
 script:
   - docker run -it -d commsworth/projectos
