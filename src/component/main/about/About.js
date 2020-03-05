@@ -18,9 +18,12 @@ const  About = ()=>{
            </div>
            <div className="row">
                 <div className="col s12 m7">
-                  
                 <div id="about-image-wrapper">
-                    <img src={AboutImage} className="responsive-img" alt=""/>
+                    <img src={AboutImage} className="responsive-img" className="about-img" alt=""/>
+                    <div id="about-icon-wrapper">
+                    <img src={PlayIcon} alt="" className="icon"/>
+                    </div>
+                   
                 </div>
                
                 </div>
