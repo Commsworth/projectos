@@ -19,7 +19,7 @@ before_install:
   - docker build -t commsworth/commsworth:latest  -f  ./Dockerfile .
   
 script:
-  - docker run -it -d commsworth/commsworth
+  - docker run -it -d commsworth/projectos
 
 deploy:
   provider: script

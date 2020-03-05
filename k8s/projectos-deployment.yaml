@@ -17,6 +17,4 @@ spec:
           image: commsworthdevops/projectos
           ports:
             - containerPort: 4000
-          # env:
-          #   - name: REACT_APP_GRAPHQL_API_URL
-          #     value: "https://staging.commslog.com/auth/graphql"
+          
