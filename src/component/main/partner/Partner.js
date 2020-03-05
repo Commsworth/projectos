@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment} from 'react';
 import Microsoft from '../../../asset/svg/microsoft.svg';
 import Fortinet from '../../../asset/img/Fortinet.png';
 import Docker from '../../../asset/img/docker.png';

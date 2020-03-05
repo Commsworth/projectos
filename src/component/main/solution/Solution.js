@@ -65,7 +65,7 @@ const  Solution = ()=>{
                         </div>
                         </div>
                         <div>
-                            <a href="ff.html" className="link-text right blue-text">Contact Sales <img src={ArrowIcon} alt=""/></a>
+                            <a href="#contact" className="link-text right blue-text">Contact Sales <img src={ArrowIcon} alt=""/></a>
                         </div>
                     </div>
                 </div>

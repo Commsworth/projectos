@@ -1,20 +1,36 @@
 #about-image-wrapper{
     position: relative;
-    height: 380px;
+    height: 355px;
 }
-#about-image-wrapper .about-img{
+
+
+.about-image-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.about-img{
     width: 95%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#about-icon-wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+
+@media only screen and (max-width:600px){
+    .play-icon{
+        width: 150px;
+    }
+
+    .about-img{
+        height: 250px  !important;
+    }
+
+    .about-image-overlay{
+        height: 250px;
+    }
 }

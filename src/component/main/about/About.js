@@ -19,11 +19,10 @@ const  About = ()=>{
            <div className="row">
                 <div className="col s12 m7">
                 <div id="about-image-wrapper">
-                    <img src={AboutImage} className="responsive-img" className="about-img" alt=""/>
-                    <div id="about-icon-wrapper">
-                    <img src={PlayIcon} alt="" className="icon"/>
+                    <img src={AboutImage} className="responsive-img about-img" alt=""/>
+                    <div className="about-image-overlay">
+                        <img src={PlayIcon} alt="" className="responsive-img play-icon" />
                     </div>
-                   
                 </div>
                
                 </div>
@@ -34,7 +33,7 @@ const  About = ()=>{
                     elementum tortor. Sit posuere pellentesque arcu, venenatis. Diam suspendisse at eget 
                     blandit. Sed diam aliquet at tortor, lectus elit. Interdum mi egestas etiam nibh. 
                     Mauris sem venenatis ultricies laoreet et, vestibulum, vel. Viverra et aliquam ut at. Risus duis velit eget iaculis posuere. Sem nunc massa consequat vehicula.</p>
-                    <a href="inde.html" className="link-text blue-text">Contact Us <img src={ArrowIcon} alt=""/></a>
+                    <a href="#contact" className="link-text blue-text">Contact Us <img src={ArrowIcon} alt=""/></a>
                 </div>
            </div>
            </ScrollAnimation>

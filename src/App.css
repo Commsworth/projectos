@@ -2,6 +2,7 @@ html, body{
     font-family: 'nunito';
     margin: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .space-50{

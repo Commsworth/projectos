@@ -8,7 +8,7 @@ import ContactForm from '../contactform/ContactForm';
 const Footer = ()=>{
 
     return(
-    <footer className="page-footer">
+    <footer className="page-footer" id="contact">
         <div className="container">
             <div className="row">
                 <div className="col s12 m8">
