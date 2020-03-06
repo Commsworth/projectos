@@ -4,21 +4,27 @@ import './HeroContent.css';
 
 const HeroContent = ()=>{
 
+
+    const handleMouseOver =()=>{
+        // document.getElementById('about').style.backgroundColor = 'red';
+        console.log("Over");
+    }
+
     return(
         <div id="outer-div">
 <div className="container white-text center hero-content">
     <h4>Digital agency team that will<br /> grow your business</h4>
     <h5>Redefine your Project Management lifecycle with ProjectOS Enterprise-Class Project Management Platform</h5>
 <div className="btn-wrapper center">
-    <button className="btn__blue btn">Contact</button>
-    <button className="btn__transparent btn transparent">About</button>
+    <button className="btn__blue btn" onMouseEnter={handleMouseOver}>Contact</button>
+    <button className="btn__transparent btn transparent" id="about">About Us</button>
 </div>
 </div>
 <div className="hero-image-wrapper">
     <div className="hero-image-wrapper-overlay"></div>
    <div>
    <div>
-<svg width="1299" height="689" viewBox="0 0 1299 689" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="map" width="1299" height="689" viewBox="0 0 1299 689" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M187.008 77.1783C299.737 69.3017 412.999 74.6005 524.503 92.9674C487.142 70.8626 448.073 50.2595 407.297 31.158C319.52 72.0664 236.101 121.758 158.315 179.475C280.59 115.841 411.26 69.8848 546.425 42.9782C538.1 31.0228 529.596 19.1399 520.914 7.32947C583.01 13.4984 644.671 23.4686 705.549 37.184C672.751 49.8925 640.807 63.6296 609.716 78.3951C687.742 75.6341 765.865 79.0245 843.36 88.5349C765.277 105.63 688.851 129.58 614.968 160.107C509.115 158.299 403.402 168.573 299.873 190.73C351.367 126.018 408.56 66.0636 470.762 11.5882" stroke="green" stroke-width="0.4" stroke-miterlimit="10"/>
 <path d="M1158.22 353.445C1015.02 295.121 862.71 262.391 708.212 256.74C749.496 197.746 794.644 141.559 843.36 88.5494C896.803 89.5312 950.154 93.3996 1003.18 100.138C952.24 77.5992 900.115 57.8459 847.036 40.9647C875.512 75.807 901.857 111.364 926.07 147.635" stroke="white" stroke-width="0.4" stroke-miterlimit="10"/>
 <path d="M551.388 273.789C471.239 199.725 376.881 133.164 269.66 78.2357C476.199 32.5023 689.955 30.0364 897.492 70.993C847.557 71.3483 797.673 74.2492 748.033 79.6842C854.831 125.712 955.509 184.829 1047.76 255.682C1020.38 208.046 990.113 162.128 957.137 118.187C878.634 117.686 800.225 123.733 722.725 136.264C882.979 183.545 1030.25 257.841 1158.22 353.445C1088.95 276.182 1011.06 207.127 926.07 147.635C814.206 160.191 704.412 187.049 599.37 227.552C584.234 187.224 567.57 147.182 549.376 107.424C382.004 168.422 235.366 258.478 115.643 367.322" stroke="white" stroke-width="0.4" stroke-miterlimit="10"/>

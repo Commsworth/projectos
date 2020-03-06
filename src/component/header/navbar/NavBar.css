@@ -2,9 +2,15 @@
 .contact__link{
     background-color: #208FFF;
     height: auto !important;
-    padding: 2px 60px;
+    padding: 9px 70px;
     text-transform: none !important;
     border-radius: 5px;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.contact__link:hover{
+    background-color: #5CADFF; 
 }
 
 .nav-wrapper{
