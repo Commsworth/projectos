@@ -7,6 +7,10 @@ label{
     color: #ffffff;
 }
 
+input, select, textarea{
+color: white;
+}
+
 select option{
     color: #ffffff;
 }

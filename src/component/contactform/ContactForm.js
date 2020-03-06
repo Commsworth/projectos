@@ -34,7 +34,12 @@ const ContactForm = ()=>{
 
     const handleSubmit = ()=>{
         console.log(data);
-        axios.post("https://staging.commslog.com/alert/api/Alert/ContactUS/",{data})
+        axios.post("https://staging.commslog.com/alert/api/Alert/ContactUS/",{data},
+        {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+            }
+        })
         .then((res)=>{
            // console.log(res);
         })
