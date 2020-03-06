@@ -11,14 +11,16 @@ const  About = ()=>{
         <Fragment>
             <div className="container">
             <div className="space-50"></div>
-            <ScrollAnimation animateIn="bounceInUp">
+            <ScrollAnimation animateIn="fadeInUp"  animateOnce={true}>
            <div className="row">
                <div className="col s12 center"><h5 className="blue-text">About Us</h5><br /></div>
            </div>
+           </ScrollAnimation>
+           <ScrollAnimation delay={100} animateIn="fadeInUp" animateOnce={true}>
            <div className="row">
                 <div className="col s12 m7">
                 <div id="about-image-wrapper">
-                <object type="image/svg+xml" data={AboutImage} className="aboutimage"></object>
+                <object type="image/svg+xml" data={AboutImage} className="aboutimage">About Commsworth</object>
                 </div>
                
                 </div>
