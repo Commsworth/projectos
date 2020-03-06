@@ -36,11 +36,18 @@ const ContactForm = ()=>{
         console.log(data);
         axios.post("https://staging.commslog.com/alert/api/Alert/ContactUS/",{data},
         {
+<<<<<<< HEAD
         headers:{
             'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
             'Content-Type': 'application/x-www-form-urlencoded',
              APIKEY:'ce28e0ec-164b-4d08-9cab-623b6ba46316'
         }
+=======
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8',
+                 'APIKEY':'ce28e0ec-164b-4d08-9cab-623b6ba46316'
+            }
+>>>>>>> 458bb4ea164a72f51c920f9b7299d7a434bf6345
         })
         .then((res)=>{
            // console.log(res);
