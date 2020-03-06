@@ -30,6 +30,16 @@
     text-transform: none !important;
 }
 
+.btn__blue:hover{
+    background-color: #111517;
+    border:  1px solid white;
+}
+
+.btn__transparent:hover{
+    background-color: #208FFF !important;
+    border: none;
+}
+
 .hero-content .btn{
     margin: 10px 10px !important;
     padding: 2px 60px;
