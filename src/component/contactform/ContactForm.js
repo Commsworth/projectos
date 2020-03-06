@@ -34,7 +34,14 @@ const ContactForm = ()=>{
 
     const handleSubmit = ()=>{
         console.log(data);
-        axios.post("https://staging.commslog.com/alert/api/Alert/ContactUS/",{data})
+        axios.post("https://staging.commslog.com/alert/api/Alert/ContactUS/",{data},
+        {
+        headers:{
+            'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
+            'Content-Type': 'application/x-www-form-urlencoded',
+             APIKEY:'ce28e0ec-164b-4d08-9cab-623b6ba46316'
+        }
+        })
         .then((res)=>{
            // console.log(res);
         })
