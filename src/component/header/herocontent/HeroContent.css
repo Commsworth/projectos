@@ -20,8 +20,6 @@
 
 .btn__blue{
     background-color: #208FFF;
-    height: 55px !important;
-    width:213px !important;
     text-transform: none !important;
     font-family: 'Nunito';
     font-size: 12px;
@@ -30,8 +28,6 @@
 
 .btn__transparent{
     border: 1px solid #ffffff;
-    height: 55px !important;
-    width:213px !important;
     text-transform: none !important;
     font-family: 'Nunito';
     font-size: 12px;
@@ -53,7 +49,8 @@
 
 .hero-content .btn{
     margin: 10px 10px !important;
-    padding: 2px 60px;
+    height:44.8px !important;
+    width: 0 30px!important;
     border-radius: 5px !important;
 }
 
