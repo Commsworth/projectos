@@ -37,8 +37,7 @@ const ContactForm = ()=>{
         axios.post("https://staging.commslog.com/alert/api/Alert/ContactUS/",{data},
         {
         headers:{
-            'Content-Type': 'application/json',
-             'APIKEY':'ce28e0ec-164b-4d08-9cab-623b6ba46316'
+            'Content-Type': 'application/json'
         }
         })
         .then((res)=>{
