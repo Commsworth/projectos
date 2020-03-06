@@ -7,10 +7,7 @@ import './Partner.css';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-
 const Partner = () =>{
-
-    
 
     return(
         <Fragment>

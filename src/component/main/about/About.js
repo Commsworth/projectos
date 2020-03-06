@@ -25,7 +25,7 @@ const  About = ()=>{
                
                 </div>
                 <div className="col s12 m5">
-                <h4><b>Great</b> products <br /><b>Great</b> business</h4>
+                <h4><b>About</b> us</h4>
                 <p>Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients</p>
                    <p>Consisting of a school of IT professionals, we drive business agility with keen focus on Server and Cloud Infrastructure, Managed Services and Support, Business Productivity/Process Management, Enterprise Networking and Security, Business Consulting, and lots more.</p>
                     <a href="#contact" className="link-text blue-text">Contact Us <img src={ArrowIcon} alt=""/></a>

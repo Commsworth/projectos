@@ -19,7 +19,7 @@
 }
 
 .btn__blue{
-    background-color: #208FFF;
+    background-color: #208FFF !important;
     text-transform: none !important;
     font-family: 'Nunito';
     font-size: 12px;
@@ -27,7 +27,7 @@
 }
 
 .btn__transparent{
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffff !important;
     text-transform: none !important;
     font-family: 'Nunito';
     font-size: 12px;
@@ -35,7 +35,7 @@
 }
 
 .btn__blue:hover{
-    background-color: #5CADFF;
+    background-color: #5CADFF !important;
   
 }
 
@@ -50,7 +50,7 @@
 .hero-content .btn{
     margin: 10px 10px !important;
     height:44.8px !important;
-    width: 0 30px!important;
+    width: 200px!important;
     border-radius: 5px !important;
 }
 
@@ -112,7 +112,7 @@ path{
         margin-top: 80px;
     }
 
-    .hero-content-wrapper, svg,.hero-image-wrapper-overlay{
+    .hero-content-wrapper, .map,.hero-image-wrapper-overlay{
         display: none;
     }
 
