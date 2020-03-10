@@ -19,10 +19,10 @@
     background: #0A80F6;
     border-left: 1px solid white;
 }
-.search-div{
+.search-container{
     background: #0E82F8;
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;

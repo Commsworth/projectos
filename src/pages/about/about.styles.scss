@@ -1,32 +1,178 @@
-.about{
-    // display: grid;
-    grid-template-rows: 1fr;
-    .about__heading-and-button{
-        padding-top: 6vw;
-        height: 400px;
-        padding-bottom: 0vw;
-        background: black;
-        h1{
-            text-align: center;
-            background: #000000;
-            margin: 0px;
-            padding-bottom: 30px;
-            color: white;
+@media screen and (max-width: 570px) {
+    // MOBILE VIEW
+    .about{
+        // display: grid;
+        // grid-template-rows: 1fr;
+        .about__heading-and-button{
+            padding-top: 6vw;
+            // height: 400px;
+            // padding-bottom: 0vw;
+            background: black;
+            h1{
+                text-align: center;
+                background: #000000;
+                margin: 0px;
+                padding-bottom: 30px;
+                color: white;
+            }
+            button{
+                background: #208FFF;
+                border: none;
+                border-radius: 2px;
+                font-size: small;
+                text-align: center;
+                padding: 1vw 2vw;
+                color: white;
+                width: 150px;
+                line-height: 30px;
+            }
+            .about__3-cards{
+                // z-index: 0;
+                // position: absolute;
+                // top: 23vw;
+                // left: 18%;
+                // height: 0px;
+                // display: flex;
+                // justify-content: center;
+                display: grid;
+                margin: 0px 20px;
+                gap: 10px;
+                // grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+                small{
+                    p{
+                        // width: 200px;
+                        
+                    }
+                }
+            }
+        }     
+        .about__card-div{
+            margin-top: 10px;
+            margin-bottom: 5rem;
+            // margin: 30px;
+            // height: 0px;
+            
         }
-        button{
-            background: #208FFF;
-            border: none;
-            border-radius: 2px;
-            font-size: small;
-            text-align: center;
-            padding: 1vw 2vw;
-            color: white;
-        }
-        .about__3-cards{
+        .about__2-cards{
             // z-index: 0;
             // position: absolute;
-            // top: 23vw;
-            // left: 18%;
+            // top: 48vw;
+            // left: 27vw;
+            // height: 0px;
+            // display: flex;
+            // justify-content: center;
+            gap: 10px;
+            display: grid;
+            margin: 0px 20px;
+            // grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            // display: grid;
+            // grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
+            small{
+                p{
+                    // width: 200px;
+                    
+                }
+            }
+        }
+        
+        .about__info{
+            // padding-top: 35vw;
+            h6{
+                text-align: center;
+                color: #046BD3;
+            }
+            h1{
+                text-align: center;
+                
+            }
+        }
+        .about__screen-and-features{
+            display: flex;
+            justify-content: space-around;
+            .about__screen-and-features--button-grid{
+                display: grid;
+                button{
+                    background: white;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: small;
+                    padding: 1vw 2vw;
+                    // margin-bottom: 1vw;
+                    margin: 10px 20px;
+                    // width: 40vw;
+                    
+                    h1,p{
+                        text-align: left;
+                    }
+                }
+                button:hover{
+                    box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.3);
+                }  
+            }
+        }
+        .about__link{
+            p{
+                text-align: center;
+            }
+        }
+    }
+  }
+  @media screen and (min-width: 570px) {
+    // PC VIEW
+    
+    .about{
+        // display: grid;
+        grid-template-rows: 1fr;
+        .about__heading-and-button{
+            padding-top: 6vw;
+            height: 400px;
+            padding-bottom: 0vw;
+            background: black;
+            h1{
+                text-align: center;
+                background: #000000;
+                margin: 0px;
+                padding-bottom: 30px;
+                color: white;
+            }
+            button{
+                background: #208FFF;
+                border: none;
+                border-radius: 2px;
+                font-size: small;
+                text-align: center;
+                padding: 1vw 2vw;
+                color: white;
+            }
+            .about__3-cards{
+                // z-index: 0;
+                // position: absolute;
+                // top: 23vw;
+                // left: 18%;
+                // height: 0px;
+                display: flex;
+                justify-content: center;
+                // display: grid;
+                // grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
+                small{
+                    p{
+                        width: 200px;
+                        
+                    }
+                }
+            }
+        }     
+        .about__card-div{
+            margin-top: 7rem;
+            margin-bottom: 5rem;
+            // height: 0px;
+            
+        }
+        .about__2-cards{
+            // z-index: 0;
+            // position: absolute;
+            // top: 48vw;
+            // left: 27vw;
             // height: 0px;
             display: flex;
             justify-content: center;
@@ -39,68 +185,45 @@
                 }
             }
         }
-    }     
-    .about__card-div{
-        margin-top: 7rem;
-        margin-bottom: 5rem;
-        // height: 0px;
         
-    }
-    .about__2-cards{
-        // z-index: 0;
-        // position: absolute;
-        // top: 48vw;
-        // left: 27vw;
-        // height: 0px;
-        display: flex;
-        justify-content: center;
-        // display: grid;
-        // grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
-        small{
-            p{
-                width: 200px;
+        .about__info{
+            // padding-top: 35vw;
+            h6{
+                text-align: center;
+                color: #046BD3;
+            }
+            h1{
+                text-align: center;
                 
             }
         }
-    }
-    
-    .about__info{
-        // padding-top: 35vw;
-        h6{
-            text-align: center;
-            color: #046BD3;
-        }
-        h1{
-            text-align: center;
-            
-        }
-    }
-    .about__screen-and-features{
-        display: flex;
-        justify-content: space-around;
-        .about__screen-and-features--button-grid{
-            display: grid;
-            button{
-                background: white;
-                border: none;
-                border-radius: 2px;
-                font-size: small;
-                padding: 1vw 2vw;
-                margin-bottom: 1vw;
-                width: 40vw;
-                
-                h1,p{
-                    text-align: left;
+        .about__screen-and-features{
+            display: flex;
+            justify-content: space-around;
+            .about__screen-and-features--button-grid{
+                display: grid;
+                button{
+                    background: white;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: small;
+                    padding: 1vw 2vw;
+                    margin-bottom: 1vw;
+                    width: 40vw;
+                    
+                    h1,p{
+                        text-align: left;
+                    }
                 }
+                button:hover{
+                    box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.3);
+                }  
             }
-            button:hover{
-                box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.3);
-            }  
+        }
+        .about__link{
+            p{
+                text-align: center;
+            }
         }
     }
-    .about__link{
-        p{
-            text-align: center;
-        }
-    }
-}
+  }

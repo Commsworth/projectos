@@ -22,6 +22,7 @@ class Licensing extends React.Component {
             <div className="licensing">
                 <h1 className="">Plans that won't break</h1>
                 <h1>the bank</h1>
+                {/* shadow-2 class below is a tachyons class for shadowns */}
                 <div className="shadow-2 list">
                     <table>
                         <tr>
@@ -45,13 +46,7 @@ class Licensing extends React.Component {
                         <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="" normal={<Button text="Try Standard" color="white"/>} premium={<Button text="Try Premium" color="blue"/>} content="Lorem Ipsum" color="" />
                     </table>
-                    {/* <div>
-                        <div className="row">
-                            <h5 className="w-40"></h5>
-                            <button className="w-10">Try Standard</button>
-                            <button className="w-10">Try Premium</button>
-                        </div>
-                    </div> */}
+
                 </div>
 
                 <div className="add-on">
@@ -60,9 +55,11 @@ class Licensing extends React.Component {
                 </div>
 
                 <div className="card-grid">
-                    <div className="mw5 bg-white br3 mv3 ba b--black-10 mr3">
+                    {/* Classes below are tachyons classes */}
+                    <div className="mw5 bg-white br3 mv3 ba b--black-10">
                         <h2>Developer License</h2>
                         <hr />
+                        {/* Classes below except 'tick-grid' are tachyons classes */}
                         <div className="tick-grid pa3 pa3-ns">
                             <div>
                                 <TickLicense />
@@ -91,12 +88,13 @@ class Licensing extends React.Component {
                         </div>
 
                         <div>
+                            {/* All classes except 'card-button' and 'learn-more' are tachyons classes */}
                             <h1><button className="pa3 pa3-ns card-button">Contact Us</button></h1>
                             <a href="#"><p className="learn-more">Learn more</p></a>
                         </div>
                     </div>
 
-                    <div className="mw5 bg-white br3 mv3 ba b--black-10 ml3">
+                    <div className="mw5 bg-white br3 mv3 ba b--black-10">
                         <h2>ProjectOS Mobile</h2>
                         <hr />
                         <div className="tick-grid pa3 pa3-ns">
