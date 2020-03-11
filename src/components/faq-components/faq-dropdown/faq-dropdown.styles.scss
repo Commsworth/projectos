@@ -1,34 +1,26 @@
 .faq-dropdown{
-  width:100%;
+  // width:100%;
   .faq-dropdown-flex{
-    // display:flex;
+    display:flex;
+    justify-content: center;
   }
 
     .collapsible {
     background-color: white;
     cursor: pointer;
     padding: 18px;
-    width: 45vw;
+    // width: 45vw;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 20px;
     border-bottom: 1px solid #dddddd;
+    margin: 0vw 10vw;
   }
-  // .collapsible i {
-  //     font-size: 15px;
-  //   padding-right: 1rem;
-  //   padding-bottom: 1rem;
-  // }
-  //   .collapsible:hover {
-      //   }
+
   
       .content {
-          // padding: 20px  ;
-        //   display: none;
-        //   overflow: hidden;
-        //   background-color: #f1f1f1;
-        width: 45vw;
+        // width: 45vw;
             
         }
 }

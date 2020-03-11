@@ -1,58 +1,126 @@
-.licensing{
-    h1,small,h2,h3{
-    text-align: center  ;
-}
-th,td{
-    width: 20vw;
-}
-table{
-    border-spacing: 0px;
-}
-
-.list{
-    margin: 20px 15% 20px 15%;
-    padding: 20px 5% 30px 5%;;
+@media screen and (max-width: 570px) {
+    // MOBILE VIEW
+        .licensing{
+            h1,small,h2,h3{
+            text-align: center  ;
+        }
+        
+        .list{
+            margin: 20px 5%;
+            padding: 20px 5% 30px 5%;;
+                    table{
+                        border-spacing: 0px;
+                        margin: 0px 0px;
+                            th,td{
+                                // width: 20vw;
+                            }
+                    }
+            
+        }
+        
+        .card-grid{
+            display: grid;
+            justify-content: center;
+            // width: 1000px;
+        
+            .tick-grid{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 0px;
+                svg{
+                    margin-right: 20px;
+                    // width: max-content;
+                }
+                p{
+                    font-size: 13px;
+                    margin: 0px;
+        
+                }
+            }
+            .learn-more{
+                        text-align: center;
+                        color: black;
+                        text-decoration: underline;
+                        font-size: small;
+                    }
+            .card-button{
+                // margin-left: 20px;
+                background: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                // padding-left: 40px;
+                // padding-right: 40px;
+                width: 90%;
+                border: 0;
+                background: #0A80F6;
+                font-size: small;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+            }
+        }}
     
 }
 
-.card-grid{
-    display: flex;
-    justify-content: center;
-    // width: 1000px;
-
-    .tick-grid{
-        display: flex;
-        justify-content: space-around;
-        padding-top: 0px;
-        svg{
-            margin-right: 20px;
-            // width: max-content;
+@media screen and (min-width: 570px) {
+    // PC VIEW
+        .licensing{
+            h1,small,h2,h3{
+            text-align: center  ;
         }
-        p{
-            font-size: 13px;
-            margin: 0px;
-
+        table{
+            border-spacing: 0px;
+                th,td{
+                    width: 20vw;
+                }
         }
-    }
-    .learn-more{
-                text-align: center;
-                color: black;
-                text-decoration: underline;
-                font-size: small;
+        
+        .list{
+            margin: 20px 15% 20px 15%;
+            padding: 20px 5% 30px 5%;;
+            
+        }
+        
+        .card-grid{
+            display: flex;
+            justify-content: center;
+            // width: 1000px;
+        
+            .tick-grid{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 0px;
+                svg{
+                    margin-right: 20px;
+                    // width: max-content;
+                }
+                p{
+                    font-size: 13px;
+                    margin: 0px;
+        
+                }
             }
-    .card-button{
-        // margin-left: 20px;
-        background: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        // padding-left: 40px;
-        // padding-right: 40px;
-        width: 90%;
-        border: 0;
-        background: #0A80F6;
-        font-size: small;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-    }
-}}
+            .learn-more{
+                        text-align: center;
+                        color: black;
+                        text-decoration: underline;
+                        font-size: small;
+                    }
+            .card-button{
+                // margin-left: 20px;
+                background: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                // padding-left: 40px;
+                // padding-right: 40px;
+                width: 90%;
+                border: 0;
+                background: #0A80F6;
+                font-size: small;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+            }
+        }}
+
+}

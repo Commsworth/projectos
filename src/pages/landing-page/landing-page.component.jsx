@@ -95,21 +95,21 @@ class LandingPage extends Component {
     }
 
     setActive = (num) => {
-        switch (num){
+        switch (num) {
             case 1:
-                this.setState({activeButton1:true,activeButton2:false,activeButton3:false,activeButton4:false,activeButton5:false})
+                this.setState({ activeButton1: true, activeButton2: false, activeButton3: false, activeButton4: false, activeButton5: false })
                 break;
             case 2:
-                this.setState({activeButton1:false,activeButton2:true,activeButton3:false,activeButton4:false,activeButton5:false})
+                this.setState({ activeButton1: false, activeButton2: true, activeButton3: false, activeButton4: false, activeButton5: false })
                 break;
             case 3:
-                this.setState({activeButton1:false,activeButton2:false,activeButton3:true,activeButton4:false,activeButton5:false})
+                this.setState({ activeButton1: false, activeButton2: false, activeButton3: true, activeButton4: false, activeButton5: false })
                 break;
             case 4:
-                this.setState({activeButton1:false,activeButton2:false,activeButton3:false,activeButton4:true,activeButton5:false})
+                this.setState({ activeButton1: false, activeButton2: false, activeButton3: false, activeButton4: true, activeButton5: false })
                 break;
             case 5:
-                this.setState({activeButton1:false,activeButton2:false,activeButton3:false,activeButton4:false,activeButton5:true})
+                this.setState({ activeButton1: false, activeButton2: false, activeButton3: false, activeButton4: false, activeButton5: true })
                 break;
         }
     }
@@ -118,25 +118,14 @@ class LandingPage extends Component {
         return (
             <div className="main-div">
                 <div className="midtop">
-                    <br />
-                    <br />
-                    <br />
                     <h1>Let’s help you build</h1>
                     <p>Redefine your Project Management lifecycle with ProjectOS</p>
                     <p>Enterprise-Class Project Management Platform</p>
                     <button className="two-buttons">Request Demo</button>
-                    <button className="two-buttons">Learn More</button>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-
+                    <button className="two-buttons">Learn More</button> 
                 </div>
-
-                <div>
-                    <h6 className="title-color">Technical Partners</h6>
+                <div className="features-1">
+                    <h4 className="title center">Technical Partners</h4>
                     <div className="card-grid">
                         {
                             TechPart.map(tp => (
@@ -144,90 +133,97 @@ class LandingPage extends Component {
                             ))
                         }
                     </div>
-                    <h2><button className="slide-button"><SlideButton/></button ><button className="slide-button"><SlideButton/></button></h2>
-
-                    <div>
-                        <h6 className="title-color">Features</h6>
-                        <h2>Solutions on Offer</h2>
-                    </div>
-
+                        <h2 className="center"><button className="slide-button"><SlideButton /></button ><button className="slide-button"><SlideButton /></button></h2>
+                </div>
+                <div className="features-2">
+                    <h4 className="title center">Features</h4>
+                    <h2 className="center">Solutions on Offer</h2>
+                <div className="feature-select-div">
+                    <select name="feature" className="feature-select">
+                    <option value={Features[0]}>{Features[0]}</option>
+                    <option value={Features[1]}>{Features[1]}</option>
+                    <option value={Features[2]}>{Features[2]}</option>
+                    <option value={Features[3]}>{Features[3]}</option>
+                    <option value={Features[4]}>{Features[4]}</option>
+                    </select>
                 </div>
                 <div className="feature-grid">
-                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton1 ? "feature-buttons active" : "feature-buttons"} 
-                    onClick={() => {
+                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton1 ? "feature-buttons active" : "feature-buttons"}
+                        onClick={() => {
                             num = 0;
                             this.setActive(1)
                         }
-                        }>
+                    }>
                         {Features[0]}
                     </button>
-                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton2 ? "feature-buttons active" : "feature-buttons"} 
-                    onClick={() => {
+                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton2 ? "feature-buttons active" : "feature-buttons"}
+                        onClick={() => {
                             num = 0;
                             this.setActive(2)
                         }
-                        }>
+                    }>
                         {Features[1]}
                     </button>
-                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton3 ? "feature-buttons active" : "feature-buttons"} 
-                    onClick={() => {
+                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton3 ? "feature-buttons active" : "feature-buttons"}
+                        onClick={() => {
                             num = 0;
                             this.setActive(3)
                         }
                         }>
                         {Features[2]}
                     </button>
-                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton4 ? "feature-buttons active" : "feature-buttons"} 
-                    onClick={() => {
+                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton4 ? "feature-buttons active" : "feature-buttons"}
+                        onClick={() => {
                             num = 0;
                             this.setActive(4)
                         }
-                        }>
+                    }>
                         {Features[3]}
                     </button>
-                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton5 ? "feature-buttons active" : "feature-buttons"} 
-                    onClick={() => {
+                    <button key={Math.round((Math.random() * 1392929))} className={this.state.activeButton5 ? "feature-buttons active" : "feature-buttons"}
+                        onClick={() => {
                             num = 0;
                             this.setActive(5)
                         }
-                        }>
+                    }>
                         {Features[4]}
                     </button>
                 </div>
-                <div className="features">
+                <div className="features-3">
                     <div>
-                    <h2>We handle budget</h2>
-                    <h2>tracking</h2>
-                    <div className="feature-blue-line"></div>
-                    {
-                        FeatureList.map(featlist => (
-                            <div key={Math.round((Math.random() * 1392929))} className="feature-flex">
-                                <div>
-                                    <h4>{featlist.icon}</h4>
-                                </div>
-                                <div className="featurelist">
-                                    <h4>{featlist.title}</h4>
-                                    <p>{featlist.content}</p>
+                        <h2>We handle budget</h2>
+                        <h2>tracking</h2>
+                        <div className="features-3--blue-line"></div>
+                        {
+                            FeatureList.map(featlist => (
+                                <div key={Math.round((Math.random() * 1392929))} className="features-3-flex">
+                                    <div>
+                                        <h4>{featlist.icon}</h4>
+                                    </div>
+                                    <div className="features-3--list">
+                                        <h4>{featlist.title}</h4>
+                                        <p>{featlist.content}</p>
+
+                                    </div>
 
                                 </div>
-
-                            </div>
-                        ))
-                    }
-                    <ScheduleADemo className="schedule-a-demo" />
-                </div>
-                <div>
-                    </div>                        
+                            ))
+                        }
+                        <ScheduleADemo className="schedule-a-demo" />
                     </div>
-                <div className="search-center">
-                    <h2>Ready to be amazed? Schedule a demo</h2>
+                    <div className="feature-display">
+                        </div>
+                    </div>
+                </div>
+                <div className="search-div">
+                    <h2 className="center">Ready to be amazed? Schedule a demo</h2>
+                    <br/>
+                <div>
                     <div className="search">
                         <SearchBox placeholder="Email Address" />
-
                         <small>Don't worry, we'll only send you messages concerning product launch</small>
                     </div>
                 </div>
-                <div>
                 </div>
             </div>
         )

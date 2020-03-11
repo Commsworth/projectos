@@ -19,19 +19,21 @@ class About extends React.Component{
                     <h1>Traditional Project Management can’t endure</h1>
                     <h1><button>Request Demo</button></h1>
                 <br/>
+                <div className="about__card-div-1">
                     <div className="about__3-cards">
                     <Card display={<div><BudgetTracking/><h3>Budget Tracking</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>
                     <Card display={<div><ProjectTracking/><h3>Project Tracking</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>
                     <Card display={<div><GeoTracking/><h3>Geo-tracking</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>
                     </div>
-                </div>
-                <div className="about__card-div">
-                    <div className="about__2-cards">
+                    </div>
+                    <br/>
+                <div className="about__card-div-1">
+                    <div className="about__3-cards">
                     <Card display={<div><ContractManager/><h3>Contract Manager</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>
                     <Card display={<div><PerformanceInsights/><h3>Performance Insights</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>
                     </div>
                 </div>
-
+                </div>
                 <div className="about__info">
                     <h6>How it works</h6>
                     <h1>Use ProjectOS without stress</h1>
