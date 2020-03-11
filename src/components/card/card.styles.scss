@@ -1,13 +1,14 @@
 .card-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     // background: linear-gradient(60deg, #000428, #004e92);
     // background: linear-gradient(89deg, #4ca1af, #c4e0e5);
     // border: 1px solid grey;
     // border: 1px solid black;
     border-radius: 5px;
-    padding: 35px 20px;
-    margin: 10px 0px 10px;
+    padding: 20px 40px;
+    // margin: 10px 0px 10px;
     cursor: pointer;
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
