@@ -27,28 +27,24 @@ export const GetDemo = () => {
 }
 export const Microsoft = () => {
     return (
-        <svg width="53" height="100" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H24.8642V24.8642H0V0Z" fill="#F25022" />
-            <path d="M28.1358 0H53V24.8642H28.1358V0Z" fill="#7FBA00" />
-            <path d="M0 28.1358H24.8642V53H0V28.1358Z" fill="#00A4EF" />
-            <path d="M28.1358 28.1358H53V53H28.1358V28.1358Z" fill="#FFB900" />
-        </svg>
+<img height="120px" width="180px" src="https://pngimg.com/uploads/microsoft/microsoft_PNG4.png" alt="Microsoft" />
+
 
     )
 }
 export const Fortinet = () => {
     return (
-        <img height="100px" src="https://www.tech-wiki.net/images/4/49/Fortinet_logo.png" alt="Fortinet" />
+        <img height="120px" width="180px" src="https://www.tech-wiki.net/images/4/49/Fortinet_logo.png" alt="Fortinet" />
     )
 }
 export const Docker = () => {
     return (
-        <img height="100px" src="https://cdn.iconscout.com/icon/free/png-256/docker-226091.png" alt="Docker" />
+        <img height="120px" width="180px" src="https://cdn.iconscout.com/icon/free/png-256/docker-226091.png" alt="Docker" />
     )
 }
 export const BeniRatio = () => {
     return (
-        <img height="100px" src="https://static.wixstatic.com/media/be1717_d0c99b78938b4cc3bc89ee85f454a77e~mv2.png/v1/fit/w_2500,h_1330,al_c/be1717_d0c99b78938b4cc3bc89ee85f454a77e~mv2.png" alt="BeniRatio" />
+        <img height="120px" width="180px" src="https://static.wixstatic.com/media/be1717_d0c99b78938b4cc3bc89ee85f454a77e~mv2.png/v1/fit/w_2500,h_1330,al_c/be1717_d0c99b78938b4cc3bc89ee85f454a77e~mv2.png" alt="BeniRatio" />
     )
 }
 

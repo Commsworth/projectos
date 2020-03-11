@@ -36,11 +36,11 @@ class App extends Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/licensing" render={(props) => <Licensing {...props} />} />
-          <Route exact path="/contact" render={(props) => <Contact {...props} />} />
-          <Route exact path="/faq" render={(props) => <FAQ {...props} />} />
-          <Route exact path="/about" render={(props) => <About {...props} />} />
+          <Route exact path="/projectos/" component={LandingPage} />
+          <Route exact path="/projectos/licensing" render={(props) => <Licensing {...props} />} />
+          <Route exact path="/projectos/contact" render={(props) => <Contact {...props} />} />
+          <Route exact path="/projectos/faq" render={(props) => <FAQ {...props} />} />
+          <Route exact path="/projectos/about" render={(props) => <About {...props} />} />
           {/* <Route exact path="/signup" render={(props) => <Register {...props} users={users} isSignedIn={this.state.isSignedIn} />} /> */}
         </Switch>
         <br />
