@@ -46,9 +46,9 @@ class App extends Component {
         <br />
         <br />
         <hr />
-        {/* <Socials /> */}
+        <Socials />
         <div>
-          {/* <Footer /> */}
+          <Footer />
         </div>
 
       </div>
