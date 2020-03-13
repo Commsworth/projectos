@@ -68,6 +68,7 @@
         .feature-select {
           padding: 5px 30px;
           color: #0e82f8;
+          // background: red;
         }
       }
       .feature-grid {
@@ -89,7 +90,7 @@
           // width: 50%;
         }
         .schedule-a-demo {
-          width: 244px;
+          width: 180px;
           height: 26px;
         }
       }
@@ -100,10 +101,127 @@
       .search {
         display: inline-block;
       }
+      small {
+        color: rgb(161, 161, 161);
+      }
     }
   }
 }
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 571px) and (max-width: 990px){
+  // TABLET VIEW
+    .main-div {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+      font-style: normal;
+  
+      // REUSABLE CLASSES
+      .title {
+        color: #0e82f8;
+      }
+      .center {
+        text-align: center;
+      }
+  
+      //   MOBILE VIEW
+      .midtop {
+        text-align: center;
+        background: #000000;
+        color: white;
+        padding: 10px 0px 50px 0px;
+        .two-buttons {
+          margin-right: 5px;
+          margin-left: 5px;
+          width: 150px;
+          background: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          // padding-left: 5px;
+          // padding-right: 10px;
+          border: 0;
+          background: #0a80f6;
+          border-radius: 2px;
+          color: white;
+          cursor: pointer;
+          font-size: small;
+          text-align: center;
+  
+          p {
+            font-size: x-small;
+          }
+        }
+      }
+  
+      .features-1 {
+        .card-grid {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          // display: flex;
+          // justify-content: space-around;
+          // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          // margin: 0px 150px 40px;
+          gap: 30px;
+        }
+          .slide-button {
+          background: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 0px;
+          border: 0;
+          color: black;
+          cursor: pointer;
+        }
+      }
+  
+      .features-2 {
+        .feature-select-div {
+          display: flex;
+          justify-content: center;
+          .feature-select {
+            padding: 5px 30px;
+            color: #0e82f8;
+            // background: red;
+          }
+        }
+        .feature-grid {
+          display: none;
+        }
+      }
+      .features-3 {
+        display: flex;
+        justify-content: center;
+        margin: 0px 20px;
+        .features-3--blue-line {
+          border-bottom: 5px solid #0e82f8;
+          width: 88px;
+        }
+        .features-3-flex {
+          display: flex;
+          .features-3--list {
+            margin-left: 20px;
+            // width: 50%;
+          }
+          .schedule-a-demo {
+            width: 180px;
+            height: 26px;
+          }
+        }
+      }
+  
+      .search-div {
+        text-align: center;
+        .search {
+          display: inline-block;
+        }
+        small {
+          color: rgb(161, 161, 161);
+        }
+      }
+    }
+  
+}
+@media screen and (min-width: 990px) {
   .main-div {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
       sans-serif;
@@ -139,18 +257,17 @@
         cursor: pointer;
         font-size: small;
         text-align: center;
-        
 
         p {
           font-size: x-small;
         }
       }
-      .white{
+      .white {
         background: white;
-        color: #000000;        
+        color: #000000;
       }
-      .blue{
-        background-color: #0A80F6;
+      .blue {
+        background-color: #0a80f6;
         color: white;
       }
     }
@@ -250,7 +367,7 @@
     .search-div {
       text-align: center;
       margin: 0vw 30vw;
-      small{
+      small {
         color: rgb(161, 161, 161);
       }
       .search {

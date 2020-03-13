@@ -17,7 +17,26 @@
         margin: 0px;
     }
 }
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 571px) and (max-width: 990px){
+    // TABLET VIEW
+                ul{
+                list-style: none;
+                padding: 0px 20px;
+                }
+                
+                .footer-grid{
+                    color: white;
+                    background: #000000;
+                    display: grid;
+                    // justify-content: center;
+                    line-height: 25px;
+                    // display: grid;
+                    grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
+                    margin: 0px;
+                }
+}
+
+@media screen and (min-width: 990px) {
     // PC VIEW
         ul{
         list-style: none;
