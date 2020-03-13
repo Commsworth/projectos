@@ -121,8 +121,8 @@ class LandingPage extends Component {
                     <h1>Let’s help you build</h1>
                     <p>Redefine your Project Management lifecycle with ProjectOS</p>
                     <p>Enterprise-Class Project Management Platform</p>
-                    <button className="two-buttons">Request Demo</button>
-                    <button className="two-buttons">Learn More</button> 
+                    <button className="two-buttons blue">Request Demo</button>
+                    <button className="two-buttons white">Learn More</button> 
                 </div>
                 <div className="features-1">
                     <h4 className="title center">Technical Partners</h4>

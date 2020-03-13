@@ -32,6 +32,8 @@ class Licensing extends React.Component {
                         </tr>
                         <tr>
                             <th>Features</th>
+                            <th> </th>
+                            <th> </th>
                         </tr>
                         <List title="Budget tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="Project tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
@@ -44,7 +46,7 @@ class Licensing extends React.Component {
                         <List title="Contractor Manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="Geo-track mobile" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="" normal={<Button text="Try Standard" color="white"/>} premium={<Button text="Try Premium" color="blue"/>} content="Lorem Ipsum" color="" />
+                        <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} content="Lorem Ipsum" color="" />
                     </table>
 
                 </div>
@@ -56,11 +58,13 @@ class Licensing extends React.Component {
 
                 <div className="card-grid">
                     {/* Classes below are tachyons classes */}
-                    <div className="mw5 bg-white br3 mv3 ba b--black-10">
-                        <h2>Developer License</h2>
-                        <hr />
+                    <div className="licensing-card">
+                        <div className="licensing-card-title">
+                            <h2>Developer License</h2>
+                        </div>
+                        {/* <hr /> */}
                         {/* Classes below except 'tick-grid' are tachyons classes */}
-                        <div className="tick-grid pa3 pa3-ns">
+                        <div className="tick-grid">
                             <div>
                                 <TickLicense />
                             </div>
@@ -69,7 +73,7 @@ class Licensing extends React.Component {
                             </div>
                         </div>
                         <br />
-                        <div className="tick-grid pa3 pa3-ns">
+                        <div className="tick-grid">
                             <div>
                                 <TickLicense />
                             </div>
@@ -78,7 +82,7 @@ class Licensing extends React.Component {
                             </div>
                         </div>
                         <br />
-                        <div className="tick-grid pa3 pa3-ns">
+                        <div className="tick-grid">
                             <div>
                                 <TickLicense />
                             </div>
@@ -89,15 +93,17 @@ class Licensing extends React.Component {
 
                         <div>
                             {/* All classes except 'card-button' and 'learn-more' are tachyons classes */}
-                            <h1><button className="pa3 pa3-ns card-button">Contact Us</button></h1>
+                            <h1><button className="card-button">Contact Us</button></h1>
                             <a href="#"><p className="learn-more">Learn more</p></a>
                         </div>
                     </div>
 
-                    <div className="mw5 bg-white br3 mv3 ba b--black-10">
-                        <h2>ProjectOS Mobile</h2>
-                        <hr />
-                        <div className="tick-grid pa3 pa3-ns">
+                    <div className="licensing-card">
+                        <div className="licensing-card-title">
+                            <h2>ProjectOS Mobile</h2>
+                        </div>
+                        {/* <hr /> */}
+                        <div className="tick-grid">
                             <div>
                                 <TickLicense />
                             </div>
@@ -106,7 +112,7 @@ class Licensing extends React.Component {
                             </div>
                         </div>
                         <br />
-                        <div className="tick-grid pa3 pa3-ns">
+                        <div className="tick-grid">
                             <div>
                                 <TickLicense />
                             </div>
@@ -115,7 +121,7 @@ class Licensing extends React.Component {
                             </div>
                         </div>
                         <br />
-                        <div className="tick-grid pa3 pa3-ns">
+                        <div className="tick-grid">
                             <div>
                                 <TickLicense />
                             </div>
@@ -125,7 +131,7 @@ class Licensing extends React.Component {
                         </div>
 
                         <div>
-                            <h1><button className="pa3 pa3-ns card-button">Contact Us</button></h1>
+                            <h1><button className=" card-button">Contact Us</button></h1>
                             <a href="#"><p className="learn-more">Learn more</p></a>
                         </div>
                     </div>

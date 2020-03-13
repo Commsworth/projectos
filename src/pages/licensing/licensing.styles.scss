@@ -73,6 +73,9 @@
                 th,td{
                     width: 20vw;
                 }
+                tr{
+                    border: 1px solid #F6F6F6;
+                }
         }
         
         .list{
@@ -85,42 +88,55 @@
             display: flex;
             justify-content: center;
             // width: 1000px;
-        
-            .tick-grid{
-                display: flex;
-                justify-content: space-around;
-                padding-top: 0px;
-                svg{
-                    margin-right: 20px;
-                    // width: max-content;
-                }
-                p{
-                    font-size: 13px;
-                    margin: 0px;
-        
-                }
-            }
-            .learn-more{
-                        text-align: center;
-                        color: black;
-                        text-decoration: underline;
-                        font-size: small;
-                    }
-            .card-button{
-                // margin-left: 20px;
-                background: none;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                // padding-left: 40px;
-                // padding-right: 40px;
-                width: 90%;
-                border: 0;
-                background: #0A80F6;
-                font-size: small;
-                border-radius: 5px;
-                color: white;
-                cursor: pointer;
-            }
-        }}
 
+            .licensing-card{
+                border: 1px solid rgb(214, 222, 230);
+                width: 300px;
+                border-radius: 2px;
+                padding: 1vh 3vh;
+                margin: 0vw 1vw;
+                
+                .licensing-card-title{
+                    border-bottom: 1px solid rgb(214, 222, 230);
+                    margin-bottom: 3vh;
+                }
+                .tick-grid{
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 0px;
+                    padding: 1vh 3vh;
+                    svg{
+                        margin-right: 20px;
+                        // width: max-content;
+                    }
+                    p{
+                        font-size: 13px;
+                        margin: 0px;
+                        
+                    }
+                }
+                .learn-more{
+                    text-align: center;
+                    color: black;
+                    text-decoration: underline;
+                    font-size: small;
+                }
+                .card-button{
+                    // margin-left: 20px;
+                    background: none;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    // padding-left: 40px;
+                    // padding-right: 40px;
+                    width: 90%;
+                    border: 0;
+                    background: #0A80F6;
+                    font-size: small;
+                    border-radius: 5px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }}
+        }
+            
 }
