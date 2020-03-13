@@ -26,7 +26,7 @@ class About extends React.Component{
                     <Card display={<div><GeoTracking/><h3>Geo-tracking</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>
                     </div>
                     </div>
-                    <br/>
+                    {/* <br/> */}
                 <div className="about__card-div-1">
                     <div className="about__3-cards">
                     <Card display={<div><ContractManager/><h3>Contract Manager</h3><small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque accumsan, adipiscing consectetur netus tristique. Gravida elementum.</p></small></div>} className="card-shadow"/>

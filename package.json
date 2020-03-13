@@ -1,5 +1,5 @@
 {
-  "name": "branding-site",
+  "name": "projectos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "react-scripts": "3.4.0",
     "tachyons": "^4.11.1"
   },
-  "homepage": "./",
+  "homepage": "/projectos/",
   "main": "src/index.js",
   "repository": {
     "type": "git",

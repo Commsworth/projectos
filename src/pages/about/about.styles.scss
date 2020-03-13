@@ -146,15 +146,16 @@
             }
             margin-bottom: 40em;
             .about__card-div-1{
-            }
-            .about__3-cards{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                div{
-                    width: max-content;
-                    p{
-                        width: 200px;
+                .about__3-cards{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin: 0px;
+                    div{
+                        width: max-content;
+                        p{
+                            width: 200px;
+                        }
                     }
                 }
                 // display: grid;
