@@ -27,14 +27,14 @@ export const GetDemo = () => {
 }
 export const Microsoft = () => {
     return (
-<img height="120px" width="180px" src="https://pngimg.com/uploads/microsoft/microsoft_PNG4.png" alt="Microsoft" />
+<img height="140px" width="180px" src="https://pngimg.com/uploads/microsoft/microsoft_PNG4.png" alt="Microsoft" />
 
 
     )
 }
 export const Fortinet = () => {
     return (
-        <img height="120px" width="180px" src="https://www.tech-wiki.net/images/4/49/Fortinet_logo.png" alt="Fortinet" />
+        <img height="160px" width="180px" src="https://www.tech-wiki.net/images/4/49/Fortinet_logo.png" alt="Fortinet" />
     )
 }
 export const Docker = () => {
