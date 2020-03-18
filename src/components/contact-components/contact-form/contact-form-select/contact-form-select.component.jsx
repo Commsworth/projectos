@@ -3,16 +3,12 @@ import './contact-form-select.styles.scss';
 
 const ContactFormSelect=(props)=>(
     <div className="contact-form-select">
-        <div>
-            {props.label}
-        </div>
-        <div>
+                <label className={`${props.value.length?'shrink':''} label`}>{props.label}</label>
             <select >
                 {props.optionsArray.map(arr=>(
-                    <option value={`${arr}`}>arr</option>
+                    <option value={`${arr}`}>{arr}</option>
                 ))}
             </select>
-        </div>
     </div>
 )
 
