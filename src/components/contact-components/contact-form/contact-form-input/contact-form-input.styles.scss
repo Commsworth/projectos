@@ -1,42 +1,120 @@
-
-@media screen and (max-width: 570px) {
-    // MOBILE VIEW
-        .contact-form-input-flex{
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #DDDDDD;
-            // width:20em;
-            padding-top: 25px;
-            // border-bottom-width: 1px;
-            padding-bottom: 25px;
-        
-            .contact-input{
-                border: 0;
-                width: 15rem;
-            }
-            .contact-input:focus{
-                outline: none;
-        }
-        }
-}
-@media screen and (min-width: 570px) {
-    // PC VIEW
-        .contact-form-input-flex{
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #DDDDDD;
-            width:20em;
-            padding-top: 25px;
-            border-bottom-width: 1px;
-            padding-bottom: 25px;
-        
-            .contact-input{
-                border: 0;
-                // width: fit-content;
-            }
-            .contact-input:focus{
-                outline: none;
-        }
-        }
-    
+@media screen and (max-width: 990px) {
+  // MOBILE AND TABLET VIEWS
+  $sub-color: grey;
+  $main-color: black;
+  $blue-color: #0E82F8;
+  
+  @mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+    color: $main-color;
   }
+  .contact-form-input-flex {
+      // justify-content: space-between;
+    //   border-bottom: 1px solid #dddddd;
+    position: relative;
+    margin: 25px 0;
+    width: 80vw;
+    .contact-input {
+      background: none;
+      background-color: white;
+      color: $main-color;
+      font-size: 1em;
+      // text-align: center;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      // margin: 25px 0;    
+      border-bottom: 1px solid $sub-color;
+            // outline: ;
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid $blue-color;
+              }
+              
+              &:focus ~ .label {
+                  @include shrinkLabel();
+              }
+            
+        }
+        .contact-input:focus {
+                    outline: none;
+                                        }
+    .label {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 300ms ease all;
+
+        &.shrink {
+            @include shrinkLabel();
+          }
+    }
+  }
+
+}
+@media screen and (min-width: 990px) {
+  // PC VIEW
+  $sub-color: grey;
+  $main-color: black;
+  $blue-color: #0E82F8;
+  
+  @mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+    color: $main-color;
+  }
+  .contact-form-input-flex {
+      // justify-content: space-between;
+    //   border-bottom: 1px solid #dddddd;
+    position: relative;
+    margin: 25px 0;
+    width: 20em;
+    .contact-input {
+      background: none;
+      background-color: white;
+      color: $sub-color;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      // margin: 25px 0;    
+      border-bottom: 1px solid $sub-color;
+            // outline: ;
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid $blue-color;
+              }
+              
+              &:focus ~ .label {
+                  @include shrinkLabel();
+              }
+            
+        }
+        .contact-input:focus {
+                    outline: none;
+                                        }
+    .label {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 300ms ease all;
+
+        &.shrink {
+            @include shrinkLabel();
+          }
+    }
+  }
+}

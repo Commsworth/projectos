@@ -25,16 +25,23 @@ class Licensing extends React.Component {
                 {/* shadow-2 class below is a tachyons class for shadowns */}
                 <div className="shadow-2 list">
                     <table>
+                        <thead>
+                        <br/>
+                        {/* <br/> */}
                         <tr>
-                            <th> </th>
-                            <th>Standard</th>
-                            <th>Premium</th>
+                            <th style={{borderBottom: "1px solid"}}> </th>
+                            <th style={{borderBottom: "1px solid"}}>Standard</th>
+                            <th style={{borderBottom: "1px solid"}}>Premium</th>
                         </tr>
+                        {/* <br/> */}
+                        <br/>
                         <tr>
-                            <th>Features</th>
-                            <th> </th>
-                            <th> </th>
+                            <th style={{borderBottom: "1px solid"}}>Features</th>
+                            <th style={{borderBottom: "1px solid"}}> </th>
+                            <th style={{borderBottom: "1px solid"}}> </th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <List title="Budget tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="Project tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="Milestone manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
@@ -47,6 +54,7 @@ class Licensing extends React.Component {
                         <List title="Geo-track mobile" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} content="Lorem Ipsum" color="" />
+                        </tbody>
                     </table>
 
                 </div>
