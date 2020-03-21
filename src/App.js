@@ -15,6 +15,7 @@ import Footer from './components/footer/footer.component';
 
 //import stylesheet
 import './App.css';
+import LoginPage from './pages/login-page/login-page.component';
 
 //apollo client setup
 // const client = new ApolloClient({
@@ -33,7 +34,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{height:"100%"}}>
         <Header />
         <Switch>
           <Route exact path="/projectos/" component={LandingPage} />
@@ -41,6 +42,7 @@ class App extends Component {
           <Route exact path="/projectos/contact" render={(props) => <Contact {...props} />} />
           <Route exact path="/projectos/faq" render={(props) => <FAQ {...props} />} />
           <Route exact path="/projectos/about" render={(props) => <About {...props} />} />
+          <Route exact path="/projectos/login" render={(props) => <LoginPage {...props} />} />
           {/* <Route exact path="/signup" render={(props) => <Register {...props} users={users} isSignedIn={this.state.isSignedIn} />} /> */}
         </Switch>
         <br />
