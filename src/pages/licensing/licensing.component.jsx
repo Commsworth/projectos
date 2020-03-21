@@ -26,16 +26,18 @@ class Licensing extends React.Component {
                 <div className="shadow-2 list">
                     <table>
                         <thead>
-                        <br/>
-                        {/* <br/> */}
+                        {/* <br/>
+                        <br/> */}
                         <tr>
+                            <th style={{borderBottom: "1px solid"}}> </th>
                             <th style={{borderBottom: "1px solid"}}> </th>
                             <th style={{borderBottom: "1px solid"}}>Standard</th>
                             <th style={{borderBottom: "1px solid"}}>Premium</th>
                         </tr>
                         {/* <br/> */}
-                        <br/>
+                        {/* <br/> */}
                         <tr>
+                            <th style={{borderBottom: "1px solid"}}> </th>
                             <th style={{borderBottom: "1px solid"}}>Features</th>
                             <th style={{borderBottom: "1px solid"}}> </th>
                             <th style={{borderBottom: "1px solid"}}> </th>
@@ -53,8 +55,10 @@ class Licensing extends React.Component {
                         <List title="Contractor Manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="Geo-track mobile" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} content="Lorem Ipsum" color="" />
                         </tbody>
+                        <tfoot>
+                        <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} content="Lorem Ipsum" color="" />
+                        </tfoot>
                     </table>
 
                 </div>

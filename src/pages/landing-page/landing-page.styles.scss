@@ -17,20 +17,20 @@
       text-align: center;
       background: #000000;
       color: white;
-      padding: 10px 0px 50px 0px;
+      padding: 10vh 0px 5vh 0px;
       .two-buttons {
         margin-right: 5px;
         margin-left: 5px;
-        width: 150px;
-        background: none;
+        width: 140px;
+        // background: none;
         padding-top: 10px;
         padding-bottom: 10px;
         // padding-left: 5px;
         // padding-right: 10px;
         border: 0;
-        background: #0a80f6;
+        // background: #0a80f6;
         border-radius: 2px;
-        color: white;
+        // color: white;
         cursor: pointer;
         font-size: small;
         text-align: center;
@@ -38,6 +38,14 @@
         p {
           font-size: x-small;
         }
+      }
+      .white {
+        background: white;
+        color: #000000;
+      }
+      .blue {
+        background-color: #0a80f6;
+        color: white;
       }
     }
 
@@ -121,26 +129,26 @@
       .center {
         text-align: center;
       }
-  
-      //   MOBILE VIEW
+
+      //BODY
       .midtop {
         text-align: center;
         background: #000000;
         color: white;
-        padding: 10px 0px 50px 0px;
+        padding: 10vh 0px 5vh 0px;
         .two-buttons {
           margin-right: 5px;
           margin-left: 5px;
-          width: 150px;
-          background: none;
+          width: 140px;
+          // background: none;
           padding-top: 10px;
           padding-bottom: 10px;
           // padding-left: 5px;
           // padding-right: 10px;
           border: 0;
-          background: #0a80f6;
+          // background: #0a80f6;
           border-radius: 2px;
-          color: white;
+          // color: white;
           cursor: pointer;
           font-size: small;
           text-align: center;
@@ -149,8 +157,16 @@
             font-size: x-small;
           }
         }
+        .white {
+          background: white;
+          color: #000000;
+        }
+        .blue {
+          background-color: #0a80f6;
+          color: white;
+        }
       }
-  
+    
       .features-1 {
         .card-grid {
           display: flex;
