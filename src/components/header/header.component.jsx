@@ -36,6 +36,9 @@ class Header extends React.Component{
                 <Link to="/projectos/contact" className="option">
                     Contact
             </Link>
+                <Link to="/projectos/login" className="option">
+                    Login
+            </Link>
                 <Link to="/projectos/contact" className="option">
                     <button className="demo">Get Demo</button>
                 </Link>
