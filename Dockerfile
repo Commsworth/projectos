@@ -10,7 +10,7 @@ COPY ./package.json ./
 
 
 
-RUN yarn install 
+RUN npm install 
 #run package installations
 
 
