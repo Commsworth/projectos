@@ -6,6 +6,48 @@ import Button from '../../components/button/button.component';
 // const license = 
 
 
+const inside = [[
+    ["Create Projects", true, false],
+    ["Unified Project Tracking", true, false],
+    ["Project Archival ", true, false],
+],
+[
+    ["Realtime Budget Disbursement ", true, false],
+    ["Expenditure Reporting ", true, false],
+    ["Budget Compliance  ", true, false],
+],
+[
+    ["Milestone Manager ", true, false],
+    ["Milestone Auto-weight algorithm", true, false],
+    ["Milestone Timestamp", true, false],
+],
+[
+    ["ProjectsOS Map-View", true, false],
+    ["Project Geo-location services. ", true, false],
+    ["Geo-Track GO (Mobile Tracking for Onsite Project Officers)", true, false],
+],
+[
+    ["Contractor Indicator", true, false],
+    ["Contractor Profiling", true, false],
+    ["Contractor Milestone Compliance", true, false],
+    ["Contractor Competency History", true, false],
+],
+[
+    ["Data Import Service", true, false],
+    ["Data Export Service", true, false],
+],
+[
+    ["Standard Visualization Dashboard", true, false],
+    ["Custom Insights Visualizations", true, false],
+    ["Module Based Visualizations", true, false],
+    ["Personalized Data Widgets", true, false],
+    ["Predictive AI Recommendations (Preview)", true, false],
+]
+]
+const groups = [["Budget Tracker",inside[1]],["Project Tracker",inside[0]],["Milestones",inside[2]],["Geo-Track",inside[3]],["Contract Manager",inside[4]],["Data I/O Service",inside[5]], ["Perfomance Insights",inside[6]]]
+
+
+
 
 class Licensing extends React.Component {
     constructor() {
@@ -26,26 +68,40 @@ class Licensing extends React.Component {
                 <div className="shadow-2 list">
                     <table>
                         <thead>
-                        {/* <br/>
+                            {/* <br/>
                         <br/> */}
-                        <tr>
-                            <th style={{borderBottom: "1px solid"}}> </th>
-                            <th style={{borderBottom: "1px solid"}}> </th>
-                            <th style={{borderBottom: "1px solid"}}>Standard</th>
-                            <th style={{borderBottom: "1px solid"}}>Premium</th>
-                        </tr>
-                        {/* <br/> */}
-                        {/* <br/> */}
-                        <tr>
-                            <th style={{borderBottom: "1px solid"}}> </th>
-                            <th style={{borderBottom: "1px solid"}}>Features</th>
-                            <th style={{borderBottom: "1px solid"}}> </th>
-                            <th style={{borderBottom: "1px solid"}}> </th>
-                        </tr>
+                            {/* <br/> */}
+                            {/* <br/> */}
+                            <tr>
+                                <th style={{ borderBottom: "1px solid" }}> </th>
+                                <th style={{ borderBottom: "1px solid" }}>Features</th>
+                                {/* <th style={{ borderBottom: "1px solid" }}> </th>
+                                <th style={{ borderBottom: "1px solid" }}> </th>
+                            </tr>
+                            <tr>
+                                <th style={{ borderBottom: "1px solid" }}> </th>
+                                <th style={{ borderBottom: "1px solid" }}> </th> */}
+                                <th style={{ borderBottom: "1px solid" }}>Standard</th>
+                                <th style={{ borderBottom: "1px solid" }}>Premium</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <List title="Budget tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="Project tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
+                            {
+                                groups.map(group=>(
+                                    <List title={<h4>{group[0]}</h4>} content={
+                                    group[1].map((ins1) =>(
+                                        <List title={ins1[0]} normal={<TickLicense />} premium={<TickLicense />} color="grey" />
+                                            // ins1.map(ins2=>(
+                                            // ))
+                                            )
+                                            )}
+                                        collapsible={true} color=""/>
+                                ))
+                            }
+                                    
+
+
+                            {/* <List title="Project tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="Milestone manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="Geotracking" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="Milestone manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
@@ -54,10 +110,10 @@ class Licensing extends React.Component {
                         <List title="Performance Insights" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
                         <List title="Contractor Manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
                         <List title="Geo-track mobile" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
-                        <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
+                        <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" /> */}
                         </tbody>
                         <tfoot>
-                        <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} content="Lorem Ipsum" color="" />
+                            {/* <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} /> */}
                         </tfoot>
                     </table>
 

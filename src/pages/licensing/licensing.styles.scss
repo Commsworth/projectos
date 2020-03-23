@@ -9,20 +9,50 @@
     }
 
     .list {
-      margin: 20px 5%;
-      min-width: 400px;
-      margin: 0% 10vw;
-      padding: 0% 10%;
-      table {
-        border-spacing: 0px;
-        margin: 0px 0px;
-        th,
-        td {
-          width: 2vw;
+      // margin: 20px 5%;
+      // min-width: 400px;
+      margin: 0% 10%;
+      padding: 0% 1%;
+      table, thead, tbody, th, td, tr { 
+        display: block; 
+      }
+      
+      /* Hide table headers (but not display: none;, for accessibility) */
+      thead tr { 
+        // position: absolute;
+        // top: -9999px;
+        // left: -9999px;
+      }
+      
+      tr { border: 1px solid #ccc; }
+      
+      td { 
+        /* Behave  like a "row" */
+        border: none;
+        // border-bottom: 1px solid rgb(180, 173, 173); 
+        // position: relative;
+        // padding-left: 50%;
+        span{
+          background: none;
+          border: 0px;
+          outline: none;
+          font-weight: bold;
+          font-size: x-large;
+          color: #0a80f6;
         }
       }
+      
+      td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+      }
     }
-
     .card-grid {
       display: grid;
       justify-content: center;
@@ -89,14 +119,43 @@
     }
 
     .list {
-      margin: 20px 20% 20px 20%;
-      padding: 20px 5% 30px 5%;
+      display: flex;
+      justify-content: center;
+      margin: 20px 5% 20px 5%;
+      //   padding: 20px 5% 30px 5%;
       table {
-        border-spacing: 0px;
-        margin: 0px 0px;
-        th,
-        td {
-          // width: 20vw;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        text-align: center;
+        padding: 16px 16px;
+      }
+      td {
+        text-align: center;
+        padding: 16px;
+        span {
+          background: none;
+          border: 0px;
+          outline: none;
+          font-weight: bold;
+          font-size: x-large;
+          color: #0a80f6;
+        }
+      }
+
+      th:first-child,
+      td:first-child {
+        text-align: left;
+      }
+      tbody {
+        tr {
+          tr:first-child {
+            background-color: #f2f2f2;
+          }
         }
       }
     }
@@ -195,16 +254,23 @@
       text-align: left;
     }
     tbody {
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
+      tr {
+        tr:first-child {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+    tfoot {
+      td {
+        padding: 16px;
       }
     }
 
     .list {
       display: flex;
       justify-content: center;
-      margin: 20px 20% 20px 20%;
-    //   padding: 20px 5% 30px 5%;
+      margin: 20px 10% 20px 10%;
+      //   padding: 20px 5% 30px 5%;
     }
 
     .card-grid {
