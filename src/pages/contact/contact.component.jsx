@@ -26,17 +26,18 @@ class Contact extends React.Component {
                                 <div className="got-questions-grid">
                                     <div className="got-questions-box">
                                         <ChatWithSales />
-                                        <small><p>Chat with Sales</p></small>
+                                        <p>Chat with Sales</p>
                                         <ChatNow />
                                     </div>
                                     <div className="got-questions-box">
                                         <TalkToAGuru />
-                                        <small><p>Talk to a ProjectOS guru</p></small>
+                                        <p>Talk to a ProjectOS guru</p>
                                         <RequestContact />
                                     </div>
                                 </div>
-                                <div>
+                                <div className="working-hours">
                                     <WorkingHours />
+                                <p> Kindly fill out this short form to get information about products, plans, pricing, demos support, and anything else about our platform and a ProjectOS representative will get in touch to guide you on your journey. </p>
                                 </div>
 
                             </div>
