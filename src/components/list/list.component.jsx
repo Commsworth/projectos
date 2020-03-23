@@ -14,7 +14,7 @@ class List extends React.Component {
         return (
             // <div className="row">
             <>
-            <tr className={`${this.props.color}`}  onClick={() => !this.state.title ? this.setState({ title: true }) : this.setState({ title: false })}>
+            <tr className={`${this.props.className}`}  onClick={() => !this.state.title ? this.setState({ title: true }) : this.setState({ title: false })}>
                 <td>{this.props.collapsible?!this.state.title && <span>+  </span>:""}{this.props.title?this.state.title && <span>-  </span>:""}</td>
                 <td>{this.props.title}</td>
                 <td><p>{this.props.normal}</p></td>

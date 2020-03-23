@@ -90,7 +90,8 @@ class Licensing extends React.Component {
                                 groups.map(group=>(
                                     <List title={<h4>{group[0]}</h4>} content={
                                     group[1].map((ins1) =>(
-                                        <List title={ins1[0]} normal={<TickLicense />} premium={<TickLicense />} color="grey" />
+                                        <List title={ins1[0]}
+                                         normal={<TickLicense />} premium={<TickLicense />} className="grey cursor" />
                                             // ins1.map(ins2=>(
                                             // ))
                                             )
@@ -98,22 +99,9 @@ class Licensing extends React.Component {
                                         collapsible={true} color=""/>
                                 ))
                             }
-                                    
-
-
-                            {/* <List title="Project tracker" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
-                        <List title="Milestone manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="Geotracking" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
-                        <List title="Milestone manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="Geotracking" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
-                        <List title="Data I/O service" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="Performance Insights" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
-                        <List title="Contractor Manager" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" />
-                        <List title="Geo-track mobile" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="grey" />
-                        <List title="KPI Manager license" normal={<TickLicense />} premium={<TickLicense />} content="Lorem Ipsum" color="" /> */}
                         </tbody>
                         <tfoot>
-                            {/* <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} /> */}
+                            <List title="" normal={<Button text="Try Standard" color="white" />} premium={<Button text="Try Premium" color="blue" />} />
                         </tfoot>
                     </table>
 

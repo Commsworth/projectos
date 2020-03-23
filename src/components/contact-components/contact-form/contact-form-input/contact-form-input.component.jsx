@@ -3,7 +3,7 @@ import './contact-form-input.styles.scss';
 
 const ContactFormInput=(props)=>(
     <div className="contact-form-input-flex">
-            <input type="text" className="contact-input" onChange={props.handleChange} name={props.name}/>
+            <input type="text" className="contact-input" onChange={props.handleChange} name={props.name} style={{fontSize: "24px", fontFamily: "monospace" }}/>
             <label className={`${props.value.length?'shrink':''} label`}>{props.label}</label>
     </div>
 )

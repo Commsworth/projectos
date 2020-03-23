@@ -1,7 +1,14 @@
-html,body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@font-face {
+  font-family: aribau_grotesk;
+  src: url(assets/aribau_grotesk/Aribau\ Grotesk\ Regular.otf);
+  font-weight: bold;
+}
 
-
+h1,h2,h3,h4,h5,h6,th,button {
+  font-family: 'Nunito', sans-serif;
+}
+p,small,a,td,li,select,option{
+  font-family: aribau_grotesk;
 }
 a{
   text-decoration: none;
