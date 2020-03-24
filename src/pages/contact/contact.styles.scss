@@ -1,6 +1,7 @@
 @media screen and (max-width: 990px) {
   // MOBILE AND TABLET VIEWS
   .contact-flex {
+    padding-top: 10vh;
     margin: 0px 10vw;
     display: grid;
       // justify-content: center;
@@ -39,10 +40,11 @@
   }
   @media screen and (min-width: 990px) {
     // PC VIEW
-  .contact-flex {
-    display: flex;
-    justify-content: center;
-    .socials-area-button {
+    .contact-flex {
+      padding-top: 10vh;
+      display: flex;
+      justify-content: center;
+      .socials-area-button {
       background: none;
       border: 0;
       border-radius: 5px;

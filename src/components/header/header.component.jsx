@@ -48,19 +48,19 @@ class Header extends React.Component{
 
         {this.state.dropdown && <div className="header2">
             <div className="header2--flex">
-                <Link to="/projectos/about" className="option">
+                <Link to="/projectos/about" className="option" onClick={()=>this.setState({dropdown:false})}>
                     About
                 </Link >
-                <Link to="/projectos/licensing" className="option">
+                <Link to="/projectos/licensing" className="option" onClick={()=>this.setState({dropdown:false})}>
                     Licensing
                 </Link >
-                <Link to="/projectos/faq" className="option">
+                <Link to="/projectos/faq" className="option" onClick={()=>this.setState({dropdown:false})}>
                     FAQ
                 </Link >
-                <Link to="/projectos/contact" className="option">
+                <Link to="/projectos/contact" className="option" onClick={()=>this.setState({dropdown:false})}>
                     Contact
                 </Link>
-                <Link to="/projectos/contact" className="option">
+                <Link to="/projectos/contact" className="option" onClick={()=>this.setState({dropdown:false})}>
                     <button className="demo">Get Demo</button>
                 </Link>
             </div>
