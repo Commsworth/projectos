@@ -1,0 +1,30 @@
+.card-div{
+    display: grid;
+    // justify-content: center;
+    // grid-template-columns: repeat(auto-fill,minmax(50vw,1fr));
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    height: 40vh;
+    // width: 100%;
+    // margin:20%;  
+    .div1{
+        // width: 50%;
+        height: 100%;
+        background: red;
+    }
+    .div2{
+        display: grid;
+        height: 100%;
+        // width: 50%;
+        .card-div-medium{
+            background: green;
+            height: 100%;
+        }
+        .card-div-small{
+            background: gold;
+            height: 100%;
+        // width: 50%;
+        display: flex;
+        }
+    }
+}

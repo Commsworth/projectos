@@ -3,7 +3,7 @@
     src: url("asset//fonts//Aribau_Regular.otf");
     }
 html, body{
-    font-family: 'nunito';
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     height: 100%;
     scroll-behavior: smooth;

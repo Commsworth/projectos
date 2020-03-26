@@ -1,0 +1,12 @@
+.card-div-2-three{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(20vw,1fr));
+        gap: 3vw;
+        margin: 10vw;
+    }
+    .card-div-2-four{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(15vw,1fr));
+        gap: 3vw;
+        margin: 1vw;
+    }
