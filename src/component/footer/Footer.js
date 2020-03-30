@@ -2,42 +2,75 @@ import React from 'react';
 import './Footer.css';
 import FacebookIcon from '../../asset/svg/icons/facebook.svg';
 import TwitterIcon from '../../asset/svg/icons/twitter.svg';
-import LinkedinIcon from '../../asset/svg/icons/linkedin.svg';
-import ContactForm from '../contactform/ContactForm';
-
+import LinkedinIcon from '../../asset/svg/icons/linkedin.svg'; 
 const Footer = ()=>{
-
+ 
     return(
-    <footer className="page-footer" id="contact">
-        <div className="container">
-            <div className="row">
-                <div className="col s12 m8">
-                    <h5>Got an enquiry?.<br />
-                    Our customer care team will address it</h5>
-                <ContactForm />
-                </div>
-                <div className="col s12 m4">
-                    <br />
-                    <h4 className="white-text" style={{fontWeight: 'bold'}}>Feel free<br />to contact us</h4>
-                    <h6>Address</h6>
-                    <p>225, Ikorodu Crescent,<br /> Dolphin Estate, Ikoyi Lagos</p>
-                
-                    <h6>Phone</h6>
-                    <p>+234 8180321046</p>
-
-                    <h6>Email</h6>
-                    <p>info@commsworth.com</p>
-              
-              <div className="footer-icon-wrapper">
-                    <img src={LinkedinIcon} alt=""/>
-                    <img src={FacebookIcon} alt=""/>
-                    <img src={TwitterIcon} alt=""/>
-              </div>
-                </div>
-            </div>
+         <div>
+            <div className="socials">
+          <div className="follow">
+            <p>Follow us:</p>
+            <img src={TwitterIcon} alt="" srcset="" />
+            <img src={FacebookIcon} alt="" srcset="" />
+            <img src={LinkedinIcon} alt="" srcset="" />
+          </div>
+          <div className="share">
+            <p>Share on:</p>
+            <img src={TwitterIcon} alt="" srcset="" />
+            <img src={FacebookIcon} alt="" srcset="" />
+            <img src={LinkedinIcon}alt="" srcset="" />
+          </div>
         </div>
-    </footer>
+ 
+        <div className="foot">
+        <div className="footer">
+          <ul>
+            <a href="http://" className=" footer-brand"
+              >ProjectOS</a>
+            <li>© 2019</li>
+          </ul>
+          <ul>
+            <a href="http://">ProjectOS</a>
+            <li><a href="about.html">About</a></li>
+            <li><a href="http://">Support</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="license.html">Licensing</a></li>
+          </ul>
+ 
+          <ul>
+            <a href="http://">Follow US</a>
+            <li><a href="http://">Facebook</a></li>
+            <li><a href="http://">Linkedin</a></li>
+            <li><a href="http://">Twitter</a></li>
+          </ul>
+ 
+          <ul>
+            <a href="http://">LEGAL</a>
+            <li><a href="http://">Privacy Policy</a></li>
+            <li><a href="http://">Terms of Service</a></li>
+            <li><a href="http://">Cookies Policy</a></li>
+          </ul>
+ 
+          <ul>
+            <a href="contact.html">CONTACT</a>
+            <li><a href="http://">+2348180321046</a></li>
+            <li><a href="http://">support@projectos.com</a></li>
+          </ul>
+        </div>
+        
+ 
+        <ul className="pd">
+            <li><a href="">Contact ProjectOS</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">FAQs</a></li>
+        </ul>
+        </div>
+        </div>
+ 
     );
 }
-
+ 
 export default Footer;

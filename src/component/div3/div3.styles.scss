@@ -1,0 +1,12 @@
+.div3{
+    margin: 10vw 10vw;
+    .bold-title{
+        font-weight: bold;
+    }
+    .div3-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    // margin: 10vw 10vw;
+    gap: 1vw;
+}
+}

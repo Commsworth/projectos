@@ -1,29 +1,94 @@
-footer{
-    min-height: 400px;
-    background-color: #111517 !important;
-    margin-top: 150px;
-    padding: 30px 0;
-}
-
-footer h6{
-    font-size: 1.4em;
-    color: #77AFE7;
-    margin: 40px 0 0 0;
-}
-
-footer p{
-    color: #ffffff;
-    margin: 0;
-}
-
-.footer-icon-wrapper{
-    height: 100px;
+.socials {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-
-}
-
-.footer-icon-wrapper img{
-    margin: 10px;
-}
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border-top: 2px solid grey ;
+    margin-top: 8rem;
+    padding: 5px;
+    margin: auto;
+  }
+  .follow {
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .share {
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #111517;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+  .foot {
+    background-color: #111517;
+    width: 100%;
+  }
+  .footer-brand {
+    width: rem;
+    display: block;
+  }
+  .footer ul a {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+  .footer li a {
+    color: grey;
+    line-height: 1rem;
+  }
+  .footer ul {
+    width: 143px;
+    padding: 2rem;
+    line-height: 30px;
+  }
+  .pd{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 15rem 1rem 15rem;
+      border-top: 2px solid white;
+      color:white;
+  }
+  .pd a{
+    color: white;
+    width: 15%;
+  }
+  .pd li{
+    margin: auto;
+      padding: 0px 5px 0px 5px;
+  }
+ 
+  @media only screen and (max-width: 760px) {
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: #111517;
+      padding: 2rem;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: auto;
+    }
+    .footer ul {
+      width: 50%;
+      padding: 2rem;
+    }
+    .footer ul a {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .footer li a {
+      color: grey;
+      line-height: 3rem;
+    }
+  }

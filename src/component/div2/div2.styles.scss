@@ -1,0 +1,6 @@
+.div2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    margin: 10vw 10vw;
+    gap: 1vw;
+}

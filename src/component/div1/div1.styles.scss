@@ -1,0 +1,27 @@
+.div1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    // height: 10rem;\
+    height: 100%;
+    gap: 1vw;
+    // margin: 0vw 10vw;
+    
+    div{
+    }
+    
+    .div1--second{
+        display: grid;
+        // grid-template-rows: 1fr  1fr;
+        height: 100%;
+        margin: 0px;
+        gap: 0px;
+        // background: red;
+        gap: 1vw;
+    }
+    .div1--second--small{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        gap: 1vw;
+}
+}

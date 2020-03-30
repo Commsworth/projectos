@@ -8,7 +8,7 @@ const Card = (props) =>(
         </h3>
         <h3>
             {props.subTitle}
-        </h3>
+        </h3>   
         <p>
             {props.content}
         </p>

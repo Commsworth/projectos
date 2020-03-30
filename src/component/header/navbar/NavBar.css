@@ -1,22 +1,76 @@
-
-.contact__link{
-    background-color: #208FFF;
-    height: auto !important;
-    padding: 9px 70px;
-    text-transform: none !important;
-    border-radius: 5px;
-    font-family: 'Nunito';
-    font-size: 12px;
+ul {
+    list-style: none;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .dp{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  .nav{
+    display: block;
+  }
+  .none{
+    display: none;
+  }
+  .block{
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+   button{
+     display: none;
+   }
+   .nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: white;
+    margin: auto;
+    width: 80%;
 }
-
-.contact__link:hover{
-    background-color: #5CADFF; 
+.nav-sm{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
-
-.nav-wrapper{
-   padding-top: 20px !important;
+.nav-lg{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
 }
-.nav__padding{
-    padding: 0 100px;
+.divide {
+  border: 1px solid white;
+  height: 30px;
+  margin-right: 14px;
 }
-
+.padding {
+  margin-right: 1rem;
+  text-align: center;
+}
+.butt {
+  background-color: #208fff;
+  border-radius: 5px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+.nav-sm a{
+  width: 50%;
+  color: white;
+}
+.nav-lg a{
+    width: 25%;
+    color: white;
+  }
+  .none{
+    display: flex;
+    align-items: center;
+  }
+  .none2{
+    display: none;
+  }
+}  
