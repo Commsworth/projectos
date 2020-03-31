@@ -5,6 +5,12 @@
     height: 100%;
     gap: 1vw;
     // margin: 0vw 10vw;
+    .card{
+        background: #1C2124;
+    }
+    .card:hover{
+        background: transparent;
+    }
     
     div{
     }

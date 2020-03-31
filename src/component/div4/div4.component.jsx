@@ -8,6 +8,7 @@ const Div4 = (props) =>
         <div className="center">
             <h3>{props.Logo}</h3>
            <h3> {props.about}</h3>
+           <p>{props.mission}</p>
            <h5>{props.name}</h5>
            <p>{props.position}</p>
         </div>

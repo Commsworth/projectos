@@ -1,14 +1,16 @@
 .carousel-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 5% 15%;
+  margin: 2vw 10vw;
   gap: 1vw;
   .img {
-    width: 35vw;
-    // height: 30vw;
+    width: 39vw;
+    height: 385px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
   }
   .card{
-      width: 35vw;
-      height: min-content;
+      width: 39vw;
   }
 }

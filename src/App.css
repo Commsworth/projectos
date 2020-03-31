@@ -3,10 +3,11 @@
     src: url("asset//fonts//Aribau_Regular.otf");
     }
 html, body{
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     margin: 0;
     height: 100%;
     scroll-behavior: smooth;
+    background: #111517;
 }
 
 .space-50{
@@ -25,15 +26,24 @@ html, body{
     font-weight: bold;
 }
 
-h4{
-    margin: 0;
-    color: #2A2A2A;
-    font-size: 30px;
+h3,h4,h5,h6{
+    /* margin: 0; */
+    color: white;
+    font-family: Nunito, sans-serif;
+    /* font-size: 30px; */
     }
+
+    h3{
+        font-size: 36px;
+    }
+
+a>p{
+        color: #039BE5;
+}
 
 p{
     font-size: 16px;
-    color: #2B2B2B;
+    color: white;
     font-family: 'Aribau';
 }
 
