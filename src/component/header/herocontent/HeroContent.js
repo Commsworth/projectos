@@ -13,11 +13,13 @@ const HeroContent = ()=>{
     return(
         <div id="outer-div">
 <div className="container white-text center hero-content">
-    <h4>Digital agency team that will<br /> grow your business</h4>
-    <h5>Redefine your Project Management lifecycle with ProjectOS Enterprise-Class Project Management Platform</h5>
+
+    <h1>Digital solutions for<br /> business growth</h1>
+    
+    
 <div className="btn-wrapper center">
     <button className="btn__blue btn" onMouseEnter={handleMouseOver}>Contact</button>
-    <button className="btn__transparent btn transparent" id="about">About Us</button>
+    
 </div>
 </div>
 <div className="hero-image-wrapper">

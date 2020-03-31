@@ -24,7 +24,7 @@ ul {
   }
   @media screen and (min-width: 768px) {
    button{
-     /* display: none; */
+     display: none;
    }
    .nav{
     display: grid;
@@ -58,10 +58,6 @@ ul {
   border-radius: 5px;
   padding: 0.5rem 3rem 0.5rem 3rem;
 }
-.nav-sm a{
-  width: 50%;
-  color: white;
-}
 .nav-lg a{
     width: 25%;
     color: white;
@@ -70,7 +66,5 @@ ul {
     display: flex;
     align-items: center;
   }
-  .none2{
-    display: none;
-  }
+
 }  

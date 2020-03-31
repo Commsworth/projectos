@@ -21,19 +21,15 @@ function Nav() {
                 <li className="padding dp"> <a href="/"><img src={Logo} alt="Logo" /></a> 
                 <button onClick={dropDown}><FaBars onClick={dropDown}/></button>
                 </li>
-                 <div className="divide"></div>
-                 <li className="padding none"> <a href="">ProjectOS</a></li>
                </ul>
  
                
                    <ul className="nav-lg none"  id="myNav">
-                   <li className="padding"> <a href="" className="none2">ProjectOS</a></li>
-                <li className="padding"> <a href="/about">About</a> </li>
-                <li className="padding"><a href="/license">Licensing</a></li>
-                <li className="padding"><a href="">FAQs</a></li>
+                <li className="padding"> <a href="/about">About Us</a> </li>
+                <li className="padding"><a href="/license">Portfolio</a></li>
+                <li className="padding"><a href="">Blog</a></li>
                  <div className="divide"></div>
-                <li className="padding"><a href="">Contact</a></li>
-                <li className="padding butt"><a href="">Get Demo</a></li>
+                <li className="padding butt"><a href="">Contact</a></li>
                 </ul>
                 
             </div>

@@ -3,9 +3,10 @@
     margin-top: 100px;
 }
 
-.hero-content h4{
-    color: #C4C4C4;
+.hero-content h1{
+    color: #F4F4F4;
     font-weight: bold;
+    font-size: 56px;
 }
 
 .hero-content h5{
@@ -23,6 +24,7 @@
     text-transform: none !important;
     font-family: 'Nunito';
     font-size: 12px;
+    width: 12rem;
 
 }
 
@@ -38,8 +40,6 @@
     background-color: #5CADFF;
   
 }
-
-
 .btn__transparent:hover{
     background-color: white !important;
     color:#000000;
