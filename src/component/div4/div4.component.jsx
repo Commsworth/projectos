@@ -4,7 +4,11 @@ import './div4.styles.scss'
 const Div4 = (props) =>
     (
         <div className="div4">
-
+        <button>a</button>
+        <button>a</button>
+        <button>a</button>
+        <button>a</button>
+        <button>a</button>
         <div className="center">
             <h3>{props.Logo}</h3>
            <h3> {props.about}</h3>

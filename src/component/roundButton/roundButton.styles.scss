@@ -1,7 +1,14 @@
 .round-button{
-    border-radius: 30px;
+    border-radius: 50%;
     background-color: white;
     color: #1987F8;
-    width: 200px;
+    font-size: 3em;
+    text-align: center;
+    height: 4vw;
+    width: 4vw;
+    // position: absolute;
+    padding-bottom: 1.3em;
+    cursor: pointer;
+    // border: 100% 0%;
     // z-index: 0;
 }

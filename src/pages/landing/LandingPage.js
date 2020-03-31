@@ -38,7 +38,7 @@ const LandingPage = () => {
             <main>
             <TitleDiv title="Featured" subTitle="Find out what’s new with commsworth" />
                 <CarouselDiv
-                // background="https://images.adsttc.com/media/images/5de3/1ca6/3312/fda8/2a00/00b3/large_jpg/001.jpg?1575165037"
+                background="https://images.adsttc.com/media/images/5de3/1ca6/3312/fda8/2a00/00b3/large_jpg/001.jpg?1575165037"
                 />
                 <TitleDiv title="Strategic Partners" subTitle="We partner with industry leading OEMs to deliver value.​" />
                 <TitleDiv title="About Us" subTitle="A premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients

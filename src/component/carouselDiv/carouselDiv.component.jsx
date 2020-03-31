@@ -17,10 +17,12 @@ class CarouselDiv extends Component{
         return (
             <div>
         <div className="carousel-div">
+            <div className="carousel-img-div">
+            <RoundButton display ="←"/>
         <div style={{backgroundImage: "url(" + this.props.background + ")",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}} className="img">
         </div>
-            <RoundButton display ="←"/>
             <RoundButton display ="→"/>
+            </div>
         {/* <Card title="Commsworth partners" subTitle="Microsoft" content={LoremIpsum} link="Read More →" className="card" /> */}
         <div>
         <h3>
