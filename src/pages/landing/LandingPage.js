@@ -28,7 +28,6 @@ import QualityAssuranceBackground from '../../component/div1/rectangle55.png'
 // import CardDiv4 from '../../component/cardDiv4/cardDiv4.component';
 
 const LoremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies turpis ridiculus et id mauris tincidunt facilisi duis. Fermentum amet vestibulum elit ac vel eget. Lobortis maecenas sit faucibus congue volutpat aenean sit. Donec in."
-const QualityAssurance = "We are committed to ensuring that our products, services and solutions are highly potent and well reputed to be adopted across major business verticals. We ensure they are based on IT best practices and are backed by OEMs SLA support. All our products are top trend and sourced directly from OEMs (Original Equipment Manufacturers) ensuring manufacturer’s warranty covers our entire portfolio, thus protecting your investment from the start. "
 
 const LandingPage = () => {
 

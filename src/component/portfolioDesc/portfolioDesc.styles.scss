@@ -1,0 +1,33 @@
+.portfolio-desc{
+    display: flex;
+    align-items: center;
+    // padding: 0vh 20%;
+    // height: 323px;
+    // align-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ),url('siwp.png');
+    padding: 4vh 23vw;
+    transition: ease-out 0.5s;
+    h3{
+        width: auto;
+    }
+    .second{
+        margin-left: 5vw;
+        margin-top: 1vw;
+        // margin: 2vh;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+            p,a{
+                line-height: 206.5%;
+            }
+    }
+    a{
+            font-size: 24px;
+    }
+}
+.portfolio-desc:hover{
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ),url('siwp.png');
+    transform: scale(1.05);
+    // transform: scale3d(1.05);
+    transition: ease-in 0.5s;
+}
