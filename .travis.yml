@@ -29,7 +29,7 @@ deploy:
       only:
       - kubernetes-projectos
       - projectos
-      - kubernetes-comms
+      - kubernetes-minor
 
 
 
