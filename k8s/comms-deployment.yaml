@@ -16,5 +16,5 @@ spec:
         - name: commsworth
           image: commsworthdevops/commsworth
           ports:
-            - containerPort: 3000
+            - containerPort: 6000
   
