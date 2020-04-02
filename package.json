@@ -18,7 +18,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
-  "homepage": "./",
+  "homepage": "/commsworth/",
   "main": "src/index.js",
   "repository": {
     "type": "git",
