@@ -12,8 +12,8 @@ function App() {
     <div>
       <Nav/>
       <Switch>
-      <Route exact path="/" render={(props) => <LandingPage {...props} />} />
-      <Route exact path="/portfolio" render={(props) => <Portfolio {...props} />} />
+      <Route exact path="/commsworth/" render={(props) => <LandingPage {...props} />} />
+      <Route exact path="/commsworth/portfolio" render={(props) => <Portfolio {...props} />} />
       </Switch>
       <Footer/>
     </div>

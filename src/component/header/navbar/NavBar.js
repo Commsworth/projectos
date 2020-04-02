@@ -18,15 +18,15 @@ function Nav() {
              <div className="nav">  
             
                <ul className="nav-sm">
-                <li className="padding dp"> <a href="/"><img src={Logo} alt="Logo" /></a> 
+                <li className="padding dp"> <a href="/commsworth/"><img src={Logo} alt="Logo" /></a> 
                 <button onClick={dropDown}><FaBars onClick={dropDown}/></button>
                 </li>
                </ul>
  
                
                    <ul className="nav-lg none"  id="myNav">
-                <li className="padding"> <a href="/about">About Us</a> </li>
-                <li className="padding"><a href="/portfolio">Portfolio</a></li>
+                <li className="padding"> <a href="/commsworth/about">About Us</a> </li>
+                <li className="padding"><a href="/commsworth/portfolio">Portfolio</a></li>
                 <li className="padding"><a href="">Blog</a></li>
                  <div className="divide"></div>
                 <li className="padding butt"><a href="">Contact</a></li>
