@@ -1,4 +1,5 @@
 
+
 # Frontend Build
 docker build -t commsworthdevops/commsworth:latest -t commsworthdevops/commsworth:$SHA -f  ./Dockerfile .
 

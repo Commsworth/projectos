@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: web
+      component: comms
   template:
     metadata:
       labels:
-        component: web
+        component: comms
     spec:
       containers:
         - name: commsworth
