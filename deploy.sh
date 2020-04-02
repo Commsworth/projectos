@@ -11,6 +11,6 @@ docker push commsworthdevops/commsworth:$SHA
 
 # Apply kubernetes configuration
 kubectl apply -f  k8s
-kubectl set image deployments/projectos-deployment commsworth=commsworthdevops/commsworth:$SHA
+kubectl set image deployments/commsworth-deployment commsworth=commsworthdevops/commsworth:$SHA
 
 
