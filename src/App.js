@@ -12,7 +12,7 @@ function App() {
     <div>
       <Nav/>
       <Switch>
-      <Route exact path="/commsworth/" render={(props) => <LandingPage {...props} />} />
+      <Route exact path="/commsworth/" component={LandingPage} />
       <Route exact path="/commsworth/portfolio" render={(props) => <Portfolio {...props} />} />
       </Switch>
       <Footer/>
