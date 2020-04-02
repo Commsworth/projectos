@@ -26,7 +26,7 @@ function Nav() {
                
                    <ul className="nav-lg none"  id="myNav">
                 <li className="padding"> <a href="/about">About Us</a> </li>
-                <li className="padding"><a href="/license">Portfolio</a></li>
+                <li className="padding"><a href="/portfolio">Portfolio</a></li>
                 <li className="padding"><a href="">Blog</a></li>
                  <div className="divide"></div>
                 <li className="padding butt"><a href="">Contact</a></li>

@@ -156,7 +156,7 @@ const LandingPage = () => {
                 {/* <About />
                 <Solution />
                 <Partner /> */}
-                <Footer />
+                {/* <Footer /> */}
             </main>
         </Fragment>
     )

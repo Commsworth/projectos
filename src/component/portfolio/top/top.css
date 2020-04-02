@@ -31,29 +31,29 @@
     width: 50px;
 }
 .show .simg1{
-    /* width: 377px;
-    height: 245px; */
+    width: 60%;
+    height: 50%;
     position: relative;
     z-index: 4;
     right: 81px;
 }
 .show .simg2{
-    /* width: 306px;
-    height: 199px; */
+    width: 50%;
+    height: 40%;
     position: relative;
     right: 303px;
     z-index: 3;
 }
 .show .simg3{
-    /* width: 244px;
-    height: 158px; */
+    width: 40%;
+    height: 30%;
     position: relative;
     right: 473px;
     z-index: 2;
 }
 .show .simg4{
-    /* width: 193px;
-    height: 124px; */
+    width: 30%;
+    height: 20%;
     position: relative;
     right: 569px;
     z-index: 1;
@@ -61,30 +61,15 @@
 .show .simg0{
     z-index: 5;
 }
-/* .show #hover:before{
-    margin: 0vh 3vw;
-    position: absolute;
-} */
 .show #hover{
-    margin: 0vh 3vw;
     /* margin: 0vh 2vw; */
-    /* content: ''; */
-    /* margin: 2vh; */
-    /* position: absolute; */
-    /* width: 100%;
-    height: 100%; */
-    /* background: #fff; */
-    /* z-index: 1; */
-}
-.show #hover:not(#hover:hover){
-    width: 400px;
-    height: 200px;
 }
 .show #hover:hover {
-    transition: 0.5s;
+    width: 355px;
+    height: 230px;
     /* position: absolute; */
     /* right: 569px; */
-    transform: scale(1.5);
-    margin: 0vh 3vw;
+    /* transform: scale(1.5); */
+    /* margin: 0vh 3vw; */
     z-index: 4;
 }
