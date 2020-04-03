@@ -2,8 +2,8 @@ import React from 'react';
 import './card.styles.scss';
 
 const Card = (props) => (
-    <div className="card" className="card" style={{backgroundImage: "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + props.background + ")",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}>
-        <h3>
+    <div className="card" style={{backgroundImage: "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + props.background + ")",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}>
+        <h3 className="title">
             {props.title}
         </h3>
         <h3>

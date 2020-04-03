@@ -39,7 +39,7 @@ function Nav() {
           </Link>
           </li>
           <div className="divide"></div>
-          <li className="padding butt"> <Link to="#" className="option">
+          <li className="padding butt"> <Link to="/commsworth/contact" className="option">
             <p>Contact</p>
           </Link>
           </li>
