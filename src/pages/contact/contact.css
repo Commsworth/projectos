@@ -1,7 +1,7 @@
 .tp{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(30vw, 1fr));
-    margin: 10vh 15vw;
+    margin: 0vh 15vw;
     /* gap: 10vw; */
     /* margin: 200px 0px 0px 50px; */
 }
@@ -19,33 +19,13 @@ font-size: 20px;
 .tp1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* margin-left: 100px; */
 }
 .tp2{
     display: flex;
+    /* align-content: center; */
     width: 100%;
-}
-.devop1{
-    position: relative;
-    z-index: 3;
-    width: 406px;
-height: 333px;
-}
-.devop2{
-    position: relative;
-    z-index: 2;
-    right: 292px;
-    bottom: 105px;
-    width: 304.99px;
-height: 247.05px;
-}
-.devop3{
-    position: relative;
-    z-index: 1;
-    right: 472px;
-    bottom: -43px;
-    width: 305px;
-height: 247px;
 }
 .dpn{
     display: flex;
