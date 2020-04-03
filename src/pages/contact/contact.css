@@ -1,0 +1,80 @@
+.tp{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 200px 0px 0px 50px;
+}
+.tp1 h1{
+    font-weight: bold;
+    font-size: 52px;
+    color: white;
+
+}
+.tp p{
+    font-weight: 500;
+font-size: 20px;
+
+}
+.tp1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.tp2{
+    display: flex;
+}
+.devop1{
+    position: relative;
+    z-index: 3;
+    width: 406px;
+height: 333px;
+}
+.devop2{
+    position: relative;
+    z-index: 2;
+    right: 292px;
+    bottom: 105px;
+    width: 304.99px;
+height: 247.05px;
+}
+.devop3{
+    position: relative;
+    z-index: 1;
+    right: 472px;
+    bottom: -43px;
+    width: 305px;
+height: 247px;
+}
+.dpn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* cards */
+.crd{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5px 0px 0px 0px;
+    background: #2A2A2A;
+    padding: 2rem;
+}
+.crd1 h1{
+    font-weight: Bold;
+font-size:36px;
+    color: white;
+
+}
+.crd p{
+font-size: 18px;
+
+}
+.crd1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+}
+.crd12 img{
+    width: 597px;
+height: 464.85px;
+}
