@@ -1,7 +1,9 @@
 .tp{
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 200px 0px 0px 50px;
+    grid-template-columns: repeat(auto-fill,minmax(30vw, 1fr));
+    margin: 10vh 15vw;
+    /* gap: 10vw; */
+    /* margin: 200px 0px 0px 50px; */
 }
 .tp1 h1{
     font-weight: bold;
@@ -15,12 +17,13 @@ font-size: 20px;
 
 }
 .tp1{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 100px; */
 }
 .tp2{
     display: flex;
+    /* width: 100%; */
 }
 .devop1{
     position: relative;
@@ -53,10 +56,11 @@ height: 247px;
 /* cards */
 .crd{
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 5px 0px 0px 0px;
+    grid-template-columns: repeat(auto-fill,minmax(30vw, 1fr));
+    padding: 1vh 5vw;
+    margin: 1vh 0vw;
+    gap: 10vw;
     background: #2A2A2A;
-    padding: 2rem;
 }
 .crd1 h1{
     font-weight: Bold;
