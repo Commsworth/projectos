@@ -9,6 +9,7 @@ import dpn from '../contact/img/dpn.png'
 import cyber from '../contact/img/cyber.png'
 import cloud from '../contact/img/cloud.png'
 import appdev from '../contact/img/appdev.png'
+import analytics from '../../asset/svg/analytics.svg';
 
 
 function Contact() {
@@ -25,9 +26,7 @@ function Contact() {
                     </p>
                 </div>
                 <div className="tp2">
-                    <img src={devop1} className="devop1" alt="" />
-                    <img src={devop2} className="devop2" alt="" />
-                    <img src={devop3} className="devop3" alt="" />
+                    <img src={analytics} alt="devops and analytics" />
                 </div>
             </div>
             <div className="dpn"><img src={dpn} alt=""/></div>
