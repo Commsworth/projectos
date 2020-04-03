@@ -17,13 +17,13 @@ font-size: 20px;
 
 }
 .tp1{
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    margin-left: 100px; */
+    /* margin-left: 100px; */
 }
 .tp2{
     display: flex;
-    /* width: 100%; */
+    width: 100%;
 }
 .devop1{
     position: relative;
