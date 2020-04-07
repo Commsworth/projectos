@@ -1,0 +1,26 @@
+.carousel-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2vw 10vw;
+  gap: 1vw;
+  .carousel-img-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img {
+      // margin: 0vw 2vw;
+      width: 39vw;
+      height: 385px;
+    }
+  }
+  h3{
+    line-height: 119%;
+  }
+  p{
+      line-height: 195%;
+  }
+  .card{
+      width: 39vw;
+
+  }
+}
