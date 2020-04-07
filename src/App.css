@@ -21,7 +21,7 @@ html, body{
 }
 
 .blue-text{
-    color: #046BD3 !important;
+    color: #0E82F8 !important;
     font-size: 18px;
     font-weight: bold;
 }
@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
     /* margin: 0; */
     color: white;
     font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
     /* font-size: 30px; */
     }
 
@@ -38,7 +39,11 @@ h1,h2,h3,h4,h5,h6{
     }
 
 a>p{
-        color: #039BE5;
+        color: #0E82F8;
+}
+
+a{
+    color: #0E82F8;
 }
 
 p{

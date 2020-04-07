@@ -1,0 +1,76 @@
+.home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px 100px 0px 100px;
+    align-items: start;
+    padding: 10vh 0vw;
+}
+.text p{
+    font-size: 16px;
+    text-align: initial;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.show{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+    cursor: pointer;
+}
+/* .hover{
+    width: 300px;
+    height: 200px;
+    z-index: 5;
+} */
+.bor{
+    border: 5px solid blue;
+    width: 50px;
+}
+.show .simg1{
+    width: 60%;
+    height: 50%;
+    position: relative;
+    z-index: 4;
+    right: 81px;
+}
+.show .simg2{
+    width: 50%;
+    height: 40%;
+    position: relative;
+    right: 303px;
+    z-index: 3;
+}
+.show .simg3{
+    width: 40%;
+    height: 30%;
+    position: relative;
+    right: 473px;
+    z-index: 2;
+}
+.show .simg4{
+    width: 30%;
+    height: 20%;
+    position: relative;
+    right: 569px;
+    z-index: 1;
+}
+.show .simg0{
+    z-index: 5;
+}
+.show #hover{
+    /* margin: 0vh 2vw; */
+}
+.show #hover:hover {
+    width: 355px;
+    height: 230px;
+    /* position: absolute; */
+    /* right: 569px; */
+    /* transform: scale(1.5); */
+    /* margin: 0vh 3vw; */
+    z-index: 4;
+}

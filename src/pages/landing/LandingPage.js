@@ -1,18 +1,18 @@
 import React, { Fragment } from 'react';
-import Hero from '../../component/header/hero/Hero';
+import Hero from '../../component/extraPageComponents/header/hero/Hero';
 import './LandingPage.css';
-import About from '../../component/main/about/About';
-import Solution from '../../component/main/solution/Solution';
-import Partner from '../../component/main/partner/Partner';
-import Footer from '../../component/footer/Footer';
-import Card from '../../component/card/card.component';
-import Card2 from '../../component/card2/card2.component';
-import Div1 from '../../component/div1/div1.component';
-import Div2 from '../../component/div2/div2.component';
-import Div3 from '../../component/div3/div3.component'
-import Div4 from '../../component/div4/div4.component';
-import CarouselDiv from '../../component/carouselDiv/carouselDiv.component';
-import TitleDiv from '../../component/titleDiv/titleDiv.component';
+// import About from '../../component/main/about/About';
+// import Solution from '../../component/main/solution/Solution';
+// import Partner from '../../component/main/partner/Partner';
+// import Footer from '../../component/footer/Footer';
+import Card from '../../component/extraPageComponents/card/card.component';
+import Card2 from '../../component/extraPageComponents/card2/card2.component';
+import Div1 from '../../component/landingPageComponents/div1/div1.component';
+import Div2 from '../../component/landingPageComponents/div2/div2.component';
+import Div3 from '../../component/landingPageComponents/div3/div3.component'
+import Div4 from '../../component/landingPageComponents/div4/div4.component';
+import CarouselDiv from '../../component/landingPageComponents/carouselDiv/carouselDiv.component';
+import TitleDiv from '../../component/extraPageComponents/titleDiv/titleDiv.component';
 import BlueLine from '../../asset/svg/titleLine.svg'
 import software from '../../asset/img/software.png';
 import datacenter from '../../asset/img/datacenter.png';
@@ -20,7 +20,7 @@ import cyber from '../../asset/img/cyber.png';
 import marketing from '../../asset/img/marketing.png';
 import cloud from '../../asset/img/cloud.png';
 import settings from '../../asset/img/settings.png';
-import QualityAssuranceBackground from '../../component/div1/rectangle55.png'
+import QualityAssuranceBackground from '../../component/landingPageComponents/div1/rectangle55.png'
 
 // import CardDiv1 from '../../component/cardDiv1/cardDiv1.component';
 // import CardDiv2 from '../../component/cardDiv2/cardDiv2.component';
@@ -47,7 +47,7 @@ const LandingPage = () => {
                 <TitleDiv title="About Us" subTitle="A premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients
                 "/>
                 <Div1
-                    large={<Card background={QualityAssuranceBackground} title="Quality Assurance" subTitle={<img src={BlueLine} alt="Blue line"/>} content='We are committed to ensuring that our products, services and solutions are highly potent and well reputed to be adopted across major business verticals. We ensure they are based on IT best practices and are backed by OEMs SLA support. All our products are top trend and sourced directly from OEMs (Original Equipment Manufacturers) ensuring manufacturer’s warranty covers our entire portfolio, thus protecting your investment from the start.' link="Read More →" />}
+                    large={<Card background={QualityAssuranceBackground} title="Quality Assurance" subTitle={<img src={BlueLine} alt="Blue line"/>} content='We are committed to ensuring that our products, services and solutions are highly potent and well reputed to be adopted across major business verticals. We ensure they are based on IT best practices and are backed by OEMs SLA support. All our products are top trend and sourced directly from OEMs (Original Equipment Manufacturers) ensuring manufacturer’s warranty covers our entire portfolio, thus protecting your investment from the start.' link="Read More →" link2="Read More——>" />}
                     medium={<Card title="Core Values" subTitle={<img src={BlueLine} alt="Blue line"/>} content={LoremIpsum} link="Read More →" />}
                     small1={<Card title="Our Vision" subTitle={<img src={BlueLine } alt="Blue line"/>} content="“To be the most trusted IT value partner for delivering business outcomes.”​" link="Read More →" />}
                     small2={<Card title="Our Mission" subTitle={<img src={BlueLine} alt="Blue line"/>} content="​To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
