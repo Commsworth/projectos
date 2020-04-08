@@ -14,13 +14,16 @@ import Div4 from '../../component/landingPageComponents/div4/div4.component';
 import CarouselDiv from '../../component/landingPageComponents/carouselDiv/carouselDiv.component';
 import TitleDiv from '../../component/extraPageComponents/titleDiv/titleDiv.component';
 import BlueLine from '../../asset/svg/titleLine.svg'
-import software from '../../asset/img/software.png';
-import datacenter from '../../asset/img/datacenter.png';
-import cyber from '../../asset/img/cyber.png';
-import marketing from '../../asset/img/marketing.png';
-import cloud from '../../asset/img/cloud.png';
-import settings from '../../asset/img/settings.png';
+import mission from '../../asset/svg/mission.svg'
+import vision from '../../asset/svg/vision.svg'
+import core from '../../asset/svg/core.svg'
+import devops2 from '../../asset/img/devops2.png';
+import support2 from '../../asset/img/support2.png';
+import business2 from '../../asset/img/business2.png';
+import product2 from '../../asset/img/product2.png';
+import strategy2 from '../../asset/img/strategy2.png';
 import QualityAssuranceBackground from '../../component/landingPageComponents/div1/rectangle55.png'
+import {Link} from 'react-router-dom';
 
 // import CardDiv1 from '../../component/cardDiv1/cardDiv1.component';
 // import CardDiv2 from '../../component/cardDiv2/cardDiv2.component';
@@ -58,19 +61,53 @@ class LandingPage  extends React.Component {
                 <TitleDiv title="About Us" subTitle="A premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients
                 "/>
                 <Div1
-                    large={<Card background={QualityAssuranceBackground} title="Quality Assurance" subTitle={<img src={BlueLine} alt="Blue line"/>} content='We are committed to ensuring that our products, services and solutions are highly potent and well reputed to be adopted across major business verticals. We ensure they are based on IT best practices and are backed by OEMs SLA support. All our products are top trend and sourced directly from OEMs (Original Equipment Manufacturers) ensuring manufacturer’s warranty covers our entire portfolio, thus protecting your investment from the start.' link="Read More →" link2="Read More——>" />}
-                    medium={<Card title="Core Values" subTitle={<img src={BlueLine} alt="Blue line"/>} content={LoremIpsum} link="Read More →" />}
-                    small1={<Card title="Our Vision" subTitle={<img src={BlueLine } alt="Blue line"/>} content="“To be the most trusted IT value partner for delivering business outcomes.”​" link="Read More →" />}
-                    small2={<Card title="Our Mission" subTitle={<img src={BlueLine} alt="Blue line"/>} content="​To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
+                    large={<Card title="Quality Assurance" subTitle={<img src={BlueLine} alt="Blue line"/>} content='We are committed to ensuring that our products, services and solutions are highly potent and well reputed to be adopted across major business verticals. We ensure they are based on IT best practices and are backed by OEMs SLA support. All our products are top trend and sourced directly from OEMs (Original Equipment Manufacturers) ensuring manufacturer’s warranty covers our entire portfolio, thus protecting your investment from the start.' link="Read More →" link2="Read More——>" />}
+                    small1={<Card background={core} title="Core Values" subTitle={<img src={BlueLine} alt="Blue line"/>} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
+                    medium={<Card background={vision} title="Our Vision" subTitle={<img src={BlueLine } alt="Blue line"/>} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
+                    small2={<Card background={mission} title="Our Mission" subTitle={<img src={BlueLine} alt="Blue line"/>} content="​To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
                 />
                         <TitleDiv title="Our Solutions"/>
                 <Div2
-                    one={<Card title={<img src={software}/>} subTitle="Software Development" content={LoremIpsum} link="Contact Us →" />}
-                    two={<Card title={<img src={datacenter}/>} subTitle="DataCenter Solutions" content={LoremIpsum} link="Contact Us →" />}
-                    three={<Card title={<img src={cyber}/>} subTitle="Cyber Security" content={LoremIpsum} link="Contact Us →" />}
-                    four={<Card title={<img src={marketing}/>} subTitle="Presence & Marketing" content={LoremIpsum} link="Contact Us →" />}
-                    five={<Card title={<img src={cloud}/>} subTitle="Cloud Computing" content={LoremIpsum} link="Contact Us →" />}
-                    six={<Card title={<img src={settings}/>} subTitle="Cyber Security" content={LoremIpsum} link="Contact Us →" />}
+                                    one={<Card
+                                    title = {<img src={devops2} alt="devops"/>}
+                                    subTitle="DevOps & Analytics"
+                                    content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
+                                    link={<Link to="/commsworth/explore1">
+                                        Contact Us →
+                                    </Link>}
+                                    />}
+                                    two={<Card
+                                    title = {<img src={support2} alt="devops"/>}
+                                    subTitle="Support"
+                                    content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
+                                    link={<Link to="/commsworth/explore2">
+                                        Contact Us →
+                                    </Link>}
+                                    />}
+                                    three={<Card
+                                    title = {<img src={business2} alt="devops"/>}
+                                    subTitle="Business Continuity"
+                                    content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
+                                    link={<Link to="/commsworth/explore3">
+                                        Contact Us →
+                                    </Link>}
+                                    />}
+                                    four={<Card
+                                    title = {<img src={product2} alt="devops"/>}
+                                    subTitle="Product & Digital"
+                                    content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
+                                    link={<Link to="/commsworth/explore4">
+                                        Contact Us →
+                                    </Link>}
+                                    />}
+                                    five={<Card
+                                    title = {<img src={strategy2} alt="devops"/>}
+                                    subTitle="Strategy"
+                                    content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
+                                    link={<Link to="/commsworth/explore5">
+                                        Contact Us →
+                                    </Link>}
+                                    />}                 
                 />
 
                 <Div3
