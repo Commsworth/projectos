@@ -26,8 +26,8 @@ function Nav() {
 
 
         <ul className="nav-lg none" id="myNav">
-          <li className="padding"> <Link to="/commsworth/about" className="option">
-            <p>About Us</p>
+          <li className="padding"> <Link to="/commsworth/services" className="option">
+            <p>Services</p>
           </Link>
           </li>
           <li className="padding"> <Link to="/commsworth/portfolio" className="option">
