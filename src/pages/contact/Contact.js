@@ -12,103 +12,115 @@ import appdev from '../contact/img/appdev.png'
 import analytics from '../../asset/svg/analytics.svg';
 
 
-function Contact(props) {
-    return (
-        <div>
-            {/* <Nav /> */}
-            <div className="tp">
-                <div className="tp1">
-                    <h1>
-                        {props.title1}
-                    </h1>
-                    <p>
-                        {props.content1}
-                    </p>
-                    {/* <h1>DevOps & Analytics</h1>
+class Contact extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    render() {
+        return (
+            <div>
+                {/* <Nav /> */}
+                <div className="tp">
+                    <div className="tp1">
+                        <h1>
+                            {this.props.title1}
+                        </h1>
+                        <p>
+                            {this.props.content1}
+                        </p>
+                        {/* <h1>DevOps & Analytics</h1>
                     <p>We are focused on developing data-oriented <br/>
                         applications tailored to solve a vast array of business <br/>
                         requiremenents while giving intuitive insights for <br/>
                         informed business decision making 
                     </p> */}
+                    </div>
+                    <div className="tp2">
+                        <img src={this.props.image1} alt="" />
+                    </div>
                 </div>
-                <div className="tp2">
-                    <img src={props.image1} alt="" />
-                </div>
-            </div>
-            <div className="dpn"><img src={dpn} alt="" /></div>
+                <div className="dpn"><img src={dpn} alt="" /></div>
 
-            <div className="crd">
-                <div className="crd1">
-                    <h1>
-                        {props.title2}
-                    </h1>
-                    <p>
-                        {props.content2}
-                    </p>
+                <div className="crd">
+                    <div className="crd1">
+                        <h1>
+                            {this.props.title2}
+                        </h1>
+                        <p>
+                            {this.props.content2}
+                        </p>
 
-                    {/* <h1>Cyber Security</h1>
+                        {/* <h1>Cyber Security</h1>
                     <p>We implement network security solutions designed to <br/>
                        dynamically adapt to the evolving IT infrasture in<br/>
                        order to defend its rapidly changing attack surface.<br/>
                         Primary focus is given to the edge of the network as every<br/>
                         packet must be certified as non-malicious before entry to the network 
                     </p> */}
-                    <a href=""><p>Work with us →</p></a>
+                        <a href=""><p>Work with us →</p></a>
+                    </div>
+                    <div className="crd2">
+                        <img src={this.props.image2} alt="" />
+                    </div>
                 </div>
-                <div className="crd2">
-                    <img src={props.image2} alt="" />
-                </div>
-            </div>
 
-            <div className="crd">
-                <div className="crd2">
-                    <img src={props.image3} alt="" />
-                </div>
-                <div className="crd1">
+                <div className="crd">
+                    <div className="crd2">
+                        <img src={this.props.image3} alt="" />
+                    </div>
+                    <div className="crd1">
 
-                    <h1>
-                        {props.title3}
-                    </h1>
-                    <p>
-                        {props.content3}
-                    </p>
-                    {/* <h1>Cyber Security</h1>
+                        <h1>
+                            {this.props.title3}
+                        </h1>
+                        <p>
+                            {this.props.content3}
+                        </p>
+                        {/* <h1>Cyber Security</h1>
                     <p>We implement network security solutions designed to <br/>
                        dynamically adapt to the evolving IT infrasture in<br/>
                        order to defend its rapidly changing attack surface.<br/>
                         Primary focus is given to the edge of the network as every<br/>
                         packet must be certified as non-malicious before entry to the network 
                     </p> */}
-                    <a href=""><p>Work with us →</p></a>
+                        <a href=""><p>Work with us →</p></a>
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div className="crd">
-                <div className="crd1">
-                    <h1>
-                        {props.title4}
-                    </h1>
-                    <p>
-                        {props.content4}
-                    </p>
-                    {/* <h1>App Development</h1>
+                <div className="crd">
+                    <div className="crd1">
+                        <h1>
+                            {this.props.title4}
+                        </h1>
+                        <p>
+                            {this.props.content4}
+                        </p>
+                        {/* <h1>App Development</h1>
                     <p>We implement network security solutions designed to <br />
                        dynamically adapt to the evolving IT infrasture in<br />
                        order to defend its rapidly changing attack surface.<br />
                         Primary focus is given to the edge of the network as every<br />
                         packet must be certified as non-malicious before entry to the network
                     </p> */}
-                    <a href=""><p>Work with us →</p></a>
+                        <a href=""><p>Work with us →</p></a>
+                    </div>
+                    <div className="crd2">
+                        <img src={this.props.image4} alt="" />
+                    </div>
                 </div>
-                <div className="crd2">
-                    <img src={props.image4} alt="" />
-                </div>
-            </div>
 
-            {/* <Footer/> */}
-        </div>
-    )
+                {/* <Footer/> */}
+            </div>
+        )
+    }
 }
 
 export default Contact;

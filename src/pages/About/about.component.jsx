@@ -18,6 +18,10 @@ class About extends React.Component{
         // 
     // }
     // }
+
+    componentDidMount(){
+        window.scrollTo(0,0)
+    }
     render(){
         return(
             <div className="about">
@@ -66,14 +70,6 @@ class About extends React.Component{
                 subTitle="Strategy"
                 content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
                 link={<Link to="/commsworth/explore5">
-                    Explore →
-                </Link>}
-                />
-                <Card
-                title = {<img src={Product} alt="devops"/>}
-                subTitle="Product & Digital"
-                content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                link={<Link to="/commsworth/explore6">
                     Explore →
                 </Link>}
                 />
