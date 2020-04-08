@@ -1,6 +1,11 @@
 ul {
     list-style: none;
     text-decoration: none;
+  color: white;
+
+  }
+  li{
+  color: white;
   }
   a {
     text-decoration: none;
@@ -22,8 +27,8 @@ ul {
   .block{
     display: block;
   }
-  @media screen and (min-width: 768px) {
-   button{
+  @media screen and (min-width: 990px) {
+   .dropdown-button{
      display: none;
    }
    .nav{
@@ -56,7 +61,8 @@ ul {
 .butt {
   background-color: #0E82F8;
   border-radius: 5px;
-  padding: 0.5rem 3rem 0.5rem 3rem;
+  padding: 15.53px 39px;
+  border-radius: 5px;
 }
 .butt:hover{
   background-color:  #5CADFF;;
