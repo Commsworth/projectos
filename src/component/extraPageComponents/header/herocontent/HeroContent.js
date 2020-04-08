@@ -7,7 +7,7 @@ const HeroContent = ()=>{
 
     const handleMouseOver =()=>{
         // document.getElementById('about').style.backgroundColor = 'red';
-        console.log("Over");
+        // console.log("Over");
     }
 
     return(

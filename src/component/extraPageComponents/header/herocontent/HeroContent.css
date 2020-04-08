@@ -20,12 +20,19 @@
 }
 
 .btn__blue{
-    background-color: #208FFF;
+    /* background-color: #208FFF; */
+    background: #0E82F8;
     text-transform: none !important;
     font-family: 'Nunito';
     font-size: 12px;
     width: 12rem;
 
+}
+.btn__blue:active{
+    background: #5CADFF;
+}
+.btn__blue:focus{
+    background: #0E82F8;
 }
 
 .btn__transparent{

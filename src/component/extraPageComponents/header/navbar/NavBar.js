@@ -20,7 +20,7 @@ function Nav() {
 
         <ul className="nav-sm">
           <li className="padding dp"> <a href="/commsworth/"><img src={Logo} alt="Logo" /></a>
-            <button onClick={dropDown}><FaBars onClick={dropDown} /></button>
+            <button className="dropdown-button" onClick={dropDown}><FaBars onClick={dropDown} /></button>
           </li>
         </ul>
 
@@ -39,8 +39,8 @@ function Nav() {
           </Link>
           </li>
           <div className="divide"></div>
-          <li className="padding butt"> <Link to="/commsworth/contact" className="option">
-            <p>Contact</p>
+          <li className="padding"> <Link to="/commsworth/contact" className="option">
+            <p className="butt">Contact</p>
           </Link>
           </li>
         </ul>
