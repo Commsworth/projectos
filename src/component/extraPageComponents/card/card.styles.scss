@@ -19,10 +19,15 @@
         font-size: 15px;
     }
     a{
+        cursor: pointer;
+        text-align: right;
         p{
                 font-size: 30px;
                 color: #0E82F8;
-            // font-stretch: extra-expanded;
+                // cursor: default;
+                height: fit-content;
+                z-index: 2;
+                margin: 0;
         }
     }
 

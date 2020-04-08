@@ -1,5 +1,5 @@
 .div3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Rectangle 75.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Rectangle 75.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@
         }
         .card:hover {
             background:#208FFF;
-            filter: brightness(130%);
+            filter: brightness(200%);
             // opacity: 0.1;
             a {
                 p {
