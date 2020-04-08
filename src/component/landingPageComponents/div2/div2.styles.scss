@@ -1,16 +1,35 @@
-.div2{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-    margin: 10vw 10vw;
-    gap: 1vw;
+.div2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 69px;
+    .card {
+        width: 400px;
+        height: 400px;
+        margin: 37px 33px;
+        border: 1px solid #208fff;
+        box-sizing: border-box;
+        border-radius: 4px;
 
-    .card{
-        border: 1px solid #208FFF;
-box-sizing: border-box;
-border-radius: 4px;
+        h3 {
+            font-size: 24px;
+            line-height: 119%;
+        }
+        p {
+            font-size: 15px;
+            line-height: 185%;
+        }
+        a {
+            p {
+                font-family: "Nunito", "sans-serif";
+                font-size: 18px;
+                line-height: 109%;
+                text-align: end ;
+            }
+        }
     }
-    .card:hover{
+    .card:hover {
         border: none;
-        background: #1C2124;
+        background: #1c2124;
     }
 }

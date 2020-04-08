@@ -14,7 +14,7 @@ class Card extends React.Component {
     render() {
         return (
 
-            <div className="card" style={{ backgroundImage: "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + this.props.background + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+            <div className="card" style={{ backgroundImage: "linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(" + this.props.background + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
                 <h3 className="title">
                     {this.props.title}
                 </h3>
