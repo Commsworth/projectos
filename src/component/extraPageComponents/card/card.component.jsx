@@ -24,7 +24,7 @@ class Card extends React.Component {
                 <p>
                     {this.props.content}
                 </p>
-                <a href="/#">
+                <a>
                     <p onMouseOver={() => this.setState({ link: true })} onMouseOut={() => this.setState({ link: false })}
                     >
                         {/* {!this.state.link && <p>{this.props.link}   <img src={arrow} /></p>}

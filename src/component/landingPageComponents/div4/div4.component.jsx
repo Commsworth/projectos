@@ -8,23 +8,60 @@ import pf5 from '../../../asset/img/pf/Ellipse 20.png'
 
 
 
-const Div4 = (props) =>
-    (
-        <div className="div4">
-        <img src={pf1} alt="" className="pf1"/>
-        <img src={pf2} alt="" className="pf2"/>
-        <img src={pf3} alt="" className="pf3"/>
-        <img src={pf4} alt="" className="pf4"/>
-        <img src={pf4} alt="" className="pf5"/>
-        <div className="center">
-            <h3>{props.Logo}</h3>
-           <h3> {props.about}</h3>
-           <p>{props.mission}</p>
-           <h5>{props.name}</h5>
-           <p>{props.position}</p>
-        </div>
+function div4(props) {
+    function hover(){
+            
+        document.getElementById("mission").innerHTML = "'i am pesky'"
+        document.getElementById("name").innerHTML = "pesky" 
+        document.getElementById("position").innerHTML = "CEO"
+    }
+    function hover1(){
+            
+        document.getElementById("mission").innerHTML = "'i am Nirvaclaus'"
+        document.getElementById("name").innerHTML = "Nicholas" 
+        document.getElementById("position").innerHTML = "MD"
+    }
+    function hover2(){
+            
+        document.getElementById("mission").innerHTML = "'I am Bakare'"
+        document.getElementById("name").innerHTML = "Tayo" 
+        document.getElementById("position").innerHTML = "DevOps"
+    }
+    function hover3(){
+            
+        document.getElementById("mission").innerHTML = "'i am Abiodun'"
+        document.getElementById("name").innerHTML = "Micheal" 
+        document.getElementById("position").innerHTML = "Frontend DevOps"
+    }
+    function hover4(){
+            
+        document.getElementById("mission").innerHTML = "'i am pesky'"
+        document.getElementById("name").innerHTML = "pesky" 
+        document.getElementById("position").innerHTML = "CEO"
+    }
 
-        </div>
+
+    return (
+            <div className="div4">
+         ""
+         <div  className="pf1" onMouseEnter={hover}><img src={pf1} id="pf1"alt="" /></div>
+         <div  className="pf2" onMouseEnter={hover1}><img src={pf2} id="pf2"alt=""/></div>
+        
+        
+         
+         <div className="center">
+             <h3>{props.Logo}</h3>
+            <h3> {props.about}</h3>
+            <p id="mission">{props.mission}</p>
+            <h5 id="name">{props.name}</h5>
+            <p id="position">{props.position}</p>
+         </div>
+ 
+         <div  className="pf3" onMouseEnter={hover2}><img src={pf3} id="pf3"alt=""/></div>
+         <div  className="pf4" onMouseEnter={hover3}><img src={pf4} id="pf4"alt=""/></div>
+         <div  className="pf5" onMouseEnter={hover4}><img src={pf4} id="pf5"alt=""/></div>
+         </div> 
     )
+}
 
-export default Div4;
+export default div4;

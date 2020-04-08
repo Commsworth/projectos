@@ -24,7 +24,7 @@ class CarouselDiv extends Component{
             <RoundButton display ="→"/>
             </div>
         {/* <Card title="Commsworth partners" subTitle="Microsoft" content={LoremIpsum} link="Read More →" className="card" /> */}
-        <div>
+        <div className="carousel-text-div">
         <h3>
         Commsworth partners
         </h3>

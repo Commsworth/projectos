@@ -50,13 +50,16 @@ ul {
   margin-right: 14px;
 }
 .padding {
-  margin-right: 1rem;
+  margin-right: 3rem;
   text-align: center;
 }
 .butt {
-  background-color: #208fff;
+  background-color: #0E82F8;
   border-radius: 5px;
   padding: 0.5rem 3rem 0.5rem 3rem;
+}
+.butt:hover{
+  background-color:  #5CADFF;;
 }
 .nav-lg p{
     /* width: 25%; */
