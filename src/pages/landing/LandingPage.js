@@ -29,8 +29,19 @@ import QualityAssuranceBackground from '../../component/landingPageComponents/di
 
 const LoremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies turpis ridiculus et id mauris tincidunt facilisi duis. Fermentum amet vestibulum elit ac vel eget. Lobortis maecenas sit faucibus congue volutpat aenean sit. Donec in."
 
-const LandingPage = () => {
+class LandingPage  extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            
+        }
+    }
+
+    componentDidMount(){
+        window.scrollTo(0,0)
+    }
+    render() {
     return (
         <Fragment>
             <Hero />
@@ -160,5 +171,6 @@ const LandingPage = () => {
             </main>
         </Fragment>
     )
+}
 }
 export default LandingPage;
