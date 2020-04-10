@@ -5,15 +5,47 @@
     justify-content: center;
     align-items: center;
     height: 40rem;
+    margin: 10vh 0vw;
+
+    .pf1{
+        .circle1{
+            border: 5px solid #208FFF;
+         border-radius: 50%;
+        }
+    } 
+    .pf2{
+        .circle2{
+            border: 5px solid #208FFF;
+         border-radius: 50%;
+        }
+    } 
+    .pf3{
+        .circle3{
+            border: 5px solid #208FFF;
+         border-radius: 50%;
+        }
+    } 
+    .pf4{
+        .circle4{
+            border: 5px solid #208FFF;
+         border-radius: 50%;
+        }
+    } 
+    .pf5{
+        .circle5{
+            border: 5px solid #208FFF;
+         border-radius: 50%;
+        }
+    } 
 
      img{
          width: 100px;
          height: 100px;
          border-radius: 50%;
      }
-     img:hover{
-         border: 5px solid #208FFF;
-     }
+    //  img:hover{
+    //      border: 5px solid #208FFF;
+    //  }
     .center{
         text-align: center;
         margin: 0vh 35vw;

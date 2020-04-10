@@ -22,63 +22,54 @@ class Portfolio extends React.Component {
     render() {
         return (
 
+            <div>
             <div className="portfolio text-center">
-                <h3 className="h3">We build <br /> digital products</h3>
+                <h3 className="h3">We build <br /> digital product</h3>
+                <div>
                 <Top />
-                <PortfolioDiv2
-                    one={<PortfolioDesc
+                </div>
+                <div>
+
+                <PortfolioDiv2         
+                        one={<PortfolioDesc
                         title="siwp.ng"
                         subTitle="Building the SIWP web application"
                         info={LoremIpsum}
-                        link="Visit Website →"
+                        link="Visit Website →" 
                     />}
-                />
-                <PortfolioDiv2
-                    one={<PortfolioDesc
+                        two={<PortfolioDesc
                         title="siwp.ng"
                         subTitle="Building the SIWP web application"
                         info={LoremIpsum}
-                        link="Visit Website →"
+                        link="Visit Website →" 
                     />}
-                />
-                <PortfolioDiv2
-                    one={<PortfolioDesc
+                        three={<PortfolioDesc
                         title="siwp.ng"
                         subTitle="Building the SIWP web application"
                         info={LoremIpsum}
-                        link="Visit Website →"
+                        link="Visit Website →" 
                     />}
-                />
-                <PortfolioDiv2
-                    one={<PortfolioDesc
+                        four={<PortfolioDesc
                         title="siwp.ng"
                         subTitle="Building the SIWP web application"
                         info={LoremIpsum}
-                        link="Visit Website →"
+                        link="Visit Website →" 
                     />}
-                />
-                <PortfolioDiv2
-                    one={<PortfolioDesc
+                        five={<PortfolioDesc
                         title="siwp.ng"
                         subTitle="Building the SIWP web application"
                         info={LoremIpsum}
-                        link="Visit Website →"
+                        link="Visit Website →" 
                     />}
-                />
-                <PortfolioDiv2
-                    one={<PortfolioDesc
+                        six={<PortfolioDesc
                         title="siwp.ng"
                         subTitle="Building the SIWP web application"
                         info={LoremIpsum}
-                        link="Visit Website →"
+                        link="Visit Website →" 
                     />}
                 />
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                </div>
+                </div>
                 <Div4
                     Logo={null}
                     about="What our clients think about us"
@@ -86,8 +77,7 @@ class Portfolio extends React.Component {
                     name="JAMES BOND"
                     position="MD, Microsoft Nigeria"
                 />
-            </div>
-        )
+            </div>)
     }
 }
 
