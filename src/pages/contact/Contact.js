@@ -25,7 +25,7 @@ class Contact extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="explore">
                 {/* <Nav /> */}
                 <div className="tp">
                     <div className="tp1">

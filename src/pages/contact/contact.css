@@ -1,9 +1,11 @@
+.explore{
+}
 .tp{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30vw, 1fr));
-    margin: 0vh 15vw;
-    /* gap: 10vw; */
-    /* margin: 200px 0px 0px 50px; */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 0vh 2vw;
+
 }
 .tp1 h1{
     font-weight: bold;
@@ -17,15 +19,17 @@ font-size: 20px;
 
 }
 .tp1{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+    width: 500px;
+    align-self: center;
     /* margin-left: 100px; */
 }
 .tp2{
     display: flex;
     /* align-content: center; */
-    width: 100%;
+    /* width: 100%; */
 }
 .dpn{
     display: flex;
@@ -35,12 +39,12 @@ font-size: 20px;
 
 /* cards */
 .crd{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30vw, 1fr));
-    padding: 1vh 5vw;
-    margin: 1vh 0vw;
-    gap: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background: #2A2A2A;
+    padding: 0vh 2vw;
+
 }
 .crd1 h1{
     font-weight: Bold;
@@ -53,12 +57,16 @@ font-size: 18px;
 
 }
 .crd1{
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    justify-content: center;
+    width: 500px;
+}x
+.crd1,.crd2 img{
+    width: 500px;
+height: 400.85px;
 }
-.crd12 img{
-    width: 597px;
-height: 464.85px;
+
+@media screen and (max-width: 570px){
+    .crd1,.crd2 img{
+        width: 90vw;
+    height: 400.85px;
+}
 }
