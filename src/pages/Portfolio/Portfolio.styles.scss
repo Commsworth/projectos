@@ -1,5 +1,10 @@
 .portfolio{
     display: grid;
+    .top{
+        display: flex;
+        justify-content: center;
+        margin: 5vh 0vw;
+    }
 }
 .text-center{
     .h3{
