@@ -1,9 +1,24 @@
 .about {
     background: #111517;
-    h3{
+    h3 {
         font-size: 40px;
         text-align: center;
         margin-bottom: 10vh;
+        // width: fit-content;
+    }
+    .about-hero {
+        .card {
+            img {
+                width: 80vw;
+                height: 50vh;
+            }
+            @media screen and (min-width: 570px) {
+                h3 {
+                    // width: 50%;
+                    padding: 0vh 30vw;
+                }
+            }
+        }
     }
     .card {
         text-align: center;
@@ -13,9 +28,9 @@
         h3 {
             font-size: 56px;
             // width: 50%;
-            margin: 0vh 30vw 2vh;
+            text-align: center;
+            // margin: 0vh 30vw 2vh;
         }
-
     }
     .about-cards {
         // display: grid;
@@ -23,16 +38,18 @@
         flex-wrap: wrap;
         justify-content: center;
         .card {
-            background: #1C2124 !important;
+            background: #1c2124 !important;
             height: 355px;
             width: 400px;
             margin: 0vh 1vw;
             margin-bottom: 112px;
-            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+                0 1px 5px 0 rgba(0, 0, 0, 0.2);
             // justify-self: center;
             .title {
                 position: absolute;
                 bottom: 230px;
+                right: 60px;
             }
             h3 {
                 font-size: 24px;
@@ -50,20 +67,21 @@
             }
         }
     }
-    .about-cards:nth-child(4){
+    .about-cards:nth-child(4) {
         align-self: center;
     }
-    .about-cards:nth-child(5){
+    .about-cards:nth-child(5) {
         align-self: center;
     }
-    .about-work{
-        .card{
+    .about-work {
+        .card {
             padding: 0;
             height: 50px;
             // margin: 0;
-            a{
-                p{
-                    margin: 0;
+            a {
+                p {
+                    margin-bottom: 10vh;
+                    text-align: center;
                 }
                 height: min-content;
             }

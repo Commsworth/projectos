@@ -6,7 +6,7 @@ import Support from '../../asset/svg/support.svg'
 import Business from '../../asset/svg/business.svg'
 import Product from '../../asset/svg/product.svg'
 import Strategy from '../../asset/svg/strategy.svg'
-import AboutHero from '../../asset/svg/aboutHero.svg'
+import AboutHero from '../../asset/img/aboutHero.png'
 import Why from '../../component/aboutPageComponents/why/Why';
 import Contact from '../contact/Contact';
 import {Link} from 'react-router-dom';
@@ -25,12 +25,14 @@ class About extends React.Component{
     render(){
         return(
             <div className="about">
+                <div className="about-hero">
                 <Card
                 title="Digital solutions for business growth"
                 content= {<img src={AboutHero} alt="devops"/>}
                 />
-
                 <h3>Services on Offer</h3>
+                </div>
+
 
             <div className="about-cards">
                 <Card

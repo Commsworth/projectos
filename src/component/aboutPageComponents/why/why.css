@@ -41,15 +41,22 @@ color: white;
     display: flex;
     flex-direction: column;
 }
-.why2 img{
-    /* width: 100%; */
+.why2{
+    align-self: center;
+    /* align-self: center; */
+    /* width: 400px; */
     /* height: 365px; */
     /* margin:33px 0px 0px 3px; */
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 570px) {
     .why{
         grid-template-columns: 100%;
     
+    }
+    .why2 img{
+        width: 80vw;
+        /* height: 365px; */
+        /* margin:33px 0px 0px 3px; */
     }
 }
