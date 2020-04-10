@@ -1,33 +1,62 @@
-.portfolio-desc{
+.portfolio-desc {
     display: flex;
     align-items: center;
+    justify-content: center;
     // padding: 0vh 20%;
     // height: 323px;
     // align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ),url('siwp.png');
-    padding: 4vh 23vw;
-    transition: ease-out 0.5s;
-    h3{
-        width: auto;
+    // padding: 2rem;
+    transition: ease-in-out 0.5s;
+    margin: 50px 0px 50px 0px;
+    // pointer-events: none;
+    overflow-x: hidden;
+    .words {
+        // padding: 5vh 23vw;
+        width: 20vw;
+        position: relative;
+        z-index: 2;
     }
-    .second{
+    h3 {
+        width: auto;
+        text-align: start;
+    }
+    .background {
+        padding: 1rem 0px 1rem 0px;
+        overflow-x: hidden;
+        // overflow-y: hidden;
+        position: absolute;
+        // align-self: center;
+        margin-top: 10px;
+        z-index: 1;
+        width: 100%;
+        height: 310px;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("siwp.png");
+        transition: ease-in-out 1s;
+    }
+    .second {
+        width: 30vw;
         margin-left: 5vw;
         margin-top: 1vw;
+        position: relative;
+        z-index: 2;
         // margin: 2vh;
         // display: flex;
         // flex-direction: column;
         // justify-content: center;
-            p,a{
-                line-height: 206.5%;
-            }
+        p,
+        a {
+            line-height: 206.5%;
+        }
     }
-    a{
-            font-size: 24px;
+    a {
+        font-size: 24px;
     }
 }
-.portfolio-desc:hover{
-    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ),url('siwp.png');
-    transform: scale(1.05);
-    // transform: scale3d(1.05);
-    transition: ease-in 0.5s;
+.portfolio-desc:hover {
+    .background {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("siwp.png");
+        transform: scale(1.05);
+        // transform: scale3d(1.05);
+        transition: ease-in 0.5s;
+    }
 }

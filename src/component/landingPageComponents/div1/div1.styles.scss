@@ -37,6 +37,11 @@
         // top: 50px;
         z-index: 1;
 
+        @media screen and (max-width: 570px) {
+            left: 0vw;
+            // display: none;
+        }
+
         .card {
             background: linear-gradient(
                 179.94deg,
@@ -45,7 +50,9 @@
                 #1c2124 80.28%,
                 #1c2124 93.46%
             ) !important;
-            width: 500px;
+            width: 400px;
+            margin: 0;
+            padding: 0vh 1vw;
             p {
                 // height: 400px;
                 overflow: hidden;
