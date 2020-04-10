@@ -32,7 +32,7 @@ class Top extends React.Component{
         <p>lorem ipsum dolor isit amet, consectetur<br/>
             adipiscing elit. Ulticies turpis ridiculus et id <br/>
             mauris tincidut facilisi duis. Fermentum amet</p> 
-            <a href="">Visit website -></a>   
+            <a href="">Visit website →</a>   
         </div>
 
         <div className="show">

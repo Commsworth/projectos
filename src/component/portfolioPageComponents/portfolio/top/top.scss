@@ -9,11 +9,16 @@
     margin: 10vh 5vw 0vh 5vw;
     // height: 20vh;
     .text p {
-        font-size: 16px;
-        text-align: initial;
+        font-size: 18px;
+        line-height: 206.5%;
     }
-    h3{
-        
+    a {
+        font-size: 24px;
+        line-height: 109%;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 119%;
     }
     .text {
         display: flex;
@@ -62,105 +67,105 @@
         }
         .simg2 {
             img {
-            position: relative;
-            left: -260px;
-        }
+                position: relative;
+                left: -260px;
+            }
 
-        // right: 20%;
-        // display: none;
-        // z-index: 4;
-        .first,
-        .third {
-            height: 170px;
-            z-index: 4;
+            // right: 20%;
+            // display: none;
+            // z-index: 4;
+            .first,
+            .third {
+                height: 170px;
+                z-index: 4;
+            }
+            .second {
+                height: 200px;
+                z-index: 5;
+            }
+            .fourth {
+                height: 140px;
+                z-index: 3;
+            }
+            .fifth {
+                height: 100px;
+                z-index: 2;
+            }
         }
-        .second {
-            height: 200px;
-            z-index: 5;
+        .simg3 {
+            img {
+                position: relative;
+                // right: 40%;
+                left: -380px;
+                position: relative;
+            }
+
+            // z-index: 3;
+            .first,
+            .fifth {
+                height: 140px;
+                z-index: 3;
+            }
+            .second,
+            .fourth {
+                height: 170px;
+                z-index: 4;
+            }
+            .third {
+                height: 200px;
+                z-index: 5;
+            }
         }
-        .fourth {
-            height: 140px;
-            z-index: 3;
+        .simg4 {
+            img {
+                // right: 60%;
+                position: relative;
+                left: -480px;
+            }
+            .first {
+                height: 100px;
+                z-index: 2;
+            }
+            .second {
+                height: 140px;
+                z-index: 3;
+            }
+            .third,
+            .fifth {
+                height: 170px;
+                z-index: 4;
+            }
+            .fourth {
+                height: 200px;
+                z-index: 5;
+            }
         }
-        .fifth {
-            height: 100px;
-            z-index: 2;
-        }
-    }
-    .simg3 {
-        img {
-            position: relative;
+        .simg5 {
+            img {
+                position: relative;
+                left: -530px;
+            }
             // right: 40%;
-            left: -380px;
-            position: relative;
+            .first {
+                height: 60px;
+                z-index: 1;
+            }
+            .second {
+                height: 100px;
+                z-index: 2;
+            }
+            .third {
+                height: 140px;
+                z-index: 3;
+            }
+            .fourth {
+                height: 170px;
+                z-index: 4;
+            }
+            .fifth {
+                height: 200px;
+                z-index: 5;
+            }
         }
-        
-        // z-index: 3;
-        .first,
-        .fifth {
-            height: 140px;
-            z-index: 3;
-        }
-        .second,
-        .fourth {
-            height: 170px;
-            z-index: 4;
-        }
-        .third {
-            height: 200px;
-            z-index: 5;
-        }
-    }
-    .simg4 {
-        img {
-            // right: 60%;
-            position: relative;
-            left: -480px;
-        }
-        .first {
-            height: 100px;
-            z-index: 2;
-        }
-        .second {
-            height: 140px;
-            z-index: 3;
-        }
-        .third,
-        .fifth {
-            height: 170px;
-            z-index: 4;
-        }
-        .fourth {
-            height: 200px;
-            z-index: 5;
-        }
-    }
-    .simg5 {
-        img {
-            position: relative;
-            left: -530px;
-        }
-        // right: 40%;
-        .first {
-            height: 60px;
-            z-index: 1;
-        }
-        .second {
-            height: 100px;
-            z-index: 2;
-        }
-        .third {
-            height: 140px;
-            z-index: 3;
-        }
-        .fourth {
-            height: 170px;
-            z-index: 4;
-        }
-        .fifth {
-            height: 200px;
-            z-index: 5;
-        }
-    }
     }
 }

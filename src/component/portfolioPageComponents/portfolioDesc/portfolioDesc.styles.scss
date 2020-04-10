@@ -2,12 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    width: 100%;
     // padding: 0vh 20%;
-    // height: 323px;
+    height: 323px;
     // align-items: center;
     // padding: 2rem;
     transition: ease-in-out 0.5s;
-    margin: 50px 0px 50px 0px;
+    margin: 1vh 0vw;
     // pointer-events: none;
     overflow-x: hidden;
     .words {
@@ -22,13 +24,13 @@
     }
     .background {
         padding: 1rem 0px 1rem 0px;
-        overflow-x: hidden;
+        // overflow-x: hidden;
         // overflow-y: hidden;
         position: absolute;
         // align-self: center;
         margin-top: 10px;
         z-index: 1;
-        width: 100%;
+        width: 99vw;
         height: 310px;
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("siwp.png");
         transition: ease-in-out 1s;
@@ -55,8 +57,9 @@
 .portfolio-desc:hover {
     .background {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("siwp.png");
-        transform: scale(1.05);
+        transform: scale(1.02);
         // transform: scale3d(1.05);
         transition: ease-in 0.5s;
+        width: 97%;
     }
 }
