@@ -46,12 +46,6 @@ class Top extends React.Component{
         <div className="simg3">
         <img src={img5} alt="" onMouseOver={()=>this.hover("third")} className={`${this.state.current}`}/>
         </div>
-        <div className="simg4">
-        <img src={img5} alt="" onMouseOver={()=>this.hover("fourth")} className={`${this.state.current}`}/>
-        </div>
-        <div className="simg5">
-        <img src={img5} alt="" onMouseOver={()=>this.hover("fifth")} className={`${this.state.current}`}/>
-        </div>
         </div>
        
         </div>
