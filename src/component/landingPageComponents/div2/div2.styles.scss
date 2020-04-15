@@ -4,10 +4,12 @@
     justify-content: center;
     margin-bottom: 69px;
     .card {
-        width: 400px;
+        // width: 400px;
         height: 400px;
+        width: 368px;
         margin: 37px 33px;
         border: 1px solid #208fff;
+        background: transparent !important;
         box-sizing: border-box;
         border-radius: 4px;
 
@@ -30,6 +32,6 @@
     }
     .card:hover {
         border: none;
-        background: #1c2124;
+        background: #1C2124 !important;
     }
 }

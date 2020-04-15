@@ -8,6 +8,7 @@
     // padding: 10vh 0vw;
     margin: 10vh 5vw 0vh 5vw;
     // height: 20vh;
+    padding: 1rem;
     .text p {
         font-size: 18px;
         line-height: 206.5%;
@@ -166,6 +167,26 @@
                 height: 200px;
                 z-index: 5;
             }
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home{
+        grid-template-columns: 100%;
+        .show{
+            display: none;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+    .home{
+        grid-template-columns: 100%;
+        .show{
+            display: none;
         }
     }
 }

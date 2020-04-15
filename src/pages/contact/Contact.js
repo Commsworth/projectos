@@ -48,7 +48,7 @@ class Contact extends React.Component {
                 </div>
                 <div className="dpn"><img src={dpn} alt="" /></div>
 
-                <div className="crd">
+                <div className="crda">
                     <div className="crd1">
                         <h1>
                             {this.props.title2}
@@ -71,7 +71,7 @@ class Contact extends React.Component {
                     </div>
                 </div>
 
-                <div className="crd">
+                <div className="crdb">
                     <div className="crd2">
                         <img src={this.props.image3} alt="" />
                     </div>
@@ -95,7 +95,7 @@ class Contact extends React.Component {
 
                 </div>
 
-                <div className="crd">
+                <div className="crda">
                     <div className="crd1">
                         <h1>
                             {this.props.title4}
