@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-.title-div{
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+.title-div {
     text-align: center;
     margin: 10vh;
-    h3{
-        line-height: 5px;
-        font-size: 25px;
+    h3 {
+        font-size: 20px;
+        line-height: 119%;
         font-family: "Nunito";
         font-weight: bold;
     }
-    img{
+    img {
         position: relative;
         left: 1px;
         // top: 2px;
         bottom: 7px;
     }
 }
-
