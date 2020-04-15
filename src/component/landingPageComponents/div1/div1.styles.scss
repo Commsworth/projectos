@@ -3,8 +3,8 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     // height: 10rem;\
-    gap: 1vw;
-    // margin: 0vw 10vw;
+    gap: 6px;
+    margin: 0px 55px;
     // height: 540px;
     .card{
         background: #1C2124;
@@ -28,7 +28,7 @@
         // margin: 0px;
         // gap: 0px;
         // background: red;
-        gap: 1vw;
+        gap: 6px;
     }
     .div1--second--small{
         display: grid;
