@@ -1,21 +1,27 @@
-.div2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 69px;
-    .card {
+    .div2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // margin-bottom: 69px;
+        // margin: 0px 148px 69px;
+        @media only screen and (max-width: 570px) {
+            margin: 0px 0px 69px;
+            }
+        .card {
         // width: 400px;
         height: 400px;
         width: 368px;
-        margin: 37px 33px;
+        padding: 0px 22px !important;
+        margin: 37px 12.5px;
         border: 1px solid #208fff;
         background: transparent !important;
         box-sizing: border-box;
         border-radius: 4px;
-
+        
         h3 {
             font-size: 24px;
             line-height: 119%;
+            // margin: 0px;
         }
         p {
             font-size: 15px;
