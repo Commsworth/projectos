@@ -3,22 +3,25 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // padding: 0vh 15vw;
     .div3-title {
         padding-top: 2vw;
-        margin: 0vw 10vw;
         .bold-title {
             font-weight: bold;
         }
     }
     .div3-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        margin: 5vw 10vw;
-        padding-bottom: 2vw;
-        gap: 1vw;
+        // justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
         .card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(15px);
+            width: 255px;
+            margin-right: 2vw;
             h3 {
                 font-size: 24px;
             }
@@ -33,7 +36,7 @@
             }
         }
         .card:hover {
-            background:#208FFF;
+            background: #208fff;
             filter: brightness(200%);
             // opacity: 0.1;
             a {

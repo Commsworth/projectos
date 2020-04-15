@@ -38,7 +38,15 @@ font-size: 20px;
 }
 
 /* cards */
-.crd{
+.crda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #2A2A2A;
+    padding: 0vh 2vw;
+
+}
+.crdb{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -58,7 +66,7 @@ font-size: 18px;
 }
 .crd1{
     width: 500px;
-}x
+}
 .crd1,.crd2 img{
     width: 500px;
 height: 400.85px;
@@ -69,4 +77,26 @@ height: 400.85px;
         width: 90vw;
     height: 400.85px;
 }
+.crda{
+    display: flex;
+    flex-direction: column-reverse;
 }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+     .crda{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+     }
+ 
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (max-width: 900px) {
+    .crda{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+         }
+     
+ 

@@ -1,85 +1,38 @@
-.div1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    // height: 500px;
-    // width: 100vw;
-    margin: 0px 0vw;
-    .card {
-        background: #1c2124;
-        width: 400px;
-        h3 {
+.div1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    // height: 10rem;\
+    height: 100%;
+    gap: 1vw;
+    // margin: 0vw 10vw;
+    // height: 540px;
+    .card{
+        background: #1C2124;
+        h3{
             margin: 0;
-        }
-        p {
-            margin: 0;
-            font-size: 15px;
-            line-height: 185%;
-        }
-        a {
-            p {
-                text-align: right;
-            }
+            padding: 0;
         }
     }
-    .card:hover {
+    .card:hover{
         background: transparent;
     }
-
-    .div1--first {
-        height: 400px;
-        // width: 400px;
-        position: relative;
-        align-items: center;
-        align-self: center;
-        left: 1vw;
-        // top: 50px;
-        z-index: 1;
-
-        @media screen and (max-width: 570px) {
-            left: 0vw;
-            // display: none;
-        }
-
-        .card {
-            background: linear-gradient(
-                179.94deg,
-                rgba(28, 33, 36, 0) 46.47%,
-                rgba(28, 33, 36, 0.87) 62.55%,
-                #1c2124 80.28%,
-                #1c2124 93.46%
-            ) !important;
-            width: 400px;
-            margin: 0;
-            padding: 0vh 1vw;
-            p {
-                // height: 400px;
-                overflow: hidden;
-            }
-        }
+    
+    div{
     }
-
-    .div1--second {
-        // position: relative;
-        .card {
-            justify-content: flex-end;
-            p {
-                line-height: 178.5%;
-            }
-            margin: 0;
-        }
-    }
-    .div1--second--small {
+    
+    .div1--second{
         display: grid;
-        // position: relative;
-        .card {
-            justify-content: center;
-            height: 250px;
-            margin: 0;
-            p {
-                line-height: 185.5%;
-            }
-        }
+        // grid-template-rows: 1fr  1fr;
+        height: 100%;
+        margin: 0px;
+        gap: 0px;
+        // background: red;
+        gap: 1vw;
     }
+    .div1--second--small{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        gap: 1vw;
+}
 }
