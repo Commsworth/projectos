@@ -1,27 +1,47 @@
 .div3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Rectangle 75.png");
+    background-image: linear-gradient(
+            89.74deg,
+            #111517 0.01%,
+            rgba(17, 21, 23, 0.89) 0%,
+            rgba(17, 21, 23, 0.78) 3.14%,
+            rgba(17, 21, 23, 0) 78.53%
+        ),
+        url("Rectangle 75.png") !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0vh 10%;
+    // width: max-content;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left: 170px;
+    // padding-right: 174px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    // padding: 0vh 15vw;
+    flex-direction: column;
+    // align-items: center;
     .div3-title {
         padding-top: 2vw;
+        width: 100%;
+        margin: 0vh 19px;
+        // width: 80%;
         .bold-title {
             font-weight: bold;
         }
     }
     .div3-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        // grid-column: 1 / -1;
         // justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
         .card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.05) !important;
             backdrop-filter: blur(15px);
             width: 255px;
-            margin-right: 2vw;
+            height: 238px;
+            padding: 0px 26px !important;
+            margin: 19px 19px;
+
             h3 {
                 font-size: 24px;
             }
@@ -36,8 +56,8 @@
             }
         }
         .card:hover {
-            background: #208fff;
-            filter: brightness(200%);
+            background: #208fff !important;
+            // filter: brightness(200%);
             // opacity: 0.1;
             a {
                 p {
@@ -49,7 +69,28 @@
 }
 
 @media only screen and (max-width: 570px) {
-    .div3{
+    .div3 {
         padding: 0vh 10vw;
+        .div3-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 571px) and (max-width: 990px) {
+    .div3-title {
+        text-align: center;
+    }
+    .div3 {
+        // justify-content: center !important;
+        padding: 0% 5%;
+    }
+    .div3-grid {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        justify-content: center;
     }
 }
