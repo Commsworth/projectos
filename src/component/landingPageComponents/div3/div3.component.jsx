@@ -8,11 +8,13 @@ const Div3 = (props) => (
         <h3>{props.normalTitle}</h3>
         <h3 className="bold-title">{props.boldTitle}</h3>
         </div>
+        <div className="div3-flex">
         <div className="div3-grid">
             {props.one}
             {props.two}
             {props.three}
             {props.four}
+        </div>
         </div>
     </div>
 )

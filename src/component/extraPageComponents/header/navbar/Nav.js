@@ -13,10 +13,10 @@ export class Nav extends Component {
     }
     dropDown = () => {
         var x = document.getElementById("myNav");
-        if (x.className === "none") {
+        if (x.className === "nav-lg") {
           x.className += " block";
         } else {
-          x.className = "none";
+          x.className = "nav-lg";
         }
       }
 
@@ -37,7 +37,7 @@ export class Nav extends Component {
         </ul>
 
 
-        <ul className="nav-lg none" id="myNav">
+        <ul className="nav-lg" id="myNav">
           <li className="option padding " onClick={() =>this.setState({class: "active"})}> <Link to="/commsworth/services" className={this.state.class}>
             Services
           </Link>

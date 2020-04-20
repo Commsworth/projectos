@@ -20,7 +20,7 @@
     flex-direction: column;
     // align-items: center;
     .div3-title {
-        padding-top: 2vw;
+        padding-top: 60px;
         width: 100%;
         margin: 0vh 19px;
         // width: 80%;
@@ -34,6 +34,7 @@
         // grid-column: 1 / -1;
         // justify-content: center;
         width: 100%;
+        padding-bottom: 71px;
         .card {
             background: rgba(255, 255, 255, 0.05) !important;
             backdrop-filter: blur(15px);
@@ -71,10 +72,14 @@
 @media only screen and (max-width: 570px) {
     .div3 {
         padding: 0vh 10vw;
-        .div3-grid {
+        .div3-flex {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            .div3-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     }
 }
@@ -87,10 +92,14 @@
         // justify-content: center !important;
         padding: 0% 5%;
     }
-    .div3-grid {
+    .div3-flex {
         display: flex;
-        flex-wrap: wrap;
-        // justify-content: center;
         justify-content: center;
+        .div3-grid {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+            justify-content: center;
+        }
     }
 }

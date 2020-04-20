@@ -25,6 +25,7 @@ import strategy2 from '../../asset/img/strategy2.png';
 import QualityAssuranceBackground from '../../component/landingPageComponents/div1/rectangle55.png'
 import {Link} from 'react-router-dom';
 import Nav from '../../component/extraPageComponents/header/navbar/Nav'
+import Arrow from '../../component/extraPageComponents/arrow/arrow.component';
 
 // import CardDiv1 from '../../component/cardDiv1/cardDiv1.component';
 // import CardDiv2 from '../../component/cardDiv2/cardDiv2.component';
@@ -99,7 +100,7 @@ class LandingPage  extends React.Component {
                                     subTitle="Product & Digital"
                                     content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
                                     link={<Link to="/commsworth/explore4">
-                                        Contact Us →
+                                        {<Arrow text = "Contact Us"/>}
                                     </Link>}
                                     />}
                                     five={<Card
