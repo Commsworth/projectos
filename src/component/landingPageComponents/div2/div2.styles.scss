@@ -32,7 +32,10 @@
                 font-family: "Nunito", "sans-serif";
                 font-size: 18px;
                 line-height: 109%;
-                text-align: end ;
+                text-align: right;
+                .arrow-div{
+                    justify-content: flex-end;
+                }
             }
         }
     }

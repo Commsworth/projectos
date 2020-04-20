@@ -19,7 +19,7 @@ const HeroContent = ()=>{
     
     
 <div className="btn-wrapper center">
-    <button className="btn__blue btn" onMouseEnter={handleMouseOver}>Contact</button>
+    <button className="btn__blue btn" onMouseEnter={handleMouseOver}>Learn More</button>
     
 </div>
 </div>

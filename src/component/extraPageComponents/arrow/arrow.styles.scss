@@ -1,41 +1,21 @@
-.arrow-div{
-    display: flex;
-    .arrow {
-        width: 80px;
+.arrow-div {
     transition: ease-in 1s;
-    margin-top: 12px;
-    
-    .line {
-        margin-top: 10px;
-        width: 50px;
-        background: #0E82F8;
-        height: 4px;
-        float: left;
-    }
-    
-    .point {
-        // margin-top: 0em;
-        width: 0;
-      height: 0;
-      border-top: 0.5em solid transparent;
-      border-bottom: 0.5em solid transparent;
-      border-left: 30px solid #0E82F8;
-      float: right;
+    display: flex;
+    align-items: center;
+    .arrow {
+        margin-left: 10px;
+        img{
+            width: 38px;
+            height: 15px;
+        }
     }
 }
 
-.long{
-    // width: 120px;
-    .line{
-        transform-origin: left;
-        transform: scaleX(1.6);
-        transition: ease-in 0.5s;
-        // transform: ;
-    }
-    .point{
-        transform: translateX(30px);
-        transform-origin: left;
-        transition: ease-in 0.5s;
+.arrow-div:hover{
+    .arrow{
+        img{
+            transition: ease 0.2s;
+            width: 76px;
+        }
     }
 }
-    }

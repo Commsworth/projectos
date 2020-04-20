@@ -1,14 +1,14 @@
 import React from 'react';
+import arrow from '../../../asset/img/arrow.png';
 import './arrow.styles.scss';
 
 const Arrow = (props) => (
     <div className="arrow-div">
         <div>
-        <h3>{props.text}</h3>
+        <p>{props.text}</p>
         </div>
-    <div className={`arrow ${props.className}`}>
-        <div className="line"></div>
-        <div className="point"></div>
+    <div className={`arrow`}>
+        <img src={arrow} alt="arrow"/>
     </div>
     </div>
 )
