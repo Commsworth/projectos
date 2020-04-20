@@ -2,6 +2,8 @@ import React,{Component} from 'react';
 import './carouselDiv.styles.scss';
 import Card from '../../extraPageComponents/card/card.component';
 import RoundButton from '../roundButton/roundButton.component';
+import R from './img/right.png'
+import L from './img/left.png'
 
 const LoremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies turpis ridiculus et id mauris tincidunt facilisi duis. Fermentum amet vestibulum elit ac vel eget. Lobortis maecenas sit faucibus congue volutpat aenean sit. Donec in."
 
@@ -18,8 +20,10 @@ class CarouselDiv extends Component{
             <div>
         <div className="carousel-div">
             <div className="carousel-img-div">
-        <div style={{backgroundImage: "url(" + this.props.background + ")",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}} className="img">
+                <button className="cr-btn"><img src={L} alt="" /></button>
+        <div className="cau" style={{backgroundImage: "url(" + this.props.background + ")",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}} className="img">
         </div>
+        <button className="cr-btn1"><img src={R} alt="" /></button>
             </div>
         {/* <Card title="Commsworth partners" subTitle="Microsoft" content={LoremIpsum} link="Read More →" className="card" /> */}
         <div className="carousel-text-div">

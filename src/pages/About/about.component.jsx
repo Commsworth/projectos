@@ -10,6 +10,7 @@ import AboutHero from '../../asset/img/aboutHero.png'
 import Why from '../../component/aboutPageComponents/why/Why';
 import Contact from '../contact/Contact';
 import {Link} from 'react-router-dom';
+import Nav from '../../component/extraPageComponents/header/navbar/Nav';
 
 class About extends React.Component{
     // constructor(){
@@ -25,6 +26,7 @@ class About extends React.Component{
     render(){
         return(
             <div className="about">
+                {/* <Nav/> */}
                 <div className="about-hero">
                 <Card
                 title="Digital solutions for business growth"

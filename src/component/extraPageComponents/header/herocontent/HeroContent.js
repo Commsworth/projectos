@@ -15,6 +15,7 @@ const HeroContent = ()=>{
 <div className="container white-text center hero-content">
 
     <h1>Digital solutions for<br /> business growth</h1>
+    <span className="line2"></span>
     
     
 <div className="btn-wrapper center">

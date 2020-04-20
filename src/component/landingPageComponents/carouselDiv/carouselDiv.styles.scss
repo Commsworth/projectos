@@ -40,3 +40,25 @@
 
   }
 }
+.cr-btn{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  z-index: 1;
+  left: 12px;
+  box-shadow: whitesmoke;
+}
+.cr-btn1{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  z-index: 1;
+  right: 12px;
+}
+.cr-btn img, .cr-btn1 img {
+  width: 15px;
+}

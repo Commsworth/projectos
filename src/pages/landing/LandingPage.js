@@ -24,6 +24,7 @@ import product2 from '../../asset/img/product2.png';
 import strategy2 from '../../asset/img/strategy2.png';
 import QualityAssuranceBackground from '../../component/landingPageComponents/div1/rectangle55.png'
 import {Link} from 'react-router-dom';
+import Nav from '../../component/extraPageComponents/header/navbar/Nav'
 
 // import CardDiv1 from '../../component/cardDiv1/cardDiv1.component';
 // import CardDiv2 from '../../component/cardDiv2/cardDiv2.component';
@@ -47,6 +48,7 @@ class LandingPage  extends React.Component {
     render() {
     return (
         <Fragment>
+            {/* <Nav/> */}
             <Hero />
             <main>
             <TitleDiv title="Featured" subTitle="Find out what’s new with commsworth" />

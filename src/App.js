@@ -1,7 +1,7 @@
 import React from 'react';
 import  LandingPage from './pages/landing/LandingPage';
 import './App.css';
-import Nav from './component/extraPageComponents/header/navbar/NavBar'
+import Nav from './component/extraPageComponents/header/navbar/Nav'
 import Portfolio from './pages/Portfolio/Portfolio.component';
 import About from './pages/About/about.component';
 import Footer from './component/extraPageComponents/footer/Footer';
