@@ -1,3 +1,21 @@
+.cli{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.brand{
+
+    img{
+        margin: 20px 100px 0px 100px;
+    }
+}
+.bor3{
+    display: inline-block;
+    width: 0px;
+    height: 60px;
+    border: 1px solid #878787;
+}
 .div4{
     
     display: flex;
@@ -61,23 +79,23 @@
    
     .pf1{
         position: relative;
-        top: 11rem;
-    left: -14rem;
+        top: 20rem;
+        left: -46rem;
     }
     .pf2{
         position: relative;
-        top: 5rem;
-    left: 25rem;
+        top: 14rem;
+        left: 46rem;
     }
     .pf3{
             position: relative;
-            top: -11rem;
-    left: 20rem;;
+            top: -9rem;
+            left: 30rem;
     }
     .pf4{
         position: relative;
-        left: -24rem;
-    bottom: 22rem;
+        left: -34rem;
+        bottom: 16rem;
     }
     .pf5{
         position: relative;

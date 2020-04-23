@@ -4,14 +4,19 @@
         justify-content: center;
         // margin-bottom: 69px;
         margin: 0px 148px 69px;
-        @media only screen and (max-width: 570px) {
+        @media only screen and (max-width: 700px) {
             margin: 0px 0px 69px;
-            }
+        }
         .card {
+            img{
+                // padding-bottom: 50px;
+                // height: 75px;
+                // width: 70px;
+            }
         // width: 400px;
         height: 400px;
         width: 368px;
-        padding: 0px 22px !important;
+        padding: 56px 45px !important;
         margin: 37px 12.5px;
         border: 1px solid #208fff;
         background: transparent !important;
@@ -19,6 +24,7 @@
         border-radius: 4px;
         
         h3 {
+            height: 70px;
             font-size: 24px;
             line-height: 119%;
             // margin: 0px;
