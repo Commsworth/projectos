@@ -14,9 +14,13 @@ import Div4 from '../../component/landingPageComponents/div4/div4.component';
 import CarouselDiv from '../../component/landingPageComponents/carouselDiv/carouselDiv.component';
 import TitleDiv from '../../component/extraPageComponents/titleDiv/titleDiv.component';
 import BlueLine from '../../asset/svg/titleLine.svg'
+import Bluecircle from '../../asset/svg/titlecircle.svg'
 import mission from '../../asset/svg/mission.svg'
 import vision from '../../asset/svg/vision.svg'
 import core from '../../asset/svg/core.svg'
+import tunnel from '../../asset/svg/tunnel.svg'
+import services from '../../asset/svg/services.svg'
+import cyber from '../../asset/svg/cyber.svg'
 import devops2 from '../../asset/img/devops2.png';
 import support2 from '../../asset/img/support2.png';
 import business2 from '../../asset/img/business2.png';
@@ -26,6 +30,7 @@ import QualityAssuranceBackground from '../../component/landingPageComponents/di
 import {Link} from 'react-router-dom';
 import Nav from '../../component/extraPageComponents/header/navbar/Nav'
 import Arrow from '../../component/extraPageComponents/arrow/arrow.component';
+import comma from '../../asset/img/comma.png'
 
 // import CardDiv1 from '../../component/cardDiv1/cardDiv1.component';
 // import CardDiv2 from '../../component/cardDiv2/cardDiv2.component';
@@ -52,7 +57,7 @@ class LandingPage  extends React.Component {
             {/* <Nav/> */}
             <Hero />
             <main>
-            <TitleDiv title="Featured" subTitle="Find out what’s new with commsworth" />
+            <TitleDiv title="Featured" subTitle="Our latest trends tailored for you" />
                 <CarouselDiv
                 background="https://images.adsttc.com/media/images/5de3/1ca6/3312/fda8/2a00/00b3/large_jpg/001.jpg?1575165037"
                 />
@@ -64,11 +69,16 @@ class LandingPage  extends React.Component {
                 <TitleDiv title="About Us" subTitle="A premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients
                 "/>
                 <Div1
-                    large={<Card title="Quality Assurance" subTitle={<img src={BlueLine} alt="Blue line"/>} content='We are committed to ensuring that our products, services and solutions are highly potent and well reputed to be adopted across major business verticals. We ensure they are based on IT best practices and are backed by OEMs SLA support. All our products are top trend and sourced directly from OEMs (Original Equipment Manufacturers) ensuring manufacturer’s warranty covers our entire portfolio, thus protecting your investment from the start.' link="Read More →" link2="Read More——>" />}
-                    small1={<Card background={core} title="Core Values" subTitle={<img src={BlueLine} alt="Blue line"/>} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
-                    medium={<Card background={vision} title="Our Vision" subTitle={<img src={BlueLine } alt="Blue line"/>} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
-                    small2={<Card background={mission} title="Our Mission" subTitle={<img src={BlueLine} alt="Blue line"/>} content="​To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" link="Read More →" />}
+                    large={<Card background={tunnel} title="Who we are" subTitle={<img src={Bluecircle} alt="Blue line"/>} 
+                    content='Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients.' 
+                    content1='The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy and Managed Services'
+                     />}
+                    small1={<Card background={core} title="Core Values" subTitle={<img src={Bluecircle} alt="Blue line"/>} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets"  />}
+                    medium={<Card background={vision} title="Our Vision" subTitle={<img src={Bluecircle } alt="Blue line"/>} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets"  />}
+                    small2={<Card background={mission} title="Our Mission" subTitle={<img src={Bluecircle} alt="Blue line"/>} content="​To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets"  />}
                 />
+                <br/>
+                <br/>
                         <TitleDiv title="Our Solutions"/>
                 <Div2
                                     one={<Card
@@ -80,8 +90,8 @@ class LandingPage  extends React.Component {
                                     </Link>}
                                     />}
                                     two={<Card
-                                    title = {<img src={support2} alt="devops"/>}
-                                    subTitle="Support"
+                                    title = {<img src={strategy2} alt="devops"/>}
+                                    subTitle="Business Automation and Productivity"
                                     content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
                                     link={<Link to="/commsworth/explore2">
                                         Contact Us →
@@ -104,7 +114,15 @@ class LandingPage  extends React.Component {
                                     </Link>}
                                     />}
                                     five={<Card
-                                    title = {<img src={strategy2} alt="devops"/>}
+                                    title = {<img src={services} alt="devops"/>}
+                                    subTitle="Strategy"
+                                    content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
+                                    link={<Link to="/commsworth/explore5">
+                                        Contact Us →
+                                    </Link>}
+                                    />}                 
+                                    six={<Card
+                                    title = {<img src={cyber} alt="devops"/>}
                                     subTitle="Strategy"
                                     content= "Our Core Values define our personality and guides our relationship with staff, clients and partners. "
                                     link={<Link to="/commsworth/explore5">
@@ -123,8 +141,9 @@ class LandingPage  extends React.Component {
                     four={<Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link="Enroll →" />}
                 />
 
+                <TitleDiv title="Our Clients and Stories"/>
                 <Div4
-                    Logo={null}
+
                     about="What our clients think about us"
                     mission='"Commsworth deliver value and helped grow microsoft in Nigeria, working with them has been a revelation"'
                     name="JAMES BOND"
