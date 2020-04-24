@@ -9,6 +9,7 @@ export class Nav extends Component {
         super(props)
         this.state = {
             class: "",
+            fixed: "",
         }
     }
     dropDown = () => {
@@ -27,9 +28,11 @@ export class Nav extends Component {
 //     })
 // }
     render() {
+      // window.pageYOffset===0?console.log("yayyy"):console.log("nayyy");
         return (
-            <div className="nav">
+          <div className={`nav-div ${this.props.nav}`}>
 
+          <div className="nav">
         <ul className="nav-sm">
           <li className="padding dp" > <a href="/commsworth/"><img src={Logo} alt="Logo" /></a>
             <button className="dropdown-button" onClick={this.dropDown}><FaBars onClick={this.dropDown} /></button>
@@ -58,6 +61,7 @@ export class Nav extends Component {
         </ul>
 
       </div>
+          </div>
         )
     }
 }

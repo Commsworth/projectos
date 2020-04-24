@@ -139,6 +139,7 @@ class LandingPage  extends React.Component {
                     two={<Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link="Enroll →" />}
                     three={<Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link="Enroll →" />}
                     four={<Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link="Enroll →" />}
+                    five={<Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link="Enroll →" />}
                 />
 
                 <TitleDiv title="Our Clients and Stories"/>

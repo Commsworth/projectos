@@ -7,6 +7,7 @@ const Footer = ()=>{
  
   return(
        <div>
+         <div className="sc">
           <div className="socials">
         <div className="follow">
           <p>Follow us:</p>
@@ -20,6 +21,7 @@ const Footer = ()=>{
           <img src={FacebookIcon} alt="" srcset="" />
           <img src={LinkedinIcon}alt="" srcset="" />
         </div>
+      </div>
       </div>
 
       <div className="foot">
@@ -58,7 +60,7 @@ const Footer = ()=>{
         </ul>
       </div>
       
-
+      <div className="pda-border">
       <ul className="pda">
           <li><a href="">Contact ProjectOS</a></li>
           <li><a href="">Products</a></li>
@@ -67,6 +69,7 @@ const Footer = ()=>{
           <li><a href="">Terms of Service</a></li>
           <li><a href="">FAQs</a></li>
       </ul>
+      </div>
       </div>
       </div>
 

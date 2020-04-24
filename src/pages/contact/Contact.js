@@ -1,6 +1,5 @@
 import React from 'react'
 import './contact.css'
-import Nav from '../../component/extraPageComponents/header/navbar/NavBar'
 import Footer from '../../component/extraPageComponents/footer/Footer'
 import devop1 from '../contact/img/devop1.png'
 import devop2 from '../contact/img/devop2.png'

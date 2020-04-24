@@ -2,16 +2,17 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 70vw;
+  margin: 2vw 15vw;
   // grid-template-columns: 1fr 1fr;
-  margin: 2vw 10vw;
   // gap: 1vw;
   .carousel-img-div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 600px;
+    width: 45%;
     height: 100%;
-    margin: 9vh ;
+    // margin: 9vh ;
     .img {
       // margin: 0vw 2vw;
       // width: 39vw;
@@ -22,9 +23,10 @@
   .carousel-text-div{
     margin: 1vw;
     display: flex;
+    align-items: center;  
     flex-direction: column;
     justify-content: center;
-    width: 450px;
+    width: 35%;
 
     h5{
     font-family: Nunito;

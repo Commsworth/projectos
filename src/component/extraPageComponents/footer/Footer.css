@@ -2,12 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  border-top: 2px solid grey ;
-  border-bottom: 2px solid grey ;
+  width: 70vw;
+  margin: 2vw 15vw;
   margin-top: 8rem;
   padding: 5px;
   margin: auto;
+}
+.sc {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 .follow {
   width: 15rem;
@@ -26,7 +29,8 @@
   justify-content: space-evenly;
   background-color: #111517;
   flex-wrap: wrap;
-  width: 80%;
+  width: 70vw;
+  margin: 2vw 15vw;
   margin: auto;
 }
 .foot {
@@ -34,38 +38,40 @@
   width: 100%;
 }
 .footer-brand {
-  width: rem;
   display: block;
 }
 .footer ul a {
   font-size: 20px;
   font-weight: 700;
-  color:#F4F4F4;
+  color: #f4f4f4;
   font-family: "Nunito";
 }
 .footer li a {
-  color: #C5C5C5;;
+  color: #c5c5c5;
   line-height: 4rem;
   font-size: 18px;
   font-family: "Aribau";
 }
 .footer ul {
-  width: 200px;
+  width: 19%;
   padding: 2rem 0rem 2rem 0rem;
   line-height: 30px;
 }
-.pda{
+.pda {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem 0rem 1rem 0rem;
-    border-top: 2px solid white;
-    
-  }
-.pda li a{
+  justify-content: center;
+  /* margin: auto;
+    width: 60%; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0rem 30px 0rem;
+}
+.pda li a {
   color: white;
   margin: 50px;
+}
+.pda-border {
+  border-top: 2px solid white;
 }
 
 @media only screen and (max-width: 570px) {
@@ -83,7 +89,8 @@
     /* justify-content: space-evenly; */
     /* align-items: center; */
   }
-  .follow, .share{
+  .follow,
+  .share {
     margin: 0vh 5vw;
   }
   .footer ul {
@@ -98,13 +105,13 @@
     color: grey;
     line-height: 3rem;
   }
-  .pda{
+  .pda {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: flex-start;   
+    justify-content: flex-start;
   }
-  .pda > li{
-    line-height: 40px;
-    /* margin: 2vh 0vw; */
+  .pda li a {
+    color: white;
+    margin: 5px;
   }
 }

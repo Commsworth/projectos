@@ -1,123 +1,118 @@
-ul {
-  list-style: none;
-  text-decoration: none;
-  color: white;
-}
-li {
-  color: white;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-.dp {
-  display: flex;
-  padding: 1rem;
-  justify-content: space-between;
-}
-.nav {
-  display: block;
-}
 @media screen and (min-width: 990px) {
   .dropdown-button {
     display: none;
   }
-  .nav {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    color: white;
-    margin: auto;
-    width: 80%;
-  }
-  .nav-lg a {
-    color: white;
-  }
-  .nav-sm {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-  }
-  .nav-lg {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-weight: bold;
-    color: white;
-    .option {
-      .active {
-        border-bottom: 5px solid #0e82f8;
+  .nav-div {
+    transition: ease-in 0.1s;
+    position: fixed;
+    z-index: 9999;
+    // left: 19.5vw;
+    &.nav-scroll {
+      background: gray;   
+      transition: ease-in 0.1s;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      // grid-template-columns: 30% 70%;
+      color: white;
+      // padding: 0vh 10vw;
+      width: 70vw;
+      margin: 0vh 15vw;
+      // margin-bottom: 80px;
+    }
+    .nav-lg a {
+      color: white;
+    }
+    .nav-sm {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+    .nav-lg {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      .option {
+        .active {
+          border-bottom: 5px solid #0e82f8;
+        }
+      }
+      .option1 {
+        .active1 {
+          border-bottom: 5px solid #0e82f8;
+        }
+      }
+      .option2 {
+        .active2 {
+          border-bottom: 5px solid #0e82f8;
+        }
       }
     }
-    .option1 {
-      .active1 {
-        border-bottom: 5px solid #0e82f8;
-      }
+    .divide {
+      border: 1px solid white;
+      height: 30px;
+      margin-right: 14px;
     }
-    .option2 {
-      .active2 {
-        border-bottom: 5px solid #0e82f8;
-      }
+    .padding {
+      margin-right: 3rem;
+      text-align: center;
     }
-  }
-  .divide {
-    border: 1px solid white;
-    height: 30px;
-    margin-right: 14px;
-  }
-  .padding {
-    margin-right: 3rem;
-    text-align: center;
-  }
-  .padding a {
-    color: white;
-  }
-  .butt {
-    background-color: #0e82f8;
-    border-radius: 5px;
-    padding: 15.53px 39px;
-    border-radius: 5px;
-    font-size: 12px;
-    line-height: 126.5%;
-    text-align: center;
-  }
-  .butt:hover {
-    background-color: #5cadff;
-  }
-  .nav-lg p {
-    /* width: 25%; */
-    color: white;
-  }
-  .none {
-    display: flex;
-    align-items: center;
+    .padding a {
+      color: white;
+    }
+    .butt {
+      background-color: #0e82f8;
+      border-radius: 5px;
+      font-family: "Nunito", "sans-serif" !important;
+      padding: 15.53px 39px;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 126.5%;
+      text-align: center;
+      font-weight: bold;
+    }
+    .butt:hover {
+      background-color: #5cadff;
+    }
+    .nav-lg p {
+      /* width: 25%; */
+      color: white;
+    }
+    .none {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 @media screen and (max-width: 990px) {
-  .nav {
-    // background-color: #1c2124;
-  }
-  .nav-lg {
-    display: none;
-    background-color: #1c2124;
-    padding: 0px 0px 0px 20px;
-  }
-  .block {
-    display: block;
-    transition: ease-in-out 0.5s;
-  }
-  .nav-lg a {
-    color: white;
-    width: 100%;
-    font-weight: bold;
-    font-size: 22px;
-    padding: 0px 0px 0px 20px;
-  }
-  .nav-lg {
-    padding: 5px 0px 5px 0px;
-  }
-  .nav-lg li:hover {
-    background-color: #5cadff;
+  .nav-div {
+    .nav {
+      // background-color: #1c2124;
+    }
+    .nav-lg {
+      display: none;
+      background-color: #1c2124;
+      padding: 0px 0px 0px 20px;
+    }
+    .block {
+      display: block;
+      transition: ease-in-out 0.5s;
+    }
+    .nav-lg a {
+      color: white;
+      width: 100%;
+      font-weight: bold;
+      font-size: 22px;
+      padding: 0px 0px 0px 20px;
+    }
+    .nav-lg {
+      padding: 5px 0px 5px 0px;
+    }
+    .nav-lg li:hover {
+      background-color: #5cadff;
+    }
   }
 }

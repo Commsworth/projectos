@@ -3,9 +3,11 @@
         flex-wrap: wrap;
         justify-content: center;
         // margin-bottom: 69px;
-        margin: 0px 148px 69px;
+        // margin: 0px 148px 69px;
+        width: 70vw;
+        margin: 2vw 15vw;
         @media only screen and (max-width: 700px) {
-            margin: 0px 0px 69px;
+            // margin: 0px 0px 69px;
         }
         .card {
             img{
@@ -16,8 +18,8 @@
         // width: 400px;
         height: 400px;
         width: 368px;
-        padding: 56px 45px !important;
-        margin: 37px 12.5px;
+        // padding: 56px 45px !important;
+        margin-right: 25px;
         border: 1px solid #208fff;
         background: transparent !important;
         box-sizing: border-box;

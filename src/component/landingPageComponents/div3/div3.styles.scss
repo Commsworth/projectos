@@ -10,7 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0vh 10%;
+    // padding: 0vh 15vw;
     // width: max-content;
     // margin-left: auto;
     // margin-right: auto;
@@ -24,24 +24,27 @@
         width: 100%;
         margin: 0vh 19px;
         // width: 80%;
+        width: 70vw;
+        margin: 2vw 15vw;    
         .bold-title {
             font-weight: bold;
         }
     }
     .div3-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
         // grid-column: 1 / -1;
         // justify-content: center;
-        width: 100%;
+        width: 70vw;
+        margin: 2vw 15vw;    
         padding-bottom: 71px;
         .card {
             background: rgba(255, 255, 255, 0.05) !important;
             backdrop-filter: blur(15px);
             width: 255px;
             height: 238px;
-            padding: 0px 26px !important;
-            margin: 19px 19px;
+            // padding: 0px 26px !important;
+            margin-right: 19px;
 
             h3 {
                 font-size: 24px;
@@ -71,7 +74,7 @@
 
 @media only screen and (max-width: 570px) {
     .div3 {
-        padding: 0vh 10vw;
+        // padding: 0vh 10vw;
         .div3-flex {
             display: flex;
             justify-content: center;
@@ -90,7 +93,7 @@
     }
     .div3 {
         // justify-content: center !important;
-        padding: 0% 5%;
+        // padding: 0% 5%;
     }
     .div3-flex {
         display: flex;
