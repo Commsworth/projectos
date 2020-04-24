@@ -29,7 +29,7 @@ class Portfolio extends React.Component {
                 <div className="portfolio text-center">
                     <h3 className="h3"> We build <br /> digital product </h3>
                     <span className="line2"></span>
-                    <div>
+                    <div className="center-div">
                         <Top />
                     </div>
                     <div className="top">

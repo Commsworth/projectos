@@ -35,7 +35,7 @@ class About extends React.Component{
                 </div>
 
 
-            <div className="about-cards">
+            <div className="about-cards ">
                 <Card
                 title = {<img src={DevOps} alt="devops"/>}
                 subTitle="DevOps & Analytics"
