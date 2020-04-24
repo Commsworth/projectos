@@ -10,7 +10,6 @@ import AboutHero from '../../asset/img/aboutHero.png'
 import Why from '../../component/aboutPageComponents/why/Why';
 import Contact from '../contact/Contact';
 import {Link} from 'react-router-dom';
-import Nav from '../../component/extraPageComponents/header/navbar/Nav';
 
 class About extends React.Component{
     // constructor(){
