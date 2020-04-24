@@ -15,6 +15,11 @@ html, body{
     scroll-behavior: smooth;
 }
 
+.center-div{
+    width: 70vw;
+    margin: 0vw 15vw;
+}
+
 .space-50{
     height: 50px;
 }
