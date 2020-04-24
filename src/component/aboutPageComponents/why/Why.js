@@ -7,7 +7,7 @@ import sup from '../why/img/sup.png'
 
 function Why() {
     return (
-        <div>
+        <div className="center-div">
         <h1 className="h1">Why Choose Us?</h1>
         <div className="why">
             <div className="why0">

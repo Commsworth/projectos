@@ -1,9 +1,9 @@
 .why{
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 2rem;
-    gap: 5vw;
-    margin: 0px 5vw;
+    grid-template-columns: 40% 40%;
+    /* padding: 2rem; */
+    gap: 10%;
+    /* margin: 0px 5vw; */
 }
 .why0{
     display: flex;
