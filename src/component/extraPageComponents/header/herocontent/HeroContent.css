@@ -127,7 +127,6 @@ path {
     }
 
     .hero-content-wrapper,
-    svg,
     .hero-image-wrapper-overlay {
         display: none;
     }

@@ -46,8 +46,8 @@ class App extends React.Component {
         <Nav nav={this.state.nav} />
         <Switch>
           <Route exact path="/commsworth/" component={LandingPage} />
-          <Route exact path="/commsworth/portfolio" render={(props) => <Portfolio {...props} />} />
-          <Route exact path="/commsworth/services" render={(props) => <About {...props} />} />
+          <Route exact path="/commsworth/portfolio" component={Portfolio}/>
+          <Route exact path="/commsworth/services" component={About} />
           <Route exact path="/commsworth/explore1" render={(props) => <Contact title1="DevOps & Analytics" content1="We are focused on developing data-oriented <br/>
                         applications tailored to solve a vast array of business <br/>
                         requiremenents while giving intuitive insights for <br/>
