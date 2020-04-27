@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Logo from '../../../../asset/svg/logo.svg';
-import { FaBars } from 'react-icons/fa'
+// import { FaBars } from 'react-icons/fa'
 import './NavBar.scss';
 import { Link } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ export class Nav extends Component {
           <div className="nav">
         <ul className="nav-sm">
           <li className="padding dp" > <a href="/commsworth/"><img src={Logo} alt="Logo" /></a>
-            <button className="dropdown-button" onClick={this.dropDown}><FaBars onClick={this.dropDown} /></button>
+            <button className="dropdown-button" onClick={this.dropDown}>≡</button>
           </li>
         </ul>
 
