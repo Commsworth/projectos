@@ -33,7 +33,7 @@ class Portfolio extends React.Component {
                         <Top />
                     </div>
                     <div className="top">
-                        <img src={scroll} alt="" />
+                        <img src={scroll} style={{cursor: "pointer"}} alt="" onClick={()=>window.scrollTo(0,650)}/>
                     </div>
                     <div>
 
