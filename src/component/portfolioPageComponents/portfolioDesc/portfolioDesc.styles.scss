@@ -30,7 +30,7 @@
         // align-self: center;
         margin-top: 10px;
         z-index: 1;
-        width: 99vw;
+        width: 100vw;
         height: 310px;
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("siwp.png");
         transition: ease-in-out 1s;
@@ -60,7 +60,7 @@
         transform: scale(1.02);
         // transform: scale3d(1.05);
         transition: ease-in 0.5s;
-        width: 97%;
+        // width: 97%;
     }
 }
 
