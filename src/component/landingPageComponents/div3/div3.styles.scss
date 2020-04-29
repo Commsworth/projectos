@@ -31,20 +31,20 @@
         }
     }
     .div3-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-        // grid-column: 1 / -1;
-        // justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 70vw;
         margin: 2vw 15vw;    
         padding-bottom: 71px;
         .card {
             background: rgba(255, 255, 255, 0.05) !important;
             backdrop-filter: blur(15px);
-            width: 255px;
+            min-width: 255px;
+            width: 23%;
             height: 238px;
             // padding: 0px 26px !important;
-            margin-right: 19px;
+            margin-right: 2%;
 
             h3 {
                 font-size: 24px;

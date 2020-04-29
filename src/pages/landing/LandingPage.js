@@ -6,7 +6,6 @@ import './LandingPage.css';
 // import Partner from '../../component/main/partner/Partner';
 // import Footer from '../../component/footer/Footer';
 import Card from '../../component/extraPageComponents/card/card.component';
-import Card2 from '../../component/extraPageComponents/card2/card2.component';
 import Div1 from '../../component/landingPageComponents/div1/div1.component';
 import Div2 from '../../component/landingPageComponents/div2/div2.component';
 import Div3 from '../../component/landingPageComponents/div3/div3.component'
@@ -18,26 +17,16 @@ import Bluecircle from '../../asset/svg/titlecircle.svg'
 import mission from '../../asset/svg/mission.svg'
 import vision from '../../asset/svg/vision.svg'
 import core from '../../asset/svg/core.svg'
-import tunnel from '../../asset/svg/tunnel.svg'
 import services from '../../asset/svg/services.svg'
 import cyber from '../../asset/svg/cyber.svg'
 import devops2 from '../../asset/img/devops2.png';
-import support2 from '../../asset/img/support2.png';
+import about from '../../asset/img/about.png';
 import business2 from '../../asset/img/business2.png';
 import product2 from '../../asset/img/product2.png';
 import strategy2 from '../../asset/img/strategy2.png';
-import QualityAssuranceBackground from '../../component/landingPageComponents/div1/rectangle55.png'
 import {Link} from 'react-router-dom';
-import Nav from '../../component/extraPageComponents/header/navbar/Nav'
 import Arrow from '../../component/extraPageComponents/arrow/arrow.component';
-import comma from '../../asset/img/comma.png'
 
-// import CardDiv1 from '../../component/cardDiv1/cardDiv1.component';
-// import CardDiv2 from '../../component/cardDiv2/cardDiv2.component';
-// import CardDiv3 from '../../component/cardDiv3/cardDiv3.component';
-// import CardDiv4 from '../../component/cardDiv4/cardDiv4.component';
-
-const LoremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies turpis ridiculus et id mauris tincidunt facilisi duis. Fermentum amet vestibulum elit ac vel eget. Lobortis maecenas sit faucibus congue volutpat aenean sit. Donec in."
 
 class LandingPage  extends React.Component {
 
@@ -59,7 +48,7 @@ class LandingPage  extends React.Component {
             <main>
             <TitleDiv title="Featured" subTitle="Our latest trends tailored for you" />
                 <CarouselDiv
-                background="https://images.adsttc.com/media/images/5de3/1ca6/3312/fda8/2a00/00b3/large_jpg/001.jpg?1575165037"
+                background={about}
                 />
                 <TitleDiv title="Strategic Partners" subTitle="We partner with industry leading OEMs to deliver value.​" />
                 <br />
@@ -69,7 +58,7 @@ class LandingPage  extends React.Component {
                 <TitleDiv title="About Us" subTitle="A premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients
                 "/>
                 <Div1
-                    large={<Card background={tunnel} title="Who we are" subTitle={<img src={Bluecircle} alt="Blue line"/>} 
+                    large={<Card background={about} title="Who we are" subTitle={<img src={Bluecircle} alt="Blue line"/>} 
                     content='Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients.' 
                     content1='The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy and Managed Services'
                      />}

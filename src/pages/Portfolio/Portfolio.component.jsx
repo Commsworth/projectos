@@ -5,9 +5,6 @@ import PortfolioDesc from '../../component/portfolioPageComponents/portfolioDesc
 import Top from '../../component/portfolioPageComponents/portfolio/top/top';
 import Div4 from '../../component/landingPageComponents/div4/div4.component';
 import scroll from '../../asset/svg/scrollformore.svg'
-// import { render } from '@testing-library/react';
-import Nav from '../../component/extraPageComponents/header/navbar/Nav'
-
 const LoremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo nibh orci, id diam consequat orci, ut enim non. Feugiat amet vitae tortor at in mauris. Consectetur in volutpat dictum ultrices. Quisque sit purus sit elementum velit."
 
 class Portfolio extends React.Component {
