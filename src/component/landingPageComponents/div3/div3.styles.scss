@@ -22,12 +22,14 @@
     .div3-title {
         padding-top: 60px;
         width: 100%;
-        margin: 0vh 19px;
         // width: 80%;
         width: 70vw;
         margin: 2vw 15vw;    
         .bold-title {
             font-weight: bold;
+        }
+        .title{
+            margin: 1% 1.5%;
         }
     }
     .div3-grid {
@@ -36,15 +38,15 @@
         flex-wrap: wrap;
         width: 70vw;
         margin: 2vw 15vw;    
-        padding-bottom: 71px;
+        // padding-bottom: 71px;
         .card {
             background: rgba(255, 255, 255, 0.05) !important;
             backdrop-filter: blur(15px);
-            min-width: 255px;
+            min-width: 240px;
             width: 23%;
             height: 238px;
             // padding: 0px 26px !important;
-            margin-right: 2%;
+            margin: 2% 1%;
 
             h3 {
                 font-size: 24px;

@@ -24,6 +24,7 @@ import about from '../../asset/img/about.png';
 import business2 from '../../asset/img/business2.png';
 import product2 from '../../asset/img/product2.png';
 import strategy2 from '../../asset/img/strategy2.png';
+import tunnel from '../../asset/img/Tunnel.png';
 import {Link} from 'react-router-dom';
 import Arrow from '../../component/extraPageComponents/arrow/arrow.component';
 
@@ -58,7 +59,7 @@ class LandingPage  extends React.Component {
                 <TitleDiv title="About Us" subTitle="A premium ICT consultancy partner with dedicated specialty in delivering business productivity solutions to its clients
                 "/>
                 <Div1
-                    large={<Card background={about} title="Who we are" subTitle={<img src={Bluecircle} alt="Blue line"/>} 
+                    large={<Card background={tunnel} title="Who we are" subTitle={<img src={Bluecircle} alt="Blue line"/>} 
                     content='Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients.' 
                     content1='The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy and Managed Services'
                      />}

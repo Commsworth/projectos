@@ -77,8 +77,8 @@ class About extends React.Component{
                 </Link>}
                 />
             </div>
-            <Why/>
             <div className="about-work">
+            <Why/>
             <Card
             link="Work with us →"
             />
