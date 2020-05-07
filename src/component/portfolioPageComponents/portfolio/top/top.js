@@ -1,11 +1,7 @@
-import React from 'react'
-import './top.scss'
-import img1 from '../img/img1.png'
-import img2 from '../img/img2.png'
-import img3 from '../img/img3.png'
-import img4 from '../img/img4.png'
-import img5 from '../img/img5.png'
-import arrow from '../img/arrow.svg'
+import React from 'react';
+import './top.scss';
+import img5 from '../img/img5.png';
+import arrow from '../img/arrow.svg';
 // import { render } from 'node-sass'
 
 class Top extends React.Component{
@@ -32,7 +28,7 @@ class Top extends React.Component{
         <p>lorem ipsum dolor isit amet, consectetur<br/>
             adipiscing elit. Ulticies turpis ridiculus et id <br/>
             mauris tincidut facilisi duis. Fermentum amet</p> 
-            <a href="">Visit website →</a>   
+            <a href="#">Visit website →</a>   
         </div>
 
         <div className="show">

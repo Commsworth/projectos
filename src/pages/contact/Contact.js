@@ -1,14 +1,6 @@
 import React from 'react'
 import './contact.css'
-import Footer from '../../component/extraPageComponents/footer/Footer'
-import devop1 from '../contact/img/devop1.png'
-import devop2 from '../contact/img/devop2.png'
-import devop3 from '../contact/img/devop3.png'
 import dpn from '../contact/img/dpn.png'
-import cyber from '../contact/img/cyber.png'
-import cloud from '../contact/img/cloud.png'
-import appdev from '../contact/img/appdev.png'
-import analytics from '../../asset/svg/analytics.svg';
 
 
 class Contact extends React.Component {
@@ -63,7 +55,7 @@ class Contact extends React.Component {
                         Primary focus is given to the edge of the network as every<br/>
                         packet must be certified as non-malicious before entry to the network 
                     </p> */}
-                        <a href=""><p>Work with us →</p></a>
+                        <a href="#"><p>Work with us →</p></a>
                     </div>
                     <div className="crd2">
                         <img src={this.props.image2} alt="" />
@@ -89,7 +81,7 @@ class Contact extends React.Component {
                         Primary focus is given to the edge of the network as every<br/>
                         packet must be certified as non-malicious before entry to the network 
                     </p> */}
-                        <a href=""><p>Work with us →</p></a>
+                        <a href="#"><p>Work with us →</p></a>
                     </div>
 
                 </div>
@@ -109,7 +101,7 @@ class Contact extends React.Component {
                         Primary focus is given to the edge of the network as every<br />
                         packet must be certified as non-malicious before entry to the network
                     </p> */}
-                        <a href=""><p>Work with us →</p></a>
+                        <a href="#"><p>Work with us →</p></a>
                     </div>
                     <div className="crd2">
                         <img src={this.props.image4} alt="" />

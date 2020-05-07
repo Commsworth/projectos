@@ -1,6 +1,5 @@
 import React from 'react';
 import './card.styles.scss';
-import Arrow from '../arrow/arrow.component';
 // import arrow from '../../../asset/svg/arrow.svg';
 
 class Card extends React.Component {

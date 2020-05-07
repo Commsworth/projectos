@@ -27,36 +27,36 @@ const Footer = ()=>{
       <div className="foot">
       <div className="footer">
         <ul>
-          <a href="http://" className=" footer-brand"
+          <a href="#" className=" footer-brand"
             >ProjectOS</a>
           <li>© 2019</li>
         </ul>
         <ul>
-          <a href="http://">ProjectOS</a>
+          <a href="#">ProjectOS</a>
           <li><a href="about.html">About</a></li>
-          <li><a href="http://">Support</a></li>
+          <li><a href="#">Support</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="license.html">Licensing</a></li>
         </ul>
 
         <ul>
-          <a href="http://">Follow US</a>
-          <li><a href="http://">Facebook</a></li>
-          <li><a href="http://">Linkedin</a></li>
-          <li><a href="http://">Twitter</a></li>
+          <a href="#">Follow US</a>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
 
         <ul>
-          <a href="http://">LEGAL</a>
-          <li><a href="http://">Privacy Policy</a></li>
-          <li><a href="http://">Terms of Service</a></li>
-          <li><a href="http://">Cookies Policy</a></li>
+          <a href="#">LEGAL</a>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookies Policy</a></li>
         </ul>
 
         <ul>
           <a href="contact.html">CONTACT</a>
-          <li><a href="http://">+2348180321046</a></li>
-          <li><a href="http://">support@projectos.com</a></li>
+          <li><a href="#">+2348180321046</a></li>
+          <li><a href="#">support@projectos.com</a></li>
         </ul>
       </div>
       
