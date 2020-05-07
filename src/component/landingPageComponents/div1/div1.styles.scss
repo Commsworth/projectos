@@ -1,0 +1,111 @@
+@media only screen and (min-width: 990px) {
+    .div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // height: 10rem;\
+        gap: 6px;
+        // margin: 0vh 11vw;
+        height: 600px;
+        width: 70vw;
+        margin: 2vw 15vw;
+        // width: 300px;
+        .large {
+            // background: #1C2124;
+            // height: 650px;
+            // padding: 5rem;
+            height: 600px;
+            .card {
+                margin: 0px !important;
+            }
+            h3 {
+                font-size: 40px;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .card:hover {
+            background: transparent;
+        }
+
+        .large {
+        }
+
+        .div1--second {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 6px;
+            height: 600px;
+            // margin: 0px;
+            // gap: 0px;
+            // background: red;
+
+            .card {
+                margin: 0px !important;
+                // height: 310px;
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .div1--second--small {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // height: 100%;
+            gap: 6px;
+            // height: 300px;
+        }
+        .card {
+            margin: 0px !important;
+        }
+    }
+}
+.core {
+    background: #212425;
+    padding: 0px 0px 0px 40px;
+    h3 {
+        font-size: 30px;
+    }
+}
+.list {
+    display: flex;
+    margin: 0px 20px;
+    ul {
+        margin: 0px 50px 0px 0px;
+        li {
+            // list-style: circle;
+            list-style-image: url("./list.svg");
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .div1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        height: 1400px;
+        margin: 0px 20px;
+        .card {
+            margin-bottom: 1vw;
+        }
+        grid-template-columns: 100%;
+        gap: 0px;
+
+        .div1--second {
+            .card {
+                margin-bottom: 1vw;
+            }
+            gap: 0px;
+
+            .div1--second--small {
+                grid-template-columns: 100%;
+                gap: 6px;
+                .card {
+                    margin-bottom: 1vw;
+                }
+            }
+        }
+    }
+}

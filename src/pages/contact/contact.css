@@ -1,0 +1,103 @@
+.explore{
+}
+.tp{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 200px 2vw;
+}
+.tp1 h1{
+    font-weight: bold;
+    font-size: 52px;
+    color: white;
+
+}
+.tp p{
+    font-weight: 500;
+font-size: 20px;
+
+}
+.tp1{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 500px;
+    align-self: center;
+    /* margin-left: 100px; */
+}
+.tp2{
+    display: flex;
+    /* align-content: center; */
+    /* width: 100%; */
+}
+.dpn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+/* cards */
+.crda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #2A2A2A;
+    padding: 15vh 11vw;
+    margin: 5px 0px 5px 0px ;
+}
+.crdb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #2A2A2A;
+    padding: 15vh 11vw;
+    margin: 5px 0px 5px 0px ;
+
+}
+.crd1 h1{
+    font-weight: Bold;
+font-size:36px;
+    color: white;
+
+}
+.crd p{
+font-size: 18px;
+
+}
+.crd1{
+    width: 500px;
+}
+.crd1,.crd2 img{
+    width: 500px;
+height: 400.85px;
+}
+
+@media screen and (max-width: 570px){
+    .crd1,.crd2 img{
+        width: 90vw;
+    height: 400.85px;
+}
+.crda{
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+     .crda{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+     }
+ 
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (max-width: 900px) {
+    .crda{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+         }
+     
+ 

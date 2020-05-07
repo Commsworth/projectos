@@ -2,12 +2,22 @@
     font-family: "Aribau";
     src: url("asset//fonts//Aribau_Regular.otf");
     }
+    html{
+        overflow-x: hidden;
+    }
 html, body{
     /* font-family: 'Times New Roman', Times, serif; */
     margin: 0;
     height: 100%;
+    box-sizing: border-box;
     scroll-behavior: smooth;
-    background: #111517;
+    background: #111517 !important;
+    scroll-behavior: smooth;
+}
+
+.center-div{
+    width: 70vw;
+    margin: 0vw 15vw;
 }
 
 .space-50{
@@ -21,15 +31,17 @@ html, body{
 }
 
 .blue-text{
-    color: #046BD3 !important;
+    color: #0E82F8 !important;
     font-size: 18px;
     font-weight: bold;
 }
 
-h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     /* margin: 0; */
     color: white;
-    font-family: Nunito, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700 !important;
+    /* font-weight: lighter; */
     /* font-size: 30px; */
     }
 
@@ -38,7 +50,11 @@ h3,h4,h5,h6{
     }
 
 a>p{
-        color: #039BE5;
+        color: #0E82F8;
+}
+
+a{
+    color: #0E82F8;
 }
 
 p{
