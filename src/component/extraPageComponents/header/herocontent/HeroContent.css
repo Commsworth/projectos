@@ -28,6 +28,13 @@
     font-size: 14px;
     line-height: 126.5%;
     width: 175px;
+    border-radius: 5px;
+    font-family: "Nunito", "sans-serif" !important;
+    font-weight: bold;
+    padding: 15.53px 39px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
 }
 .btn__blue:active {
     background: #5cadff;
