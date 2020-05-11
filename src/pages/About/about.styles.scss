@@ -100,3 +100,21 @@
         }
     }
 }
+@media only screen and (max-width: 600px) {
+     .about-hero {
+        .card {
+            img {
+                width: 100vw;
+                height: 50vh;
+            }
+        }
+    }
+.about {
+    padding-top: 100px;
+    .about-hero{
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+}
+}

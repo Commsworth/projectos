@@ -25,7 +25,6 @@ class About extends React.Component{
     render(){
         return(
             <div className="about">
-                {/* <Nav/> */}
                 <div className="about-hero">
                 <Card
                 title="Digital solutions for business growth"
@@ -79,6 +78,10 @@ class About extends React.Component{
             </div>
             <div className="about-work">
             <Why/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Card
             link="Work with us →"
             />

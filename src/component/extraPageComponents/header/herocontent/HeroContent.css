@@ -130,11 +130,16 @@ path {
         display: none;
     }
     .hero-content {
-        margin-top: 80px;
+        margin-top: 0px;
     }
 
     .hero-content-wrapper,
     .hero-image-wrapper-overlay {
         display: none;
     }
+    .hero-content h1 {
+    color: #c4c4c4;
+    margin-top: 0px;
+    font-size: 1.5em;
+}
 }

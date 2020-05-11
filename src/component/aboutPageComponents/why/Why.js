@@ -45,6 +45,7 @@ function Why() {
             <div className="why2">
             <img src={big} alt=""/>
             </div>
+        
         </div>
         </div>
     )
