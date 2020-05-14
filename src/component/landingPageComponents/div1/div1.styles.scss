@@ -81,7 +81,7 @@
     }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 600px) {
     .div1 {
         display: grid;
         grid-template-rows: 1fr;
@@ -108,4 +108,12 @@
             }
         }
     }
+   .list {
+    display: flex;
+    margin: 0px 0px;
+    ul {
+        margin: 0px 0px 0px 0px;
+        padding: 1rem;
+    }
+}
 }
