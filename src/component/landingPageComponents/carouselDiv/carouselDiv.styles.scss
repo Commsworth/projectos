@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 700px) {
     .banner{
-      padding: 0px;
+      padding: 50px 50px;
     }
     .bor3{
       display: none;
@@ -106,9 +106,9 @@
     padding: 2rem;
  }
  .cr-btn{
-   left: 15px;
- }
- .cr-btn1 {
-   right: 15px;
+   display: none;
+  }
+  .cr-btn1 {
+    display: none;
  }
   }

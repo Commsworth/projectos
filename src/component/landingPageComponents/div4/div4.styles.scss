@@ -17,6 +17,7 @@
     height: 60px;
     border: 1px solid #878787;
 }
+
 .div4{
     display: flex;
     flex-direction: column;
@@ -139,8 +140,8 @@
         left: 0rem;
         top: 0rem;
     }
-    }
-    .flx{
+    
+    .img-flx{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -151,3 +152,4 @@
             height: 50px;
         }
     }
+}
