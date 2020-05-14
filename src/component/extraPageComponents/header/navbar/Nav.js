@@ -21,14 +21,7 @@ export class Nav extends Component {
         }
       }
 
-//       click=(object)=>{
-
-//         this.setState({
-//             class: "active"
-//     })
-// }
     render() {
-      // window.pageYOffset===0?console.log("yayyy"):console.log("nayyy");
         return (
           <div className={`nav-div ${this.props.nav}`}>
 

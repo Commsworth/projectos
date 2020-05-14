@@ -107,23 +107,6 @@
       .padding{
         display: flex;
         justify-content: space-around;
-        .dropdown-button{
-          // padding: 0px 10px;
-          // height: 43.32px;
-          border: none;
-          border-radius: 3px;
-          background: #0E82F8;
-          width: 40px;
-          svg{
-            display: none;
-          }
-        }
-        .dropdown-button:active{
-          background: #5CADFF;
-        }
-        .dropdown-button:hover{
-          background: #5CADFF;
-        }
       }
     }
     .nav-lg {

@@ -11,7 +11,7 @@
         .card {
             img {
                 // width: 80vw;
-                height: 50vh;
+                height: 40vh;
             }
             @media screen and (min-width: 570px) {
                 h3 {
@@ -111,10 +111,5 @@
     }
 .about {
     padding-top: 100px;
-    .about-hero{
-    h3 {
-        font-size: 1.5rem;
-    }
-}
 }
 }
