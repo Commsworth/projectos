@@ -1,6 +1,8 @@
 @media screen and (min-width: 991px) {
   .dropdown-button {
     display: none;
+    width: 25px;
+    height: 25px;
   }
   .nav-div {
     transition: ease-in 0.1s;
@@ -107,6 +109,7 @@
       .padding{
         display: flex;
         justify-content: space-around;
+        align-items: center;
       }
     }
     .nav-lg {
@@ -131,5 +134,10 @@
     .nav-lg li:hover {
       background-color: #5cadff;
     }
+  }
+  .dropdown-button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
   }
 }

@@ -28,7 +28,7 @@ export class Nav extends Component {
           <div className="nav">
         <ul className="nav-sm">
           <li className="padding dp" > <a href="/commsworth/"><img src={Logo} alt="Logo" /></a>
-            <button className="dropdown-button" onClick={this.dropDown}><FaBars onClick={this.dropDown} /></button>
+                  <FaBars onClick={this.dropDown} className="dropdown-button"/>
           </li>
         </ul>
 
