@@ -51,6 +51,7 @@
             }
         }
         .div1--second--small {
+    width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             // height: 100%;
@@ -63,8 +64,10 @@
     }
 }
 .core {
+    // width: 100%;
     background: #212425;
-    padding: 0px 0px 0px 40px;
+    padding: 1vw;
+    // padding: 0px 0px 0px 40px;
     h3 {
         font-size: 30px;
     }
@@ -73,7 +76,7 @@
     display: flex;
     margin: 0px 20px;
     ul {
-        margin: 0px 50px 0px 0px;
+        // margin: 0px 50px 0px 0px;
         li {
             // list-style: circle;
             list-style-image: url("./list.svg");

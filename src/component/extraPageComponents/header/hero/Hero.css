@@ -5,8 +5,8 @@
 }
 
 
-@media only screen and (max-width : 600px) {
-    .hero-wrapper{
-        height: 550px;
+@media only screen and (max-width : 990px) {
+    .hero-image-wrapper-overlay,.map,.hero-image-wrapper{
+        display: none;
     }
 }
