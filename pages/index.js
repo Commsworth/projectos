@@ -2,17 +2,21 @@ import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
 import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
+import Layout from '../components/Layout'
 // import featuredImage from '../assets/png/featuredImage.png'
 
 export default function Home() {
   return (
-    <div className="container">
+    <Layout className="container">
       <Head>
         <title>Commsworth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <br />
+        <br />
+        <br />
         <div className="heading">
           <h3 className="heading-text">Digital Solutions to <br/> accelerate your business. </h3>
           <button className="heading-button">Learn More</button>
@@ -83,9 +87,6 @@ export default function Home() {
         </div>
         </div>
       </main>
-
-      <footer>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -392,6 +393,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
   )
 }
