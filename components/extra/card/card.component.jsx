@@ -11,7 +11,7 @@ class Card extends React.Component {
     render() {
         return (
 
-            <div className="card" style={{width: this.props.width, minWidth: this.props.minWidth}}>
+            <div className="card" style={{width: this.props.width, minWidth: this.props.minWidth, background: `url(${this.props.background})`, backgroundSize: "cover"}}>
                 <h3 className="title">
                     {this.props.title}
                 </h3>
@@ -21,14 +21,11 @@ class Card extends React.Component {
                 <p>
                     {this.props.content}
                 </p>
+                <p>
+                    {this.props.content2}
+                </p>
                 <a>
-                    <p onMouseOver={() => this.setState({ link: true })} onMouseOut={() => this.setState({ link: false })}
-                    >
-                        {/* {!this.state.link && <p>{this.props.link}   <img src={arrow} /></p>}
-                        {this.state.link && <p>{this.props.link} <img src={arrow} /></p>} */}
-                        {!this.state.link && <p>{this.props.link}</p>}
-                        {this.state.link && <p>{this.props.link}</p>}
-                    </p>
+                    {this.props.link}
                 </a>
 
                 <style jsx global>{

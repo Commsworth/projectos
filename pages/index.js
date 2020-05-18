@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow } from '../assets/svgs';
+import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 // import featuredImage from '../assets/png/featuredImage.png'
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Commsworth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="carousel-div">
           <button id="left-button">{leftArrow}</button>
           <div className="carousel-grid">
-            <Card title="" content={<img />} />
+            <Card title="" content={<img />} background="/static/assets/png/featuredImage.png" />
             <Card title="NextGen App Performance Monitoring (APM) delivered through Dynatrace" subTitle={blueSemiCircle} content="Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud." />
           </div>
           <button id="right-button">{rightArrow}</button>
@@ -42,16 +42,16 @@ export default function Home() {
         <br />
         <div className="div1">
           <div className="div1-large">
-            <Card title="Who we are" content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients. " />
+            <Card title="Who we are" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services."/>
           </div>
           <div className="div1-medium">
             <div>
-              <Card title="Core Values" subTitle={<img />} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
+              <Card title="Core Values"  subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
 " />
             </div>
             <div className="div1-small">
-              <Card title="Our Mission" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-              <Card title="Our Vision" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
+              <Card title="Our Mission" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
+              <Card title="Our Vision" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
             </div>
           </div>
         </div>
@@ -72,10 +72,15 @@ export default function Home() {
         <br />
         <br />
         <div className="div3">
+          <TitleDiv text="The Academy" position="left"/>
+          <h3>Learn from the best at</h3>
+          <h3>Commsworth Academy</h3>
+        <div className="div3-grid">
           <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
           <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
           <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
           <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
+        </div>
         </div>
       </main>
 
@@ -243,13 +248,24 @@ export default function Home() {
           border: none;
         }
         .div3{
+          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 23.14%, rgba(17, 21, 23, 0) 78.53%), url('/static/assets/png/div3Image.png');
+          background-size: cover;
+          background-position: center;
+          width: 100vw;
+          padding: 5vh 10vw;
+        }
+        .div3 h3{
+          font-size: 54px;
+          line-height: 126.5%;
+          margin: 0;
+        }
+        .div3-grid{
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 80vw;
-          margin: 0vh 10vw;
+          margin: 58px 0px;
         }
-        .div3 :global(.card){
+        .div3-grid :global(.card){
           max-height: 250px;
           width: 23%;
           margin: 1%;
@@ -259,8 +275,8 @@ export default function Home() {
           border-radius: 5px;
           padding: 20px;
         }
-        .div3 :global(.card:hover){
-          background: #208FFF;
+        .div3-grid :global(.card:hover){
+          background: #208FFF !important;
         }
         footer {
           width: 100%;

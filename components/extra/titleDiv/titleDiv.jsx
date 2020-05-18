@@ -1,8 +1,8 @@
-import { blueLine } from '../../../assets/svgs';
+import { blueLine } from '../../../static/assets/svgs';
 
 const TitleDiv = (props) => (
     <div>
-        <div className="title-div">
+        <div className={`title-div ${props.position}`}>
             {blueLine}
             <div id="title-text">
                 {props.text}
@@ -16,6 +16,9 @@ const TitleDiv = (props) => (
     .title-div{
         display: flex;
         justify-content: center;
+    }
+    .left{
+        justify-content: flex-start !important;
     }
     #title-text{
         margin: 0px 26px;
