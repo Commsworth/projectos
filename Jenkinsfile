@@ -42,7 +42,8 @@ agent{
             script {
               
                 sh("echo ${env.dockerPassword} | docker login -u ${env.dockerUsername} --password-stdin")
-                // sh("docker push ${env.dockerUsername}/${env.privateImageName}:latest")
+                // sh("docker push ${env.dockerUsername}/${env.commsworthImageName}:latest")
+                
                 sh("docker push ${env.dockerUsername}/${env.commsworthImageName}:${env.BUILD_NUMBER}")
           
         }
@@ -65,6 +66,7 @@ agent{
                 sh("curl -LO https://storage.googleapis.com/kubernetes-release/release/\$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl")
                 sh("chmod +x ./kubectl")
                 sh("sudo mv ./kubectl /usr/local/bin/kubectl")
+                sh("kubectl apply -f k8s")
                 sh("kubectl set image deployments/commsworth-deployment  commsworth=${env.dockerUsername}/${commsworthImageName}:${env.BUILD_NUMBER}")
                 
             }}
