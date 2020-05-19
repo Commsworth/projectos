@@ -1,0 +1,80 @@
+.portfolio-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 323px;   
+    transition: ease-in-out 0.5s;
+    margin: 1vh 0vw;
+    overflow-x: hidden;
+    .words {
+        width: 25vw;
+        position: relative;
+        z-index: 2;
+    }
+    h3 {
+        width: auto;
+        text-align: start;
+    }
+    .background {
+        padding: 1rem 0px 1rem 0px;
+        position: absolute;
+        margin-top: 10px;
+        z-index: 1;
+        width: 114vw;
+        height: 310px;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/static/siwp.png");
+        transition: ease-in-out 1s;
+    }
+    .second {
+        width: 30vw;
+        margin-left: 5vw;
+        margin-top: 1vw;
+        position: relative;
+        z-index: 2;
+        p,
+        a {
+            line-height: 206.5%;
+        }
+    }
+    a {
+        font-size: 24px;
+    }
+}
+.portfolio-desc:hover {
+    .background {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/siwp.png");
+        transform: scale(1.02);
+        transition: ease-in 0.5s;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+   .portfolio-desc{
+
+    .second{
+        display: none;
+    }
+    .words{
+        width: 50vw;
+    }
+   }
+    }
+
+
+
+@media only screen and (max-width: 850px) {
+    .portfolio-desc{
+
+        .second{
+        width: 44vw;
+        margin-left: 8vw;
+        margin-top: 1vw;
+        }
+        
+       }
+        }
+    
+
