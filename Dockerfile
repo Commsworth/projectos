@@ -19,9 +19,10 @@ COPY . .
 
 RUN npm run build
 
-RUN ls .
+
 
 FROM nginx
 EXPOSE 6000
+RUN  --from=builder ls ./app
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/build /usr/share/nginx/html
