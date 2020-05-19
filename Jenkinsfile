@@ -42,7 +42,7 @@ agent{
             script {
               
                 sh("echo ${env.dockerPassword} | docker login -u ${env.dockerUsername} --password-stdin")
-                // sh("docker push ${env.dockerUsername}/${env.commsworthImageName}:latest")
+                sh("docker push ${env.dockerUsername}/${env.commsworthImageName}:latest")
                 
                 sh("docker push ${env.dockerUsername}/${env.commsworthImageName}:${env.BUILD_NUMBER}")
           
