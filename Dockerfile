@@ -14,7 +14,7 @@ RUN yarn install
 #run package installations
 
 
-COPY . .
+COPY . /app
 
 
 RUN npm run build
