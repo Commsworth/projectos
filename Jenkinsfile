@@ -35,6 +35,7 @@ agent{
         }}}
     }
 
+
 //Stage 6: Push the Image to a Docker Registry
         stage('Deploy Image') {
           when { anyOf { branch 'kubernetes-minor'} }
