@@ -15,7 +15,7 @@ agent{
 
 
   stages {
-   if(env.BRANCH_NAME == 'kubernetes-minor'){
+   
 // Stage 1: Checkout Code from Git
     stage('Application Code Checkout from Git') {
       steps{
@@ -26,16 +26,18 @@ agent{
 // Stage 5: Build Docker Image    
     stage('Build Docker Image') {
       steps{
+        if(env.BRANCH_NAME == 'kubernetes-minor'){
         container('docker') {
           script {
              docker.build registry + "${env.commsworthImageName}:${env.BUILD_NUMBER} -f ./Dockerfile "
             
-        }}}
+        }}}}
     }
 
 //Stage 6: Push the Image to a Docker Registry
         stage('Deploy Image') {
         steps{
+          if(env.BRANCH_NAME == 'kubernetes-minor'){
         container('docker'){
             script {
               
@@ -43,7 +45,7 @@ agent{
                 // sh("docker push ${env.dockerUsername}/${env.privateImageName}:latest")
                 sh("docker push ${env.dockerUsername}/${env.commsworthImageName}:${env.BUILD_NUMBER}")
           
-        }
+        }}
             }
         }
         }
@@ -54,6 +56,7 @@ agent{
         stage('Deploy Application on K8s') {
          
         steps{
+          if(env.BRANCH_NAME == 'kubernetes-minor'){
           container('docker') {
 
             script {
@@ -65,14 +68,9 @@ agent{
                 sh("sudo mv ./kubectl /usr/local/bin/kubectl")
                  sh("kubectl set image deployments/commsworth-deployment  commsworth=${env.dockerUsername}/${commsworthImageName}:${env.BUILD_NUMBER}")
                 
-            }}
+            }}}
         }
         }
-
-
-
-
 
   }
-}
 }
