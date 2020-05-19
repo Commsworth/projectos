@@ -7,5 +7,5 @@ spec:
   selector:
     component: commsworth
   ports:
-    - port: 6000
-      targetPort: 6000
+    - port: 3000
+      targetPort: 3000
