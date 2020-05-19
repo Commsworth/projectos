@@ -25,8 +25,9 @@ agent{
 
 // Stage 5: Build Docker Image    
     stage('Build Docker Image') {
+      if(env.BRANCH_NAME == 'kubernetes-minor'){
       steps{
-        if(env.BRANCH_NAME == 'kubernetes-minor'){
+        
         container('docker') {
           script {
              docker.build registry + "${env.commsworthImageName}:${env.BUILD_NUMBER} -f ./Dockerfile "
@@ -36,8 +37,9 @@ agent{
 
 //Stage 6: Push the Image to a Docker Registry
         stage('Deploy Image') {
+        if(env.BRANCH_NAME == 'kubernetes-minor'){
         steps{
-          if(env.BRANCH_NAME == 'kubernetes-minor'){
+          
         container('docker'){
             script {
               
@@ -54,9 +56,9 @@ agent{
      
 
         stage('Deploy Application on K8s') {
-         
+         if(env.BRANCH_NAME == 'kubernetes-minor'){
         steps{
-          if(env.BRANCH_NAME == 'kubernetes-minor'){
+          
           container('docker') {
 
             script {
