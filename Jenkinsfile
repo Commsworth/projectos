@@ -30,6 +30,7 @@ agent{
         container('docker') {
           script {
              docker.build registry + "${env.commsworthImageName}:${env.BUILD_NUMBER} -f ./Dockerfile "
+             docker.build registry + "${env.commsworthImageName}:latest -f ./Dockerfile "
             
         }}}
     }
