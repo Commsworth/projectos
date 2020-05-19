@@ -14,10 +14,12 @@ RUN yarn install
 #run package installations
 
 
-COPY . /app
+COPY . .
 
 
 RUN npm run build
+
+RUN ls .
 
 FROM nginx
 EXPOSE 6000
