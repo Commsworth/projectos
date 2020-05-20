@@ -10,7 +10,7 @@ export class Nav extends Component {
     this.state = {
       class: "",
       fixed: "",
-      nav: "",
+      page: ""
     }
   }
   dropDown = () => {
@@ -21,34 +21,33 @@ export class Nav extends Component {
       x.className = "nav-lg";
     }
   }
-  handleScroll = () => {
-    window.pageYOffset >= 1 ? this.setState({ nav: "nav-scroll" }) : this.setState({ nav: "" })
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-    window.scrollY>50? this.handleScroll: null;
-    console.log(window.scrollY)
-  }
-
 
   render() {
     return (
-      <div className={`nav-div ${this.state.nav}`}>
+      <div className="nav-div">
+
         <div className="nav">
           <ul className="nav-sm">
             <li className="padding dp" > <Link href="/"><img src="/static/logo.svg" alt="Logo" /></Link>
+              <div id="myDropdown" class="dropdown-content">
+                <ul>
+                  <li onClick={() => this.setState({ page: "Academy" })}><Link href="/">Academy</Link></li>
+                  <li onClick={() => this.setState({ page: "Store" })}><Link href="#about">Store</Link></li>
+                  <li onClick={() => this.setState({ page: "ProjectOS" })}><Link href="#contact">ProjectOS</Link></li>
+                  <li onClick={() => this.setState({ page: "MealStock" })}><Link href="#contact">MealStock</Link></li>
+                  <li onClick={() => this.setState({ page: "Liveizy" })}><Link href="#contact">Liveizy</Link></li>
+                  <li onClick={() => this.setState({ page: "Solutions" })}><Link href="#contact">Solutions</Link></li>
+                </ul>
+              </div>
               <FaBars onClick={this.dropDown} className="dropdown-button" />
             </li>
+            <div className="divide"></div>
+            <li className="padding">{this.state.page}</li>
           </ul>
 
 
           <ul className="nav-lg" id="myNav">
-            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href="/services" className={this.state.class}>
+            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href="/devops" className={this.state.class}>
               <a>Services</a>
             </Link>
             </li>
