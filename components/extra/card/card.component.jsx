@@ -30,17 +30,19 @@ class Card extends React.Component {
 
                 <style jsx global>{
                     `.card{
-                        box-shadow: 0px 0px 1px 0px;
+                        box-shadow: 0px 0px 0px 0px;
                         outline: transparent;
                         padding: 1vw;
                         width: 100%;
                         height: 100%;
-                        color: white;
+                        color: white !important;
                         background: transparent;
                         display: flex;
                         // align-content: center;
                         justify-content: center;
                         flex-direction: column;
+                        background-position: center !important;
+                        background-size: cover !important;
                     }
 
                     .card h3{

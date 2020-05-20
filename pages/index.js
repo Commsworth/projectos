@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow } from '../static/assets/svgs';
+import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
 // import featuredImage from '../assets/png/featuredImage.png'
@@ -14,9 +14,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <br />
-        <br />
-        <br />
         <div className="heading">
           <h3 className="heading-text">Digital Solutions to <br/> accelerate your business. </h3>
           <button className="heading-button">Learn More</button>
@@ -35,7 +32,7 @@ export default function Home() {
           <button id="left-button">{leftArrow}</button>
           <div className="carousel-grid">
             <Card title="" content={<img />} background="/static/assets/png/featuredImage.png" />
-            <Card title="NextGen App Performance Monitoring (APM) delivered through Dynatrace" subTitle={blueSemiCircle} content="Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud." />
+            <Card title="NextGen App Performance Monitoring (APM) delivered through Dynatrace" subTitle={blueSemiCircle} content="Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud." link={drawingArrow} />
           </div>
           <button id="right-button">{rightArrow}</button>
         </div>
@@ -46,16 +43,16 @@ export default function Home() {
         <br />
         <div className="div1">
           <div className="div1-large">
-            <Card title="Who we are" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services."/>
+            <Card title="Who we are" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services."/>
           </div>
           <div className="div1-medium">
             <div>
-              <Card title="Core Values"  subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
+              <Card title="Core Values" background="/static/assets/png/featuredImage.png"  subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
 " />
             </div>
             <div className="div1-small">
-              <Card title="Our Mission" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-              <Card title="Our Vision" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
+              <Card title="Our Mission" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
+              <Card title="Our Vision" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
             </div>
           </div>
         </div>
@@ -101,6 +98,7 @@ export default function Home() {
           justify-content: center;
         }
         .heading{
+          padding-top: 10vh;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -259,6 +257,7 @@ export default function Home() {
           font-size: 54px;
           line-height: 126.5%;
           margin: 0;
+          font-family: 'Nunito', sans-serif;
         }
         .div3-grid{
           display: flex;

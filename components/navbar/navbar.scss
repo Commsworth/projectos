@@ -9,8 +9,8 @@
     position: fixed;
     z-index: 9999;
     // left: 19.5vw;
-    background: #1C2124; ;   
     &.nav-scroll {
+      background: #1C2124;   
       transition: ease-in 0.1s;
     }
     .nav {
