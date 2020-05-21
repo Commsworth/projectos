@@ -61,7 +61,7 @@ export class Nav extends Component {
 
 
           <ul className="nav-lg" id="myNav">
-            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href="/devops" className={this.state.class}>
+            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href="/services" className={this.state.class}>
               <a>Services</a>
             </Link>
             </li>

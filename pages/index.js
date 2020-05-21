@@ -5,6 +5,8 @@ import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
 import Div4 from '../components/div4/div4'
 import TechnicalSupport from '../components/technicalSupport/TechnicalSupport'
+import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component';
+
 // import featuredImage from '../assets/png/featuredImage.png'
 
 export default function Home() {
@@ -17,19 +19,20 @@ export default function Home() {
 
       <main>
         <div className="heading">
-          <h3 className="heading-text">Digital Solutions to <br/> accelerate your business. </h3>
+          <h3 className="heading-text">Digital Solutions to <br /> accelerate your business. </h3>
           <button className="heading-button">Learn More</button>
         </div>
         <br />
         <br />
         <div className="map">
-        {map}
+          {map}
         </div>
         <br />
         <br />
-        <TitleDiv text="Featured" subText="Our latest trends tailored for you"/>
+        <TitleDiv text="Featured" subText="Our latest trends tailored for you" />
         <br />
         <br />
+<<<<<<< HEAD
         <div className="carousel-div">
           <button id="left-button">{leftArrow}</button>
           <div className="carousel-grid">
@@ -41,16 +44,21 @@ export default function Home() {
        
       <TechnicalSupport />
 
+=======
+        <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
+        <br />
+        <br />
+>>>>>>> 71caf1023259c3246069d10453293aee08f7ea89
         <TitleDiv text="About Us" />
         <br />
         <br />
         <div className="div1">
           <div className="div1-large">
-            <Card title="Who we are" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services."/>
+            <Card title="Who we are" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
           </div>
           <div className="div1-medium">
             <div>
-              <Card title="Core Values" background="/static/assets/png/featuredImage.png"  subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
+              <Card title="Core Values" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
 " />
             </div>
             <div className="div1-small">
@@ -76,15 +84,15 @@ export default function Home() {
         <br />
         <br />
         <div className="div3">
-          <TitleDiv text="The Academy" position="left"/>
+          <TitleDiv text="The Academy" position="left" />
           <h3>Learn from the best at</h3>
           <h3>Commsworth Academy</h3>
-        <div className="div3-grid">
-          <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-          <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-          <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-          <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-        </div>
+          <div className="div3-grid">
+            <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
+            <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
+            <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
+            <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
+          </div>
         </div>
         <Div4 />
       </main>
@@ -128,42 +136,11 @@ export default function Home() {
           text-align: center;
           color: #ffffff;
           border: none;
+          cursor: pointer;
+        }
+        .heading-button:hover{
+          background-color: #5cadff;
         }        
-        .carousel-div{
-          display: flex;
-          justify-content: center;
-          width: 80vw;
-          margin: 0vh 10vw;
-          // cursor: pointer;
-          align-items: center;
-        }
-        .carousel-grid{
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-          gap: 9px;
-        }
-        #left-button{
-          background: transparent;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          height: 31px;
-          width: 18px;
-          padding: 0;
-        }
-        #right-button{
-          background: transparent;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          height: 31px;
-          width: 18px;
-          padding: 0;
-        }
-        .carousel-div :global(.card){
-          min-height: 500px;
-          padding: 20px;
-        }
         .div1{
           // display: flex;
           // flex-wrap:wrap;
