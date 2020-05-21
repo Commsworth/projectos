@@ -39,17 +39,21 @@ class Div4 extends React.Component{
                     <img src="/static/img-div4/ap.svg" alt="" srcset=""/>
                 </div>
                 <br/>
+                <div className="divide2"></div>
                 <div className="brand">
                     <img src="/static/img-div4/waec.svg" alt="" srcset=""/>
                     <div className="bor3"></div>
                     <img src="/static/img-div4/ns.svg" alt="" srcset=""/>
                     <div className="bor3"></div>
                     <img src="/static/img-div4/nm.svg" alt="" srcset=""/>
+                    <div className="bor3"></div>
+                    <img src="/static/img-div4/home.svg" alt="" srcset=""/>
                 </div>
+                <br/>
                 </div>
                 <br/>
             <div className="div4">         
-         <div className="center">
+         <div className="center2">
              <br/>
              <br/>
             <img src="/static/img-div4/comma.png" alt="" srcset=""/>

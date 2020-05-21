@@ -3,6 +3,8 @@ import Card from '../components/extra/card/card.component'
 import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
+import Div4 from '../components/div4/div4'
+import TechnicalSupport from '../components/technicalSupport/TechnicalSupport'
 // import featuredImage from '../assets/png/featuredImage.png'
 
 export default function Home() {
@@ -36,8 +38,9 @@ export default function Home() {
           </div>
           <button id="right-button">{rightArrow}</button>
         </div>
-        <br />
-        <br />
+       
+      <TechnicalSupport />
+
         <TitleDiv text="About Us" />
         <br />
         <br />
@@ -83,6 +86,7 @@ export default function Home() {
           <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
         </div>
         </div>
+        <Div4 />
       </main>
 
       <style jsx>{`
