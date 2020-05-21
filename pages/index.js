@@ -32,23 +32,10 @@ export default function Home() {
         <TitleDiv text="Featured" subText="Our latest trends tailored for you" />
         <br />
         <br />
-<<<<<<< HEAD
-        <div className="carousel-div">
-          <button id="left-button">{leftArrow}</button>
-          <div className="carousel-grid">
-            <Card title="" content={<img />} background="/static/assets/png/featuredImage.png" />
-            <Card title="NextGen App Performance Monitoring (APM) delivered through Dynatrace" subTitle={blueSemiCircle} content="Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud." link={drawingArrow} />
-          </div>
-          <button id="right-button">{rightArrow}</button>
-        </div>
-       
-      <TechnicalSupport />
-
-=======
         <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
+      <TechnicalSupport />
         <br />
         <br />
->>>>>>> 71caf1023259c3246069d10453293aee08f7ea89
         <TitleDiv text="About Us" />
         <br />
         <br />
@@ -374,5 +361,6 @@ export default function Home() {
         }
       `}</style>
     </Layout>
+  // </Layout>
   )
 }
