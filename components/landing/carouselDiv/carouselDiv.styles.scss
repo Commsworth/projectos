@@ -1,0 +1,36 @@
+.carousel-div {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 0vh 10vw;
+    // cursor: pointer;
+    align-items: center;
+    .carousel-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        gap: 9px;
+        .card {
+            height: 500px;
+            padding: 20px;
+            justify-content: center;
+        }
+    }
+    #left-button {
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        height: 31px;
+        width: 18px;
+        padding: 0;
+    }
+    #right-button {
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        height: 31px;
+        width: 18px;
+        padding: 0;
+    }
+}

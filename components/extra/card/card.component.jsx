@@ -38,9 +38,9 @@ class Card extends React.Component {
                         color: white !important;
                         background: transparent;
                         display: flex;
-                        // align-content: center;
-                        justify-content: center;
-                        flex-direction: column;
+                        align-content: center;
+                        // justify-content: center;
+                        // flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
                     }
