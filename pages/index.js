@@ -20,13 +20,14 @@ export default function Home() {
 
       <main>
         <div className="heading">
-          <h3 className="heading-text">Digital Solutions to <br /> accelerate your business. </h3>
+          <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
+          <img src="/static/assets/png/blueline.png"/>
           <button className="heading-button">Learn More</button>
         </div>
         <br />
         <br />
         <div className="map">
-          {map}
+          <img src="/static/assets/png/map.png" alt=""/>
         </div>
         <br />
         <br />
@@ -119,6 +120,15 @@ export default function Home() {
           display: flex;
           justify-content: center;
         }
+        .map img{
+          width: 80%;
+        }
+        .heading img{
+          position:relative; 
+          right:157px;
+          bottom:67px;
+          z-index:0
+          }
         .heading{
           padding-top: 10vh;
           display: flex;
@@ -130,6 +140,8 @@ export default function Home() {
           font-weight: bold;
           font-size: 46px;
           line-height: 114%;
+          position:relative;
+          z-index:10;
         }
         .heading-button{
           background: #0e82f8;
@@ -205,6 +217,7 @@ export default function Home() {
           text-align: center !important;
           color: white;
           font-family: 'Nunito', sans-serif;
+          cursor: pointer;
 
         }
         //MOBILE

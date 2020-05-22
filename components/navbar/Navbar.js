@@ -56,7 +56,7 @@ export class Nav extends Component {
               <FaBars onClick={this.dropDown} className="dropdown-button" />
             </li>
             <div className="divide"></div>
-            <li className="padding">{this.state.page}</li>
+            <li className="padding page">{this.state.page}</li>
           </ul>
 
 
