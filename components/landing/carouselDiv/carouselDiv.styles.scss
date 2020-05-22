@@ -1,14 +1,15 @@
 .carousel-div {
     display: flex;
     justify-content: center;
-    width: 80vw;
-    margin: 0vh 10vw;
     // cursor: pointer;
     align-items: center;
+    margin: 0vh 1vw;
     .carousel-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 9px;
+        width: 80vw;
+        margin: 0vh 9vw;
         .card {
             height: 500px;
             padding: 20px;
