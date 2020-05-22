@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow } from '../static/assets/svgs';
+import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
 import Div4 from '../components/div4/div4'
 import TechnicalSupport from '../components/technicalSupport/TechnicalSupport'
 import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component';
+import ArrowLink from '../components/extra/arrow';
 
 // import featuredImage from '../assets/png/featuredImage.png'
 
@@ -33,7 +34,7 @@ export default function Home() {
         <br />
         <br />
         <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
-      <TechnicalSupport />
+        <TechnicalSupport />
         <br />
         <br />
         <TitleDiv text="About Us" />
@@ -41,12 +42,28 @@ export default function Home() {
         <br />
         <div className="div1">
           <div className="div1-large">
-            <Card title="Who we are" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
+            <Card title="Who we are" background="/static/assets/png/featuredImage.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
           </div>
           <div className="div1-medium">
             <div>
-              <Card title="Core Values" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
-" />
+              <Card title="Core Values" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
+                content2={
+                  <div style={{ display: "flex" }}>
+                    <ul>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Customer Driven</li>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Value Centric</li>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Detail Oriented</li>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Quality of Service</li>
+                    </ul>
+                    <ul>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Teamwork and Collaboration</li>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Driving mental productivity</li>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Innovation Driven</li>
+                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Integrity</li>
+                    </ul>
+                  </div>
+                }
+              />
             </div>
             <div className="div1-small">
               <Card title="Our Mission" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
@@ -55,30 +72,34 @@ export default function Home() {
           </div>
         </div>
         <br />
+        <div className="work-with">
+          <ArrowLink text="Work with us" />
+        </div>
+        <br />
         <br />
         <TitleDiv text="Our Services" />
         <br />
         <br />
         <div className="div2">
-          <Card title={devOps} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={businessAutomation} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={businessContinuity} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={product} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={managedServices} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={cyberSecurity} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={infrastructure} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
+          <Card title={devOps} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={businessAutomation} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={businessContinuity} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={product} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={managedServices} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={cyberSecurity} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={infrastructure} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
         </div>
         <br />
         <br />
         <div className="div3">
           <TitleDiv text="The Academy" position="left" />
-          <h3>Learn from the best at</h3>
-          <h3>Commsworth Academy</h3>
+          <h3 style={{ fontWeight: "normal" }}>Learn from the best at</h3>
+          <h3 style={{ fontWeight: "bold" }}>Commsworth Academy</h3>
           <div className="div3-grid">
-            <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-            <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-            <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-            <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
+            <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+            <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+            <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+            <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
           </div>
         </div>
         <Div4 />
@@ -89,7 +110,9 @@ export default function Home() {
           min-height: 100vh;
           // padding: 0 0.5rem;
           // max-width: 97vw;
-          background: #111517;
+          background: #111517 !important;
+        }
+        h1,h2,h3,h4.h5,h6{
           color: white;
         }
         .map{
@@ -136,29 +159,53 @@ export default function Home() {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
           gap: 9px;
+          min-height: 600px;
         }
         .div1 :global(.card){
           padding: 20px;
         }
-        .div1 .div1-large{
-          // width: 500px;
-          // height: 600px;
-          // flex-wrap: wrap;
+        .div1 .div1-large :global(.card h3){
+          font-size: 40px;
+          line-height: 119%;
+        }
+        .div1 .div1-large :global(.card p){
+          font-size: 18px;
+          line-height: 200%;
+          letter-spacing: 0.01em;
+          }
+        .div1 .div1-small :global(.card h3),.div1 .div1-medium :global(.card h3){
+          font-size: 30px;
+          line-height: 119%;
+          }
+        .div1 .div1-small :global(.card p),.div1 .div1-medium :global(.card p){
+          font-size: 16px;
+          line-height: 208%;
+          letter-spacing: 0.01em;
         }
         .div1 .div1-medium{
-          // width: 500px;
           gap: 9px;
-          // height: 600px;
-          display: grid;
-          // flex-direction: column;
-          // width: 100%;
-          
+          display: grid;          
         }
+        .div1 .div1-medium :global(.card p){
+          margin: 0;
+          }
         .div1 .div1-small{
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 9px;
           width: 100%;
+        }
+        .work-with{
+          color: #208FFF !important;
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 109%;
+          text-align: center !important;
+          color: white;
+          font-family: 'Nunito', sans-serif;
+
         }
         //MOBILE
         //AND
@@ -199,15 +246,28 @@ export default function Home() {
         .div2 :global(.card){
           width: 30%;
           margin: 1.65%;
-          min-width: 300px;
-          height: 450px;
+          min-width: 368px;
+          height: 381px;
           background: #111517;
           border: 1px solid #208FFF;
           box-sizing: border-box;
           border-radius: 4px;
           color: white;
-          padding: 20px;
+          padding: 44px;
           // height: 381px;
+        }
+        .div2 :global(.card h3){
+          font-size: 24px;
+          line-height: 119%;
+        }
+        .div2 :global(.card .link){
+          font-size: 18px;
+          line-height: 109%;
+          margin-left: 50%;
+        }
+        .div2 :global(.card p){
+          font-size: 15px;
+          line-height: 185%;
         }
         .div2 :global(.card:hover){
           background: #1C2124;
@@ -234,8 +294,8 @@ export default function Home() {
           margin: 58px 0px;
         }
         .div3-grid :global(.card){
-          max-height: 250px;
-          width: 23%;
+          min-height: 250px;
+          width: 20%;
           margin: 1%;
           min-width: 260px;
           background: rgba(255, 255, 255, 0.05);
@@ -243,26 +303,33 @@ export default function Home() {
           border-radius: 5px;
           padding: 20px;
         }
+        .div3-grid :global(.card h3){
+          font-size: 24px;
+          line-height: 126.5%;
+        }
+        .div3-grid :global(.card .link){
+          font-size: 16px;
+          line-height: 109%;
+          margin-left: 50%;
+        }
+        .div3-grid :global(.card .sub-title){
+          font-weight: bold !important;
+        }
+        .div3-grid :global(.card .title){
+          font-weight: normal !important;
+        }
+        .div3-grid :global(.card p){
+          font-size: 12px;
+          line-height: 145%;
+          letter-spacing: 0.01em;        }
         .div3-grid :global(.card:hover){
           background: #208FFF !important;
         }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .div3-grid :global(.card:hover .link){
+          color: #ffffff !important;
         }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .div3-grid :global(.card:hover .link svg){
+          fill: #ffffff !important;
         }
 
         a {
@@ -361,6 +428,6 @@ export default function Home() {
         }
       `}</style>
     </Layout>
-  // </Layout>
+    // </Layout>
   )
 }

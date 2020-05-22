@@ -6,7 +6,7 @@ const Layout = (props) => (
   <div className="container">
     <Head>
       <title>Commsworth</title>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"></link>
     </Head>
     {/* <Navbar />
  */}

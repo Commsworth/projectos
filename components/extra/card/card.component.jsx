@@ -1,5 +1,7 @@
 // import arrow from '../../../asset/svg/arrow.svg';
 
+import Link from "next/link";
+
 class Card extends React.Component {
 
     constructor(props) {
@@ -11,11 +13,11 @@ class Card extends React.Component {
     render() {
         return (
 
-            <div className="card" style={{width: this.props.width, minWidth: this.props.minWidth, background: `url(${this.props.background})`, backgroundSize: "cover"}}>
+            <div className="card" style={{ width: this.props.width, minWidth: this.props.minWidth, background: `url(${this.props.background})`, backgroundSize: "cover" }}>
                 <h3 className="title">
                     {this.props.title}
                 </h3>
-                <h3>
+                <h3 className="sub-title">
                     {this.props.subTitle}
                 </h3>
                 <p>
@@ -24,9 +26,11 @@ class Card extends React.Component {
                 <p>
                     {this.props.content2}
                 </p>
-                <a>
-                    {this.props.link}
-                </a>
+                <Link href="#">
+                    <h3 className="link">
+                        {this.props.link}
+                    </h3>
+                </Link>
 
                 <style jsx global>{
                     `.card{
@@ -39,15 +43,13 @@ class Card extends React.Component {
                         background: transparent;
                         display: flex;
                         align-content: center;
-                        // justify-content: center;
-                        // flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
                     }
 
                     .card h3{
                         font-size: 36px;
-                        margin: 5px 0px;
+                        margin: 0px 0px;
                     }
 
                     .card    p{
@@ -58,7 +60,12 @@ class Card extends React.Component {
                     .card    a{
                         cursor: pointer;
                         text-align: right;
-                    }                
+                    }  
+                    .card .link{
+                        cursor: pointer;
+                        width: fit-content;
+                        color: #208FFF;
+                    }              
                       `
                 }
 

@@ -13,6 +13,16 @@
             height: 500px;
             padding: 20px;
             justify-content: center;
+            p {
+                font-size: 16px;
+                line-height: 197.5%;
+                letter-spacing: 0.01em;
+            }
+            .link {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 109%;
+            }
         }
     }
     #left-button {

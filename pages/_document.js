@@ -1,25 +1,27 @@
-import Document, {Head, Main, NextScript} from "next/document"
+import Document, { Head, Main, NextScript } from "next/document"
 
-export default class MyDocument extends Document{
+export default class MyDocument extends Document {
     render() {
         return (
             <html>
                 <Head>
                     {/* <title>Commsworth</title> */}
-                     <meta   name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+                    <meta name="viewport"
+                        content="width=device-width, initial-scale=1, user-scalable=no"
+                    />
                     <link rel="stylesheet"
-                    href="/_next/static/style.css" />
+                        href="/_next/static/style.css" />
+                    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet"></link>
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
                 </body>
+
                 <style global jsx>{`
-                  @font-face {
+    @font-face {
     font-family: "Aribau";
-    src: url("asset//fonts//Aribau_Regular.otf");
+    src: url("scss//fonts//Aribau_Regular.otf");
     }
     html{
         overflow-x: hidden;
@@ -68,9 +70,8 @@ a{
 
 h1,h2,h3,h4,h5,h6{
     /* margin: 0; */
-    color: white;
     font-family: 'Nunito', sans-serif;
-    font-weight: 700 !important;
+    /* font-weight: 700 !important; */
     /* font-weight: lighter; */
     /* font-size: 30px; */
     }
@@ -87,10 +88,9 @@ a{
     color: #0E82F8;
 }
 
-p, li{
+p, a, li{
     /* font-size: 16px; */
-    color: white;
-    font-family: 'Aribau';
+    font-family: 'Muli', sans-serif;
 }
 
 .link-text{
