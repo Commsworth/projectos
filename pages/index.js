@@ -1,13 +1,5 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-<<<<<<< HEAD
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow } from '../static/assets/svgs';
-import TitleDiv from '../components/extra/titleDiv/titleDiv';
-import Layout from '../components/Layout'
-// import featuredImage from '../assets/png/featuredImage.png'
-
-export default function Home() {
-=======
 import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
@@ -29,7 +21,6 @@ export default class Home extends Component{
   }
   
   render(){
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
   return (
     <Layout className="container">
       <Head>
@@ -38,39 +29,14 @@ export default class Home extends Component{
       </Head>
 
       <main>
-<<<<<<< HEAD
-        <br />
-        <br />
-        <br />
-        <div className="heading">
-          <h3 className="heading-text">Digital Solutions to <br/> accelerate your business. </h3>
-=======
         <div className="heading">
           <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
           <img src="/static/assets/png/blueline.png"/>
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
           <button className="heading-button">Learn More</button>
         </div>
         <br />
         <br />
         <div className="map">
-<<<<<<< HEAD
-        {map}
-        </div>
-        <br />
-        <br />
-        <TitleDiv text="Featured" subText="Our latest trends tailored for you"/>
-        <br />
-        <br />
-        <div className="carousel-div">
-          <button id="left-button">{leftArrow}</button>
-          <div className="carousel-grid">
-            <Card title="" content={<img />} background="/static/assets/png/featuredImage.png" />
-            <Card title="NextGen App Performance Monitoring (APM) delivered through Dynatrace" subTitle={blueSemiCircle} content="Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud." />
-          </div>
-          <button id="right-button">{rightArrow}</button>
-        </div>
-=======
           <img src="/static/assets/png/map.png" alt=""/>
         </div>
         <br />
@@ -80,7 +46,6 @@ export default class Home extends Component{
         <br />
         <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
         <TechnicalSupport />
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         <br />
         <br />
         <TitleDiv text="About Us" />
@@ -88,18 +53,6 @@ export default class Home extends Component{
         <br />
         <div className="div1">
           <div className="div1-large">
-<<<<<<< HEAD
-            <Card title="Who we are" subTitle={blueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services."/>
-          </div>
-          <div className="div1-medium">
-            <div>
-              <Card title="Core Values"  subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​
-" />
-            </div>
-            <div className="div1-small">
-              <Card title="Our Mission" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-              <Card title="Our Vision" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
-=======
             <Card title="Who we are" background="/static/assets/png/Tunnel.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
           </div>
           <div className="div1-medium">
@@ -126,32 +79,19 @@ export default class Home extends Component{
             <div className="div1-small">
               <Card title="Our Mission" backcolour="#205674" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
               <Card title="Our Vision" background="/static/assets/png/vr.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
             </div>
           </div>
         </div>
         <br />
-<<<<<<< HEAD
-=======
         <div className="work-with">
           <ArrowLink text="Work with us" />
         </div>
         <br />
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         <br />
         <TitleDiv text="Our Services" />
         <br />
         <br />
         <div className="div2">
-<<<<<<< HEAD
-          <Card title={devOps} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={businessAutomation} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={businessContinuity} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={product} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={managedServices} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={cyberSecurity} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-          <Card title={infrastructure} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." />
-=======
           <Card title={devOps} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
           <Card title={businessAutomation} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
           <Card title={businessContinuity} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
@@ -169,26 +109,10 @@ export default class Home extends Component{
             <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
           </svg>
 
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         </div>
         <br />
         <br />
         <div className="div3">
-<<<<<<< HEAD
-          <TitleDiv text="The Academy" position="left"/>
-          <h3>Learn from the best at</h3>
-          <h3>Commsworth Academy</h3>
-        <div className="div3-grid">
-          <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-          <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-          <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-          <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." />
-        </div>
-        </div>
-      </main>
-
-      <style jsx>{`
-=======
           <TitleDiv text="The Academy" position="left" />
           <h3 style={{ fontWeight: "normal" }}>Learn from the best at</h3>
           <h3 style={{ fontWeight: "bold" }}>Commsworth Academy</h3>
@@ -211,27 +135,19 @@ export default class Home extends Component{
         fill: #208FFF;
         margin-left: 10px 10px;
       }
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         .container {
           min-height: 100vh;
           // padding: 0 0.5rem;
           // max-width: 97vw;
-<<<<<<< HEAD
-          background: #111517;
-=======
           background: #111517 !important;
         }
         h1,h2,h3,h4.h5,h6{
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
           color: white;
         }
         .map{
           display: flex;
           justify-content: center;
         }
-<<<<<<< HEAD
-        .heading{
-=======
         .map img{
           width: 80%;
         }
@@ -243,7 +159,6 @@ export default class Home extends Component{
           }
         .heading{
           padding-top: 201px;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -253,11 +168,8 @@ export default class Home extends Component{
           font-weight: bold;
           font-size: 46px;
           line-height: 114%;
-<<<<<<< HEAD
-=======
           position:relative;
           z-index:10;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         }
         .heading-button{
           background: #0e82f8;
@@ -274,50 +186,11 @@ export default class Home extends Component{
           text-align: center;
           color: #ffffff;
           border: none;
-<<<<<<< HEAD
-        }        
-        .carousel-div{
-          display: flex;
-          justify-content: center;
-          width: 80vw;
-          margin: 0vh 10vw;
-          // cursor: pointer;
-          align-items: center;
-        }
-        .carousel-grid{
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-          gap: 9px;
-        }
-        #left-button{
-          background: transparent;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          height: 31px;
-          width: 18px;
-          padding: 0;
-        }
-        #right-button{
-          background: transparent;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          height: 31px;
-          width: 18px;
-          padding: 0;
-        }
-        .carousel-div :global(.card){
-          min-height: 500px;
-          padding: 20px;
-        }
-=======
           cursor: pointer;
         }
         .heading-button:hover{
           background-color: #5cadff;
         }        
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         .div1{
           // display: flex;
           // flex-wrap:wrap;
@@ -326,30 +199,11 @@ export default class Home extends Component{
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
           gap: 9px;
-<<<<<<< HEAD
-=======
           min-height: 600px;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         }
         .div1 :global(.card){
           padding: 20px;
         }
-<<<<<<< HEAD
-        .div1 .div1-large{
-          // width: 500px;
-          // height: 600px;
-          // flex-wrap: wrap;
-        }
-        .div1 .div1-medium{
-          // width: 500px;
-          gap: 9px;
-          // height: 600px;
-          display: grid;
-          // flex-direction: column;
-          // width: 100%;
-          
-        }
-=======
         .div1 .div1-large :global(.card h3){
           font-size: 40px;
           line-height: 119%;
@@ -375,15 +229,12 @@ export default class Home extends Component{
         .div1 .div1-medium :global(.card p){
           margin: 0;
           }
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         .div1 .div1-small{
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 9px;
           width: 100%;
         }
-<<<<<<< HEAD
-=======
         .work-with{
           color: #208FFF !important;
           display: flex;
@@ -397,7 +248,6 @@ export default class Home extends Component{
           cursor: pointer;
 
         }
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         //MOBILE
         //AND
         //TABLET
@@ -437,23 +287,13 @@ export default class Home extends Component{
         .div2 :global(.card){
           width: 30%;
           margin: 1.65%;
-<<<<<<< HEAD
-          min-width: 300px;
-          height: 450px;
-=======
           min-width: 368px;
           height: 381px;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
           background: #111517;
           border: 1px solid #208FFF;
           box-sizing: border-box;
           border-radius: 4px;
           color: white;
-<<<<<<< HEAD
-          padding: 20px;
-          // height: 381px;
-        }
-=======
           padding: 44px;
           // height: 381px;
         }
@@ -470,7 +310,6 @@ export default class Home extends Component{
           font-size: 15px;
           line-height: 185%;
         }
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         .div2 :global(.card:hover){
           background: #1C2124;
           box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.5);
@@ -487,10 +326,7 @@ export default class Home extends Component{
           font-size: 54px;
           line-height: 126.5%;
           margin: 0;
-<<<<<<< HEAD
-=======
           font-family: 'Nunito', sans-serif;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         }
         .div3-grid{
           display: flex;
@@ -499,13 +335,8 @@ export default class Home extends Component{
           margin: 58px 0px;
         }
         .div3-grid :global(.card){
-<<<<<<< HEAD
-          max-height: 250px;
-          width: 23%;
-=======
           min-height: 250px;
           width: 20%;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
           margin: 1%;
           min-width: 260px;
           background: rgba(255, 255, 255, 0.05);
@@ -513,28 +344,6 @@ export default class Home extends Component{
           border-radius: 5px;
           padding: 20px;
         }
-<<<<<<< HEAD
-        .div3-grid :global(.card:hover){
-          background: #208FFF !important;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-=======
         .div3-grid :global(.card h3){
           font-size: 24px;
           line-height: 126.5%;
@@ -562,7 +371,6 @@ export default class Home extends Component{
         }
         .div3-grid :global(.card:hover .link svg){
           fill: #ffffff !important;
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         }
 
         a {
@@ -661,11 +469,7 @@ export default class Home extends Component{
         }
       `}</style>
     </Layout>
-<<<<<<< HEAD
-  )
-=======
     // </Layout>
   )
       }
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
 }
