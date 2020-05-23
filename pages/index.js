@@ -53,11 +53,11 @@ export default class Home extends Component{
         <br />
         <div className="div1">
           <div className="div1-large">
-            <Card title="Who we are" background="/static/assets/png/featuredImage.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
+            <Card title="Who we are" background="/static/assets/png/Tunnel.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
           </div>
           <div className="div1-medium">
             <div>
-              <Card title="Core Values" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
+              <Card title="Core Values" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
                 content2={
                   <div style={{ display: "flex" }}>
                     <ul>
@@ -77,8 +77,8 @@ export default class Home extends Component{
               />
             </div>
             <div className="div1-small">
-              <Card title="Our Mission" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-              <Card title="Our Vision" background="/static/assets/png/featuredImage.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
+              <Card title="Our Mission" backcolour="#205674" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
+              <Card title="Our Vision" background="/static/assets/png/vr.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default class Home extends Component{
           z-index:0
           }
         .heading{
-          padding-top: 10vh;
+          padding-top: 201px;
           display: flex;
           flex-direction: column;
           align-items: center;

@@ -11,7 +11,7 @@ const options = [
         index: 0,
     },
     {
-        img: "/static/assets/png/featuredImage.png",
+        img: "/static/assets/png/featuredImage2.png",
         title: "Yes",
         content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 1,

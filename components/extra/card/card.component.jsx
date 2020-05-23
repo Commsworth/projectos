@@ -13,7 +13,7 @@ class Card extends React.Component {
     render() {
         return (
 
-            <div className="card" style={{ width: this.props.width, minWidth: this.props.minWidth, background: `url(${this.props.background})`, backgroundSize: "cover" }}>
+            <div className="card" style={{ background: `url(${this.props.background})`, backgroundColor:this.props.backcolour, backgroundSize: "cover" }}>
                 <h3 className="title">
                     {this.props.title}
                 </h3>
