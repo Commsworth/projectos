@@ -9,8 +9,6 @@ import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component
 import ArrowLink from '../components/extra/arrow';
 import React, { Component } from 'react'
 
-// import featuredImage from '../assets/png/featuredImage.png'
-
 export default class Home extends Component{
   constructor(props) {
     super(props)
