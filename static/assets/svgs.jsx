@@ -1,9 +1,5 @@
 export const blueSemiCircle = 
-<<<<<<< HEAD
-    <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-=======
     <svg width="44" height="24" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         <path d="M22 14C34.1503 14 44 7.73199 44 3.8147e-06L1.22392e-06 -3.19049e-08C5.47967e-07 7.73198 9.84974 14 22 14Z" fill="#0E82F8" />
     </svg>
 
@@ -411,12 +407,6 @@ export const rightArrow =
 </svg>
 
 
-<<<<<<< HEAD
-export const div4Image = 
-    <div>
-
-    </div>
-=======
 export const drawingArrow = 
 <svg xmlns="http://www.w3.org/2000/svg">
         <path fill="#FFF" fill-rule="nonzero" d="M 26.44 7.587 L 18.806 0.45 a 1.643 1.643 0 0 0 -2.386 0.133 a 1.816 1.816 0 0 0 0.13 2.488 l 4.154 3.882 H 1.69 C 0.756 6.954 0 7.743 0 8.714 s 0.756 1.76 1.689 1.76 h 19.196 l -4.293 3.759 a 1.785 1.785 0 0 0 -0.603 1.349 c 0 0.398 0.131 0.8 0.396 1.13 c 0.6 0.744 1.666 0.84 2.38 0.215 l 7.632 -6.682 A 1.79 1.79 0 0 0 27 8.925 c -0.026 -0.535 -0.197 -0.997 -0.56 -1.338 Z">
@@ -505,7 +495,6 @@ export const listStyle =
 //     <div>
 
 //     </div>
->>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
 // 
 // export const empty = 
 //     <div>
