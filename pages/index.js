@@ -37,7 +37,7 @@ export default class Home extends Component{
         <br />
         <br />
         <div className="map">
-          <img src="/static/assets/png/map.png" alt=""/>
+          <img src="/commsworth/image/map.png" alt=""/>
         </div>
         <br />
         <br />
