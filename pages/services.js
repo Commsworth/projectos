@@ -88,6 +88,10 @@ export default function Services() {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+<<<<<<< HEAD
+=======
+                    padding-top: 10vh;
+>>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
                   }
                   .heading-text{
                     text-align: center;

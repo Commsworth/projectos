@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+<<<<<<< HEAD
     "build": "next build && next export",
+=======
+    "build": "next build",
+>>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
     "start": "next start"
   },
   "dependencies": {

@@ -1,0 +1,61 @@
+.carousel-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+.svg{
+    fill: #208FFF;
+    margin: 5px;
+}
+.carousel-div {
+    display: flex;
+    justify-content: center;
+    // cursor: pointer;
+    align-items: center;
+    margin: 0vh 1vw;
+    .carousel-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 9px;
+        width: 80vw;
+        margin: 0vh 9vw;
+        .card {
+            height: 500px;
+            padding: 20px;
+            justify-content: center;
+            // background-color: rgba(12, 30, 34, 0.65);
+            p {
+                font-size: 16px;
+                line-height: 197.5%;
+                letter-spacing: 0.01em;
+                margin: 0;
+            }
+            .link {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 109%;
+                margin: 0;
+                margin-top: 34px !important;
+            }
+        }
+    }
+    #left-button {
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        height: 31px;
+        width: 18px;
+        padding: 0;
+    }
+    #right-button {
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        height: 31px;
+        width: 18px;
+        padding: 0;
+    }
+}

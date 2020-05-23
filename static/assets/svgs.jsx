@@ -1,5 +1,9 @@
 export const blueSemiCircle = 
+<<<<<<< HEAD
     <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+=======
+    <svg width="44" height="24" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+>>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
         <path d="M22 14C34.1503 14 44 7.73199 44 3.8147e-06L1.22392e-06 -3.19049e-08C5.47967e-07 7.73198 9.84974 14 22 14Z" fill="#0E82F8" />
     </svg>
 
@@ -407,10 +411,101 @@ export const rightArrow =
 </svg>
 
 
+<<<<<<< HEAD
 export const div4Image = 
     <div>
 
     </div>
+=======
+export const drawingArrow = 
+<svg xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFF" fill-rule="nonzero" d="M 26.44 7.587 L 18.806 0.45 a 1.643 1.643 0 0 0 -2.386 0.133 a 1.816 1.816 0 0 0 0.13 2.488 l 4.154 3.882 H 1.69 C 0.756 6.954 0 7.743 0 8.714 s 0.756 1.76 1.689 1.76 h 19.196 l -4.293 3.759 a 1.785 1.785 0 0 0 -0.603 1.349 c 0 0.398 0.131 0.8 0.396 1.13 c 0.6 0.744 1.666 0.84 2.38 0.215 l 7.632 -6.682 A 1.79 1.79 0 0 0 27 8.925 c -0.026 -0.535 -0.197 -0.997 -0.56 -1.338 Z">
+        <animate attributeType="XML" begin="team.mouseover" end="team.mouseout" attributeName="d" from="M26.44 7.587L18.806.45a1.643 1.643 0 0 0-2.386.133 1.816 1.816 0 0 0 .13 2.488l4.154 3.882H1.69C.756 6.954 0 7.743 0 8.714s.756 1.76 1.689 1.76h19.196l-4.293 3.759a1.785 1.785 0 0 0-.603 1.349c0 .398.131.8.396 1.13.6.744 1.666.84 2.38.215l7.632-6.682A1.79 1.79 0 0 0 27 8.925c-.026-.535-.197-.997-.56-1.338z" to="M118.626 7.587L110.994.45a1.643 1.643 0 0 0-2.386.133 1.816 1.816 0 0 0 .13 2.488l4.154 3.882H1.69C.756 6.954 0 7.743 0 8.714s.756 1.76 1.689 1.76h111.383l-4.293 3.759a1.785 1.785 0 0 0-.603 1.349c0 .398.13.8.396 1.13.6.744 1.666.84 2.38.215l7.632-6.682a1.81 1.81 0 0 0 .603-1.32c-.026-.535-.197-.997-.561-1.338z" dur="400ms" begin="indefinite" keySplines="0 0 0 0.96" calcMode="spline"></animate>
+        <animate attributeType="XML" attributeName="d" from="M118.626 7.587L110.994.45a1.643 1.643 0 0 0-2.386.133 1.816 1.816 0 0 0 .13 2.488l4.154 3.882H1.69C.756 6.954 0 7.743 0 8.714s.756 1.76 1.689 1.76h111.383l-4.293 3.759a1.785 1.785 0 0 0-.603 1.349c0 .398.13.8.396 1.13.6.744 1.666.84 2.38.215l7.632-6.682a1.81 1.81 0 0 0 .603-1.32c-.026-.535-.197-.997-.561-1.338z" to="M26.44 7.587L18.806.45a1.643 1.643 0 0 0-2.386.133 1.816 1.816 0 0 0 .13 2.488l4.154 3.882H1.69C.756 6.954 0 7.743 0 8.714s.756 1.76 1.689 1.76h19.196l-4.293 3.759a1.785 1.785 0 0 0-.603 1.349c0 .398.131.8.396 1.13.6.744 1.666.84 2.38.215l7.632-6.682A1.79 1.79 0 0 0 27 8.925c-.026-.535-.197-.997-.56-1.338z" dur="400ms" begin="indefinite" keySplines="0 0 0 0.96" calcMode="spline"></animate>
+        </path>
+    </svg>
+
+export const oneScreen = 
+<svg width="395" height="248" viewBox="0 0 395 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="18.9531" cy="3.04688" r="2.95312" fill="#D04545"/>
+<circle cx="29.9219" cy="3.04688" r="2.95312" fill="#D8BB54"/>
+<circle cx="40.0469" cy="3.04688" r="2.95312" fill="#289C49"/>
+<rect y="13" width="395" height="235"/>
+</svg>
+
+
+export const bigBlueSemiCircle = 
+<svg width="54" height="35" viewBox="0 0 54 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27 20C41.9117 20 54 11.0457 54 3.8147e-06L1.74846e-06 -9.06133e-07C7.8281e-07 11.0457 12.0883 20 27 20Z" fill="#0E82F8"/>
+</svg>
+
+
+export const listStyle = 
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.8" x="4.6864" y="0.970215" width="6.62758" height="6.62758" transform="rotate(45 4.6864 0.970215)" fill="#208FFF"/>
+</svg>
+
+
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+// 
+// export const empty = 
+//     <div>
+
+//     </div>
+>>>>>>> 05a3c21ce806d04a4f31d7edc3e430b2053e731e
 // 
 // export const empty = 
 //     <div>
