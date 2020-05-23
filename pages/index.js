@@ -7,10 +7,20 @@ import Div4 from '../components/div4/div4'
 import TechnicalSupport from '../components/technicalSupport/TechnicalSupport'
 import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component';
 import ArrowLink from '../components/extra/arrow';
+import React, { Component } from 'react'
 
 // import featuredImage from '../assets/png/featuredImage.png'
 
-export default function Home() {
+export default class Home extends Component{
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       display: true,
+    }
+  }
+  
+  render(){
   return (
     <Layout className="container">
       <Head>
@@ -87,8 +97,18 @@ export default function Home() {
           <Card title={businessContinuity} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
           <Card title={product} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
           <Card title={managedServices} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={cyberSecurity} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={infrastructure} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          {this.state.display ? <Card title={cyberSecurity} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />:
+          <Card title={infrastructure} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />}
+        </div>
+        <div className='div2'>
+          <svg className={this.state.display ? 'div2-svg' : ''} onClick={()=>{this.setState({display:true})}} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+          </svg>
+
+          <svg className={this.state.display ? ' ' : 'div2-svg'} onClick={() => { this.setState({ display: false }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+          </svg>
+
         </div>
         <br />
         <br />
@@ -107,6 +127,14 @@ export default function Home() {
       </main>
 
       <style jsx>{`
+     .div2 svg{
+       margin: 0px 5px 0px 5px;
+       cursor: pointer;
+           }
+      .div2-svg{
+        fill: #208FFF;
+        margin-left: 10px 10px;
+      }
         .container {
           min-height: 100vh;
           // padding: 0 0.5rem;
@@ -443,4 +471,5 @@ export default function Home() {
     </Layout>
     // </Layout>
   )
+      }
 }

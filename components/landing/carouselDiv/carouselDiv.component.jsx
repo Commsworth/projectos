@@ -58,7 +58,8 @@ export default class CarouselDiv extends Component {
 
     render() {
         return (
-            <div className="carousel-div">
+                <React.Fragment>
+                <div className="carousel-div">
                 <button id="left-button" onClick={this.setOptionLeft}>{this.props.leftArrow}</button>
                 <div className="carousel-grid">
                     <Card title="" content={<img />} background={this.state.img} />
@@ -66,6 +67,18 @@ export default class CarouselDiv extends Component {
                 </div>
                 <button id="right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
             </div>
+            <div className='carousel-opt'>
+           
+
+            <svg className={this.state.index?' ':'svg'} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+            </svg>
+                    <svg className={this.state.index ? 'svg' : ' '} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+            </svg>
+            </div>
+            </React.Fragment>
+
         );
     }
 }

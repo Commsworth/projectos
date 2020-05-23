@@ -58,8 +58,8 @@ class Div4 extends React.Component{
              <br/>
             <img src="/static/img-div4/comma.png" alt="" srcset=""/>
             <h3>What Our Clients Think About Us</h3>
-            <p id="mission">{this.state.words.mission}</p>
-            <h5 id="name">{this.state.words.name}</h5>
+            <h4 id="mission">"{this.state.words.mission}"</h4>
+            <h3 id="name">{this.state.words.name}</h3>
             <p id="position">{this.state.words.position}</p>
             <p id="position">{this.state.words.company}</p>
          </div>
