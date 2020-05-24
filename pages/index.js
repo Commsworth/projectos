@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../static/assets/svgs';
+import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../commsworth/static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
 import Div4 from '../components/div4/div4'
@@ -29,7 +29,7 @@ export default class Home extends Component{
       <main>
         <div className="heading">
           <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
-          <img src="/static/assets/png/blueline.png"/>
+          <img src="/commsworth/static/assets/png/blueline.png"/>
           <button className="heading-button">Learn More</button>
         </div>
         <br />
@@ -51,7 +51,7 @@ export default class Home extends Component{
         <br />
         <div className="div1">
           <div className="div1-large">
-            <Card title="Who we are" background="/static/assets/png/Tunnel.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
+            <Card title="Who we are" background="/commsworth/static/assets/png/Tunnel.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
           </div>
           <div className="div1-medium">
             <div>
@@ -59,16 +59,16 @@ export default class Home extends Component{
                 content2={
                   <div style={{ display: "flex" }}>
                     <ul>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Customer Driven</li>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Value Centric</li>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Detail Oriented</li>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Quality of Service</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Customer Driven</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Value Centric</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Detail Oriented</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Quality of Service</li>
                     </ul>
                     <ul>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Teamwork and Collaboration</li>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Driving mental productivity</li>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Innovation Driven</li>
-                      <li style={{listStyleImage:"url('/static/assets/png/liststyle.png')"}}>Integrity</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Teamwork and Collaboration</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Driving mental productivity</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Innovation Driven</li>
+                      <li style={{listStyleImage:"url('/commsworth/static/assets/png/liststyle.png')"}}>Integrity</li>
                     </ul>
                   </div>
                 }
@@ -76,7 +76,7 @@ export default class Home extends Component{
             </div>
             <div className="div1-small">
               <Card title="Our Mission" backcolour="#205674" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-              <Card title="Our Vision" background="/static/assets/png/vr.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
+              <Card title="Our Vision" background="/commsworth/static/assets/png/vr.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
             </div>
           </div>
         </div>
@@ -314,7 +314,7 @@ export default class Home extends Component{
           border: none;
         }
         .div3{
-          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 23.14%, rgba(17, 21, 23, 0) 78.53%), url('/static/assets/png/div3Image.png');
+          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 23.14%, rgba(17, 21, 23, 0) 78.53%), url('/commsworth/static/assets/png/div3Image.png');
           background-size: cover;
           background-position: center;
           width: 100vw;
