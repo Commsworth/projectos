@@ -7,7 +7,7 @@ import './navbar.scss';
 export class Nav extends Component {
   constructor(props) {
     super(props)
-    this.path = "https://staging.commslog.com/commsworth/"
+    this.path = "/"
     this.state = {
       class: "",
       fixed: "",
