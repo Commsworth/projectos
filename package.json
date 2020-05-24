@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "react-scripts test --passWithNoTests",}
+    "test": "react-scripts test --passWithNoTests",
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
