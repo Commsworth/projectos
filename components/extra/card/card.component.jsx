@@ -13,7 +13,7 @@ class Card extends React.Component {
     render() {
         return (
 
-            <div className="card" style={{ background: `url(${this.props.background})`, backgroundColor:this.props.backcolour, backgroundSize: "cover" }}>
+            <div className="card" style={{ background: `url(${this.props.background})`, backgroundColor: this.props.backcolour, backgroundSize: "cover" }}>
                 <h3 className="title">
                     {this.props.title}
                 </h3>
@@ -42,7 +42,8 @@ class Card extends React.Component {
                         color: white !important;
                         background: transparent;
                         display: flex;
-                        align-content: center;
+                        justify-content: center;
+                        flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
                     }
