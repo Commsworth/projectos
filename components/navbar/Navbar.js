@@ -7,6 +7,7 @@ import './navbar.scss';
 export class Nav extends Component {
   constructor(props) {
     super(props)
+    this.path = "https://staging.commslog.com/commsworth/"
     this.state = {
       class: "",
       fixed: "",
@@ -36,19 +37,21 @@ export class Nav extends Component {
     console.log(window.scrollY)
   }
 
+
+
   render() {
     return (
       <div className={`nav-div ${this.state.nav}`}>
 
         <div className="nav">
           <ul className="nav-sm">
-            <li className="padding dp" > <Link href="/"><img src="/static/logo.svg" alt="Logo" /></Link>
+            <li className="padding dp" > <Link href="/"><img src={this.path+"/image/logo.svg"} alt="Logo" /></Link>
               <div id="myDropdown" class="dropdown-content">
                 <ul>
                   <li><Link href="/">Academy</Link></li>
                   <li><Link href="#about">Store</Link></li>
                   <li ><Link href="#contact">ProjectOS</Link></li>
-                  <li ><Link href="#contact">MealStock</Link></li>
+                  <li ><Link href="commsworth/contact">MealStock</Link></li>
                   <li ><Link href="#contact">Liveizy</Link></li>
                   <li ><Link href="#contact">Solutions</Link></li>
                 </ul>
@@ -61,11 +64,11 @@ export class Nav extends Component {
 
 
           <ul className="nav-lg" id="myNav">
-            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href="commsworth/services" className={this.state.class}>
+            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href={this.path+"services"} className={this.state.class}>
               <a>Services</a>
             </Link>
             </li>
-            <li className="option1 padding" onClick={() => this.setState({ class: "active1" })}> <Link href="commsworth/portfolio" className={this.state.class}>
+            <li className="option1 padding" onClick={() => this.setState({ class: "active1" })}> <Link href={this.path+"portfolio"} className={this.state.class}>
               <a>Portfolio</a>
             </Link>
             </li>
