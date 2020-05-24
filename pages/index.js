@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../commsworth/static/assets/svgs';
+import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
 import Div4 from '../components/div4/div4'
