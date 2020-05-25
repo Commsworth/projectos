@@ -27,9 +27,9 @@ class Card extends React.Component {
                     {this.props.content2}
                 </p>
                 <Link href="#">
-                    <h3 className="link">
+                    <a className="link">
                         {this.props.link}
-                    </h3>
+                    </a>
                 </Link>
 
                 <style jsx global>{
@@ -57,11 +57,7 @@ class Card extends React.Component {
                         // color: white;
                         font-size: 15px;
                     }
-
-                    .card    a{
-                        cursor: pointer;
-                        text-align: right;
-                    }  
+  
                     .card .link{
                         cursor: pointer;
                         width: fit-content;
