@@ -5,13 +5,13 @@ import ArrowLink from '../../extra/arrow';
 
 const options = [
     {
-        img: "/commsworth/static/assets/png/featuredImage.png",
+        img: "/commsworth/pngs/featuredImage.png",
         title: "NextGen App Performance Monitoring (APM) delivered through Dynatrace",
         content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 0,
     },
     {
-        img: "/commsworth/static/assets/png/featuredImage2.png",
+        img: "/commsworth/pngs/featuredImage2.png",
         title: "Yes",
         content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 1,
@@ -23,17 +23,11 @@ export default class CarouselDiv extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            img: "",
-            title: "",
-            content: "",
-            index: 0,
-        }
+        this.state = options[0]
     }
 
 
     componentDidMount() {
-        this.setState(options[0])
     }
 
     setOptionRight = () => {
