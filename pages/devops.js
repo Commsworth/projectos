@@ -1,7 +1,8 @@
 import Layout from '../components/Layout'
 import '../scss/explore.scss'
 import Head from 'next/head'
-
+import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component'
+import Explore from '../components/Explore/Explore'
 
 class Contact extends React.Component {
 
@@ -36,8 +37,9 @@ class Contact extends React.Component {
                         <img src="/static/explore-img/big1.svg" alt="" />
                     </div>
                 </div>
-                <div className="dpn"><img src="/static/scroll.svg" alt="scroll" /></div>
+               <div className="dpn"><img src="/static/scroll.svg" alt="scroll" /></div>
 
+                    <Explore />
                 <div className="crda">
                     <div className="crd1">
                         <h1>

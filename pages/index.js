@@ -104,7 +104,7 @@ export default class Home extends Component{
        cursor: pointer;
            }
       .div2-svg{
-        fill: #208FFF;
+        fill: #208FFF; 
         margin-left: 10px 10px;
       }
         .container {

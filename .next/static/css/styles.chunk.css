@@ -154,7 +154,8 @@
 
 .sc {
   border-top: 2px solid grey;
-  border-bottom: 2px solid grey; }
+  border-bottom: 2px solid grey;
+  background: white; }
 
 .follow {
   width: 15rem;
