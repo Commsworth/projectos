@@ -8,6 +8,7 @@ import TechnicalSupport from '../components/technicalSupport/TechnicalSupport'
 import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component';
 import ArrowLink from '../components/extra/arrow';
 import React, { Component } from 'react'
+import Div1 from '../components/landing/div1/div1.component';
 
 export default class Home extends Component{
   constructor(props) {
@@ -49,54 +50,25 @@ export default class Home extends Component{
         <TitleDiv text="About Us" />
         <br />
         <br />
-        <div className="div1">
-          <div className="div1-large">
-            <Card title="Who we are" background="/pngs/Tunnel.png" subTitle={bigBlueSemiCircle} content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
-          </div>
-          <div className="div1-medium">
-            <div>
-              <Card title="Core Values" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
-                content2={
-                  <div style={{ display: "flex" }}>
-                    <ul>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Customer Driven</li>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Value Centric</li>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Detail Oriented</li>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Quality of Service</li>
-                    </ul>
-                    <ul>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Teamwork and Collaboration</li>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Driving mental productivity</li>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Innovation Driven</li>
-                      <li style={{listStyleImage:"url('/pngs/liststyle.png')"}}>Integrity</li>
-                    </ul>
-                  </div>
-                }
-              />
-            </div>
-            <div className="div1-small">
-              <Card title="Our Mission" backcolour="#205674" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-              <Card title="Our Vision" background="/pngs/vr.png" subTitle={blueSemiCircle} content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
-            </div>
-          </div>
-        </div>
+        <Div1/>
+        <br />
         <br />
         <div className="work-with">
           <ArrowLink text="Work with us" />
         </div>
         <br />
         <br />
+        <br />
+        <br />
         <TitleDiv text="Our Services" />
-        <br />
-        <br />
         <div className="div2">
-          <Card title={devOps} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={businessAutomation} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={businessContinuity} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={product} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={managedServices} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          {this.state.display ? <Card title={cyberSecurity} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />:
-          <Card title={infrastructure} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />}
+          <Card title={<img src="/pngs/devOps.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={<img src="/pngs/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={<img src="/pngs/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={<img src="/pngs/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          <Card title={<img src="/pngs/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+          {this.state.display ? <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />:
+          <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />}
         </div>
         <div className='div2'>
           <svg className={this.state.display ? 'div2-svg' : ''} onClick={()=>{this.setState({display:true})}} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,8 +82,9 @@ export default class Home extends Component{
         </div>
         <br />
         <br />
+        <br />
         <div className="div3">
-          <TitleDiv text="The Academy" position="left" />
+          <h3><TitleDiv text="The Academy" position="left" /></h3>
           <h3 style={{ fontWeight: "normal" }}>Learn from the best at</h3>
           <h3 style={{ fontWeight: "bold" }}>Commsworth Academy</h3>
           <div className="div3-grid">
@@ -121,6 +94,7 @@ export default class Home extends Component{
             <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
           </div>
         </div>
+        <br/>
         <Div4 />
       </main>
 
@@ -156,7 +130,7 @@ export default class Home extends Component{
           z-index:0
           }
         .heading{
-          padding-top: 201px;
+          padding-top: 100px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -189,50 +163,6 @@ export default class Home extends Component{
         .heading-button:hover{
           background-color: #5cadff;
         }        
-        .div1{
-          // display: flex;
-          // flex-wrap:wrap;
-          width: 80vw;
-          margin: 0vh 10vw;
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-          gap: 9px;
-          min-height: 600px;
-        }
-        .div1 :global(.card){
-          padding: 20px;
-        }
-        .div1 .div1-large :global(.card h3){
-          font-size: 40px;
-          line-height: 119%;
-        }
-        .div1 .div1-large :global(.card p){
-          font-size: 18px;
-          line-height: 200%;
-          letter-spacing: 0.01em;
-          }
-        .div1 .div1-small :global(.card h3),.div1 .div1-medium :global(.card h3){
-          font-size: 30px;
-          line-height: 119%;
-          }
-        .div1 .div1-small :global(.card p),.div1 .div1-medium :global(.card p){
-          font-size: 16px;
-          line-height: 208%;
-          letter-spacing: 0.01em;
-        }
-        .div1 .div1-medium{
-          gap: 9px;
-          display: grid;          
-        }
-        .div1 .div1-medium :global(.card p){
-          margin: 0;
-          }
-        .div1 .div1-small{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 9px;
-          width: 100%;
-        }
         .work-with{
           color: #208FFF !important;
           display: flex;
@@ -263,16 +193,26 @@ export default class Home extends Component{
           .div1{
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         }
-        .carousel-grid{
-          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        }
         }
         @media only screen and (max-width: 570px) {
+          .heading img{
+          display:none;
+          }
           .div1{
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          //display:none;
         }
-        .carousel-grid{
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        .div2{
+          //max-width: 320px;
+        }
+          .div2 :global(.card){
+            max-width: 250px;
+            padding: 20px !important;
+          }
+        .div3{
+        //max-width: 320px;
+        padding: 0vw !important;
+        //margin: auto;
         }
       }
         .div2{
@@ -285,7 +225,7 @@ export default class Home extends Component{
         .div2 :global(.card){
           width: 30%;
           margin: 1.65%;
-          min-width: 368px;
+          min-width: 308px;
           height: 381px;
           background: #111517;
           border: 1px solid #208FFF;
@@ -294,6 +234,9 @@ export default class Home extends Component{
           color: white;
           padding: 44px;
           // height: 381px;
+        }
+        .div2 :global(.card .title img){
+          height: 60px;
         }
         .div2 :global(.card h3){
           font-size: 24px;
@@ -307,6 +250,7 @@ export default class Home extends Component{
         .div2 :global(.card p){
           font-size: 15px;
           line-height: 185%;
+          height: 40%
         }
         .div2 :global(.card:hover){
           background: #1C2124;
@@ -314,50 +258,57 @@ export default class Home extends Component{
           border: none;
         }
         .div3{
-          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 23.14%, rgba(17, 21, 23, 0) 78.53%), url('/pngs/div3Image.png');
+          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 43.14%, rgba(17, 21, 23, 0) 78.53%), url('/pngs/div3Image.png');
           background-size: cover;
           background-position: center;
-          width: 100vw;
-          padding: 5vh 10vw;
+          padding: 70px;
         }
         .div3 h3{
-          font-size: 54px;
+          font-size: 34px;
           line-height: 126.5%;
           margin: 0;
           font-family: 'Nunito', sans-serif;
+          width: 80vw;
+          margin: 0vh auto;
         }
         .div3-grid{
+          width: 80vw;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin: 58px 0px;
+          margin: 58px auto;
         }
         .div3-grid :global(.card){
-          min-height: 250px;
+          max-height: 250px;
           width: 20%;
           margin: 1%;
-          min-width: 260px;
+          min-width: 225px;
+          max-width: 250px;
           background: rgba(255, 255, 255, 0.05);
           backdrop-filter: blur(15px);
           border-radius: 5px;
-          padding: 20px;
+          padding: 20px 0px;
         }
         .div3-grid :global(.card h3){
+          padding: 0px 20px;
           font-size: 24px;
           line-height: 126.5%;
         }
         .div3-grid :global(.card .link){
           font-size: 16px;
           line-height: 109%;
-          margin-left: 50%;
+          margin-left: 60%;
         }
         .div3-grid :global(.card .sub-title){
           font-weight: bold !important;
+          padding: 0px 20px;
         }
         .div3-grid :global(.card .title){
           font-weight: normal !important;
+          padding: 0px 20px;
         }
         .div3-grid :global(.card p){
+          padding: 0px 20px;
           font-size: 12px;
           line-height: 145%;
           letter-spacing: 0.01em;        }
@@ -374,96 +325,6 @@ export default class Home extends Component{
         a {
           color: inherit;
           text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </Layout>

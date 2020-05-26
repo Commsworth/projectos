@@ -1,0 +1,177 @@
+@media only screen and (min-width: 991px) {
+    .div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // height: 10rem;\
+        gap: 9px;
+        // margin: 0vh 11vw;
+        // height: 600px;
+        width: 80vw;
+        margin: 2vw 10vw;
+        // width: 300px;
+        .div1-large {
+            // background: #1C2124;
+            // height: 650px;
+            // padding: 5rem;
+            // height: 600px;
+            // max-width: 500px;
+            .card {
+                min-width: 300px;
+                p,
+                h3 {
+                    padding: 0px 59px !important;
+                }
+                p {
+                    font-family: Muli;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 200%;
+                    /* or 36px */
+
+                    letter-spacing: 0.01em;
+                }
+                .title {
+                    font-family: Nunito;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 119%;
+                    /* identical to box height, or 48px */
+                }
+            }
+        }
+        .div1--second {
+            display: grid;
+            gap: 9px;
+            grid-template-columns: repeat(1fr);
+            // max-width: 500px;
+            // margin: 0px;
+            // gap: 0px;
+            // background: red;
+            .div1--second-top {
+                .card {
+                    padding: auto;
+                    min-width: 300px;
+                    h3,
+                    p {
+                        padding: 0px 32px !important;
+                        margin: 0;
+                    }
+                    h3 {
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 119%;
+                        /* identical to box height, or 36px */
+
+                        color: #ffffff;
+                    }
+                    .content {
+                        font-family: Muli;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 208%;
+                        /* or 33px */
+
+                        letter-spacing: 0.01em;
+                        color: #f4f4f4;
+                    }
+                    .content2 {
+                        font-family: Muli;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 223%;
+                        /* or 31px */
+
+                        letter-spacing: 0.01em;
+
+                        /* Placeholder */
+
+                        color: #f4f4f4;
+                    }
+                }
+            }
+        }
+        .div1--second--small {
+            width: 100%;
+            display: grid;
+            // height: 100%;
+            gap: 9px;
+            grid-template-columns: 1fr 1fr;
+            // height: 300px;
+            .card {
+                min-width: 200px;
+                padding: auto;
+                h3,
+            p {
+                padding: 0px 12px !important;
+                margin: 0;
+                // margin: auto 0px;
+            }
+            p {
+                font-family: Muli;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 208%;
+                /* or 33px */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+            }
+            .title {
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 119%;
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .div1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        // height: 1400px;
+        margin: 0px 20px;
+        .card {
+            margin-bottom: 1vw;
+            p,h3{
+                padding: 0px 20px;
+            }
+        }
+        grid-template-columns: 100%;
+        gap: 0px;
+
+        .div1--second {
+            .card {
+                margin-bottom: 1vw;
+            }
+            gap: 0px;
+
+            .div1--second--small {
+                grid-template-columns: 100%;
+                gap: 6px;
+                .card {
+                    margin-bottom: 1vw;
+                }
+            }
+        }
+    }
+    .list {
+        display: flex;
+        margin: 0px 0px;
+        ul {
+            margin: 0px 0px 0px 0px;
+            padding: 1rem;
+        }
+    }
+}

@@ -19,8 +19,8 @@
       // grid-template-columns: 30% 70%;
       color: white;
       // padding: 0vh 10vw;
-      width: 70vw;
-      margin: 0vh 15vw;
+      width: 90vw;
+      margin: 0vh 5vw;
       // margin-bottom: 80px;
     }
     .nav-lg a {
@@ -73,16 +73,22 @@
       font-weight: bold;
       color: white;
       .option {
+        border-bottom: 3px solid transparent;
         .active {
           border-bottom: 3px solid #0e82f8;
         }
       }
+      .option:hover,.option1:hover,.option2:hover{
+        border-bottom: 3px solid white;
+      }
       .option1 {
+        border-bottom: 3px solid transparent;
         .active1 {
           border-bottom: 3px solid #0e82f8;
         }
       }
       .option2 {
+        border-bottom: 3px solid transparent;
         .active2 {
           border-bottom: 3px solid #0e82f8;
         }
@@ -96,7 +102,7 @@
     .padding {
       margin-right: 3rem;
       text-align: center;
-      padding: 1rem;
+      // padding: 1rem;
       font-family: "Nunito", "sans-serif" !important;
     }
     .page {
@@ -145,8 +151,11 @@
       width: 100vw !important;
       .padding {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+      }
+      .page{
+        display: none;
       }
     }
     .nav-lg {
@@ -173,8 +182,12 @@
     }
   }
   .dropdown-button {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    margin: 0vh 5vw;
     cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
   }
 }

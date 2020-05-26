@@ -17,7 +17,7 @@ const ArrowLink = (props) => {
                 }
                 svg{
                     margin-left: 10px;
-                    width: 40px;
+                    width: 30px;
                     height: 20px;
                     transition:transform 0.5s ease;
                     transform-origin: left;
@@ -26,9 +26,9 @@ const ArrowLink = (props) => {
                     }
                 .arrow-div:hover svg{
                     transition:transform 0.5s ease;
-                    height: 20px;
+                    //height: 20px;
                     transform-origin: left;
-                    transform: scaleX(2.0);
+                    transform: scaleX(1.5);
                     }
             `}
             </style>

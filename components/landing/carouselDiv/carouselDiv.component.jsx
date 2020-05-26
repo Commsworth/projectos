@@ -62,7 +62,7 @@ export default class CarouselDiv extends Component {
                 <div className="carousel-div">
                     <button id="left-button" onClick={this.setOptionLeft}>{this.props.leftArrow}</button>
                     <div className="carousel-grid">
-                        <Card title="" content={<img />} background={this.state.img} />
+                        <Card background={this.state.img} />
                         <Card title={this.state.title} subTitle={this.props.blueSemiCircle} content={this.state.content} link={<ArrowLink text="Read More" />} />
                     </div>
                     <button id="right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
@@ -93,19 +93,21 @@ export default class CarouselDiv extends Component {
             justify-content: center;
             // cursor: pointer;
             align-items: center;
-            margin: 0vh 1vw;
+            margin: 0vh 2.5vw;
+            width: 95vw;
             }
 
             .carousel-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-            gap: 9px;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 65px;
             width: 80vw;
-            margin: 0vh 9vw;
+            margin: 0 10vw;
             }
             .carousel-grid :global(.card) {
-            height: 500px;
-            padding: 20px;
+            min-height: 500px;
+            min-width: 300px;
+            //padding: 20px;
             justify-content: center;
             }
             .carousel-grid :global(.card p) {
@@ -140,6 +142,20 @@ export default class CarouselDiv extends Component {
             width: 18px;
             padding: 0;
         }
+@media screen and (max-width: 990px) {
+
+        .carousel-grid{
+            display: flex;
+            flex-direction: column;
+        }
+}
+@media screen and (max-width: 570px) {
+
+        .carousel-grid{
+            display: flex;
+            flex-direction: column;
+        }
+}
 
                 `}
 

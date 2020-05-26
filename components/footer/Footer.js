@@ -8,15 +8,15 @@ const Footer = ()=>{
           <div className="socials">
         <div className="follow">
           <p>Follow us:</p>
-          <img src="/static/twitter.svg" alt="twitter"/>
-          <img src="/static/facebook.svg" alt="facebook"/>
-          <img src="/static/linkedin.svg" alt="linkedin"/>
+          <img src="/twitter.svg" alt="twitter"/>
+          <img src="/facebook.svg" alt="facebook"/>
+          <img src="/linkedin.svg" alt="linkedin"/>
         </div>
         <div className="share">
           <p>Share on:</p>
-          <img src="/static/twitter.svg" alt="twitter"/>
-          <img src="/static/facebook.svg" alt="facebook"/>
-          <img src="/static/linkedin.svg" alt="linkedin"/>
+          <img src="/twitter.svg" alt="twitter"/>
+          <img src="/facebook.svg" alt="facebook"/>
+          <img src="/linkedin.svg" alt="linkedin"/>
         </div>
       </div>
       </div>
@@ -24,49 +24,34 @@ const Footer = ()=>{
       <div className="foot">
       <div className="footer">
         <ul>
-          <a href="#" className=" footer-brand"
-            >ProjectOS</a>
-          <li>© 2019</li>
-        </ul>
-        <ul>
-          <a href="#">ProjectOS</a>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="license.html">Licensing</a></li>
+          <a href="#">CUSTOMER SERVICE</a>
+          <li><a href="about.html">FAQs</a></li>
+          <li><a href="#">Customer Service</a></li>
         </ul>
 
         <ul>
-          <a href="#">Follow US</a>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Twitter</a></li>
+          <a href="#">BUSINESS</a>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partner with Us</a></li>
+          <li><a href="#">Investor Relations</a></li>
         </ul>
 
         <ul>
-          <a href="#">LEGAL</a>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookies Policy</a></li>
+          <a href="#">COMPANY</a>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Customer Stories</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
 
         <ul>
-          <a href="contact.html">CONTACT</a>
-          <li><a href="#">+2348180321046</a></li>
-          <li><a href="#">support@projectos.com</a></li>
+          <a href="contact.html">PORTFOLIO</a>
+          <li><a href="#">SIWP</a></li>
+          <li><a href="#">ProjectOS</a></li>
+          <li><a href="#">MealStock</a></li>
         </ul>
-      </div>
-      
-      <div className="pda-border">
-      <ul className="pda">
-          <li><a href="">Contact ProjectOS</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Terms of Service</a></li>
-          <li><a href="">FAQs</a></li>
-      </ul>
-      </div>
+      </div>      
       </div>
       </div>
 

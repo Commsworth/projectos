@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
                     <link rel="stylesheet"
                         href="/_next/static/style.css" />
                     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"></link>
+                    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap" rel="stylesheet"></link>
                 </Head>
                 <body>
                     <Main />
