@@ -43,7 +43,7 @@ export class Nav extends Component {
         <div className="nav">
           <ul className="nav-sm">
             <li className="padding dp" > <Link href="/"><img src="/static/logo.svg" alt="Logo" /></Link>
-              <div id="myDropdown" class="dropdown-content">
+              <div id="myDropdown" className="dropdown-content">
                 <ul>
                   <li><Link href="/">Academy</Link></li>
                   <li><Link href="#about">Store</Link></li>
