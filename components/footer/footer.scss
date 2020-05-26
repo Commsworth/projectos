@@ -11,21 +11,21 @@
 .sc {
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
+  background: white;
 }
 .follow {
   width: 15rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-    p {
-    color: #f4f4f4;
-}
+  p{color: black;}
 }
 .share {
   width: 15rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  p{color: black;}
 }
 .footer {
   display: flex;

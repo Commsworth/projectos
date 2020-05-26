@@ -61,12 +61,23 @@ export default class CarouselDiv extends Component {
                     </div>
                     <button id="right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
                 </div>
+<<<<<<< HEAD
                 <div className='carousel-opt'>
 
 
                     <svg className={this.state.index ? ' ' : 'svg'} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                     </svg>
+=======
+                <button id="right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
+            </div>
+            
+            <div className='carousel-opt'>
+        
+            <svg className={this.state.index?' ':'svg'} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+            </svg>
+>>>>>>> 7d9549a4eddd87b359f8b441a4f366fc42e3b6e3
                     <svg className={this.state.index ? 'svg' : ' '} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                     </svg>
