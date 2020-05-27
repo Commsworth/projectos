@@ -193,6 +193,11 @@ export default class Home extends Component{
           .div1{
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         }
+        .div2 :global(.card .link){
+          font-size: 18px;
+          line-height: 109%;
+          //margin-left: 30%;
+        }
         }
         @media only screen and (max-width: 570px) {
           .heading img{
@@ -232,7 +237,7 @@ export default class Home extends Component{
           box-sizing: border-box;
           border-radius: 4px;
           color: white;
-          padding: 44px;
+          padding: 30px;
           // height: 381px;
         }
         .div2 :global(.card .title img){
@@ -245,7 +250,7 @@ export default class Home extends Component{
         .div2 :global(.card .link){
           font-size: 18px;
           line-height: 109%;
-          margin-left: 50%;
+          align-self: flex-end;
         }
         .div2 :global(.card p){
           font-size: 15px;
@@ -295,9 +300,10 @@ export default class Home extends Component{
           line-height: 126.5%;
         }
         .div3-grid :global(.card .link){
+          padding: 0px 20px;
           font-size: 16px;
           line-height: 109%;
-          margin-left: 60%;
+          align-self: flex-end;
         }
         .div3-grid :global(.card .sub-title){
           font-weight: bold !important;

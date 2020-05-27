@@ -439,6 +439,8 @@
     margin: 50px 10px;
     border-right: 1px solid #C9C9C9;
     padding: 20px; }
+  .head-flx img:last-of-type {
+    border-right: none; }
 
 .divide2 {
   border: 0.5px solid #C9C9C9; }
@@ -458,7 +460,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 9px;
     width: 80vw;
-    margin: 2vw 10vw; }
+    margin: 2vw 10vw;
+    min-height: 600px; }
     .div1 .div1-large .card {
       min-width: 300px; }
       .div1 .div1-large .card p,
