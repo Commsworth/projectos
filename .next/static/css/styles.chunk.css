@@ -322,7 +322,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #111517; }
+    border: 5px solid transparent; }
   .div4 .center2 {
     text-align: center;
     margin: 0vh 35vw; }
