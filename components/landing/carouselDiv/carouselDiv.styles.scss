@@ -16,7 +16,7 @@
     margin: 0vh 1vw;
     .carousel-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 9px;
         width: 80vw;
         margin: 0vh 9vw;
@@ -24,6 +24,7 @@
             height: 500px;
             padding: 20px;
             justify-content: center;
+            min-width: 400px;
             // background-color: rgba(12, 30, 34, 0.65);
             p {
                 font-size: 16px;

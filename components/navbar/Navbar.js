@@ -7,7 +7,7 @@ import './navbar.scss';
 export class Nav extends Component {
   constructor(props) {
     super(props)
-    this.path = "https://staging.commslog.com/commsworth/"
+    this.path = "/"
     this.state = {
       class: "",
       fixed: "",
@@ -45,7 +45,7 @@ export class Nav extends Component {
 
         <div className="nav">
           <ul className="nav-sm">
-            <li className="padding dp" > <Link href="/"><img src={this.path+"/image/logo.svg"} alt="Logo" /></Link>
+            <li className="padding dp" > <Link href="/"><img src={this.path+"logo.svg"} alt="Logo" /></Link>
               <div id="myDropdown" class="dropdown-content">
                 <ul>
                   <li><Link href="/">Academy</Link></li>
@@ -76,9 +76,9 @@ export class Nav extends Component {
               <a> Blog</a>
             </Link>
             </li>
-            <div className="divide"></div>
-            <li className="butt padding"> <Link href="#" className="option">
-              <a> Contact</a>
+            <div className="divide padding"></div>
+            <li> <Link href="#" className="option">
+              <a className="butt padding"> Contact</a>
             </Link>
             </li>
           </ul>

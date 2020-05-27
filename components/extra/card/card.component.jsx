@@ -11,36 +11,37 @@ class Card extends React.Component {
         }
     }
     render() {
+        const styleObject = !this.props.background?{ backgroundColor: this.props.backcolour, backgroundSize: "cover" }:{ background:`linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url(${this.props.background})`, backgroundSize: "cover" };
         return (
 
-            <div className="card" style={{ background: `url(${this.props.background})`, backgroundColor: this.props.backcolour, backgroundSize: "cover" }}>
+            <div className="card" 
+            style={styleObject}
+            >
                 <h3 className="title">
                     {this.props.title}
                 </h3>
                 <h3 className="sub-title">
                     {this.props.subTitle}
                 </h3>
-                <p>
+                <p className="content">
                     {this.props.content}
                 </p>
-                <p>
+                <p className="content2">
                     {this.props.content2}
                 </p>
                 <Link href="#">
-                    <h3 className="link">
+                    <a className="link">
                         {this.props.link}
-                    </h3>
+                    </a>
                 </Link>
 
-                <style jsx global>{
+                <style jsx>{
                     `.card{
                         box-shadow: 0px 0px 0px 0px;
                         outline: transparent;
-                        padding: 1vw;
                         width: 100%;
                         height: 100%;
                         color: white !important;
-                        background: transparent;
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
@@ -57,11 +58,7 @@ class Card extends React.Component {
                         // color: white;
                         font-size: 15px;
                     }
-
-                    .card    a{
-                        cursor: pointer;
-                        text-align: right;
-                    }  
+  
                     .card .link{
                         cursor: pointer;
                         width: fit-content;

@@ -22,6 +22,8 @@ const TitleDiv = (props) => (
         justify-content: flex-start !important;
     }
     #title-text{
+        font-family: "Nunito", "serif";
+        font-weight: bold;
         color: white !important;
         margin: 0px 26px;
         font-size: 20px;
@@ -31,6 +33,7 @@ const TitleDiv = (props) => (
         
     }
     #title-subtext{
+        font-family: "Muli", "serif";
         color: white !important;
         margin: 10px 26px;
         font-size: 15px;

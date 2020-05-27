@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 13vh;
-    padding: 80px;
+    // margin-bottom: 13vh;
+    padding-bottom: 80px;
     background: white;
     h5 {
         color: #111517;
@@ -30,8 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40rem;
-    margin: 10vh 0vw;
+    margin-bottom: 20vh;
     color: white;
 
     .pf1 {
@@ -64,11 +63,12 @@
             border-radius: 50%;
         }
     }
-
+    
     img {
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        border: 5px solid #111517;
     }
     //  img:hover{
     //      border: 5px solid #208FFF;
@@ -77,12 +77,12 @@
         text-align: center;
         margin: 0vh 35vw;
         h3 {
-            margin-bottom: 10vh;
+            // margin-bottom: 10vh;
             font-size: 24px;
             font-weight: bold;
         }
         h4 {
-            margin-bottom: 5vh;
+            // margin-bottom: 5vh;
             font-size: 30px;
             line-height: 130%;
             font-weight: bold;
@@ -95,28 +95,32 @@
 
 .pf1 {
     position: relative;
-    top: -20rem;
-    left: -43rem;
+    top: -15rem;
+    left: -10rem;
 }
 .pf2 {
     position: relative;
-    top: -27rem;
-    left: 40rem;
+    top: -15rem;
+    left: 25rem;
 }
 .pf3 {
     position: relative;
-    top: -9rem;
-    left: 30rem;
+    top: 1rem;
+    left: 20rem;
 }
 .pf4 {
     position: relative;
-    left: -34rem;
-    bottom: 16rem;
+    left: -21rem;
+    bottom: -2rem;
 }
 .pf5 {
     position: relative;
-    left: 0rem;
-    top: -16rem;
+    left: -10rem;
+    top: 5rem;
+}
+.img-flx {
+    // height: min-content !important;
+    display: flex;
 }
 
 /* Extra small devices (phones, 600px and down) */
