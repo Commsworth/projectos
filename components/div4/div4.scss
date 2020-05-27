@@ -12,17 +12,22 @@
     }
 }
 .brand {
+    border-bottom: 0.5px solid #c9c9c9;
+    padding-bottom: 47px;
     img {
         margin: 20px 100px 0px 100px;
         width: 80px;
-        height: auto;
+        height: 50px;
     }
+}
+.brand:last-of-type {
+    border-bottom: none;
 }
 .bor3 {
     display: inline-block;
     width: 0px;
-    height: 60px;
-    border: 1px solid #878787;
+    height: 54px;
+    border-right: 1px solid #878787;
 }
 
 .div4 {
@@ -63,7 +68,7 @@
             border-radius: 50%;
         }
     }
-    
+
     img {
         width: 100px;
         height: 100px;
@@ -87,7 +92,7 @@
             line-height: 130%;
             font-weight: bold;
         }
-        p{
+        p {
             font-size: 16px;
         }
     }
@@ -95,27 +100,27 @@
 
 .pf1 {
     position: relative;
-    top: -15rem;
-    left: -10rem;
+    top: -10rem;
+    left: -5rem;
 }
 .pf2 {
     position: relative;
-    top: -15rem;
-    left: 25rem;
+    top: -10rem;
+    left: 30rem;
 }
 .pf3 {
     position: relative;
     top: 1rem;
-    left: 20rem;
+    left: 15rem;
 }
 .pf4 {
     position: relative;
-    left: -21rem;
+    left: -20rem;
     bottom: -2rem;
 }
 .pf5 {
     position: relative;
-    left: -10rem;
+    left: -13rem;
     top: 5rem;
 }
 .img-flx {

@@ -6,7 +6,16 @@ class TechnicalSupport extends Component {
         super(props)
     
         this.state = {
-             display: true
+             display: true,
+             more: false
+        }
+    }
+
+    handleClick=()=>{
+        if(this.state.more){
+            this.setState({more: false})
+        }else{
+            this.setState({more: true})
         }
     }
     
@@ -21,21 +30,28 @@ class TechnicalSupport extends Component {
                 { 
                 this.state.display?
                 <div className="tech-prt">
-                <div className="head-flx">
+                <div className="head-flx-icons">
                                 <img src="/partners/dell.svg" alt=""/>
                                 <img src="/partners/hp.svg" alt="" />
                                 <img src="/partners/dynatrace.svg" alt="" />
                                 <img src="/partners/lenovo.svg" alt="" />
                                 <img src="/partners/fortinet.svg" alt="" />
+                </div>
+                <div className="more-div">
+                <button onClick={this.handleClick} className={`button ${this.state.more?'off':'more'}`}>+</button>
+                <div className={`head-flx-icons ${this.state.more?'more':'off'}`}>
                                 <img src="/partners/oracle.svg" alt=""/>
                                 <img src="/partners/symantec.svg" alt="" />
                                 <img src="/partners/veeam.svg" alt="" />
                                 <img src="/partners/microsoft.svg" alt="" />
                                 <img src="/partners/vmware.svg" alt="" />
                                 </div>
+                <button onClick={this.handleClick} className={`button ${this.state.more?'more':'off'}`}>-</button>
+                </div>
                 </div>
                 : <div>nothing here</div>
     }
+
             </div>
         )
     }

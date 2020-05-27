@@ -70,10 +70,10 @@ export default class CarouselDiv extends Component {
                 <div className='carousel-opt'>
 
 
-                    <svg className={this.state.index ? ' ' : 'svg'} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className={`${this.state.index ? ' ' : 'svg'} svg-margin`} onClick={() => { this.setState(options[0]) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                     </svg>
-                    <svg className={this.state.index ? 'svg' : ' '} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className={`${this.state.index ? 'svg' : ''} svg-margin`} onClick={() => { this.setState(options[1]) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                     </svg>
                 </div>
@@ -86,31 +86,50 @@ export default class CarouselDiv extends Component {
             }
             .svg{
                 fill: #208FFF;
+            }
+            .svg-margin{
                 margin: 5px;
+                cursor: pointer;
             }
             .carousel-div {
             display: flex;
-            justify-content: center;
+            justify-content: center  ;
             // cursor: pointer;
             align-items: center;
-            margin: 0vh 2.5vw;
-            width: 95vw;
+            margin: 0vh 5vw;
+            width: 90vw;
             }
 
             .carousel-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr !important;
-            gap: 65px;
-            width: 80vw;
-            margin: 0 10vw;
+            //display: grid;
+            //grid-template-columns: 1fr 1fr !important;
+            //gap: 65px;
+            display: flex;
+            justify-content: center;
+            //flex-wrap: wrap;
+            width: 70vw;
+            margin: 0 auto;
+            }
+            .carousel-grid :global(.card:first-of-type) {
+                width: 591px;
+                height: 387px;
+                margin: 0px 1vw;
             }
             .carousel-grid :global(.card) {
-            min-height: 500px;
-            min-width: 300px;
-            //padding: 20px;
-            justify-content: center;
+                margin: 0px 1vw;
+                height: 500px;
+                width: 452px;
+                //padding: 20px;
+                justify-content: center;
+            }
+            .carousel-grid :global(.card .title) {
+                width: 428px;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 150%;
             }
             .carousel-grid :global(.card p) {
+                width: 452px;
                 font-size: 16px;
                 line-height: 197.5%;
                 letter-spacing: 0.01em;
@@ -131,9 +150,11 @@ export default class CarouselDiv extends Component {
             height: 31px;
             width: 18px;
             padding: 0;
+            position: sticky;
             }
 
             #right-button {
+            position: sticky;
             background: transparent;
             outline: none;
             border: none;
@@ -148,6 +169,9 @@ export default class CarouselDiv extends Component {
             display: flex;
             flex-direction: column;
         }
+        .svg-margin{
+            //display: none !important;
+        }
 }
 @media screen and (max-width: 570px) {
 
@@ -155,6 +179,21 @@ export default class CarouselDiv extends Component {
             display: flex;
             flex-direction: column;
         }
+        .carousel-grid :global(.card p),.carousel-grid :global(.card .title),.carousel-grid :global(.card .link),.carousel-grid :global(.card:first-of-type),.carousel-grid :global(.card .sub-title),.carousel-grid :global(.card){
+            width: 100%;
+            min-width:220px;
+            margin: 0px auto;
+            height: fit-content;
+        }
+        .carousel-grid :global(.card:first-of-type){
+            height:200px !important;
+        }
+            #right-button {
+                display:none;
+            }
+            #left-button {
+                display:none;
+            }
 }
 
                 `}

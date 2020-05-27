@@ -10,95 +10,92 @@ import ArrowLink from '../components/extra/arrow';
 import React, { Component } from 'react'
 import Div1 from '../components/landing/div1/div1.component';
 
-export default class Home extends Component{
+export default class Home extends Component {
   constructor(props) {
     super(props)
-  
+
     this.state = {
-       display: true,
+      display: true,
     }
   }
-  
-  render(){
-  return (
-    <Layout className="container">
-      <Head>
-        <title>Commsworth</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main>
-        <div className="heading">
-          <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
-          <img src="/pngs/blueline.png"/>
-          <button className="heading-button">Learn More</button>
-        </div>
-        <br />
-        <br />
-        <div className="map">
-          <img src="/pngs/map.png" alt=""/>
-        </div>
-        <br />
-        <br />
-        <TitleDiv text="Featured" subText="Our latest trends tailored for you" />
-        <br />
-        <br />
-        <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
-        <TechnicalSupport />
-        <br />
-        <br />
-        <TitleDiv text="About Us" />
-        <br />
-        <br />
-        <Div1/>
-        <br />
-        <br />
-        <div className="work-with">
-          <ArrowLink text="Work with us" />
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <TitleDiv text="Our Services" />
-        <div className="div2">
-          <Card title={<img src="/pngs/devOps.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={<img src="/pngs/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={<img src="/pngs/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={<img src="/pngs/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          <Card title={<img src="/pngs/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-          {this.state.display ? <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />:
-          <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />}
-        </div>
-        <div className='div2'>
-          <svg className={this.state.display ? 'div2-svg' : ''} onClick={()=>{this.setState({display:true})}} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-          </svg>
- 
-          <svg className={this.state.display ? ' ' : 'div2-svg'} onClick={() => { this.setState({ display: false }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-          </svg>
+  render() {
+    return (
+      <Layout className="container">
+        <Head>
+          <title>Commsworth</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-        </div>
-        <br />
-        <br />
-        <br />
-        <div className="div3">
-          <h3><TitleDiv text="The Academy" position="left" /></h3>
-          <h3 style={{ fontWeight: "normal" }}>Learn from the best at</h3>
-          <h3 style={{ fontWeight: "bold" }}>Commsworth Academy</h3>
-          <div className="div3-grid">
-            <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-            <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-            <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-            <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+        <main>
+          <div className="heading">
+            <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
+            <img src="/pngs/blueline.png" />
+            <button className="heading-button">Learn More</button>
           </div>
-        </div>
-        <br/>
-        <Div4 />
-      </main>
+          <br />
+          <br />
+          <div className="map">
+            <img src="/pngs/map.png" alt="" />
+          </div>
+          <br />
+          <br />
+          <TitleDiv text="Featured" subText="Our latest trends tailored for you" />
+          <br />
+          <br />
+          <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
+          <TechnicalSupport />
+          <br />
+          <br />
+          <TitleDiv text="About Us" />
+          <br />
+          <br />
+          <Div1 />
+          <div className="work-with">
+            <ArrowLink text="Work with us" />
+          </div>
+          <br />
+          <br />
+          <br />
+          <TitleDiv text="Our Services" />
+          <div className="div2">
+            <Card title={<img src="/pngs/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
+            {this.state.display ? <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} /> :
+              <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />}
+          </div>
+          <div className='div2'>
+            <svg className={this.state.display ? 'div2-svg' : ''} onClick={() => { this.setState({ display: true }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+            </svg>
 
-      <style jsx>{`
+            <svg className={this.state.display ? ' ' : 'div2-svg'} onClick={() => { this.setState({ display: false }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+            </svg>
+
+          </div>
+          <br />
+          <br />
+          <br />
+          <div className="div3">
+            <h3><TitleDiv text="The Academy" position="left" /></h3>
+            <h3 style={{ fontWeight: "normal" }}>Learn from the best at</h3>
+            <h3 style={{ fontWeight: "bold" }}>Commsworth Academy</h3>
+            <div className="div3-grid">
+              <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+              <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+              <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+              <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
+            </div>
+          </div>
+          <br />
+          <Div4 />
+        </main>
+
+        <style jsx>{`
      .div2 svg{
        margin: 0px 5px 0px 5px;
        cursor: pointer;
@@ -125,9 +122,10 @@ export default class Home extends Component{
         }
         .heading img{
           position:relative; 
-          right:157px;
-          bottom:67px;
-          z-index:0
+          right:130px;
+          bottom:55px;
+          z-index:0;
+          width:180px;
           }
         .heading{
           padding-top: 100px;
@@ -138,7 +136,7 @@ export default class Home extends Component{
         .heading-text{
           text-align: center;
           font-weight: bold;
-          font-size: 46px;
+          font-size: 38px;
           line-height: 114%;
           position:relative;
           z-index:10;
@@ -154,7 +152,7 @@ export default class Home extends Component{
           border-radius: 5px;
           font-family: "Nunito", "sans-serif" !important;
           font-weight: bold;
-          padding: 15.53px 39px;
+          padding: 13.98px 35.1px;
           text-align: center;
           color: #ffffff;
           border: none;
@@ -208,10 +206,9 @@ export default class Home extends Component{
           //display:none;
         }
         .div2{
-          //max-width: 320px;
         }
           .div2 :global(.card){
-            max-width: 250px;
+            max-width: 300px;
             padding: 20px !important;
           }
         .div3{
@@ -224,20 +221,19 @@ export default class Home extends Component{
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 80vw;
-          margin: 0vh 10vw;
+          width: 90vw;
+          margin: 0vh 5vw;
         }
         .div2 :global(.card){
-          width: 30%;
-          margin: 1.65%;
-          min-width: 308px;
+          margin: 12.5px;
+          width: 340px;
           height: 381px;
           background: #111517;
           border: 1px solid #208FFF;
           box-sizing: border-box;
           border-radius: 4px;
           color: white;
-          padding: 30px;
+          padding: 35px;
           // height: 381px;
         }
         .div2 :global(.card .title img){
@@ -246,16 +242,26 @@ export default class Home extends Component{
         .div2 :global(.card h3){
           font-size: 24px;
           line-height: 119%;
+          width: 243px;
+        }
+        .div2 :global(.card .sub-title){
+          width: 243px;
+          height: 62px;
         }
         .div2 :global(.card .link){
           font-size: 18px;
           line-height: 109%;
           align-self: flex-end;
+          height: 16px;
+        }
+        .div2 :global(.card .content2){
+          display:none;
         }
         .div2 :global(.card p){
           font-size: 15px;
           line-height: 185%;
-          height: 40%
+          width: 281px;
+          height: 77px;
         }
         .div2 :global(.card:hover){
           background: #1C2124;
@@ -274,7 +280,7 @@ export default class Home extends Component{
           margin: 0;
           font-family: 'Nunito', sans-serif;
           width: 80vw;
-          margin: 0vh auto;
+          margin: 17px auto;
         }
         .div3-grid{
           width: 80vw;
@@ -284,20 +290,19 @@ export default class Home extends Component{
           margin: 58px auto;
         }
         .div3-grid :global(.card){
-          max-height: 250px;
-          width: 20%;
-          margin: 1%;
-          min-width: 225px;
-          max-width: 250px;
+          width: 255px;
+          height: 238px;
+          margin: 1% 1%;
           background: rgba(255, 255, 255, 0.05);
           backdrop-filter: blur(15px);
           border-radius: 5px;
-          padding: 20px 0px;
+          padding: 0px 0px;
         }
         .div3-grid :global(.card h3){
           padding: 0px 20px;
           font-size: 24px;
           line-height: 126.5%;
+          width: 152px;
         }
         .div3-grid :global(.card .link){
           padding: 0px 20px;
@@ -313,11 +318,15 @@ export default class Home extends Component{
           font-weight: normal !important;
           padding: 0px 20px;
         }
+        .div3-grid :global(.card .content2){
+        }
         .div3-grid :global(.card p){
           padding: 0px 20px;
           font-size: 12px;
           line-height: 145%;
-          letter-spacing: 0.01em;        }
+          letter-spacing: 0.01em;
+          width: 216px;
+                  }
         .div3-grid :global(.card:hover){
           background: #208FFF !important;
         }
@@ -333,8 +342,8 @@ export default class Home extends Component{
           text-decoration: none;
         }
       `}</style>
-    </Layout>
-    // </Layout>
-  )
-      }
+      </Layout>
+      // </Layout>
+    )
+  }
 }
