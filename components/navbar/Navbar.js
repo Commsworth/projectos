@@ -13,6 +13,7 @@ export class Nav extends Component {
       fixed: "",
       page: "Solutions",
       nav: "",
+      dropdown: false,
     }
   }
   dropDown = () => {
@@ -23,16 +24,33 @@ export class Nav extends Component {
       x.className = "nav-lg";
     }
   }
+  handleDropdown = (e) => {
+    console.log(e.target.alt);
+    if(e.target.alt!=="Logo"){
+      this.setState({dropdown:false})
+    }
+  }
+  logoDropdown = () => {
+    if(this.state.dropdown===true){
+      this.setState({dropdown:false})
+    }
+    else{
+      this.setState({dropdown:true})
+    }
+  }
   handleScroll = () => {
     window.pageYOffset >= 1 ? this.setState({ nav: "nav-scroll" }) : this.setState({ nav: "" })
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.addEventListener('click', this.handleDropdown);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('click', this.handleDropdown);
+    
     window.scrollY>50? this.handleScroll: null;
     console.log(window.scrollY)
   }
@@ -45,7 +63,7 @@ export class Nav extends Component {
 
         <div className="nav">
           <ul className="nav-sm">
-            <li className="padding dp" > <Link href="/"><img src={this.path+"logo.svg"} alt="Logo" /></Link>
+            <li className={`padding ${this.state.dropdown===true?'down':''}  dp`} > <img onClick={this.logoDropdown} src={this.path+"logo.svg"} alt="Logo" />
               <div id="myDropdown" class="dropdown-content">
                 <ul>
                   <li><Link href="/">Academy</Link></li>
@@ -53,12 +71,11 @@ export class Nav extends Component {
                   <li ><Link href="#contact">ProjectOS</Link></li>
                   <li ><Link href="commsworth/contact">MealStock</Link></li>
                   <li ><Link href="#contact">Liveizy</Link></li>
-                  <li ><Link href="#contact">Solutions</Link></li>
                 </ul>
               </div>
               <FaBars onClick={this.dropDown} className="dropdown-button" />
             </li>
-            <div className="divide"></div>
+            <div className="padding divide-line">|</div>
             <li className="padding page">{this.state.page}</li>
           </ul>
 
@@ -76,7 +93,7 @@ export class Nav extends Component {
               <a> Blog</a>
             </Link>
             </li>
-            <div className="divide padding"></div>
+            <div className="padding divide-line">|</div>
             <li> <Link href="#" className="option">
               <a className="butt padding"> Contact</a>
             </Link>

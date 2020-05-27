@@ -13,11 +13,12 @@ const ArrowLink = (props) => {
                 .arrow-div{
                     display: flex;
                     align-items: center;
-                    width: fit-content
+                    width: fit-content;
+                    padding-right: 10px;
                 }
                 svg{
                     margin-left: 10px;
-                    width: 30px;
+                    width: 25px;
                     height: 20px;
                     transition:transform 0.5s ease;
                     transform-origin: left;
@@ -28,7 +29,7 @@ const ArrowLink = (props) => {
                     transition:transform 0.5s ease;
                     //height: 20px;
                     transform-origin: left;
-                    transform: scaleX(1.5);
+                    transform: scaleX(1.4);
                     }
             `}
             </style>
