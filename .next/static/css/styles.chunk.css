@@ -174,7 +174,7 @@ form {
         .nav-div .nav-lg .option2 .active2 {
           border-bottom: 1px solid #0e82f8; }
     .nav-div .padding {
-      margin-left: 50px;
+      margin-left: 35px;
       text-align: center;
       font-size: 15px;
       font-family: "Nunito", "sans-serif" !important; }
@@ -608,17 +608,18 @@ form {
 
 @media only screen and (min-width: 991px) {
   .div1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     gap: 9px;
-    width: 80vw;
-    margin: 2vw 10vw;
+    margin: 2vw 0vw;
     min-height: 600px; }
     .div1 .div1-large .card {
-      min-width: 300px; }
+      width: 480px;
+      margin-right: 9px; }
       .div1 .div1-large .card p,
       .div1 .div1-large .card h3 {
-        padding: 0px 59px !important; }
+        padding: 0px 29.5px !important;
+        width: 450px; }
       .div1 .div1-large .card p {
         font-family: Muli;
         font-style: normal;
@@ -637,14 +638,16 @@ form {
     .div1 .div1--second {
       display: grid;
       gap: 9px;
-      grid-template-columns: repeat(1fr); }
+      grid-template-columns: repeat(1fr);
+      width: 460px; }
       .div1 .div1--second .div1--second-top .card {
         padding: auto;
-        min-width: 300px; }
+        width: 100%; }
         .div1 .div1--second .div1--second-top .card h3,
         .div1 .div1--second .div1--second-top .card p {
           padding: 0px 32px !important;
-          margin: 0; }
+          margin: 0;
+          width: 420px; }
         .div1 .div1--second .div1--second-top .card h3 {
           font-family: Nunito;
           font-style: normal;
@@ -678,12 +681,12 @@ form {
       gap: 9px;
       grid-template-columns: 1fr 1fr; }
       .div1 .div1--second--small .card {
-        min-width: 200px;
         padding: auto; }
         .div1 .div1--second--small .card h3,
         .div1 .div1--second--small .card p {
           padding: 0px 12px !important;
-          margin: 0; }
+          margin: 0;
+          width: 220px; }
         .div1 .div1--second--small .card p {
           font-family: Muli;
           font-style: normal;
