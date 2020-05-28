@@ -122,10 +122,10 @@ export default class Home extends Component {
         }
         .heading img{
           position:relative; 
-          right:130px;
-          bottom:55px;
+          right:124px;
+          bottom:52px;
           z-index:0;
-          width:180px;
+          width:170px;
           }
         .heading{
           padding-top: 150px;
@@ -136,7 +136,7 @@ export default class Home extends Component {
         .heading-text{
           text-align: center;
           font-weight: bold;
-          font-size: 38px;
+          font-size: 36px;
           line-height: 114%;
           position:relative;
           z-index:10;

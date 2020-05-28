@@ -1,7 +1,7 @@
-// import exp from '../../static/assets/png/exp.png'
-// import big from '../../static/assets/png/big.png'
-// import pig from '../../static/assets/png/pig.png'
-// import sup from '../../static/assets/png/sup.png'
+// import exp from 'pngs/exp.png'
+// import big from 'pngs/big.png'
+// import pig from 'pngs/pig.png'
+// import sup from 'pngs/sup.png'
 
 export const Why =()=>(
 
@@ -10,7 +10,7 @@ export const Why =()=>(
 <div className="why">
     <div className="why0">
         <div className="why1">
-        <div className="bkg"><img src="../../static/assets/png/pig.png" alt="" /></div>
+        <div className="bkg"><img src="pngs/pig.png" alt="" /></div>
         <div>
             <h4>Affordables Services</h4>
             <p>Lorem ipsum dolor sit arret, consectetur adipiscing elit. Egit <br/>
@@ -20,7 +20,7 @@ export const Why =()=>(
         </div>
 
         <div className="why1">
-        <div className="bkg"><img src="../../static/assets/png/sup.png" alt="" /></div>
+        <div className="bkg"><img src="pngs/sup.png" alt="" /></div>
         <div className="text">
             <h4>Great Support</h4>
             <p>Lorem ipsum dolor sit arret, consectetur adipiscing elit. Egit <br/>
@@ -30,7 +30,7 @@ export const Why =()=>(
         </div>
 
         <div className="why1">
-        <div className="bkg"><img src="../../static/assets/png/exp.png" alt="" /></div>
+        <div className="bkg"><img src="pngs/exp.png" alt="" /></div>
         <div>
             <h4>Experienced Heads</h4>
             <p>Lorem ipsum dolor sit arret, consectetur adipiscing elit. Egit <br/>
@@ -41,7 +41,7 @@ export const Why =()=>(
     </div>
 
     <div className="why2">
-    <img src="../../static/assets/png/big.png" alt=""/>
+    <img src="pngs/big.png" alt=""/>
     </div>
 
 </div>
