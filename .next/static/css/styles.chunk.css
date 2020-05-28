@@ -1,102 +1,4 @@
 
-/* contact section */
-.contact {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background: white; }
-
-.pad {
-  padding: 0rem 9.5rem 0rem 9.5rem;
-  margin-top: 2rem;
-  color: white; }
-  .pad h1 {
-    color: black;
-    line-height: 5px; }
-  .pad p {
-    color: black;
-    line-height: 40px; }
-
-.dash {
-  border: 4px solid #208FFF;
-  width: 28px; }
-
-.pad-flx {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px; }
-  .pad-flx p {
-    margin-left: 1rem;
-    line-height: 0px; }
-
-.ctap-head {
-  margin-left: 9.5rem;
-  padding: 0rem 0rem 1rem 0rem;
-  font-size: 48px;
-  color: white; }
-
-.pad2 {
-  padding: 2rem;
-  padding-right: 6rem; }
-  .pad2 h1 {
-    color: black; }
-
-/* form */
-input {
-  width: 83%;
-  box-sizing: border-box;
-  border: none;
-  text-align: center;
-  font-size: 15px;
-  padding: 13px 13px;
-  margin-top: 8px; }
-
-select {
-  border: none; }
-
-input:focus {
-  outline: none !important; }
-
-input[type="submit"] {
-  width: 30%;
-  background-color: #0E82F8;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 50px; }
-
-input[type="submit"]:hover {
-  background-color: #45a049; }
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 1.5rem;
-  color: #818181;
-  width: 16%;
-  font-size: 15px; }
-
-.form-flex {
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid #dddddd;
-  align-items: center; }
-
-.form-flex:focus-within {
-  border-bottom: 2px solid blue; }
-
-form {
-  width: 100%;
-  border-radius: 5px;
-  padding: 20px; }
-
-@media only screen and (max-width: 800px) {
-  .contact {
-    display: grid;
-    grid-template-columns: 100%; } }
-
 @media screen and (min-width: 991px) {
   .dropdown-button {
     display: none;
@@ -113,6 +15,8 @@ form {
     .nav-div .nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      max-height: 70px;
       color: white;
       width: 90vw;
       margin: 0vh 5vw; }
@@ -522,7 +426,7 @@ form {
   align-items: center;
   background: white; }
   .center .link {
-    padding: 10px; }
+    padding: 31px 17px; }
     .center .link a {
       color: #818181;
       cursor: pointer;
@@ -569,7 +473,7 @@ form {
   color: #0e82f8 !important;
   border-bottom: 2px solid #0e82f8;
   font-style: normal;
-  font-weight: bold;
+  font-weight: bold !important;
   font-size: 18px;
   line-height: 126.5%;
   /* identical to box height, or 23px */

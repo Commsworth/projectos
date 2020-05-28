@@ -17,6 +17,8 @@
     .nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      max-height: 70px;
       // grid-template-columns: 30% 70%;
       color: white;
       // padding: 0vh 10vw;
