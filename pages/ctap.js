@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../scss/ctap.scss'
 import Layout from '../components/Layout'
 import Modal from '../components/modal/Modal'
+import Socials from '../components/extra/socials/socials.component'
 
 const initialState = {
     name: "",
@@ -265,7 +266,7 @@ telephoneCheck = (str) => {
             </Modal>
                 </div>
             </div>
-
+            <Socials/>
             </Layout>
         )
     }
