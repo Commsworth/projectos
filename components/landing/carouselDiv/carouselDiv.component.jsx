@@ -117,7 +117,7 @@ export default class CarouselDiv extends Component {
             }
             .carousel-grid :global(.card) {
                 margin: 0px 1vw;
-                height: 500px;
+                height: 387px;
                 width: 452px;
                 //padding: 20px;
                 justify-content: center;
