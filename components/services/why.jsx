@@ -10,31 +10,28 @@ export const Why =()=>(
 <div className="why">
     <div className="why0">
         <div className="why1">
-        <div className="bkg"><img src="pngs/pig.png" alt="" /></div>
+        <div className="bkg"><img src="pngs/exp.png" alt="" /></div>
         <div>
-            <h4>Affordables Services</h4>
-            <p>Lorem ipsum dolor sit arret, consectetur adipiscing elit. Egit <br/>
-                scelerisque cursbitur nunc nulla sem. Libero suspendisse.
-            </p>
-        </div>
-        </div>
-
-        <div className="why1">
-        <div className="bkg"><img src="pngs/sup.png" alt="" /></div>
-        <div className="text">
-            <h4>Great Support</h4>
-            <p>Lorem ipsum dolor sit arret, consectetur adipiscing elit. Egit <br/>
-                scelerisque cursbitur nunc nulla sem. Libero suspendisse.
+            <h4>Extensive Competencies</h4>
+            <p>Our Multi-faceted management team is powered by top-tier industry experts with 100+ years of experience across various ICT domains.
             </p>
         </div>
         </div>
 
         <div className="why1">
         <div className="bkg"><img src="pngs/exp.png" alt="" /></div>
+        <div className="text">
+            <h4>Disruptive Initiatives </h4>
+            <p>Commsworth’s expertise delivers game-changing technology initiatives as key business enablers to digitally disrupt industries.
+            </p>
+        </div>
+        </div>
+
+        <div className="why1">
+        <div className="bkg"><img src="pngs/sup.png" alt="" /></div>
         <div>
-            <h4>Experienced Heads</h4>
-            <p>Lorem ipsum dolor sit arret, consectetur adipiscing elit. Egit <br/>
-                scelerisque cursbitur nunc nulla sem. Libero suspendisse.
+            <h4>Premiere Support</h4>
+            <p>Our Multi-faceted management team is powered by top-tier industry experts with 100+ years of experience across various ICT domains.
             </p>
         </div>
         </div>
@@ -45,25 +42,31 @@ export const Why =()=>(
     </div>
 
 </div>
-<style jsx>{
-    `
+<style jsx>{`
     .center-div{
-        width: 80vw;
-        margin: 0vh 10vw;
+        width: 100vw;
+        //padding: 0vh 10vw;
+        margin: 0vw;
+        background: white;
+        padding-top: 46px;
+        padding-bottom: 83px;
+        padding-left: 10px;
+        padding-right: 60px;
+
     }
     .why{
+        background: white;
         display: flex;
-        grid-template-columns: 40% 40%;
         flex-wrap: wrap;
         justify-content: center;
         /* padding: 2rem; */
-        gap: 10%;
         /* margin: 0px 5vw; */
     }
     .why0{
         display: flex;
         flex-direction: column;
-        margin: 0vh 2vw;
+        margin: 0vh 26px;
+
         /* padding: ; */
     }
     .why1{
@@ -77,9 +80,23 @@ export const Why =()=>(
     .why1 h4{
         font-weight: bold;
         font-size: 24px;
+        color: #292929;
+        margin: 0;
+
     }
     .why1 p{
-     
+        width: 492px;
+        height: 75px;
+        font-family: Muli;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 190%;
+        /* or 28px */
+
+
+        color: #292929;
+
     }
     .bkg{
         width: 88px;
@@ -91,7 +108,7 @@ export const Why =()=>(
         text-align: center;
         font-weight: bold;
     font-size: 40px;
-    color: white;
+    color: #292929;
     }
     .text{
         display: flex;
@@ -99,13 +116,19 @@ export const Why =()=>(
     }
     .why2{
         align-self: center;
-        margin: 0vh 2vw;
+        margin: 0vh 26px;
 
         /* align-self: center; */
         /* width: 400px; */
         /* height: 365px; */
         /* margin:33px 0px 0px 3px; */
     }
+        .why2 img{
+            width: 553px;
+            height: 365px;
+            /* height: 365px; */
+            /* margin:33px 0px 0px 3px; */
+        }
     
     @media only screen and (max-width: 570px) {
         .why{
@@ -113,7 +136,8 @@ export const Why =()=>(
         
         }
         .why2 img{
-            width: 80vw;
+            width: 553px;
+            height: 365px;
             /* height: 365px; */
             /* margin:33px 0px 0px 3px; */
         }
@@ -121,8 +145,7 @@ export const Why =()=>(
             margin: 15px 15px 0px 15px;
     }
     }
-    `
-}
+    `}
 
 </style>
 </div>

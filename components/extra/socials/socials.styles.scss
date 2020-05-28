@@ -1,0 +1,54 @@
+.sc {
+  border-top: 1px solid  #C1C1C1;;
+  border-bottom: 1px solid  #C1C1C1;;
+  background: white;
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 2vw 5vw;
+    margin-top: 8rem;
+    padding: 5px;
+    margin: auto;
+
+    .follow {
+        width: 15rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        p {
+          font-size: 16px;
+          line-height: 119%;
+          /* identical to box height, or 19px */
+          
+          
+          /* Text color */
+          
+          color: #1B1B1B;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
+      .share {
+        width: 15rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        p {
+          font-size: 16px;
+          line-height: 119%;
+          /* identical to box height, or 19px */
+          
+          
+          /* Text color */
+          
+          color: #1B1B1B;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
+  }
+  }
