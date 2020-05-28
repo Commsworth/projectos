@@ -9,6 +9,7 @@ import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component
 import ArrowLink from '../components/extra/arrow';
 import React, { Component } from 'react'
 import Div1 from '../components/landing/div1/div1.component';
+import Socials from '../components/extra/socials/socials.component';
 
 export default class Home extends Component {
   constructor(props) {
@@ -93,6 +94,9 @@ export default class Home extends Component {
           </div>
           <br />
           <Div4 />
+          <div className="socials">
+          <Socials icons="white"/>
+          </div>
         </main>
 
         <style jsx>{`
@@ -109,6 +113,12 @@ export default class Home extends Component {
           // padding: 0 0.5rem;
           // max-width: 97vw;
           background: #111517 !important;
+        }
+        .socials :global(.sc){
+          background: #111517; !important;
+        }
+        .socials :global(.sc .socials .follow p),.socials :global(.sc .socials .share p){
+          color: #F4F4F4 !important;
         }
         h1,h2,h3,h4.h5,h6{
           color: white !important;

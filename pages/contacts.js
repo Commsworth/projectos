@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../scss/ctap.scss'
 import '../scss/contacts.scss'
 import Layout from '../components/Layout'
+import Socials from '../components/extra/socials/socials.component'
 
 
 const initialState = {
@@ -197,6 +198,7 @@ class ctap extends Component {
                         </form>
                     </div>
                 </div>
+                <Socials/>
             </Layout>
         )
     }
