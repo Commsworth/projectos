@@ -3,20 +3,20 @@ import Navbar from './navbar/Navbar';
 import Footer from './footer/Footer'
 
 const Layout = (props) => (
-  <div className="container">
+  <React.Fragment className="container">
     <Head>
       <title>Commsworth</title>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"></link>
     </Head>
-    {/* <Navbar />
- */}
+    <Navbar />
+
     {props.children}
-{/*     
-    <Footer /> */}
+    
+    {/* <Footer /> */}
    
 
    
-  </div>
+  </React.Fragment>
 );
 
 export default Layout;
