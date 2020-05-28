@@ -128,7 +128,7 @@ export default class Home extends Component {
           width:180px;
           }
         .heading{
-          padding-top: 100px;
+          padding-top: 150px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -221,12 +221,12 @@ export default class Home extends Component {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 90vw;
-          margin: 0vh 5vw;
+          width: 80vw;
+          margin: 2vh 10vw;
         }
         .div2 :global(.card){
           margin: 12.5px;
-          width: 340px;
+          width: 360px;
           height: 381px;
           background: #111517;
           border: 1px solid #208FFF;
