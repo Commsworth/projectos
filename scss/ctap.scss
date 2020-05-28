@@ -1,21 +1,44 @@
+@font-face {
+font-family: "Aribau";
+src: url("/static/fonts/Aribau_Regular.otf");
+}
+
+p{
+  font-family: "Aribau";
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 /* contact section */
 .contact{
     display: grid;
     grid-template-columns: 50% 50%;
+    justify-content: center;
     background: white;
 }
 .pad{
-padding: 0rem 9.5rem 0rem 9.5rem;
-margin-top: 2rem;
-color: white;
+    padding: 0rem 4.5rem 0rem 9.5rem;
+    margin-top: 6rem;
+    margin-left: 4rem;
+    color: white;
     h1{
         color: black;
         line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
     }
     
     p{
         color: black;
-        line-height: 40px;
+        line-height: 30px;
     }
 
 }
@@ -27,23 +50,37 @@ color: white;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    p{
+    h1{
         margin-left: 1rem;
         line-height: 0px;
+        font-weight: 600;
+        font-size: 16px;
     }
 }
 .ctap-head{
-   margin-left: 9.5rem;
+   margin-left: 13.5rem;
+   margin-bottom: 6rem;
    padding: 0rem 0rem 1rem 0rem;
-   font-size: 48px;
+   font-weight: 500;
+   font-size: 45px;
    color: white;
 }
   .pad2 {
-    padding: 2rem;
-    padding-right: 6rem;
+     margin-top: 6rem;
+    margin-right: 11rem;
+    padding-right: 4.5rem;
     h1{
         color: black;
+        line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+            margin-left: 17px
     }
+  }
+  .asterik{
+    margin-bottom: 5px;
   }
   /* form */
   input {
@@ -51,13 +88,17 @@ color: white;
     box-sizing: border-box; 
     border: none;
     // border-bottom: 2px solid #dddddd;
-    text-align: center; 
-    font-size: 15px;
+    text-align: left; 
+    font-size: 16px;
     padding: 13px 13px;
     margin-top: 8px;
+    margin-right: 120px;
+    font-weight: 600;
   }
   select {
     border: none;
+    width: 100%;
+    margin-top: 18px;
   }
   input:focus {
     outline: none !important;
@@ -65,33 +106,38 @@ color: white;
   }
   
   input[type="submit"] {
-    width: 30%;
+    width: 20%;
     background-color: #0E82F8;;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
+    text-align: center;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 50px;
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #00B3BE;
   }
   label {
     display: block;
     margin-bottom: 10px;
     margin-top: 1.5rem;
     color: #818181;
-    width: 16%;
-    font-size: 15px;
+    width: 38%;
+    font-size: 16px;
+  }
+  .form-svg{
+        margin-top: 14px;
   }
   .form-flex{
       display: flex;
-      justify-content: center;
-      border-bottom: 2px solid #dddddd;
+      justify-content: space-between;
+      border-bottom: 3px solid #dddddd;
       align-items: center;
+      padding-right: 14px;
   }
   .form-flex:focus-within{
       border-bottom: 2px solid blue;
