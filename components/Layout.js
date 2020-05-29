@@ -2,8 +2,10 @@ import Head from 'next/head';
 import Navbar from './navbar/Navbar';
 import Footer from './footer/Footer'
 
+
 const Layout = (props) => (
-  <React.Fragment className="container">
+  <React.Fragment>
+   
     <Head>
       <title>Commsworth</title>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"></link>
@@ -15,7 +17,6 @@ const Layout = (props) => (
     {/* <Footer /> */}
    
 
-   
   </React.Fragment>
 );
 
