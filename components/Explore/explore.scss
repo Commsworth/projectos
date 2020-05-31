@@ -47,6 +47,7 @@
 .offer-grid{
     display: grid;
     grid-template-columns: 30% 70%;
+    justify-content: center;
   
     .card{
        width: 288px;
