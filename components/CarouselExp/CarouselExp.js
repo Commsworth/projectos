@@ -6,15 +6,15 @@ import {blueSemiCircle} from '../../static/assets/svgs'
 
 const options = [
     {
-        img: "/static/assets/png/featuredImage.png",
-        title: "NextGen App Performance Monitoring (APM) delivered through Dynatrace",
-        content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
+         img: "/static/subexplore/img1.svg",
+        title: "Ultra-Responsive Apps",
+        content: "We deploy blazing fast, low-code web and mobile apps and websites powered by robust business logic engines tailored to address key business challenges. Our mobile-first approach ensures a responsive user experience as today’s consumers are driven by convenient yet immersive digital interactions.",
         index: 0,
     },
     {
-        img: "/static/subexplore/img1.svg",
-        title: "Ultra-Responsive Apps",
-        content: "We deploy blazing fast, low-code web and mobile apps and websites powered by robust business logic engines tailored to address key business challenges. Our mobile-first approach ensures a responsive user experience as today’s consumers are driven by convenient yet immersive digital interactions.",
+         img: "/static/assets/png/featuredImage.png",
+        title: "NextGen App Performance Monitoring (APM) delivered through Dynatrace",
+        content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 1,
     }
 ]
@@ -60,6 +60,7 @@ export default class CarouselDiv extends Component {
     render() {
         return (
                 <React.Fragment>
+                    <div className="explore-cau">
                 <div className="carousel-div">
                
                 <div className="carousel-grid">
@@ -77,6 +78,7 @@ export default class CarouselDiv extends Component {
                     <svg onClick={this.setOptionRight} className={this.state.index ? 'svg' : ' '} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
             </svg>
+            </div>
             </div>
             </React.Fragment>
 
