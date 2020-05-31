@@ -23,7 +23,6 @@
         }
 }
 }
-
 .exp-head{
     display: flex;
     margin: auto;
@@ -31,10 +30,48 @@
     li{
         margin: auto;
         padding: 10px 0px 10px 0px;
+        cursor: pointer;
     }
     border-bottom: 1px solid #E5E5E5;
 }
 
+.exp-head-style{
+    border-bottom: 2px solid #0E82F8;
+    color: #0E82F8;
+}
 .exp-head li:hover{
-    border-bottom: 2px solid #0E82F8;;
+    color:rgb(129, 129, 129);
+}
+// Offer style
+
+.offer-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  
+    .card{
+       width: 288px;
+    padding: 0px 11px 0px 86px;
+    margin: 1px 0px 0px 19px;
+        h3{
+            font-size: 33px;
+            margin: 0px 49px -5px 0px;
+        }
+    }
+}
+.offer-options{
+    display: flex;
+        justify-content: center;
+    margin-top: 37px;
+    li{
+        margin: 0px 22px;
+        cursor: pointer;
+    }
+
+}
+.offer-options-style{
+    border-bottom: 2px solid #0E82F8;
+    color: #0E82F8;
+}
+.offer-options li:hover{
+    color:rgb(129, 129, 129);
 }
