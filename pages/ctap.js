@@ -165,7 +165,8 @@ class ctap extends Component {
 
 
                         </div>
-                        <div className="form pad2">
+
+                    <div className="form pad2">
                             <h1>Request a session</h1>
 
                             <form onSubmit={this.handleSubmit}>
