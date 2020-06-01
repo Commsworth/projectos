@@ -3,7 +3,7 @@ import CarouselDiv from '../landing/carouselDiv/carouselDiv.component'
 import { blueSemiCircle, drawingArrow } from '../../static/assets/svgs';
 import './explore.scss'
 import CarouselExp from '../CarouselExp/CarouselExp'
-import CardOfferList from '../CarouselOffer/Card-offer/CardOfferList'
+import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import Scroll from '../CarouselOffer/Scroll'
 import {events} from '../CarouselOffer/events'
 import ArrowLink from '../extra/arrow';
