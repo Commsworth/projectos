@@ -47,7 +47,7 @@ class ctap extends Component {
     }
 
 
-    phone = (e) => {
+    phone  = (e) => {
         const phone = document.getElementById('phone');
 
         if (e.key === "Backspace" || e.key === "Delete") return;
