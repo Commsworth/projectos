@@ -78,7 +78,7 @@ export default class Services extends Component {
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
                             link={<ArrowLink text="Explore" />}
                         /> : <Card
-                                title={<img src="assets/svgs/strategy.svg" alt="devops" />}
+                                title={<img src="assets/svgs/infrastructure.svg" alt="devops" />}
                                 subTitle="Infrastructure"
                                 content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
                                 link={<ArrowLink text="Explore" />}
@@ -106,12 +106,13 @@ export default class Services extends Component {
                         // padding: 0 0.5rem;
                         // max-width: 97vw;
                         background: #111517;
-                        color: white;
+                        color: #f4f4f4 !important;
                       }
                       .offer{
                         font-size: 40px;
                         line-height: 126.5%;
                         text-align: center;
+                        color: #f4f4f4 !important;
                       }
                       .map{
                         display: flex;
@@ -132,6 +133,8 @@ export default class Services extends Component {
                         text-align: center;
                         position:relative;
                         z-index:10;
+                        color: #f4f4f4 !important;
+                        color: #f4f4f4 !important;
                       }
                       .heading img{
                         position:relative; 

@@ -121,7 +121,7 @@ export default class Home extends Component {
           color: #F4F4F4 !important;
         }
         h1,h2,h3,h4.h5,h6{
-          color: white !important;
+          color: #f4f4f4 !important;
         }
         .map{
           display: flex;
@@ -179,7 +179,7 @@ export default class Home extends Component {
           font-size: 30px;
           line-height: 109%;
           text-align: center !important;
-          color: white;
+          //color: white;
           font-family: 'Nunito', sans-serif;
           cursor: pointer;
 
@@ -272,6 +272,7 @@ export default class Home extends Component {
           line-height: 185%;
           width: 281px;
           height: 77px;
+          color: #f4f4f4 !important;
         }
         .div2 :global(.card:hover){
           background: #1C2124;

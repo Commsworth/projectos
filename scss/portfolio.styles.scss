@@ -1,0 +1,104 @@
+.container {
+    background: #111517;
+    .contact-card-main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        margin-left: 20vw;
+        padding: 85px 0vw;
+        .card {
+            width: 40%;
+            min-width: 400px;
+            justify-content: center;
+            height: 465.41px;
+            h3 {
+                width: 347px;
+                height: 45px;
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 114%;
+                /* or 55px */
+
+                color: #f4f4f4;
+                margin: 0;
+            }
+            .content {
+                width: 475px;
+                height: 130px;
+                font-family: Muli;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 190%;
+                /* or 38px */
+
+                /* Placeholder */
+
+                color: #f4f4f4;
+            }
+            .img {
+                min-width: 600px;
+                box-shadow: 0px 0px 1px 0px;
+            }
+        }
+    }
+    .contact-card-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: black !important;
+        background: #ffffff;
+        width: 80vw;
+        padding: 85px 20vw;
+        &.reverse{
+            flex-direction: row-reverse;
+            padding: 85px 20vw 85px 0vw;
+        }
+        .card {
+            width: 500px;
+            color: #000000 !important;
+            justify-content: center;
+            height: 465.41px;
+            .title {
+                width: 97px;
+                height: 37px;
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 119%;
+                /* or 43px */
+
+                /* Text color */
+
+                color: #1b1b1b;
+            }
+            .content {
+                width: 500px;
+                height: 222px;
+                font-family: Muli;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 190%;
+                /* or 34px */
+
+                letter-spacing: 0.01em;
+
+                /* Text color */
+
+                color: #1b1b1b;
+            }
+            img {
+                min-width: 600px;
+                box-shadow: 0px 0px 5px 0px;
+            }
+        }
+    }
+    color: black !important;
+    #contact-heading {
+        padding-top: 200px;
+    }
+}
