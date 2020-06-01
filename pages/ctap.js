@@ -203,18 +203,6 @@ class ctap extends Component {
                                     </svg>}
                                 </div>
 
-<<<<<<< HEAD
-                            <input type="submit" value="Shoot"/>
-                    </form>
-             <Modal onclose={this.showModal} show={this.state.show}>
-                   <h1 style={{fontSize: 24, color: "white",}}>Your message has been received</h1>
-                   <p  style={{fontSize: 14, color: "white", textAlign: "center", marginBottom:10,marginTop:10}}>Need more information? Reach out to our sales team.</p>
-            </Modal>
-                </div>
-            </div>
-            </div>
-            <Socials/>
-=======
                                 <div className="form-flex">
                                     <label htmlFor="companyName">Company Name  {this.state.companyNameError ? <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" className="asterik">
                                         <path d="M6.016 5.776L6.64 4.704L4.768 3.76L6.64 2.816L6.016 1.744L4.272 2.88L4.384 0.799999H3.136L3.248 2.88L1.504 1.744L0.88 2.816L2.752 3.76L0.88 4.704L1.504 5.776L3.248 4.64L3.136 6.72H4.384L4.272 4.64L6.016 5.776Z" fill="#C63C53" />
@@ -286,7 +274,6 @@ class ctap extends Component {
                         </div>
                     <Socials />
                     </div>
->>>>>>> 21554cd3afeed90428c12fe271c6d5ad5b181e07
             </Layout>
         )
     }
