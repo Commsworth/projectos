@@ -511,8 +511,3 @@ export const listStyle =
 
 //     </div>
 // 
-// export const empty = 
-//     <div>
-
-//     </div>
-// 
