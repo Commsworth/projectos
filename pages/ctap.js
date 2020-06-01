@@ -266,7 +266,7 @@ class ctap extends Component {
 
                                 <input type="submit" value="Shoot" />
                             </form>
-                            <Modal onclose={this.showModal} show={this.state.show}>
+                            <Modal  onclose={this.showModal} show={this.state.show}>
                                 <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
                                 <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
                             </Modal>
