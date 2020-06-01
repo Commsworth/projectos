@@ -26,16 +26,21 @@ input {-webkit-appearance: none; box-shadow: none !important; }
     background: white;
 }
 .ctap-flex{
-  width: 1400px;
-  margin: auto;
+
+}
+html{
+  background-color: white;
 }
 
 .ctap-head{
-    margin-left: 123px;
+    margin-left: 94px;
     margin-bottom: 6rem;
     font-weight: 900;
     font-size: 36px;
     color: white;
+    h1{
+      zoom: 0%;
+    }
 }
 
 .pad{

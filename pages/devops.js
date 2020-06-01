@@ -31,7 +31,7 @@ class Contact extends React.Component {
                 <br/>
                 <div className="box">
                     <div id="select">
-                    <select name="explore" id="explore" form="carform">
+                    <select name="explore" id="explore">
                     <option value="devops">DevOps and Analytics</option>
                     <option value="">Cybersecurity</option>
                     <option value="">Business Continuity</option>
@@ -54,7 +54,7 @@ class Contact extends React.Component {
                             optimize business decisions on the go." />
                     </div>
                     <div className="tp2">
-                        <img src="/static/explore-img/big1.svg" alt="" />
+                        <img src="/static/exploreimg/big1.svg" alt="" />
                     </div>
                 </div>
                 </div>
