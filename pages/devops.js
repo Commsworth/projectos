@@ -3,7 +3,9 @@ import '../scss/explore.scss'
 import Head from 'next/head'
 import CarouselDiv from '../components/landing/carouselDiv/carouselDiv.component'
 import Explore from '../components/Explore/Explore'
-
+import Card from '../components/extra/card/card.component'
+import { blueSemiCircle, drawingArrow } from '../static/assets/svgs';
+import ArrowLink from '../components/extra/arrow';
 class Contact extends React.Component {
 
     constructor(props) {
@@ -23,79 +25,42 @@ class Contact extends React.Component {
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
                 </Head>
-
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="box">
+                    <div id="select">
+                    <select name="explore" id="explore" form="carform">
+                    <option value="devops">DevOps and Analytics</option>
+                    <option value="">Cybersecurity</option>
+                    <option value="">Business Continuity</option>
+                    <option value="">Managed Services</option>
+                    </select>
+                    </div>
                 <div className="tp">
                     <div className="tp1">
-                        <h1>
-                            DevOps & Analytics
-                        </h1>
-                        <p>
-                            We are focused on developing data-oriented <br/> applications tailored to solve a vast array of business <br/> requiremenents while giving intuitive insights for <br/> informed business decision making
-                        </p>
+                        <Card title="DevOps & Analytics" 
+                        subTitle={blueSemiCircle} 
+                        content=" Businesses are empowered to 
+                        meet today’s industry challenges through
+                         adoption of intelligent automation
+                          initiatives." 
+                          link={<ArrowLink text="Learn More" />}
+                          content2="Our agile, data-driven application
+                           development framework equips organizations 
+                           to disruptively solve a vast array of problems
+                            while infusing insights to intelligently 
+                            optimize business decisions on the go." />
                     </div>
                     <div className="tp2">
                         <img src="/static/explore-img/big1.svg" alt="" />
                     </div>
                 </div>
-               <div className="dpn"><img src="/static/scroll.svg" alt="scroll" /></div>
-
+                </div>
+            
                     <Explore />
-                <div className="crda">
-                    <div className="crd1">
-                        <h1>
-                            Cyber Security
-                        </h1>
-                        <p>
-                        We implement network security solutions designed to <br/>
-                         dynamically adapt to the evolving IT infrasture in<br/> 
-                         order to defend its rapidly changing attack surface.<br/> 
-                         Primary focus is given to the edge of the network as every<br/> 
-                         packet must be certified as non-malicious before entry to the network
-                        </p>
-                        <a href="#"><p>Work with us →</p></a>
-                    </div>
-                    <div className="crd2">
-                        <img src="/static/explore-img/big2.svg" alt="" />
-                    </div>
-                </div>
-
-                <div className="crdb">
-                    <div className="crd2">
-                        <img src="/static/explore-img/big3.svg" alt="" />
-                    </div>
-                    <div className="crd1">
-
-                        <h1>
-                            Cyber Security
-                        </h1>
-                        <p>
-                            We implement network security solutions designed to <br/> 
-                            dynamically adapt to the evolving IT infrasture in<br/>
-                             order to defend its rapidly changing attack surface.<br/>
-                              Primary focus is given to the edge of the network as every<br/> 
-                              packet must be certified as non-malicious before entry to the network
-                        </p>
-                        
-                        <a href="#"><p>Work with us →</p></a>
-                    </div>
-
-                </div>
-
-                <div className="crda">
-                    <div className="crd1"> 
-                        <h1>App Development</h1>
-                    <p>We implement network security solutions designed to <br />
-                       dynamically adapt to the evolving IT infrasture in<br />
-                       order to defend its rapidly changing attack surface.<br />
-                        Primary focus is given to the edge of the network as every<br />
-                        packet must be certified as non-malicious before entry to the network
-                    </p>
-                        <a href="#"><p>Work with us →</p></a>
-                    </div>
-                    <div className="crd2">
-                        <img src="/static/explore-img/big4.svg" alt="" />
-                    </div>
-                </div>
+               
             </Layout>
         )
     }
