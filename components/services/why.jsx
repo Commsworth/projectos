@@ -75,7 +75,9 @@ export const Why =()=>(
         align-items: center;
     }
     .why1 img{
-     margin: 15px 0px 0px 15px;
+        width: 60%;
+        height: 60%;
+        margin: 20%;
     }
     .why1 h4{
         font-weight: bold;
@@ -86,12 +88,13 @@ export const Why =()=>(
     }
     .why1 p{
         width: 492px;
-        height: 75px;
+        height: 60px;
         font-family: Muli;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
         line-height: 190%;
+        margin: 10px 0px 30px 0px;
         /* or 28px */
 
 
@@ -99,10 +102,12 @@ export const Why =()=>(
 
     }
     .bkg{
+     //border-radius: 4px;
         width: 88px;
     height: 88px;
     background-color: #1C2124;;
-    margin-right: 20px;
+    margin-right: 32px;
+    margin-bottom: 32px;
     }
     .h1{
         text-align: center;
