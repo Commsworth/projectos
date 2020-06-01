@@ -3,6 +3,8 @@ import Card from '../components/extra/card/card.component';
 import { oneScreen, blueSemiCircle } from '../static/assets/svgs';
 import '../scss/portfolio.styles.scss';
 import ImageCard from '../components/extra/imageCard/imageCard.component';
+import ArrowLink from '../components/extra/arrow';
+import Socials from '../components/extra/socials/socials.component';
 // import imageCard from '../components/extra/imageCard/imageCard.component';
 
 export default class ContactPage extends Component {
@@ -20,7 +22,7 @@ export default class ContactPage extends Component {
                     <Card title="SIWP"
                         subTitle={blueSemiCircle}
                         content="We implement network security solutions designed to dynamically adapt to the evolving IT Infrastructure in order to defend its rapidly changing attack surface. Primary focus is given to the edge of the network as every packet must be certified as non-malicious before entry to the network. "
-                        link="" />
+                        link={<ArrowLink text="Visit Web App"/>}/>
                     <ImageCard image="pngs/SIWP.png" />
 
                 </div>
@@ -30,7 +32,7 @@ export default class ContactPage extends Component {
                     <Card title="ProjectOS"
                         subTitle={blueSemiCircle}
                         content="We implement network security solutions designed to dynamically adapt to the evolving IT Infrastructure in order to defend its rapidly changing attack surface. Primary focus is given to the edge of the network as every packet must be certified as non-malicious before entry to the network. "
-                        link="" />
+                        link={<ArrowLink text="Visit Web App"/>} />
                     <ImageCard image="pngs/SIWP.png" />
                 </div>
 
@@ -38,10 +40,10 @@ export default class ContactPage extends Component {
                     <Card title="MealStock"
                         subTitle={blueSemiCircle}
                         content="We implement network security solutions designed to dynamically adapt to the evolving IT Infrastructure in order to defend its rapidly changing attack surface. Primary focus is given to the edge of the network as every packet must be certified as non-malicious before entry to the network. "
-                        link="" />
+                        link={<ArrowLink text="Visit Web App"/>} />
                     <ImageCard image="pngs/SIWP.png" />
-
                 </div>
+                    <Socials/>
             </div>
         );
     }
