@@ -156,6 +156,16 @@ form {
     display: grid;
     grid-template-columns: 100%; } }
 
+.contacts-flx {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px; }
+  .contacts-flx img {
+    height: 50px; }
+  .contacts-flx h1 {
+    font-weight: bold;
+    font-size: 24px; }
+
 @media screen and (min-width: 991px) {
   .dropdown-button {
     display: none;
