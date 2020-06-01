@@ -134,25 +134,25 @@ class ctap extends Component {
 
     render() {
         return (
-            <Layout className="body">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className="ctap-flex">
-                    <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
-                    <div className="contact">
-                        <div className="pad">
-                            <h1>Assess threat to your business</h1>
-                            <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 2H30" stroke="#076fd9" stroke-width="4" stroke-linecap="round" />
-                            </svg>
-                                <h1>Powered by Fortinet</h1></div>
-                            <p>The Cyber Threat Assessment Program (CTAP) is
-                            designed to help you during greenfield and renewal
-                            opportunities to convert prospects and expand your
+            <Layout>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <div className="ctap-flex">
+               <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
+            <div className="contact">
+                <div className="pad">
+                    <h1>Assess threat to your business</h1>
+                        <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2H30" stroke="#076fd9" stroke-width="4" stroke-linecap="round" />
+                        </svg>
+  <h1>Powered by Fortinet</h1></div>
+                        <p>The Cyber Threat Assessment Program (CTAP) is 
+                            designed to help you during greenfield and renewal 
+                            opportunities to convert prospects and expand your 
                             business by giving customers an in-depth view of the
                             urrent state of their network.</p> <p>After deploying a
                             FortiGate to monitor your network for a short period of
