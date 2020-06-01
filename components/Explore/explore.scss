@@ -17,11 +17,8 @@
         width: 80vw;
         margin: 0vh 9vw;
         .card {
-            width: 200px;
             height: 500px;
-           width: 258px;
-            padding: 0px 25px 0px 25px;
-            margin: 1px 16px 0px 66px;
+            padding: 20px;
             justify-content: center;
         }
 }
@@ -53,7 +50,7 @@
     justify-content: center;
   
     .card{
-       width: 288px;
+       width: 288px !important;
     padding: 0px 11px 0px 86px;
     margin: 1px 0px 0px 19px;
         h3{
