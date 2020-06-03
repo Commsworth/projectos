@@ -47,7 +47,7 @@ class ctap extends Component {
     }
 
 
-    phone = (e) => {
+    phone  = (e) => {
         const phone = document.getElementById('phone');
 
         if (e.key === "Backspace" || e.key === "Delete") return;
@@ -134,25 +134,25 @@ class ctap extends Component {
 
     render() {
         return (
-            <Layout className="body">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className="ctap-flex">
-                    <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
-                    <div className="contact">
-                        <div className="pad">
-                            <h1>Assess threat to your business</h1>
-                            <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 2H30" stroke="#076fd9" stroke-width="4" stroke-linecap="round" />
-                            </svg>
-                                <h1>Powered by Fortinet</h1></div>
-                            <p>The Cyber Threat Assessment Program (CTAP) is
-                            designed to help you during greenfield and renewal
-                            opportunities to convert prospects and expand your
+            <Layout>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <div className="ctap-flex">
+               <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
+            <div className="contact">
+                <div className="pad">
+                    <h1>Assess threat to your business</h1>
+                        <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2H30" stroke="#076fd9" stroke-width="4" stroke-linecap="round" />
+                        </svg>
+  <h1>Powered by Fortinet</h1></div>
+                        <p>The Cyber Threat Assessment Program (CTAP) is 
+                            designed to help you during greenfield and renewal 
+                            opportunities to convert prospects and expand your 
                             business by giving customers an in-depth view of the
                             urrent state of their network.</p> <p>After deploying a
                             FortiGate to monitor your network for a short period of
@@ -165,7 +165,8 @@ class ctap extends Component {
 
 
                         </div>
-                        <div className="form pad2">
+
+                    <div className="form pad2">
                             <h1>Request a session</h1>
 
                             <form onSubmit={this.handleSubmit}>
@@ -265,7 +266,7 @@ class ctap extends Component {
 
                                 <input type="submit" value="Shoot" />
                             </form>
-                            <Modal onclose={this.showModal} show={this.state.show}>
+                            <Modal  onclose={this.showModal} show={this.state.show}>
                                 <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
                                 <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
                             </Modal>
