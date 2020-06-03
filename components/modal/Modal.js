@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 // gray background
 const backdropStyle = {
     position: 'fixed',
-    top: 100,
+    top: 0,
     bottom: 0,
     left: 0,
     right: 0,
@@ -14,10 +14,11 @@ const backdropStyle = {
 
 const modalStyle = {
     backgroundColor: '#1B1B1B',
+    top: 100,
     textAlign: "center",
     borderRadius: 5,
     maxWidth: 458,
-    // minHeight: 242,
+    minHeight: 242,
     margin: '0 auto',
     padding: 30,
     position: "relative",
