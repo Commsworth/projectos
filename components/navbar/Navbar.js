@@ -25,7 +25,6 @@ export class Nav extends Component {
     }
   }
   handleDropdown = (e) => {
-    console.log(e.target.alt);
     if(e.target.alt!=="Logo"){
       this.setState({dropdown:false})
     }
@@ -44,7 +43,7 @@ export class Nav extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-    window.addEventListener('click', this.handleDropdown);
+    window.removeEventListener('click', this.handleDropdown);
   }
 
   componentDidMount() {
@@ -75,26 +74,29 @@ export class Nav extends Component {
               </div>
               <FaBars onClick={this.dropDown} className="dropdown-button" />
             </li>
-            <div className="padding divide-line">|</div>
-            <li className="padding page">{this.state.page}</li>
+            <div className="padding divide-line"><img src="pngs/navbardivide.png"/></div>
+            <li className=" page padding nav-line"><Link href="/"><a>{this.state.page}</a></Link><img className="nav-line" src="pngs/navbarline.png"/></li>
           </ul>
 
 
           <ul className="nav-lg" id="myNav">
-            <li className="option padding " onClick={() => this.setState({ class: "active" })}> <Link href={this.path+"services"} className={this.state.class}>
+            <li className="option padding nav-line " onClick={() => this.setState({ class: "active" })}> <Link href={this.path+"services"} className={this.state.class}>
               <a>Services</a>
             </Link>
+            <img className="nav-line" src="pngs/navbarline.png"/>
             </li>
-            <li className="option1 padding" onClick={() => this.setState({ class: "active1" })}> <Link href={this.path+"portfolio"} className={this.state.class}>
+            <li className="option1 padding nav-line" onClick={() => this.setState({ class: "active1" })}> <Link href={this.path+"portfolio"} className={this.state.class}>
               <a>Portfolio</a>
             </Link>
+            <img className="nav-line" src="pngs/navbarline.png"/>
             </li>
-            <li className="option2 padding" onClick={() => this.setState({ class: "active2" })}> <Link href="#" className={this.state.class}>
+            <li className="option2 padding nav-line" onClick={() => this.setState({ class: "active2" })}> <Link href="#" className={this.state.class}>
               <a> Blog</a>
             </Link>
+            <img className="nav-line" src="pngs/navbarline.png"/>
             </li>
-            <div className="padding divide-line">|</div>
-            <li> <Link href="#" className="option">
+            <div className="padding divide-line"><img src="pngs/navbardivide.png"/></div>
+            <li> <Link href="/contacts" className="option">
               <a className="butt padding"> Contact</a>
             </Link>
             </li>

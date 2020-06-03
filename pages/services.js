@@ -33,11 +33,6 @@ export default class Services extends Component {
                     </div>
                     <br />
                     <br />
-                    <div className="about-hero">
-                        <img src="pngs/aboutHero.png" alt="" />
-                    </div>
-                    <br />
-                    <br />
                     <h3 className="offer">Services on Offer</h3>
                     <br />
                     <br />
@@ -123,7 +118,11 @@ export default class Services extends Component {
                         flex-direction: column;
                         align-items: center;
                         padding-top: 150px;
-                        margin-bottom: 60px;
+                        padding-bottom: 200px;
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('pngs/servicesbackground.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
                       }
                       .heading-text{
                         text-align: center;
