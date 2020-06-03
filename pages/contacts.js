@@ -158,41 +158,43 @@ class ctap extends Component {
                         </div>
 
                         <div className="contacts-flx">
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/sales.svg" alt=""/>
                                 <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
-                                <p>9AM to 5PM GMT+1</p>
+                                <p>Availablee Monday-Friday
+                                9AM to 5PM GMT+1</p>
                                 <a href="">Chat now ></a>
                                 </div>
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/email.svg" alt="" />
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
-                                <p>9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
+                                <h1>Write Us</h1>
+                                <p>Availablee Monday-Friday
+                                9AM to 5PM GMT+1</p>
+                                <a href="">care@commsworth.com</a>
                             </div>
                         </div>
                         <br/>
+                        <br/>
+                        <br/>
                         <div className="contacts-flx">
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/tel.svg" alt=""/>
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
-                                <p>9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
+                                <h1>Ring Us</h1>
+                                <p>Availablee Monday-Friday
+                                9AM to 5PM GMT+1</p>
+                                <a href="">+2349084810110</a>
                                 </div>
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/visit.svg" alt="" />
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
+                                <h1>Pay us a Visit</h1>
+                                <p>225, Ikorodu Crescent, Dolphin Estate, Ikoyi Lagos</p>
                                 <p>9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
                             </div>
                         </div>
 
 
                     </div>
+
                     <div className="form pad2">
                             <h1>Request a session</h1>
 
@@ -293,11 +295,13 @@ class ctap extends Component {
 
                                 <input type="submit" value="Shoot" />
                             </form>
-                            <Modal onclose={this.showModal} show={this.state.show}>
+                            <Modal  onclose={this.showModal} show={this.state.show}>
                                 <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
                                 <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
                             </Modal>
                     </div>
+                    
+                    
                 </div>
                 <Socials/>
             </Layout>

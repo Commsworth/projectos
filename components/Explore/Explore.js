@@ -87,12 +87,18 @@ class Explore extends Component {
 
 right = (event) => {
     imageOffset += 50
-        if(imageOffset >= 2450) {
-        document.getElementById("scroll").style.right = 2450 + "px";
+//    let end = document.getElementById("scroll").width
+//    console.log(end)
+        if(imageOffset >= 2350) {
+        document.getElementById("scroll").style.right = 2350 + "px";
         console.log(imageOffset)
+        document.getElementById("right").setAttribute("class", "explore-svg");
+        // document.getElementById("left").setAttribute("class", "explore-svg2");
         }
         else{
             document.getElementById("scroll").style.right = imageOffset + "px";
+            document.getElementById("right").setAttribute("class", "explore-svg2");
+        document.getElementById("left").setAttribute("class", "explore-svg2");
 
         }
         }
@@ -102,10 +108,16 @@ right = (event) => {
   imageOffset -= 50
     if(imageOffset <= 0){
   document.getElementById("scroll").style.right = 0 + "px";
+ document.getElementById("left").setAttribute("class", "explore-svg");
+//  document.getElementById("right").setAttribute("class", "explore-svg2");
   console.log(imageOffset)
   return imageOffset=0
-    }else{
+    }
+    // else if (imageOffset >)
+    else{
         document.getElementById("scroll").style.right = imageOffset + "px";
+        document.getElementById("left").setAttribute("class", "explore-svg2");
+        // document.getElementById("right").setAttribute("class", "explore-svg");
   console.log(imageOffset)
     }
   } 
@@ -165,45 +177,21 @@ right = (event) => {
                 
                   </div>
                 <div style={{display: "flex", justifyContent: "center", zIndex: 1000}}>
-        <svg onClick={this.left} width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<circle cx="49" cy="39" r="19" transform="rotate(-180 49 39)" fill="white"/>
-<path d="M39.6976 38.2929C39.3071 38.6834 39.3071 39.3166 39.6976 39.7071L46.0616 46.0711C46.4521 46.4616 47.0853 46.4616 47.4758 46.0711C47.8663 45.6805 47.8663 45.0474 47.4758 44.6569L41.819 39L47.4758 33.3431C47.8663 32.9526 47.8663 32.3195 47.4758 31.9289C47.0853 31.5384 46.4521 31.5384 46.0616 31.9289L39.6976 38.2929ZM57.5952 38L40.4047 38L40.4047 40L57.5952 40L57.5952 38Z" fill="#D3D3D3"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="10"/>
-<feGaussianBlur stdDeviation="15"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
-</svg>
 
-<svg onClick={this.right} id="right" width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<circle cx="49" cy="39" r="19" fill="white"/>
-<path d="M58.3024 39.7071C58.6929 39.3166 58.6929 38.6834 58.3024 38.2929L51.9384 31.9289C51.5479 31.5384 50.9147 31.5384 50.5242 31.9289C50.1337 32.3195 50.1337 32.9526 50.5242 33.3431L56.181 39L50.5242 44.6569C50.1337 45.0474 50.1337 45.6805 50.5242 46.0711C50.9147 46.4616 51.5479 46.4616 51.9384 46.0711L58.3024 39.7071ZM40.4048 40H57.5953V38H40.4048V40Z" fill="#D3D3D3"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="10"/>
-<feGaussianBlur stdDeviation="15"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
-</svg>
     </div>
     </div> : null }
 
     {this.state.res?<div>Resources</div>:null}
+    <div className="circle-opt">
+    <div className="offer-circle"><svg onClick={this.left} width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="left" d="M0.69763 7.29289C0.307106 7.68342 0.307106 8.31658 0.69763 8.70711L7.06159 15.0711C7.45212 15.4616 8.08528 15.4616 8.4758 15.0711C8.86633 14.6805 8.86633 14.0474 8.4758 13.6569L2.81895 8L8.47581 2.34314C8.86633 1.95262 8.86633 1.31946 8.47581 0.928931C8.08528 0.538407 7.45212 0.538407 7.06159 0.928931L0.69763 7.29289ZM18.5952 7L1.40474 7L1.40474 9L18.5952 9L18.5952 7Z" fill="#D3D3D3"/>
+</svg>
+</div>
+    <div className="offer-circle"><svg onClick={this.right} width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="right" d="M18.3024 8.70711C18.6929 8.31658 18.6929 7.68342 18.3024 7.29289L11.9384 0.928932C11.5479 0.538408 10.9147 0.538408 10.5242 0.928932C10.1337 1.31946 10.1337 1.95262 10.5242 2.34315L16.181 8L10.5242 13.6569C10.1337 14.0474 10.1337 14.6805 10.5242 15.0711C10.9147 15.4616 11.5479 15.4616 11.9384 15.0711L18.3024 8.70711ZM0.404785 9L17.5953 9V7L0.404785 7L0.404785 9Z" fill="#0E82F8"/>
+</svg>
+</div>
+</div>
             </div>
         )
     }

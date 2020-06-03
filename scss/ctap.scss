@@ -117,7 +117,11 @@ html{
     margin-top: 18px;
     outline: none;
     font-size: 12px;
+    font-family: "Muli";
     font-weight: 600;
+    ::placeholder {
+      font-family: "Muli";
+}
   }
   input:focus {
     outline: none !important;
@@ -147,17 +151,20 @@ html{
     margin-top: 1.5rem;
     color: #818181;
     width: 135px;
-    font-size: 15.5px;
+    font-size: 13px;
+    font-family: "Nunito";
   }
   .form-svg{
         margin-top: 14px;
   }
+  
   .form-flex{
       display: flex;
       justify-content: space-between;
-      border-bottom: 3px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
       align-items: center;
       padding-right: 14px;
+      
   }
   .form-flex:focus-within{
       border-bottom: 2px solid blue;
