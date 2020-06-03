@@ -29,7 +29,7 @@ class Card extends React.Component {
                 <p className="content2">
                     {this.props.content2}
                 </p>
-                <Link href="#">
+                <Link href={this.props.href?`${this.props.href}`:"#"}>
                     <a className="link">
                         {this.props.link}
                     </a>
