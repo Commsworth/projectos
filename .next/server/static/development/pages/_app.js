@@ -483,8 +483,6 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     });
 
     _defineProperty(this, "handleDropdown", e => {
-      console.log(e.target.alt);
-
       if (e.target.alt !== "Logo") {
         this.setState({
           dropdown: false
@@ -524,7 +522,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-    window.addEventListener('click', this.handleDropdown);
+    window.removeEventListener('click', this.handleDropdown);
   }
 
   componentDidMount() {
@@ -540,7 +538,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62,
+        lineNumber: 61,
         columnNumber: 7
       }
     }, __jsx("div", {
@@ -548,7 +546,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64,
+        lineNumber: 63,
         columnNumber: 9
       }
     }, __jsx("ul", {
@@ -556,7 +554,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65,
+        lineNumber: 64,
         columnNumber: 11
       }
     }, __jsx("li", {
@@ -564,7 +562,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 65,
         columnNumber: 13
       }
     }, " ", __jsx("img", {
@@ -574,7 +572,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 65,
         columnNumber: 85
       }
     }), __jsx("div", {
@@ -583,21 +581,21 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67,
+        lineNumber: 66,
         columnNumber: 15
       }
     }, __jsx("ul", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68,
+        lineNumber: 67,
         columnNumber: 17
       }
     }, __jsx("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69,
+        lineNumber: 68,
         columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -605,14 +603,14 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69,
+        lineNumber: 68,
         columnNumber: 23
       }
     }, "Academy")), __jsx("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70,
+        lineNumber: 69,
         columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -620,14 +618,14 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70,
+        lineNumber: 69,
         columnNumber: 23
       }
     }, "Store")), __jsx("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
+        lineNumber: 70,
         columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -635,14 +633,14 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
+        lineNumber: 70,
         columnNumber: 24
       }
     }, "ProjectOS")), __jsx("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
+        lineNumber: 71,
         columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -650,14 +648,14 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
+        lineNumber: 71,
         columnNumber: 24
       }
     }, "MealStock")), __jsx("li", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
+        lineNumber: 72,
         columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -665,7 +663,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
+        lineNumber: 72,
         columnNumber: 24
       }
     }, "Liveizy")))), __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaBars"], {
@@ -674,7 +672,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 75,
         columnNumber: 15
       }
     })), __jsx("div", {
@@ -682,35 +680,67 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78,
+        lineNumber: 77,
         columnNumber: 13
       }
-    }, "|"), __jsx("li", {
-      className: "padding page",
+    }, __jsx("img", {
+      src: "pngs/navbardivide.png",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 77,
+        columnNumber: 50
+      }
+    })), __jsx("li", {
+      className: " page padding nav-line",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
         columnNumber: 13
       }
-    }, this.state.page)), __jsx("ul", {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
+      href: "/",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 52
+      }
+    }, __jsx("a", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 67
+      }
+    }, this.state.page)), __jsx("img", {
+      className: "nav-line",
+      src: "pngs/navbarline.png",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 98
+      }
+    }))), __jsx("ul", {
       className: "nav-lg",
       id: "myNav",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 82,
         columnNumber: 11
       }
     }, __jsx("li", {
-      className: "option padding ",
+      className: "option padding nav-line ",
       onClick: () => this.setState({
         class: "active"
       }),
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 83,
         columnNumber: 13
       }
     }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -719,18 +749,27 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
-        columnNumber: 97
+        lineNumber: 83,
+        columnNumber: 106
       }
     }, __jsx("a", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 84,
         columnNumber: 15
       }
-    }, "Services"))), __jsx("li", {
-      className: "option1 padding",
+    }, "Services")), __jsx("img", {
+      className: "nav-line",
+      src: "pngs/navbarline.png",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86,
+        columnNumber: 13
+      }
+    })), __jsx("li", {
+      className: "option1 padding nav-line",
       onClick: () => this.setState({
         class: "active1"
       }),
@@ -747,7 +786,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 88,
-        columnNumber: 98
+        columnNumber: 107
       }
     }, __jsx("a", {
       __self: this,
@@ -756,15 +795,24 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
         lineNumber: 89,
         columnNumber: 15
       }
-    }, "Portfolio"))), __jsx("li", {
-      className: "option2 padding",
+    }, "Portfolio")), __jsx("img", {
+      className: "nav-line",
+      src: "pngs/navbarline.png",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 91,
+        columnNumber: 13
+      }
+    })), __jsx("li", {
+      className: "option2 padding nav-line",
       onClick: () => this.setState({
         class: "active2"
       }),
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 93,
         columnNumber: 13
       }
     }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -773,38 +821,55 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
-        columnNumber: 98
+        lineNumber: 93,
+        columnNumber: 107
       }
     }, __jsx("a", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93,
+        lineNumber: 94,
         columnNumber: 15
       }
-    }, " Blog"))), __jsx("div", {
-      className: "padding divide-line",
+    }, " Blog")), __jsx("img", {
+      className: "nav-line",
+      src: "pngs/navbarline.png",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 96,
         columnNumber: 13
       }
-    }, "|"), __jsx("li", {
+    })), __jsx("div", {
+      className: "padding divide-line",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97,
+        lineNumber: 98,
+        columnNumber: 13
+      }
+    }, __jsx("img", {
+      src: "pngs/navbardivide.png",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98,
+        columnNumber: 50
+      }
+    })), __jsx("li", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 99,
         columnNumber: 13
       }
     }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
-      href: "#",
+      href: "/contacts",
       className: "option",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97,
+        lineNumber: 99,
         columnNumber: 18
       }
     }, __jsx("a", {
@@ -812,7 +877,7 @@ class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 100,
         columnNumber: 15
       }
     }, " Contact"))))));
