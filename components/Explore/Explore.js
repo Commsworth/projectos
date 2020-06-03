@@ -86,38 +86,42 @@ class Explore extends Component {
     }
 
 right = (event) => {
-    imageOffset += 50
+    imageOffset += 25
 //    let end = document.getElementById("scroll").width
 //    console.log(end)
-        if(imageOffset >= 2350) {
-        document.getElementById("scroll").style.right = 2350 + "px";
+        if(imageOffset >= 2645) {
+        document.getElementById("scroll").style.right = 2645 + "px";
         console.log(imageOffset)
         document.getElementById("right").setAttribute("class", "explore-svg");
         // document.getElementById("left").setAttribute("class", "explore-svg2");
-        }
-        else{
-            document.getElementById("scroll").style.right = imageOffset + "px";
-            document.getElementById("right").setAttribute("class", "explore-svg2");
+    }
+    else{
+        document.getElementById("scroll").style.right = imageOffset + "px";
+        document.getElementById("right").setAttribute("class", "explore-svg2");
         document.getElementById("left").setAttribute("class", "explore-svg2");
+        console.log(imageOffset)
 
         }
         }
 
  left = (event) => {
  
-  imageOffset -= 50
+  imageOffset -= 25
     if(imageOffset <= 0){
   document.getElementById("scroll").style.right = 0 + "px";
  document.getElementById("left").setAttribute("class", "explore-svg");
 //  document.getElementById("right").setAttribute("class", "explore-svg2");
   console.log(imageOffset)
   return imageOffset=0
+}
+else if (imageOffset >= 2645){
+    document.getElementById("scroll").style.right = 2645+ "px";
+    return imageOffset=2645
     }
-    // else if (imageOffset >)
     else{
         document.getElementById("scroll").style.right = imageOffset + "px";
         document.getElementById("left").setAttribute("class", "explore-svg2");
-        // document.getElementById("right").setAttribute("class", "explore-svg");
+        document.getElementById("right").setAttribute("class", "explore-svg2");
   console.log(imageOffset)
     }
   } 
