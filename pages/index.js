@@ -10,6 +10,7 @@ import ArrowLink from '../components/extra/arrow';
 import React, { Component } from 'react'
 import Div1 from '../components/landing/div1/div1.component';
 import Socials from '../components/extra/socials/socials.component';
+import Link from 'next/link';
 
 export default class Home extends Component {
   constructor(props) {
@@ -32,7 +33,9 @@ export default class Home extends Component {
           <div className="heading">
             <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
             <img src="/pngs/blueline.png" />
+            <Link href="/services">
             <button className="heading-button">Learn More</button>
+            </Link>
           </div>
           <br />
           <br />
@@ -53,20 +56,20 @@ export default class Home extends Component {
           <br />
           <Div1 />
           <div className="work-with">
-            <ArrowLink text="Work with us" />
+            <ArrowLink href="/services" text="Work with us" />
           </div>
           <br />
           <br />
           <br />
           <TitleDiv text="Our Services" />
           <div className="div2">
-            <Card title={<img src="/pngs/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-            <Card title={<img src="/pngs/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-            <Card title={<img src="/pngs/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-            <Card title={<img src="/pngs/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-            <Card title={<img src="/pngs/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />
-            {this.state.display ? <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} /> :
-              <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." link={<ArrowLink text="Contact Us" />} />}
+            <Card title={<img src="/pngs/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
+            <Card title={<img src="/pngs/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
+            {this.state.display ? <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} /> :
+              <Card title={<img src="/pngs/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />}
           </div>
           <div className='div2'>
             <svg className={this.state.display ? 'div2-svg' : ''} onClick={() => { this.setState({ display: true }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +98,7 @@ export default class Home extends Component {
           <br />
           <Div4 />
           <div className="socials">
-          <Socials icons="white"/>
+            <Socials icons="white" />
           </div>
         </main>
 
@@ -254,9 +257,19 @@ export default class Home extends Component {
           line-height: 119%;
           width: 243px;
         }
+        .div2 :global(.card:nth-of-type(2) .sub-title){
+          height: 64px;
+          padding-top: 0px;
+        }
+        .div2 :global(.card:nth-of-type(5) .sub-title){
+          height: 64px;
+          padding-top: 0px;
+        }
         .div2 :global(.card .sub-title){
           width: 243px;
-          height: 62px;
+          height: 32px;
+          padding-top: 32px;
+
         }
         .div2 :global(.card .link){
           font-size: 18px;

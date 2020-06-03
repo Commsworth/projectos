@@ -130,7 +130,8 @@ export const Why =()=>(
     }
         .why2 img{
             width: 553px;
-            height: 365px;
+            height: 354px;
+            margin-bottom: 32px;
             /* height: 365px; */
             /* margin:33px 0px 0px 3px; */
         }
@@ -142,7 +143,7 @@ export const Why =()=>(
         }
         .why2 img{
             width: 553px;
-            height: 365px;
+            height: 354px;
             /* height: 365px; */
             /* margin:33px 0px 0px 3px; */
         }

@@ -26,11 +26,11 @@
       margin: 0vh 5vw;
       // margin-bottom: 80px;
     }
-    .logo{
+    .logo {
       background: transparent;
       border: none;
     }
-    .down{
+    .down {
       background-color: #f3f3f3;
     }
     .nav-lg a {
@@ -83,24 +83,45 @@
       font-weight: bold;
       color: white;
       .option {
-        border-bottom: 1px solid transparent;
+        border-bottom: 3px solid transparent;
         .active {
-          border-bottom: 1px solid #0e82f8;
+          border-bottom: 3px solid #0e82f8;
         }
       }
-      .option:hover,.option1:hover,.option2:hover{
-        border-bottom: 1px solid white;
+      .option:hover,
+      .option1:hover,
+      .option2:hover {
+        border: none;
+      }
+      .option,
+      .option1,
+      .option2 {
+        &.nav-line {
+          width: 70px;
+          display: grid;
+          img {
+            display: none;
+          }
+        }
+        &.nav-line:hover {
+          img {
+            display: inline-block;
+            width: inherit;
+          }
+        }  
       }
       .option1 {
-        border-bottom: 1px solid transparent;
+        border-bottom: 3px solid transparent;
+        width: 50px;
         .active1 {
-          border-bottom: 1px solid #0e82f8;
+          border-bottom: 3px solid #0e82f8;
         }
       }
       .option2 {
-        border-bottom: 1px solid transparent;
+        border-bottom: 3px solid transparent;
+        width: 50px;
         .active2 {
-          border-bottom: 1px solid #0e82f8;
+          border-bottom: 3px solid #0e82f8;
         }
       }
     }
@@ -110,12 +131,25 @@
       // padding: 1rem;
       font-size: 15px;
       font-family: "Nunito", "sans-serif" !important;
+      &.nav-line {
+        display: grid;
+        img {
+          display: none;
+        }
+      }
+      &.nav-line:hover {
+        img {
+          display: inline-block;
+          width: inherit;
+        }
+      }
     }
     .page {
-      border-bottom: 1px solid transparent;
+      border-bottom: 3px solid transparent;
+      font-size: 18px !important;
     }
-    .page:hover{
-      border-bottom: 1px solid white;
+    .page:hover {
+      border: none;
     }
     .padding a {
       color: white;
@@ -160,13 +194,13 @@
       width: 100vw !important;
       .divide-line {
         display: none !important;
-      }  
+      }
       .padding {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .page{
+      .page {
         display: none;
       }
     }
