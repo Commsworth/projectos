@@ -17,3 +17,204 @@ a{
     color: #0E82F8;
 }
 }
+.contacts-body{
+    @font-face {
+font-family: "Aribau";
+src: url("/static/fonts/Aribau_Regular.otf");
+}
+
+p{
+  font-family: "Aribau";
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input {-webkit-appearance: none; box-shadow: none !important; }
+:-webkit-autofill { color: #fff !important; }
+
+/* contact section */
+.contact{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+    background: white;
+    padding-bottom: 100px;
+}
+.ctap-flex{
+
+}
+html{
+  background-color: white;
+}
+
+.ctap-head{
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+      margin: 0px;
+    font-weight: 900;
+    font-size: 36px;
+    color: white;
+    padding: 39px 112px;
+    background: #111517;
+    h1{
+      zoom: 0%;
+    }
+}
+
+.pad{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+    align-self: start;
+    width: 620px;
+    color: white;
+    padding: 0px 0px 0px 116px;
+    margin-top: 4.5rem;
+
+    h1{
+        color: black;
+        line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    
+    p{
+        color: black;
+        line-height: 30px;
+        padding-right: 34px;
+        margin-top: 50px !important;
+    }
+
+}
+.dash{
+    border: 4px solid #208FFF;
+    width: 28px;
+}
+.pad-flx{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    h1{
+        margin-left: 1rem;
+        line-height: 0px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 5px;
+    }
+}
+
+  .pad2 {
+    display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+     margin-bottom: 100px;
+     padding: 0px 0px 0px 68px;
+      margin-top: 3rem;
+    h1{
+        color: black;
+        line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+    }
+  }
+  .asterik{
+    margin-bottom: 5px;
+  }
+  /* form */
+  input {
+    width: 360px;
+    box-sizing: border-box; 
+    border: none;
+    // border-bottom: 2px solid #dddddd;
+    text-align: left; 
+    font-size: 12px;
+    padding: 10px 26px;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  select {
+    border: none;
+    width: 317px;
+    margin-top: 18px;
+    outline: none;
+    font-size: 12px;
+    font-family: "Muli";
+    font-weight: 600;
+    ::placeholder {
+      font-family: "Muli";
+}
+  }
+  input:focus {
+    outline: none !important;
+    // border-bottom: 2px solid #0e82f8;
+  }
+  
+  input[type="submit"] {
+    width: 20%;
+    background-color: rgb(14, 130, 248);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    font-family: "Nunito";
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #00B3BE;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0px 2.5px 0px 2.5px;
+    margin-top: 1.5rem;
+    color: #818181;
+    width: 135px;
+    font-size: 13px;
+    font-family: "Nunito";
+  }
+  .form-svg{
+        margin-top: 14px;
+  }
+  
+  .form-flex{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dddddd;
+      align-items: center;
+      padding-right: 14px;
+      
+  }
+  .form-flex:focus-within{
+      border-bottom: 2px solid blue;
+  }
+
+  .form {
+    width: 500px;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+      .contact{
+          display: grid;
+          grid-template-columns: 100%;
+      }
+  }
+}

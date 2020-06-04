@@ -22,10 +22,20 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/devops": [
+    "/contacts": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
+    "/ctap": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
   }
