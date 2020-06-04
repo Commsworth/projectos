@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../scss/ctap.scss'
 import '../scss/contacts.scss'
 import Modal from '../components/modal/Modal'
 import Layout from '../components/Layout'
@@ -141,8 +140,9 @@ class ctap extends Component {
                 <br />
                 <br />
                 <br />
-                <h1 className="ctap-head">Get In touch</h1>
+                <div className="contact-body">
                 <div className="contact">
+                <h1 className="ctap-head">Get In touch</h1>
                     <div className="pad">
                         <h1>Contact Us</h1>
                         
@@ -195,8 +195,8 @@ class ctap extends Component {
 
                     </div>
 
-                    <div className="form pad2">
-                            <h1>Request a session</h1>
+                    <div className="pad2">
+                            <h1>We'd love to hear from you</h1>
 
                             <form onSubmit={this.handleSubmit}>
 
@@ -304,6 +304,7 @@ class ctap extends Component {
                     
                 </div>
                 <Socials/>
+                </div>
             </Layout>
         )
     }

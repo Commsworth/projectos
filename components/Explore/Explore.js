@@ -86,7 +86,7 @@ class Explore extends Component {
     }
 
 right = (event) => {
-    imageOffset += 25
+    imageOffset += 40
 //    let end = document.getElementById("scroll").width
 //    console.log(end)
         if(imageOffset >= 2645) {
@@ -106,7 +106,7 @@ right = (event) => {
 
  left = (event) => {
  
-  imageOffset -= 25
+  imageOffset -= 40
     if(imageOffset <= 0){
   document.getElementById("scroll").style.right = 0 + "px";
  document.getElementById("left").setAttribute("class", "explore-svg");
