@@ -63,7 +63,8 @@ html{
     font-size: 36px;
     color: white;
     padding: 39px 112px;
-    background: #111517;
+    // background: #111517;
+    background-image: url(/static/ct-bkg.svg) !important;
     h1{
       zoom: 0%;
     }
@@ -200,7 +201,7 @@ html{
       border-bottom: 1px solid #dddddd;
       align-items: center;
       padding-right: 14px;
-      
+      width: 500px !important;
   }
   .form-flex:focus-within{
       border-bottom: 2px solid blue;
