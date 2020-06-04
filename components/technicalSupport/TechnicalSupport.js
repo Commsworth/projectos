@@ -46,7 +46,7 @@ class TechnicalSupport extends Component {
                                 <img src="/partners/microsoft.svg" alt="" />
                                 <img src="/partners/vmware.svg" alt="" />
                                 </div>
-                <button onClick={this.handleClick} className={`button ${this.state.more?'more':'off'}`}>-</button>
+
                 </div>
                 </div>
                 : <div>nothing here</div>

@@ -129,16 +129,48 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 990px) {
     .div4 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         // align-items: center;
         height: 40rem;
-        margin: 10vh 0vw;
+        margin: 0vh 0vw;
     }
-
+    // .divide2{
+    //     display: none !important;
+    // }
+    .brand {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .cli {
+        padding: 0px !important;
+        br {
+            display: none;
+        }
+    }
+    .more-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .off {
+            display: none !important;
+        }
+        .button {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            margin: 0px auto;
+            border: none;
+            background: #1c2124;
+            color: white;
+            font-size: 36px;
+            position: relative;
+            top: 30px;
+        }
+    }
     .pf1 {
         position: relative;
         top: 0rem;
@@ -146,23 +178,49 @@
     }
     .pf2 {
         position: relative;
-        top: 0rem;
+        top: 2.5rem;
         left: 0rem;
     }
     .pf3 {
         position: relative;
-        top: 0rem;
+        top: 5rem;
         left: 0rem;
     }
     .pf4 {
         position: relative;
         left: 0rem;
-        bottom: 0rem;
+        bottom: -2.5rem;
     }
     .pf5 {
         position: relative;
         left: 0rem;
         top: 0rem;
+    }
+    #mission {
+        width: 90vw;
+        margin: auto;
+        font-family: Muli;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 212%;
+        /* or 47px */
+
+        text-align: center;
+    }
+    #what-our-clients {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 126.5%;
+        /* or 25px */
+
+        text-align: center;
+    }
+    #div4-top-img{
+        width: 66px !important;
+        height: 66px !important;
     }
 
     .img-flx {
