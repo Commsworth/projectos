@@ -7,4 +7,6 @@
 .scroll {
     height: 400px;
  -ms-overflow-style: none !important;
+ overflow-y: hidden;
+ height: 412px;
 }

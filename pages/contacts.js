@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../scss/ctap.scss'
 import '../scss/contacts.scss'
 import Modal from '../components/modal/Modal'
 import Layout from '../components/Layout'
@@ -39,7 +38,7 @@ class ctap extends Component {
 
     }
 
-    handleChange = event => {
+    handleChange  = event => {
         const isCheckbox = event.target.type === "checkbox";
         this.setState({
             [event.target.name]: isCheckbox
@@ -141,8 +140,9 @@ class ctap extends Component {
                 <br />
                 <br />
                 <br />
-                <h1 className="ctap-head">Get In touch</h1>
+                <div className="contact-body">
                 <div className="contact">
+                <h1 className="ctap-head">Get In touch</h1>
                     <div className="pad">
                         <h1>Contact Us</h1>
                         
@@ -158,43 +158,45 @@ class ctap extends Component {
                         </div>
 
                         <div className="contacts-flx">
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/sales.svg" alt=""/>
                                 <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
-                                <p>9AM to 5PM GMT+1</p>
+                                <p>Availablee Monday-Friday
+                                9AM to 5PM GMT+1</p>
                                 <a href="">Chat now ></a>
                                 </div>
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/email.svg" alt="" />
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
-                                <p>9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
+                                <h1>Write Us</h1>
+                                <p>Availablee Monday-Friday
+                                9AM to 5PM GMT+1</p>
+                                <a href="">care@commsworth.com</a>
                             </div>
                         </div>
                         <br/>
+                        <br/>
+                        <br/>
                         <div className="contacts-flx">
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/tel.svg" alt=""/>
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
-                                <p>9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
+                                <h1>Ring Us</h1>
+                                <p>Availablee Monday-Friday
+                                9AM to 5PM GMT+1</p>
+                                <a href="">+2349084810110</a>
                                 </div>
-                            <div>
+                            <div className="contacts-ct">
                                 <img src="/static/visit.svg" alt="" />
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday</p>
+                                <h1>Pay us a Visit</h1>
+                                <p>225, Ikorodu Crescent, Dolphin Estate, Ikoyi Lagos</p>
                                 <p>9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
                             </div>
                         </div>
 
 
                     </div>
-                    <div className="form pad2">
-                            <h1>Request a session</h1>
+
+                    <div className="pad2">
+                            <h1>We'd love to hear from you</h1>
 
                             <form onSubmit={this.handleSubmit}>
 
@@ -293,13 +295,16 @@ class ctap extends Component {
 
                                 <input type="submit" value="Shoot" />
                             </form>
-                            <Modal onclose={this.showModal} show={this.state.show}>
+                            <Modal  onclose={this.showModal} show={this.state.show}>
                                 <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
                                 <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
                             </Modal>
                     </div>
+                    
+                    
                 </div>
                 <Socials/>
+                </div>
             </Layout>
         )
     }

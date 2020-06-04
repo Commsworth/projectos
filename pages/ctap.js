@@ -142,8 +142,8 @@ class ctap extends Component {
                <br/>
                <br/>
                <div className="ctap-flex">
-               <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
             <div className="contact">
+               <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
                 <div className="pad">
                     <h1>Assess threat to your business</h1>
                         <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,10 +166,10 @@ class ctap extends Component {
 
                         </div>
 
-                    <div className="form pad2">
+                    <div className="pad2">
                             <h1>Request a session</h1>
 
-                            <form onSubmit={this.handleSubmit}>
+                            <form className="form" onSubmit={this.handleSubmit}>
 
                                 <div className="form-flex"><label htmlFor="name">Name {this.state.nameError ? <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" className="asterik">
                                     <path d="M6.016 5.776L6.64 4.704L4.768 3.76L6.64 2.816L6.016 1.744L4.272 2.88L4.384 0.799999H3.136L3.248 2.88L1.504 1.744L0.88 2.816L2.752 3.76L0.88 4.704L1.504 5.776L3.248 4.64L3.136 6.72H4.384L4.272 4.64L6.016 5.776Z" fill="#C63C53" />
