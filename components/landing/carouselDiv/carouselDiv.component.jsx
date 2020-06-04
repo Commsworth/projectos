@@ -9,12 +9,14 @@ const options = [
         title: "NextGen App Performance Monitoring (APM) delivered through Dynatrace",
         content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 0,
+        link: "/services"
     },
     {
         img: "/pngs/featuredImage2.png",
         title: "Yes",
         content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 1,
+        link: "/ctap"
     }
 ]
 
@@ -28,6 +30,7 @@ export default class CarouselDiv extends Component {
             title: "",
             content: "",
             index: 0,
+            link: ""
         }
     }
 
@@ -62,8 +65,13 @@ export default class CarouselDiv extends Component {
                 <div className="carousel-div">
                     <button id="left-button" onClick={this.setOptionLeft}>{this.props.leftArrow}</button>
                     <div className="carousel-grid">
-                        <Card background={this.state.img} />
-                        <Card title={this.state.title} subTitle={this.props.blueSemiCircle} content={this.state.content} href="/services" link={<ArrowLink text="Read More" />} />
+                        <Card background={this.state.img} content={
+                            <div className="carousel-grid-image">
+                                <button id="inner-left-button" onClick={this.setOptionLeft}>{this.props.leftArrow}</button>
+                                <button id="inner-right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
+                            </div>
+                        } />
+                        <Card title={this.state.title} subTitle={this.props.blueSemiCircle} content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
                     </div>
                     <button id="right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
                 </div>
@@ -110,10 +118,10 @@ export default class CarouselDiv extends Component {
             width: 70vw;
             margin: 0 auto;
             }
-            .carousel-grid :global(.card:first-of-type) {
-                width: 591px;
-                height: 387px;
-                margin: 0px 1vw;
+            .carousel-grid-image{
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
             }
             .carousel-grid :global(.card) {
                 margin: 0px 1vw;
@@ -142,7 +150,7 @@ export default class CarouselDiv extends Component {
                 margin: 0;
                 margin-top: 34px !important;
             }
-            #left-button {
+            #left-button,#right-button{
             background: transparent;
             outline: none;
             border: none;
@@ -153,46 +161,66 @@ export default class CarouselDiv extends Component {
             position: sticky;
             }
 
-            #right-button {
-            position: sticky;
-            background: transparent;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            height: 31px;
-            width: 18px;
-            padding: 0;
-        }
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 991px) {
+            #inner-right-button, #inner-left-button{
+                display:none;
+            }
+            .carousel-grid :global(.card:first-of-type) {
+                width: 591px;
+                height: 387px;
+                margin: 0px 1vw;
+            }
 
+}
+@media screen and (max-width: 990px) {
         .carousel-grid{
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         .svg-margin{
             //display: none !important;
         }
+            #left-button,#right-button{
+                display: none;
+            }
+            #inner-right-button, #inner-left-button{
+                background:  black;
+                height: 62px;
+                width: 36px;
+                backdrop-filter: blur(15px);
+                padding: 0;
+                margin: 0 10px;
+                outline: none;
+                border: none;
+            }
 }
 @media screen and (max-width: 570px) {
 
         .carousel-grid{
             display: flex;
             flex-direction: column;
+            width: 90vw;    
+            margin: auto;
         }
         .carousel-grid :global(.card p),.carousel-grid :global(.card .title),.carousel-grid :global(.card .link),.carousel-grid :global(.card:first-of-type),.carousel-grid :global(.card .sub-title),.carousel-grid :global(.card){
             width: 100%;
-            min-width:220px;
+            //width:220px;
             margin: 0px auto;
             height: fit-content;
         }
         .carousel-grid :global(.card:first-of-type){
             height:200px !important;
         }
-            #right-button {
-                display:none;
-            }
-            #left-button {
-                display:none;
+            #inner-right-button, #inner-left-button{
+                background:  black;
+                height: 31px;
+                width: 18px;
+                backdrop-filter: blur(15px);
+                padding: 0;
+                margin: 0 10px;
+                outline: none;
+                border: none;
             }
 }
 

@@ -34,7 +34,7 @@ export default class Home extends Component {
             <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
             <img src="/pngs/blueline.png" />
             <Link href="/services">
-            <button className="heading-button">Learn More</button>
+              <button className="heading-button">Learn More</button>
             </Link>
           </div>
           <br />
@@ -49,6 +49,7 @@ export default class Home extends Component {
           <br />
           <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
           <TechnicalSupport />
+          <br />
           <br />
           <br />
           <TitleDiv text="About Us" />
@@ -211,6 +212,18 @@ export default class Home extends Component {
         }
         }
         @media only screen and (max-width: 570px) {
+          .map{
+            overflow: hidden;
+          }
+          .map img{
+            width: 1000px;
+            height: 300px;
+          }
+          .heading{
+            width:281px;
+            margin: auto;
+            font-size: 36px;
+          }
           .heading img{
           display:none;
           }
@@ -219,16 +232,42 @@ export default class Home extends Component {
           //display:none;
         }
         .div2{
+          width: 90vw !important;
+          margin: 0vh 5vw !important;
         }
+          .div2 :global(.card .title){
+            height: 90px;
+          }
+          .div2 :global(.card .sub-title){
+          padding: 0px !important;
+          height: 58px !important;
+          }
+          .div2 :global(.card p){
+          width: 100% !important;
+          height: 125px !important;
+          }
           .div2 :global(.card){
-            max-width: 300px;
-            padding: 20px !important;
+            min-width: 300px;
+            width: 100vw !important;
+            padding: 0px 15px !important;
           }
         .div3{
         //max-width: 320px;
         padding: 0vw !important;
+        padding-top: 50px !important;
         //margin: auto;
         }
+        .div3 h3{
+          //font-size: 18px;
+          //line-height: 119%;
+          font-size: 26px !important;
+          line-height: 139% !important;
+          width: 90vw !important;
+          margin: 0vh 5vw !important;
+        }
+            .div3 :global(.card){
+              margin: 19px 0px !important;
+            }
       }
         .div2{
           display: flex;
