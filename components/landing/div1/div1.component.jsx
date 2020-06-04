@@ -13,7 +13,7 @@ const Div1 = () => {
                 <div className="div1--second-top">
                     <Card title="Core Values" backcolour="#212425" subTitle={blueSemiCircle} content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
                         content2={
-                            <div style={{ display: "flex" }}>
+                            <div className="div1-ul">
                                 <ul>
                                     <li style={{ listStyleImage: "url('/pngs/liststyle.png')" }}>Customer Driven</li>
                                     <li style={{ listStyleImage: "url('/pngs/liststyle.png')" }}>Value Centric</li>

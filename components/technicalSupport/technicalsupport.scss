@@ -41,7 +41,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 0px 1vw;
     justify-content: center;
-    border-bottom: 0.5px solid #C9C9C9;
+    border-bottom: 0.5px solid #c9c9c9;
     // flex-direction: column;
 
     img {
@@ -74,29 +74,46 @@
     /* Project OS main */
 }
 @media screen and (min-width: 990px) {
-    .button{
+    .button {
         display: none;
     }
 }
 @media screen and (max-width: 990px) {
-    .head-flx {
+    .center{
+
+        .link {
+            padding: 25px 10px !important;
+            a{
+
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px !important;
+                line-height: 126.5%;
+            }
+        }
+        .head-flx {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        div {
+        }
     }
-    .off{
+    .off {
         display: none !important;
     }
-    .button{
-        width: 60px;
-        height: 60px;
+    .button {
+        width: 68px;
+        height: 68px;
         border-radius: 50%;
         margin: 0px auto;
         border: none;
         background: #1c2124;
         color: white;
-        font-size: 16px;
+        font-size: 36px;
+        position: relative;
+        top: 30px;
     }
-    .more-div{
+    .more-div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -106,8 +123,11 @@
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0;
-        img{
+        border-bottom: none;
+        img {
             border: none;
         }
     }
+}
+
 }
