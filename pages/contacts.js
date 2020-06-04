@@ -38,7 +38,7 @@ class ctap extends Component {
 
     }
 
-    handleChange = event => {
+    handleChange  = event => {
         const isCheckbox = event.target.type === "checkbox";
         this.setState({
             [event.target.name]: isCheckbox
