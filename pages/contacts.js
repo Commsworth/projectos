@@ -135,7 +135,7 @@ class ctap extends Component {
         return (
             <Layout>
                 <div className="ct">
-                <h1 className="ctap-head">Get In touch</h1>
+                <h1 className="ctap-head"><div className="overlay">Get In touch</div></h1>
                     <div className="pad">
                         <h1>Contact Us</h1>
                         
