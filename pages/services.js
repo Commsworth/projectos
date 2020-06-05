@@ -10,11 +10,11 @@ import { Why } from '../components/services/why';
 
 
 import React, { Component } from 'react';
-import ArrowLink from '../components/extra/arrow';
+import Arrowlink from '../components/extra/arrow';
 import Socials from '../components/extra/socials/socials.component';
 
 export default class Services extends Component {
-    constructor(props) {
+    constructor(props) {            
         super(props)
 
         this.state = {
@@ -41,42 +41,42 @@ export default class Services extends Component {
                             title={<img src="assets/svgs/devops.svg" alt="devops" />}
                             subTitle="DevOps & Analytics"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink text="Explore" />}
+                            link={<Arrowlink href="/devops" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/support.svg" alt="devops" />}
                             subTitle="Support"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink text="Explore" />}
+                            link={<Arrowlink href="/devops" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/business.svg" alt="devops" />}
                             subTitle="Business Continuity"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink text="Explore" />}
+                            link={<Arrowlink href="/devops" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/product.svg" alt="devops" />}
                             subTitle="Product & Digital Strategy"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink text="Explore" />}
+                            link={<Arrowlink href="/devops" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/businessautomation.svg" alt="devops" />}
                             subTitle="Business Automation and Productivity"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink text="Explore" />}
+                            link={<Arrowlink href="/devops" text="Explore" />}
                         />
                         {this.state.display ? <Card
                             title={<img src="assets/svgs/cybersecurity.svg" alt="devops" />}
                             subTitle="Cybersecurity"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink text="Explore" />}
+                            link={<Arrowlink href="/devops" text="Explore" />}
                         /> : <Card
                                 title={<img src="assets/svgs/infrastructure.svg" alt="devops" />}
                                 subTitle="Infrastructure"
                                 content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                                link={<ArrowLink text="Explore" />}
+                                link={<Arrowlink href="/devops" text="Explore" />}
                             />
                         }
           </div>
