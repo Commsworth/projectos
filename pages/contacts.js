@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../scss/contacts.scss'
+import '../scss/contact.scss'
 import Modal from '../components/modal/Modal'
 import Layout from '../components/Layout'
 import Socials from '../components/extra/socials/socials.component'
@@ -134,14 +134,7 @@ class ctap extends Component {
     render() {
         return (
             <Layout>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className="contact-body">
-                <div className="contact">
+                <div className="ct">
                 <h1 className="ctap-head">Get In touch</h1>
                     <div className="pad">
                         <h1>Contact Us</h1>
@@ -173,9 +166,7 @@ class ctap extends Component {
                                 <a href="">care@commsworth.com</a>
                             </div>
                         </div>
-                        <br/>
-                        <br/>
-                        <br/>
+                      
                         <div className="contacts-flx">
                             <div className="contacts-ct">
                                 <img src="/static/tel.svg" alt=""/>
@@ -188,7 +179,7 @@ class ctap extends Component {
                                 <img src="/static/visit.svg" alt="" />
                                 <h1>Pay us a Visit</h1>
                                 <p>225, Ikorodu Crescent, Dolphin Estate, Ikoyi Lagos</p>
-                                <p>9AM to 5PM GMT+1</p>
+                            
                             </div>
                         </div>
 
@@ -304,7 +295,7 @@ class ctap extends Component {
                     
                 </div>
                 <Socials/>
-                </div>
+            
             </Layout>
         )
     }
