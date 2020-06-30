@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../scss/contact.scss'
+import Head from 'next/head'
 import Modal from '../components/modal/Modal'
 import Layout from '../components/Layout'
 import Socials from '../components/extra/socials/socials.component'
@@ -134,6 +135,10 @@ class ctap extends Component {
     render() {
         return (
             <Layout>
+                <Head>
+                <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                </Head>
                 <div className="ct">
                 <h1 className="ctap-head"><div className="overlay">Get In touch</div></h1>
                     <div className="pad">

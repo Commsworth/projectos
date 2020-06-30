@@ -135,13 +135,80 @@ height: 400.85px;
  
  
  /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (max-width: 900px) {
+ @media only screen and (max-width: 1000px) {
     .crda{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
+
+    .tp{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+.card{
+    .link{font-size: 25px;}
+}
+}
+.box{
+padding: 39px 6vw;
+}
+.tp1 {
+.card{
+
+    width: 100% !important;
+    a{
+        font-family: "Nunito";
+        font-size: 24px !important;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 52px;
+        color: white;
+        margin-bottom: 0px !important;
+    
+    }
+  
+}
+
+}
+
+#explore{
+   width: 173px;
+    height: 37px;
+    outline:  #208FFF;
+    color:  #208FFF;
+    background-color: #1C2124;
+     border-radius: 5px;
+     font-weight: 600;
+}
+#select{
+    display: flex;
+    justify-content: flex-end;
+}
+.tp p{
+    font-weight: 500;
+    line-height: 30px;
+font-size: 20px;
+
+}
+.tp1{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 500px;
+    align-self: center;
+    /* margin-left: 100px; */
+}
+.tp2{
+    display: flex;
+    /* align-content: center; */
+    /* width: 100%; */
+    img{
+        width: 100%;
+    }
+}
          }
      
  

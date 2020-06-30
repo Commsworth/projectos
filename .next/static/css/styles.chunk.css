@@ -107,13 +107,18 @@
     margin-right: 10px;
     font-weight: 600; }
   .ct select {
-    border: none;
+    border: 0px !important;
     width: 317px;
     margin-top: 18px;
-    outline: none;
+    outline: none !important;
     font-size: 12px;
     font-family: "Muli";
-    font-weight: 600; }
+    font-weight: 600;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; }
     .ct select ::placeholder {
       font-family: "Muli"; }
   .ct input:focus {
@@ -155,10 +160,162 @@
   .ct .form {
     width: 500px; }
 
-@media only screen and (max-width: 800px) {
-  .contact {
+@media only screen and (max-width: 1000px) {
+  .contacts-flx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 25px; }
+    .contacts-flx .contacts-ct {
+      width: 261px; }
+    .contacts-flx img {
+      height: 50px; }
+    .contacts-flx h1 {
+      font-weight: bold;
+      font-size: 24px; }
+    .contacts-flx a {
+      border-bottom: 1px solid;
+      color: #0E82F8; }
+  .ct {
     display: grid;
-    grid-template-columns: 100%; } }
+    grid-template-columns: 100%;
+    grid-template-rows: 11%;
+    justify-content: center;
+    background: white;
+    padding-bottom: 200px;
+    /* contact section */
+    /* form */ }
+    .ct .ctap-head {
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin: 0px;
+      font-weight: 900;
+      font-size: 36px;
+      color: white;
+      background: #111517;
+      background-image: url(/static/ct-bkg.png) !important;
+      height: 316px;
+      background-size: cover; }
+    .ct .overlay {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 146px 0px 0px 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 2;
+      cursor: pointer; }
+    .ct .pad {
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      align-self: start;
+      width: 100%;
+      color: white;
+      padding: 0px 15px;
+      margin-top: 7.5rem; }
+      .ct .pad h1 {
+        color: black;
+        line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px; }
+      .ct .pad p {
+        color: black;
+        line-height: 30px;
+        padding-right: 34px;
+        margin-top: 50px !important; }
+    .ct .dash {
+      border: 4px solid #208FFF;
+      width: 28px; }
+    .ct .pad-flx {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-top: 10px; }
+      .ct .pad-flx h1 {
+        margin-left: 1rem;
+        line-height: 0px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 5px; }
+    .ct .pad2 {
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-bottom: 100px;
+      padding: 0px 15px;
+      margin-top: 7.5rem;
+      width: 100%; }
+      .ct .pad2 h1 {
+        color: black;
+        line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px; }
+    .ct .asterik {
+      margin-bottom: 5px; }
+    .ct input {
+      width: 60%;
+      box-sizing: border-box;
+      border: none;
+      text-align: left;
+      font-size: 12px;
+      padding: 10px 26px;
+      margin-top: 15px;
+      margin-right: 10px;
+      font-weight: 600; }
+    .ct select {
+      border: none;
+      width: 317px;
+      margin-top: 18px;
+      outline: none;
+      font-size: 12px;
+      font-family: "Muli";
+      font-weight: 600; }
+      .ct select ::placeholder {
+        font-family: "Muli"; }
+    .ct input:focus {
+      outline: none !important; }
+    .ct input[type="submit"] {
+      width: 20%;
+      background-color: #0e82f8;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 50px;
+      font-family: "Nunito"; }
+    .ct input[type="submit"]:hover {
+      background-color: #00B3BE; }
+    .ct label {
+      display: block;
+      margin-bottom: 10px;
+      padding: 0px 2.5px 0px 2.5px;
+      margin-top: 1.5rem;
+      color: #818181;
+      width: 35%;
+      font-size: 13px;
+      font-family: "Nunito"; }
+    .ct .form-svg {
+      margin-top: 14px; }
+    .ct .form-flex {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dddddd;
+      align-items: center;
+      padding-right: 14px;
+      width: 93% !important; }
+    .ct .form-flex:focus-within {
+      border-bottom: 2px solid blue; } }
 
 @media screen and (min-width: 991px) {
   .dropdown-button {
