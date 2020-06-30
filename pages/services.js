@@ -99,7 +99,7 @@ export default class Services extends Component {
                     .container {
                         min-height: 100vh;
                         // padding: 0 0.5rem;
-                        // max-width: 97vw;
+                        max-width: 100vw;
                         background: #111517;
                         color: #f4f4f4 !important;
                       }
@@ -232,6 +232,22 @@ export default class Services extends Component {
         fill: #208FFF; 
         margin-left: 10px 10px;
       }
+      @media only screen and (max-width: 570px) {
+        .about-cards :global(.card){
+            width: 300px;
+            margin: 5vw auto;
+        }          
+        .heading-text{
+            //width: 300px;
+            font-size: 8vw;
+        }
+        .offer{
+            font-size: 10vw;
+        }
+      }
+        .heading img{
+            display: none;
+        }
                     `}
                 </style>
             </div>

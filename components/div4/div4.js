@@ -35,8 +35,8 @@ class Div4 extends React.Component {
         return (
             <div>
                 <div className="cli">
-                    <h5>Trusted by top brands across various industries
-                    <br />just to name a few
+                    <h5>Trusted by top brands across various industries,
+                    <br /> just to name a few
                 </h5>
                     <div className="brand">
                         <img src="/img-div4/7up.svg" alt="" srcset="" />

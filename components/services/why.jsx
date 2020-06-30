@@ -2,6 +2,7 @@
 // import big from 'pngs/big.png'
 // import pig from 'pngs/pig.png'
 // import sup from 'pngs/sup.png'
+// import './why.scss';
 
 export const Why =()=>(
 
@@ -88,7 +89,7 @@ export const Why =()=>(
     }
     .why1 p{
         width: 492px;
-        height: 60px;
+        //height: 60px;
         font-family: Muli;
         font-style: normal;
         font-weight: normal;
@@ -139,11 +140,41 @@ export const Why =()=>(
     @media only screen and (max-width: 570px) {
         .why{
             grid-template-columns: 100%;
+            margin: 0 !important;
         
         }
+        .why0{
+            width: 300px;
+            margin: 0 !important;
+            
+        }
+        .center-div{
+            //width: 100% !important;
+            margin: 0 !important;
+            padding: 0px;
+        }
+        .center-div h1{
+                text-align: center;
+                font-size: 10vw;
+        }
+        .why1 h4{
+            text-align: center;
+            width: 90vw;
+            //width: 300px;
+            margin: 2vw auto;
+        }
+    .why1 p{
+            text-align: center;
+        width: 90vw;
+        //width: 300px;
+        margin: 2vw auto 15vw;
+    }
+    .bkg{
+        display: none;
+    }
         .why2 img{
-            width: 553px;
-            height: 354px;
+            width: 80vw;
+            height: 60vw;
             /* height: 365px; */
             /* margin:33px 0px 0px 3px; */
         }
