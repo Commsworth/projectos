@@ -113,31 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-/******/ 	var hotCurrentHash = "760db90b2b9f42f1cfda";
-=======
-/******/ 	var hotCurrentHash = "d299fde72afff0bc9fb3";
->>>>>>> 47dc8329b842ac01030c64b2d2483121a452af8e
-=======
-/******/ 	var hotCurrentHash = "81f273fa0552269220a0";
->>>>>>> 872b6f9c3eec79368474e35bca26da0f403c3d9b
-=======
-/******/ 	var hotCurrentHash = "2669788126cc0640ef57";
->>>>>>> 7596a148d5a4db0b65c339a098eb7a8f2619cdea
-=======
-/******/ 	var hotCurrentHash = "196bea3e5911adf899cd";
->>>>>>> c8087a11bf777953b73a0f30ef1b0eb860e3616b
-=======
-/******/ 	var hotCurrentHash = "6932c8fd2ab8ed46001b";
->>>>>>> 4d289838cd4e654be6c4b9020512e68539072681
-=======
-/******/ 	var hotCurrentHash = "5a06a0d4a9c2ba33971c";
->>>>>>> 2fbeffd3511ca2982ed84454de60900f9cb1da63
+/******/ 	var hotCurrentHash = "374b585dd287e429933b";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
