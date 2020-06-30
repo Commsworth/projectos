@@ -306,10 +306,10 @@ a{
      margin-bottom: 100px;
      padding: 0px 15px;
       margin-top: 7.5rem;
-      width: 100%;
+      width: 95%;
     h1{
         color: black;
-        line-height: 5px;
+        line-height: 27px;
         font-family: Nunito;
         font-style: normal;
         font-weight: bold;
@@ -372,7 +372,7 @@ a{
     padding: 0px 2.5px 0px 2.5px;
     margin-top: 1.5rem;
     color: #818181;
-    width: 35%;
+    width: 31%;
     font-size: 13px;
     font-family: "Nunito";
   }
@@ -386,9 +386,10 @@ a{
       border-bottom: 1px solid #dddddd;
       align-items: center;
       padding-right: 14px;
-      width: 93% !important;
+      width: 95% !important;
   }
   .form-flex:focus-within{
+    width: 93%;
       border-bottom: 2px solid blue;
   }
   }
