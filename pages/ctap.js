@@ -3,6 +3,7 @@ import '../scss/ctap.scss'
 import Layout from '../components/Layout'
 import Modal from '../components/modal/Modal'
 import Socials from '../components/extra/socials/socials.component'
+import Head from 'next/head'
 
 const initialState = {
     name: "",
@@ -135,6 +136,10 @@ class ctap extends Component {
     render() {
         return (
             <Layout>
+                 <Head>
+      <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
                <br/>
                <br/>
                <br/>
