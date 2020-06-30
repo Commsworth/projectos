@@ -213,11 +213,11 @@ input {-webkit-appearance: none; box-shadow: none !important; }
 
     h1{
         color: black;
-        line-height: 5px;
+        line-height: 27px;
         font-family: Nunito;
         font-style: normal;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 34px;
         padding-left: 10px;
         padding-top: 20px;
         height: 100%;
@@ -343,6 +343,7 @@ input {-webkit-appearance: none; box-shadow: none !important; }
   }
 
   .form {
+    width: 98%;
     margin-top: 68px;
   }
 }
