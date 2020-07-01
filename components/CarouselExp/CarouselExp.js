@@ -65,7 +65,7 @@ export default class CarouselDiv extends Component {
                
                 <div className="carousel-grid">
                     <Card title="" content={<img />} background={this.state.img} />
-                    <Card title={this.state.title} subTitle={blueSemiCircle} content={this.state.content} link={<ArrowLink text="Read More"/>} />
+                    <Card title={this.state.title} subTitle={blueSemiCircle} content={this.state.content} link={<ArrowLink text="Work with us"/>} />
                 </div>
              
             </div>

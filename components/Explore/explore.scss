@@ -23,6 +23,9 @@
         }
 }
 }
+.exp-head-opt{
+    display: none;
+}
 .exp-head{
     display: flex;
     margin: auto;
@@ -30,6 +33,7 @@
     li{
         font-family: Nunito;
         margin: auto;
+        font-size: 18px !important;
         padding: 20px 0px 10px 0px;
         cursor: pointer;
     }
@@ -106,4 +110,130 @@
     display: flex;
     justify-content: center;
     padding: 14px 0px 129px 0px;
+}
+
+ @media only screen and (max-width: 1000px) {
+ 
+.exp{
+    background: white;
+    h3{
+        color: black;
+
+    }
+    p{
+        color: black;
+    }
+    ul{
+        margin-bottom: 2rem;
+    }
+    .explore-cau{ 
+        .carousel-div{
+                margin: 0px;
+            .carousel-grid {
+                display: grid;
+                justify-items: center;
+    grid-template-columns: 100%;
+    gap: 0px;
+    padding: 0px 0px;
+    margin: 0px;
+                .card {
+                    height: 380px;
+                    padding: 20px;
+                    width: 100%;
+                    justify-content: center;
+                }
+        }
+        }
+        }
+    }
+
+.exp-head{
+    display: none;
+}
+.exp-head-opt{
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+    li{
+        font-family: Nunito;
+        margin: auto;
+        padding: 20px 0px 10px 0px;
+        cursor: pointer;
+    }
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.exp-head-style{
+    border-bottom: 2px solid #0E82F8;
+    color: #0E82F8;
+}
+.exp-head li:hover{
+    color:rgb(129, 129, 129);
+}
+// Offer style
+
+.offer-grid{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+  
+    .card{
+       width: 320px !important;
+        padding: 60px 11px 0px 53px;
+    margin: 1px 0px 0px 19px;
+        h3{
+            font-size: 33px;
+            margin: 0px 49px -5px 0px;
+        }
+        p{
+           
+        }
+    }
+}
+.offer-options{
+    display: flex;
+        justify-content: center;
+    margin-top: 37px;
+    li{
+        font-family: Nunito;
+        margin: 0px 22px;
+        cursor: pointer;
+    }
+
+}
+.offer-options-style{
+    border-bottom: 2px solid #0E82F8;
+    color: #0E82F8;
+}
+.offer-options li:hover{
+    color:rgb(129, 129, 129);
+}
+.explore-svg{
+  fill: #D3D3D3;
+}
+.explore-svg2{
+  fill:#0E82F8 ;
+}
+
+
+.offer-circle{
+    display: flex;
+    margin-left: 15px;
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow:0px 10px 25px rgba(0, 0, 0, 0.05);
+    svg{
+        cursor: pointer;
+    }
+}
+.circle-opt{
+    display: flex;
+    justify-content: center;
+    padding: 14px 0px 129px 0px;
+}
+
+
 }
