@@ -3,16 +3,19 @@
     .contact-card-main {
         display: flex;
         flex-wrap: wrap;
-        width: 80vw;
-        margin-left: 20vw;
+        justify-content: center;
+        // width: 100vw;
+        margin: 0vw auto;
         padding: 85px 0vw;
         .card {
             width: 40%;
             min-width: 400px;
             justify-content: center;
             height: 465.41px;
+            margin: auto 25px;
             h3 {
-                width: 347px;
+                min-width: 450px;
+                width: 40%;
                 height: 45px;
                 font-family: Nunito;
                 font-style: normal;
@@ -24,45 +27,58 @@
                 color: #f4f4f4;
                 margin: 0;
             }
+            .content,
+            .content2,
+            .link,
+            .title,
+            .sub-title {
+                align-self: center;
+            }
             .content {
-                width: 475px;
                 height: 130px;
                 font-family: Muli;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 190%;
+                min-width: 450px;
+                width: 40%;
                 /* or 38px */
 
                 /* Placeholder */
 
                 color: #f4f4f4;
             }
-            .img {
-                min-width: 600px;
-                box-shadow: 0px 0px 1px 0px;
-            }
+        }
+        .image-card {
+            min-width: 450px;
+            width: 40% !important;
+            box-shadow: 0px 0px 5px 0px;
+            margin: auto 25px;
         }
     }
     .contact-card-div {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         color: black !important;
         background: #ffffff;
-        width: 80vw;
-        padding: 85px 20vw;
+        // width: 100vw;
+        padding: 85px 0vw;
         &.reverse {
             flex-direction: row-reverse;
-            padding: 85px 20vw 85px 0vw;
+            padding: 85px 0vw 85px 0vw;
         }
         .card {
-            width: 500px;
+            min-width: 450px;
+            width: 40%;
             color: #000000 !important;
             justify-content: center;
             height: 465.41px;
+            margin: auto 25px;
             .title {
-                width: 97px;
+                min-width: 450px;
+                width: 40%;
                 height: 37px;
                 font-family: Nunito;
                 font-style: normal;
@@ -75,8 +91,13 @@
 
                 color: #1b1b1b;
             }
+            .sub-title {
+                min-width: 450px;
+                width: 40%;
+            }
             .content {
-                width: 500px;
+                min-width: 450px;
+                width: 40%;
                 height: 222px;
                 font-family: Muli;
                 font-style: normal;
@@ -91,15 +112,11 @@
 
                 color: #1b1b1b;
             }
-            img {
-                min-width: 600px;
-                box-shadow: 0px 0px 5px 0px;
-            }
-            .content2{
+            .content2 {
                 display: none;
             }
             .link {
-                width: 197px;
+                min-width: 450px;
                 height: 33px;
                 font-family: Nunito;
                 font-style: normal;
@@ -107,10 +124,69 @@
                 font-size: 30px;
                 line-height: 109%;
             }
+            .content,
+            .content2,
+            .link,
+            .title,
+            .sub-title {
+                align-self: center;
+            }
+        }
+        .image-card {
+            min-width: 450px;
+            width: 40% !important;
+            box-shadow: 0px 0px 5px 0px;
+            margin: auto 25px;
         }
     }
     color: black !important;
     #contact-heading {
         padding-top: 200px;
     }
+}
+
+@media screen and (min-width: 571px) and (max-width: 1023px) {
+    .contact-card-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card-div {
+        flex-direction: column;
+        align-items: center;
+
+        .card{
+            .link{
+                width: fit-content !important;
+                min-width: fit-content !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .image-card {
+        display: none;
+    }
+    .contact-card-main{
+        height: fit-content !important;
+        padding: 15vw 0px !important;
+        align-self: center;
+    }
+    .contact-card-main,.contact-card-div{
+
+        .card {
+        width: 80vw;
+        min-width: 200px !important;
+        // margin: 5vw auto !important;
+        margin: 5vh auto 0vh !important;
+        .content,
+        .content2,
+        .title,
+        .link,
+        .sub-title {
+            width: 90vw !important;
+            min-width: 200px !important;
+            height: fit-content !important;
+        }
+    }
+}
 }
