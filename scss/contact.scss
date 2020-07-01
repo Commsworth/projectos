@@ -6,11 +6,11 @@
         height: 50px;
     }
 display: flex;
-justify-content: space-between;
+justify-content: end;
 padding-top: 25px;
 h1{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 24px !important;
 }
 a{
     border-bottom: 1px solid;
@@ -32,7 +32,7 @@ a{
   grid-row: 1/2;
       margin: 0px;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 48px;
     color: white;
     background: #111517;
     background-image: url(/static/ct-bkg.png) !important;

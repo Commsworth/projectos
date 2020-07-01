@@ -1,11 +1,16 @@
 .explore{
 }
 .tp{
-display: flex;
+display: grid;
 flex-wrap: wrap;
-justify-content: center;
+grid-template-columns: 50% 50%;
+justify-items: center;
+padding: 0px 90px;
 .card{
-    .link{font-size: 25px;}
+    .link{
+        font-size: 25px;
+        padding-top: 30px;
+    }
 }
 }
 .box{
@@ -21,10 +26,10 @@ padding: 39px 6vw;
     }
     h3{
         font-weight: bold;
-        font-size: 52px;
+        font-size: 48px !important;
         color: white;
         margin-bottom: 0px !important;
-    
+        line-height: 35px;
     }
 }
 
@@ -46,7 +51,7 @@ padding: 39px 6vw;
 .tp p{
     font-weight: 500;
     line-height: 30px;
-font-size: 20px;
+    font-size: 18px !important;
 
 }
 .tp1{
@@ -65,48 +70,7 @@ font-size: 20px;
         width: 507px;
     }
 }
-.dpn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 65px;
-}
 
-/* cards */
-.crda{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background: #2A2A2A;
-    padding: 15vh 11vw;
-    margin: 5px 0px 5px 0px ;
-}
-.crdb{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background: #2A2A2A;
-    padding: 15vh 11vw;
-    margin: 5px 0px 5px 0px ;
-
-}
-.crd1 h1{
-    font-weight: Bold;
-font-size:36px;
-    color: white;
-
-}
-.crd p{
-font-size: 18px;
-
-}
-.crd1{
-    width: 500px;
-}
-.crd1,.crd2 img{
-    width: 500px;
-height: 400.85px;
-}
 
 @media screen and (max-width: 700px){
     .crd1,.crd2 img, .tp2 img{
@@ -136,19 +100,17 @@ height: 400.85px;
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (max-width: 1000px) {
-    .crda{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
     .tp{
-display: flex;
+display: grid;
 flex-wrap: wrap;
-justify-content: center;
+grid-template-columns: 100%;
+justify-items: center;
+margin: auto;
+padding: 0px 0px;
 .card{
     .link{font-size: 25px;}
+    padding: 0px 15px;
+    width: 100%;
 }
 }
 .box{
@@ -197,7 +159,7 @@ font-size: 20px;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    width: 500px;
+    width: 100%;
     align-self: center;
     /* margin-left: 100px; */
 }
