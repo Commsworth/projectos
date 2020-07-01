@@ -63,7 +63,7 @@ export class Nav extends Component {
         <div className="nav">
           <ul className="nav-sm">
             <li className={`padding ${this.state.dropdown===true?'down':''}  dp`} > <img onClick={this.logoDropdown} src={this.path+"logo.svg"} alt="Logo" />
-              <div id="myDropdown" class="dropdown-content">
+              <div id="myDropdown" className="dropdown-content">
                 <ul>
                   <li><Link href="/">Academy</Link></li>
                   <li><Link href="#about">Store</Link></li>
@@ -80,17 +80,17 @@ export class Nav extends Component {
 
 
           <ul className="nav-lg" id="myNav">
-            <li className="option padding nav-line " onClick={() => this.setState({ class: "active" })}> <Link href={this.path+"services"} className={this.state.class}>
+            <li className="option padding nav-line " onClick={() => this.setState({ class: "active" })}> <Link href={this.path+"services"}>
               <a>Services</a>
             </Link>
             <img className="nav-line" src="pngs/navbarline.png"/>
             </li>
-            <li className="option1 padding nav-line" onClick={() => this.setState({ class: "active1" })}> <Link href={this.path+"portfolio"} className={this.state.class}>
+            <li className="option1 padding nav-line" onClick={() => this.setState({ class: "active1" })}> <Link href={this.path+"portfolio"}>
               <a>Portfolio</a>
             </Link>
             <img className="nav-line" src="pngs/navbarline.png"/>
             </li>
-            <li className="option2 padding nav-line" onClick={() => this.setState({ class: "active2" })}> <Link href="#" className={this.state.class}>
+            <li className="option2 padding nav-line" onClick={() => this.setState({ class: "active2" })}> <Link href="#">
               <a> Blog</a>
             </Link>
             <img className="nav-line" src="pngs/navbarline.png"/>

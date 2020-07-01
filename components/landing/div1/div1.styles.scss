@@ -10,14 +10,15 @@
         // width: 80vw;
         margin: 2vw auto;
         // width: 300px;
-        min-height: 600px;
+        height: 40vw;
         .div1-large {
             // background: #1C2124;
             // height: 650px;
             // padding: 5rem;
             // height: 600px;
             // max-width: 500px;
-            width: 45vw;
+            min-width: 450px;
+            width: 40%;
             margin-right: 9px;
             .card {
                 // margin-right: 9px;
@@ -30,11 +31,14 @@
                     font-family: Muli;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 120% !important;
+                    font-size: 1.2vw !important;
                     line-height: 200%;
                     /* or 36px */
-
+                    
                     letter-spacing: 0.01em;
+                }
+                .content{
+                    padding: 1vw 0px;
                 }
                 .title {
                     font-family: Nunito;
@@ -55,7 +59,8 @@
             // margin: 0px;
             // gap: 0px;
             // background: red;
-            width: 45vw;
+            min-width: 450px;
+            width: 40%;
             .div1--second-top {
                 .card {
                     padding: auto;
@@ -63,7 +68,6 @@
                     h3,
                     p {
                         padding: 0px 32px !important;
-                        margin: 0;
                         // width: 420px;
                     }
                     h3 {
@@ -80,7 +84,7 @@
                         font-family: Muli;
                         font-style: normal;
                         font-weight: normal;
-                        font-size: 16px;
+                        font-size: 1vw !important;
                         line-height: 208%;
                         /* or 33px */
 
@@ -91,8 +95,8 @@
                         font-family: Muli;
                         font-style: normal;
                         font-weight: normal;
-                        font-size: 14px;
                         line-height: 223%;
+                        font-size: 0.9vw !important;
                         /* or 31px */
 
                         letter-spacing: 0.01em;
@@ -100,7 +104,7 @@
                         /* Placeholder */
 
                         color: #f4f4f4;
-                        .div1-ul{
+                        .div1-ul {
                             display: flex;
                         }
                         ul {
@@ -114,12 +118,10 @@
         }
         .div1--second--small {
             // width: 100%;
-            width: 100%;
             display: grid;
             // height: 100%;
             gap: 9px;
             grid-template-columns: 1fr 1fr;
-            // height: 300px;
             .card {
                 // width: 230px;
                 padding: auto;
@@ -127,14 +129,14 @@
                 p {
                     padding: 0px 12px !important;
                     margin: 0;
-                    width: 220px;
+                    // width: 220px;
                     // margin: auto 0px;
                 }
                 p {
                     font-family: Muli;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 16px;
+                    font-size: 1.0vw !important;
                     line-height: 208%;
                     /* or 33px */
 
@@ -183,10 +185,10 @@
         .div1--second {
             .card {
                 margin-bottom: 1vw;
-                .content2{
-                    .div1-ul{
+                .content2 {
+                    .div1-ul {
                         display: inline;
-                        ul{
+                        ul {
                             margin: 0;
                             padding: 0;
                             padding-left: 20px !important;

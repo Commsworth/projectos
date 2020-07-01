@@ -6,7 +6,7 @@ const ImageCard = ({image}) => {
         <div className="top-bar">
             <img src="assets/svgs/topbar.svg" alt=""/>
         </div>
-        <div>
+        <div style={{overflow: 'hidden'}}>
         <img className="image" src={image} alt="Card Image"/>
         </div>
     </div>
