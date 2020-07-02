@@ -28,16 +28,18 @@ class ctap extends Component {
                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Head>
                 
-                <div className="container  ct">
-                <div className="ctap-head">
-                    <div className="overlay">
-                        <div className='container'>
-                        <h1>                            
-                            Get In touch
-                            </h1>
+                <div className="ct">
+                    <div className="ctap-head">
+                        <div className="overlay">
+                            <div className='container'>
+                                <h1>Get In touch</h1>
                             </div>
                         </div>
-                        </div>
+                    </div>
+                </div>
+
+<div  style={{background:"white !important"}}>
+            <div className="container">
                 <div className='ct1'>
                     <div className="pad">
                         <h1>Contact Us</h1>
@@ -86,14 +88,16 @@ class ctap extends Component {
 
                     <div className="pad2">
                             <h1>We'd love to hear from you</h1>                          
-
-                               <ContactForm />
+                            <ContactForm />
                     </div>
                     </div>
                     
+   
+                </div>
+
                 </div>
                 <Socials/>
-            
+           
             </Layout>
         )
     }

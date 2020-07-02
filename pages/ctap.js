@@ -23,24 +23,24 @@ this.state={
         return (
             <Layout>
                  <Head>
-      <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                </Head>
+                
+             <main className="dark-bg">
+                <br />
+                <br />
+                <br />
+                <br />
                <div className="ctap-flex">
-            <div className="contact">
-               <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
-                <div className="pad">
+                    <div className="contact">
+                    <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
+                        <div className="pad">
                     <h1>Assess threat to your business</h1>
                         <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 2H30" stroke="#076fd9" stroke-width="4" stroke-linecap="round" />
+                            <path d="M2 2H30" stroke="#076fd9" strokeWidth="4" strokeLinecap="round" />
                         </svg>
-  <h1>Powered by Fortinet</h1></div>
+                        <h1>Powered by Fortinet</h1></div>
                         <p>The Cyber Threat Assessment Program (CTAP) is 
                             designed to help you during greenfield and renewal 
                             opportunities to convert prospects and expand your 
@@ -68,6 +68,7 @@ this.state={
         
                         <Socials />
                   </div>
+                  </main>
             </Layout>
         )
     }
