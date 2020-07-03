@@ -32,9 +32,20 @@ this.state={
                 <br />
                 <br />
                 <br />
-               <div className="ctap-flex">
-                    <div className="contact">
-                    <h1 className="ctap-head">Cyber Threat Assessment Program</h1>
+                 
+                <div className="ct">
+                    <div className="ctap-head">
+                        <div className="overlay">
+                            <div className='container'>
+                                <h1>Cyber Threat Assessment Program</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               <div  style={{paddingBottom: 200,background:"white !important"}}>
+            <div className="container">
+                <div className='ct1'>
                         <div className="pad">
                     <h1>Assess threat to your business</h1>
                         <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,13 +72,14 @@ this.state={
                             <h1>Request a session</h1>                         
 
                                 <CtapForm />                      
-
+                        </div>
+                        </div>
                         </div>
                                            
                     </div>
         
                         <Socials />
-                  </div>
+                
                   </main>
             </Layout>
         )

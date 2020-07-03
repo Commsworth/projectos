@@ -77,3 +77,18 @@ input {
   .asterik{
     margin-bottom: 5px;
   }
+
+  @media only screen and (max-width: 1000px) {
+    .group{
+    width: 100% !important;
+    }
+    select {
+      width: 60% !important;
+    }
+    input {
+      width: 60% !important;
+    }
+    label {
+      width: 31% !important;
+    }
+  }

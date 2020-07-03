@@ -38,7 +38,7 @@ class ctap extends Component {
                     </div>
                 </div>
 
-<div  style={{background:"white !important"}}>
+<div  style={{paddingBottom: 200,background:"white !important"}}>
             <div className="container">
                 <div className='ct1'>
                     <div className="pad">

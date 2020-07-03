@@ -21,25 +21,46 @@ a{
   .container{
     width: 80%;
     margin: 0px auto;
-  }
-
-  .ct{
-    // display: flex;
-    // flex-direction: column; 
-    // justify-content: center;
-    background: white;
-    // padding-bottom: 200px; 
-    // min-width: 100%; 
-    // margin: auto;
-
-  .ct1{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    .ct1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // width: 100%;
   // width: 90%;
   // margin: auto;
 }
 
+  .pad{
+    align-self: start;
+    justify-content: end;
+    width: 100%;
+    color: white;
+        padding-top: 20px;
+    // padding: 0px 0px 0px 116px;
+    // margin-top: 7.5rem;
+
+    h1{
+        color: black;
+        line-height: 1;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    
+    p{
+        color: black;
+        line-height: 30px;
+        padding-right: 34px;
+        margin-top: 14px !important;       
+    }
+
+}
+  }
+  .ct{
+
+
+  
 /* contact section */
 .ctap-head {
     margin: 0px;
@@ -71,55 +92,8 @@ a{
   cursor: pointer;
 }
 
-.pad{
-    width: 45%;
-    align-self: start;
-    justify-content: end;
-    // width: 620px;
-    color: white;
-    // padding: 0px 0px 0px 116px;
-    // margin-top: 7.5rem;
-
-    h1{
-        color: black;
-        line-height: 5px;
-        font-family: Nunito;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 34px;
-    }
-    
-    p{
-        color: black;
-        line-height: 30px;
-        padding-right: 34px;
-        margin-top: 14px !important;
-       
-    }
-
-}
-.dash{
-    border: 4px solid #208FFF;
-    width: 28px;
-}
-.pad-flx{
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    h1{
-        margin-left: 1rem;
-        line-height: 0px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 5px;
-    }
-}
 
   .pad2 {
-    //  margin-bottom: 100px;
-    //  padding: 0px 0px 0px 68px;
-      // margin-top: 7.5rem;
     h1{
         color: black;
         line-height: 5px;
@@ -131,20 +105,20 @@ a{
   }
   }
 
-
-
-  @media only screen and (min-width: 990px) {
+@media only screen and (max-width: 1000px) and (min-width: 700px)  {
+.contacts-flx {
+   flex-direction: column;
+}
+}
+ @media only screen and (max-width: 700px) { 
+   .container{
     .ct1 {
-      width: 100%;
+      flex-direction: column;
     }
-    .ct {
-      width: 100%;
-    }
-     .pad {
-       width: 100%;
-     }
   }
-
-  @media only screen and (max-width: 700px) {
-  
+ }
+  @media only screen and (max-width: 400px) { 
+  .contacts-flx {
+   flex-direction: column;
+}
   }
