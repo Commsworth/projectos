@@ -25,11 +25,10 @@ class Contact extends React.Component {
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
                 </Head>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div className="box">
+                
+              
+                <div className="box dark-bg">
+                    <div className='container'>
                     <div id="select">
                     <select name="explore" id="explore">
                     <option value="devops">DevOps and Analytics</option>
@@ -58,9 +57,10 @@ class Contact extends React.Component {
                     </div>
                 </div>
                 </div>
-            
+                </div>
+                <main className="container">
                     <Explore />
-               
+               </main>
             </Layout>
         )
     }
