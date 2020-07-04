@@ -29,7 +29,7 @@ class ctap extends Component {
                 </Head>
                 
                 <div className="ct">
-                    <div className="ctap-head">
+                    <div className="contact-head">
                         <div className="overlay">
                             <div className='container'>
                                 <h1>Get In touch</h1>

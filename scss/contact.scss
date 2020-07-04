@@ -63,7 +63,7 @@ a{
 
   
 /* contact section */
-.ctap-head {
+.contact-head {
     margin: 0px;
     font-weight: 900;
     font-size: 48px;
@@ -126,11 +126,10 @@ a{
 }
   }
 
-   @media only screen and (max-width: 900px) { 
+ @media only screen and (max-width: 1400px) { 
    .container{
-     width: 90%;
+     width: 80%;
     .ct1 {
-      flex-direction: column;
       width: 100%;
     }
   }
@@ -142,3 +141,13 @@ a{
   }
 }
  }
+
+  @media only screen and (max-width: 800px) { 
+     .container{
+     width: 90%;
+    .ct1 {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  }

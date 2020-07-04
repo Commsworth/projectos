@@ -1,4 +1,7 @@
-
+.pad-flx{
+      display: flex;
+    align-items: center;
+}
   
   
 .container{
@@ -12,7 +15,6 @@
   // width: 90%;
   margin: 0 auto;
 }
-
   .pad{
     align-self: start;
     justify-content: end;
@@ -28,6 +30,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 34px;
+        margin-bottom: 0;
     }
     
     p{
@@ -95,11 +98,10 @@
 //    flex-direction: column;
 // }
 // }
- @media only screen and (max-width: 900px) { 
+ @media only screen and (max-width: 1400px) { 
    .container{
-     width: 90%;
+     width: 80%;
     .ct1 {
-      flex-direction: column;
       width: 100%;
     }
   }
@@ -111,8 +113,13 @@
   }
 }
  }
-//   @media only screen and (max-width: 400px) { 
-//   .contacts-flx {
-//    flex-direction: column;
-// }
-//   }
+
+  @media only screen and (max-width: 800px) { 
+     .container{
+     width: 90%;
+    .ct1 {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  }
