@@ -58,9 +58,9 @@ class Contact extends React.Component {
                 </div>
                 </div>
                 </div>
-                <main className="container">
+            
                     <Explore />
-               </main>
+           
             </Layout>
         )
     }
