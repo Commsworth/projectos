@@ -1,21 +1,21 @@
-  .container{
+
+  
+  
+.container{
     width: 80%;
     margin: 0px auto;
     .ct1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // width: 100%;
+    width: 1000px;
   // width: 90%;
-  // margin: auto;
+  margin: 0 auto;
 }
- .pad-flx {
-    display: flex;
-    align-items: center;}
+
   .pad{
     align-self: start;
     justify-content: end;
-    width: 100%;
     color: white;
         padding-top: 20px;
     // padding: 0px 0px 0px 116px;
@@ -34,12 +34,25 @@
         color: black;
         line-height: 30px;
         padding-right: 34px;
-        margin-top: 14px !important;       
+        margin-top: 14px !important;      
     }
 
 }
+
+.pad2 {
+      padding-top: 20px;
+    h1{
+        color: black;
+        line-height: 1;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+    }
   }
- 
+
+  }
+  .ct{
 
 
   
@@ -53,11 +66,12 @@
     // background-image: url(/static/ct-bkg.png) !important;
     height: 316px;
 }
-
 .overlay {
   h1{
     // width: 100%;
     font-size: 48px;
+    width: 1000px;
+    margin: auto;
     // padding: 0px 150px;
   }
   position: relative;
@@ -75,31 +89,27 @@
   cursor: pointer;
 }
 
-
-  .pad2 {
-        padding-top: 20px;
-    h1{
-        color: black;
-        line-height: 1;
-        font-family: Nunito;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 34px;
-    }
   }
-  
-
 // @media only screen and (max-width: 1000px) and (min-width: 700px)  {
 // .contacts-flx {
 //    flex-direction: column;
 // }
 // }
- @media only screen and (max-width: 800px) { 
+ @media only screen and (max-width: 900px) { 
    .container{
+     width: 90%;
     .ct1 {
       flex-direction: column;
+      width: 100%;
     }
   }
+  .ct{
+  .overlay{
+    h1 {
+      width: 100%;
+    }
+  }
+}
  }
 //   @media only screen and (max-width: 400px) { 
 //   .contacts-flx {

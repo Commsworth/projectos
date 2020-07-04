@@ -27,7 +27,7 @@ this.state={
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Head>
                 
-             <main className="dark-bg" style={{width: 1400, margin:"auto"}}>
+             <main className="dark-bg wrapper">
                 <br />
                 <br />
                 <br />
@@ -51,7 +51,7 @@ this.state={
                         <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2H30" stroke="#076fd9" strokeWidth="4" strokeLinecap="round" />
                         </svg>
-                        <h1>Powered by Fortinet</h1></div>
+                        <p>Powered by Fortinet</p></div>
                         <p>The Cyber Threat Assessment Program (CTAP) is 
                             designed to help you during greenfield and renewal 
                             opportunities to convert prospects and expand your 
@@ -68,8 +68,7 @@ this.state={
 
                         </div>
 
-                    <div className="pad2">
-                            <h1>Request a session</h1>                         
+                    <div className="pad2">                     
 
                                 <CtapForm />                      
                         </div>
