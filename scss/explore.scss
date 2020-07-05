@@ -1,11 +1,6 @@
-.explore{
-}
+
 .tp{
-display: grid;
-flex-wrap: wrap;
-grid-template-columns: 50% 50%;
-justify-items: center;
-padding: 0px 90px;
+    display: flex;
 .card{
     .link{
         font-size: 25px;
@@ -14,12 +9,11 @@ padding: 0px 90px;
 }
 }
 .box{
-padding: 39px 6vw;
+padding: 55px 6vw;
 }
 .tp1 {
+    width: 100%;
 .card{
-
-    width: 527px !important;
     a{
         font-family: "Nunito";
         font-size: 24px !important;
@@ -54,18 +48,8 @@ padding: 39px 6vw;
     font-size: 18px !important;
 
 }
-.tp1{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    width: 500px;
-    align-self: center;
-    /* margin-left: 100px; */
-}
 .tp2{
     display: flex;
-    /* align-content: center; */
-    /* width: 100%; */
     img{
         width: 507px;
     }
@@ -156,17 +140,11 @@ font-size: 20px;
 
 }
 .tp1{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     width: 100%;
     align-self: center;
-    /* margin-left: 100px; */
 }
 .tp2{
     display: flex;
-    /* align-content: center; */
-    /* width: 100%; */
     img{
         width: 100%;
     }

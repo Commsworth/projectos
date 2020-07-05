@@ -60,7 +60,7 @@ export default class CarouselDiv extends Component {
     render() {
         return (
                 <React.Fragment>
-                    <div className="explore-cau">
+                    <div className="explore-cau container">
                 <div className="carousel-div">
                
                 <div className="carousel-grid">

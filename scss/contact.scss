@@ -25,9 +25,10 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 1000px;
     // width: 100%;
   // width: 90%;
-  // margin: auto;
+  margin: 0 auto;
 }
 
   .pad{
@@ -62,7 +63,7 @@ a{
 
   
 /* contact section */
-.ctap-head {
+.contact-head {
     margin: 0px;
     font-weight: 900;
     font-size: 48px;
@@ -75,6 +76,8 @@ a{
   h1{
     // width: 100%;
     font-size: 48px;
+    width: 1000px;
+    margin: auto;
     // padding: 0px 150px;
   }
   position: relative;
@@ -121,4 +124,30 @@ a{
   .contacts-flx {
    flex-direction: column;
 }
+  }
+
+ @media only screen and (max-width: 1400px) { 
+   .container{
+     width: 80%;
+    .ct1 {
+      width: 100%;
+    }
+  }
+  .ct{
+  .overlay{
+    h1 {
+      width: 100%;
+    }
+  }
+}
+ }
+
+  @media only screen and (max-width: 800px) { 
+     .container{
+     width: 90%;
+    .ct1 {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
   }

@@ -19,7 +19,8 @@
     margin: 52px 60px 0px 60px;
     
     .carousel-grid {
-        display: grid;
+        display: flex;
+        justify-content: center;
         grid-template-columns: 50% 50%;
         gap: 10px;
         .card {

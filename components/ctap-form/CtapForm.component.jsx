@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import FormInput from  '../FormInput/FormInput.component'
 import FormSelect from  '../FormInput/FormSelect.component'
 import Modal from '../modal/Modal'
+import './ctap-form.styles.scss'
 
 
 const initialState = {
@@ -132,7 +133,8 @@ const initialState = {
     render() {
         return (
             <React.Fragment>
-            <form onSubmit={this.handleSubmit}>
+                <h1>Request a session</h1>  
+            <form className='form' onSubmit={this.handleSubmit}>
                             <FormInput 
                                     id='name'
                                     validation={this.validation}
