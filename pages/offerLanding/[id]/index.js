@@ -20,7 +20,6 @@ const OfferLanding = () => {
     let [dataID, setDataID] = useState(data.length-1);
     useEffect(
     ()=> {
-        console.log(dataID, "id")
         dataID = window.location.href[window.location.href.length-1];
         setDataID(dataID)
     } ,[]
