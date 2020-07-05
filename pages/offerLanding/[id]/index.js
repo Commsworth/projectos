@@ -1,7 +1,5 @@
 import React, { Component, useEffect, useState } from 'react'
 import '../../../scss/ctap.scss'
-import Layout from '../../../components/Layout'
-import Modal from '../../../components/modal/Modal'
 import Socials from '../../../components/extra/socials/socials.component'
 import Head from 'next/head'
 import CtapForm from '../../../components/ctap-form/CtapForm.component'
@@ -22,7 +20,6 @@ const OfferLanding = () => {
     let [dataID, setDataID] = useState(data.length-1);
     useEffect(
     ()=> {
-        console.log(dataID, "id")
         dataID = window.location.href[window.location.href.length-1];
         setDataID(dataID)
     } ,[]
