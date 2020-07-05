@@ -22,7 +22,6 @@ class Explore extends Component {
              web: true,
              devops: false,
              analytics: false,
-             ai: false,
              pm: false,
              offer: true,
              res: false
@@ -56,7 +55,6 @@ class Explore extends Component {
             web: true, 
             devops: false,
              analytics: false,
-             ai: false,
              pm: false,
             })
     }
@@ -65,7 +63,6 @@ class Explore extends Component {
             web: false,
              devops: true,
              analytics: false,
-             ai: false,
              pm: false,
         })
     }
@@ -74,7 +71,6 @@ class Explore extends Component {
             web: false,
              devops:false,
              analytics: true,
-             ai: false,
              pm: false,
         })
     }
@@ -83,7 +79,6 @@ class Explore extends Component {
             web: false,
              devops: false,
              analytics: false,
-             ai: true,
              pm: false,
         })
     }
@@ -92,7 +87,6 @@ class Explore extends Component {
             web: false,
              devops: false,
              analytics: false,
-             ai: false,
              pm: true,
         })
     }
@@ -106,11 +100,10 @@ class Explore extends Component {
                     <li onClick={this.onDisplayWeb} className={this.state.web? "exp-head-style" : null}>Web | Mobile Apps</li>
                     <li onClick={this.onDisplayDevops} className={this.state.devops? "exp-head-style" : null}>DevOps</li>
                     <li onClick={this.onDisplayAnalytics} className={this.state.analytics? "exp-head-style" : null}>Analytics</li>
-                    <li onClick={this.onDisplayAi} className={this.state.ai? "exp-head-style" : null}>Artificial Intellicence</li>
                     <li onClick={this.onDisplayPm} className={this.state.pm? "exp-head-style" : null}>Project Management</li>
                 </ul>
 
-            {/* <div  className="exp-head-opt">
+            <div  className="exp-head-opt">
                  <select id="opt" name="opt" value={this.state.scope} value={this.state.opt}  onChange={this.handleChange}>
                     <option value={this.onDisplayWeb} className={this.state.web? "exp-head-style" : null}>Web | Mobile Apps</option>
                     <option value={this.onDisplayDevops} className={this.state.devops? "exp-head-style" : null}>DevOps</option>
@@ -118,10 +111,9 @@ class Explore extends Component {
                     <option value={this.onDisplayAi} className={this.state.ai? "exp-head-style" : null}>Artificial Intellicence</option>
                     <option value={this.onDisplayPm} className={this.state.pm? "exp-head-style" : null}>Project Management</option>
                 </select>
-                </div> */}
+                </div>
 
-                {this.state.web?
-                
+                {this.state.web?                
                  <CarouselExp />
                 : null
                  }               
@@ -135,12 +127,6 @@ class Explore extends Component {
                 {this.state.analytics?
                 <div>
                      Analytics
-                </div> : null
-                 }
-
-                {this.state.ai?
-                <div>
-                     Artificial Intellicence
                 </div> : null
                  }
 

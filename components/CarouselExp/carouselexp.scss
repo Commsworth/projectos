@@ -1,51 +1,119 @@
-.explore-cau{
-    .carousel-opt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 1px 20px 1px;
-    border-bottom: 1px solid #C0C0C0;
-     cursor: pointer;
-}
-.svg{
-    fill: #208FFF;
-    margin: 5px;
-}
-.carousel-div {
-    display: flex;
-    justify-content: center;
-    // cursor: pointer;
-    align-items: center;
-    margin: 52px 60px 0px 60px;
-    
-    .carousel-grid {
-        display: flex;
-        justify-content: center;
-        grid-template-columns: 50% 50%;
-        gap: 10px;
-        .card {
-           height: 261px;
-            width: 444px;
-            justify-content: center;
-            h3{
-                font-size: 34px;
-                line-height: 30px;
-            }
+// .explore-cau{
+//     margin: auto;
+//     .carousel-opt{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 20px 1px 20px 1px;
+//     border-bottom: 1px solid #C0C0C0;
+//      cursor: pointer;
+// }
+// .svg{
+//     fill: #208FFF;
+//     margin: 5px;
+// }
+// .carou-div {
+//     display: flex;
+//     justify-content: center;
+//     // cursor: pointer;
+//     align-items: center;
+//     margin: 52px 60px 0px 60px;
+//         .card {
+//            height: 300px;
+//             width: 444px;
+//             justify-content: center;
+//             margin: 30px 10px 10px 30px;
+//             h3{
+//                 font-size: 34px;
+//                 line-height: 30px;
+//             }
           
-            p {
-                font-size: 18px;
-                line-height: 28px;
-                margin: 0;
-            }
-            .link {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 0px;
-                font-family: "Nunito";
-                margin: 0;
-                margin-top: 34px !important;
-            }
-        }
-    }
+//             p {
+//                 font-size: 18px;
+//                 line-height: 28px;
+//                 margin: 0;
+//             }
+//             .link {
+//                 font-weight: bold;
+//                 font-size: 24px;
+//                 line-height: 0px;
+//                 font-family: "Nunito";
+//                 margin: 0;
+//                 margin-top: 10px !important;
+//             }
+//         }
+//     }
+// }
+
+
+
+// @media screen and (max-width: 800px){
+//     .container{
+//         width: 90%;
+//         margin: 0 auto;
+//     }
+// .explore-cau {
+
+// .carou-div {   
+//     flex-wrap: wrap;   
+//         .card {
+//         width: 150vw;
+//         height: 40vh;
+//           margin: 2vh 0vw;
+// }
+// }
+//     }
+// }
+
+.carou {
+  font-family: sans-serif;
+  text-align: center;
+  width: 500px;
+  margin: auto;
 }
+
+.button__bar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  width: 70px;
+  text-align: center;
+}
+
+.button__bar li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.button__bar li button {
+  border: none;
+  background: #a53692;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+}
+
+.button__bar li.slick-active button {
+  background-color: rgb(8, 255, 140);
+}
+
+.button__bar li button:hover,
+.button__bar li button:focus {
+  background: rgba(247, 34, 34, 0.8);
+  outline: 0;
+}
+
+.slick-slide img {
+  border: 5px solid #fff;
+  display: block;
+  margin: auto;
 }
