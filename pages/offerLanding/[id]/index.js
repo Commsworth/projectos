@@ -1,7 +1,5 @@
 import React, { Component, useEffect, useState } from 'react'
 import '../../../scss/ctap.scss'
-import Layout from '../../../components/Layout'
-import Modal from '../../../components/modal/Modal'
 import Socials from '../../../components/extra/socials/socials.component'
 import Head from 'next/head'
 import CtapForm from '../../../components/ctap-form/CtapForm.component'
