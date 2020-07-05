@@ -5,23 +5,27 @@
   
   
 .container{
-    width: 80%;
+    width: 100% !important;
     margin: 0px auto;
     .ct1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1000px;
-  // width: 90%;
-  margin: 0 auto;
-}
-  .pad{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      // width: 1000px;
+      margin: 0 auto;
+      // width: 90%;
+    }
+    .pad{
+      width: 40%;
+      min-width: 400px;
     align-self: start;
     justify-content: end;
     color: white;
         padding-top: 20px;
     // padding: 0px 0px 0px 116px;
     // margin-top: 7.5rem;
+    margin: 25px;
 
     h1{
         color: black;
@@ -31,26 +35,39 @@
         font-weight: bold;
         font-size: 34px;
         margin-bottom: 0;
-    }
-    
-    p{
+      }
+      
+      p{
+        font-size: 100%;
         color: black;
-        line-height: 30px;
-        padding-right: 34px;
+        line-height: 190%;
+        // padding-right: 34px;
         margin-top: 14px !important;      
     }
 
-}
+  }
 
 .pad2 {
-      padding-top: 20px;
+  padding-top: 20px;
+  margin: 25px;
+  width: 40% !important;
+  min-width: 400px !important;
     h1{
         color: black;
-        line-height: 1;
+        line-height: 100%;
         font-family: Nunito;
         font-style: normal;
         font-weight: bold;
         font-size: 34px;
+    }
+    form{
+      .group{
+        width: 100% !important;
+        min-width: 400px !important;
+      }
+      input,label,select{
+        font-size: 100%;
+            }
     }
   }
 
@@ -73,7 +90,7 @@
   h1{
     // width: 100%;
     font-size: 48px;
-    width: 1000px;
+    width: calc(80% + 50px) !important;
     margin: auto;
     // padding: 0px 150px;
   }
