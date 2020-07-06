@@ -139,7 +139,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.scss */ "./components/footer/footer.scss");
 /* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Abiodun Michael\\Desktop\\projectos\\components\\footer\\Footer.js";
+var _jsxFileName = "C:\\Users\\Akinola Ibukun\\Documents\\projects\\SIWP\\5days\\projectos\\components\\footer\\Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -459,7 +459,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _navbar_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar.scss */ "./components/navbar/navbar.scss");
 /* harmony import */ var _navbar_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_navbar_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\Abiodun Michael\\Desktop\\projectos\\components\\navbar\\Navbar.js";
+var _jsxFileName = "C:\\Users\\Akinola Ibukun\\Documents\\projects\\SIWP\\5days\\projectos\\components\\navbar\\Navbar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -2602,7 +2602,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_extra_card_card_styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_extra_card_card_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_navbar_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/navbar/Navbar */ "./components/navbar/Navbar.js");
 /* harmony import */ var _components_footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/footer/Footer */ "./components/footer/Footer.js");
-var _jsxFileName = "C:\\Users\\Abiodun Michael\\Desktop\\projectos\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\Akinola Ibukun\\Documents\\projects\\SIWP\\5days\\projectos\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 

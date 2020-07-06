@@ -34,7 +34,7 @@ const left = (event) => {
 function CardOfferList({events}) {
     return(
         <div>
-    <div id="scroll" style={{display: "flex", position: "relative",right: 0,}}>
+    <div id="scroll" style={{display: "flex", position: "relative",right: 0}}>
     {
     events.map((user,i) =>{
     return (
