@@ -8,6 +8,14 @@ const SliderWrapper = styled("div")`
     overflow: ${props => (props.overflow ? "visible" : "hidden")};
   }
   /* Slider */
+<<<<<<< HEAD
+=======
+ .slick-list .carou-div {
+      display: flex;
+  }
+
+
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
   .slick-slider {
     margin-bottom: 8px;
 
@@ -30,7 +38,11 @@ const SliderWrapper = styled("div")`
 
   .slick-list {
     position: relative;
+<<<<<<< HEAD
 
+=======
+    width
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
     display: block;
     margin: auto
     /* overflow: hidden; */
@@ -59,10 +71,17 @@ const SliderWrapper = styled("div")`
     position: relative;
     top: 0;
     left: 0;
+<<<<<<< HEAD
 
     display: block;
     margin-left: auto;
     margin-right: auto;
+=======
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
   }
   .slick-track:before,
   .slick-track:after {

@@ -12,6 +12,7 @@
 //     fill: #208FFF;
 //     margin: 5px;
 // }
+<<<<<<< HEAD
 // .carou-div {
 //     display: flex;
 //     justify-content: center;
@@ -43,6 +44,39 @@
 //             }
 //         }
 //     }
+=======
+.carou-div {
+    // display: flex;
+    justify-content: center;
+    // cursor: pointer;
+    align-items: center;
+    // margin: 52px 60px 0px 60px;
+        .card {
+           height: 300px;
+            width: 444px;
+            justify-content: center;
+            margin: 30px 10px 10px 30px;
+            h3{
+                font-size: 34px;
+                line-height: 30px;
+            }
+          
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                margin: 0;
+            }
+            .link {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 0px;
+                font-family: "Nunito";
+                margin: 0;
+                margin-top: 10px !important;
+            }
+        }
+    }
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
 // }
 
 
@@ -65,11 +99,32 @@
 //     }
 // }
 
+<<<<<<< HEAD
 .carou {
   font-family: sans-serif;
   text-align: center;
   width: 500px;
   margin: auto;
+=======
+// .carou {
+//   font-family: sans-serif;
+//   text-align: center;
+//   width: 500px;
+//   margin: auto;
+// }
+
+.carou-div {
+  width: 80%;
+  margin: auto;
+    .card-flx {
+        display: flex !important;
+        .card{
+        img{
+            height: auto;
+        }
+    }
+    }
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
 }
 
 .button__bar {
@@ -79,7 +134,11 @@
   padding: 0;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 40px;
+<<<<<<< HEAD
   width: 70px;
+=======
+  width: 100%;
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
   text-align: center;
 }
 
@@ -93,7 +152,10 @@
 
 .button__bar li button {
   border: none;
+<<<<<<< HEAD
   background: #a53692;
+=======
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
   color: transparent;
   cursor: pointer;
   display: block;
@@ -103,12 +165,20 @@
 }
 
 .button__bar li.slick-active button {
+<<<<<<< HEAD
   background-color: rgb(8, 255, 140);
+=======
+  background-color: #208FFF;
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
 }
 
 .button__bar li button:hover,
 .button__bar li button:focus {
+<<<<<<< HEAD
   background: rgba(247, 34, 34, 0.8);
+=======
+  background: #208FFF;
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
   outline: 0;
 }
 
@@ -116,4 +186,27 @@
   border: 5px solid #fff;
   display: block;
   margin: auto;
+<<<<<<< HEAD
 }
+=======
+}
+
+@media screen and (max-width: 800px){
+
+  .carou-div {
+  width: 100%;
+.card-flx {
+        width: 90% !important;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        .card{
+          height: auto;
+        img{
+            height: 300px;
+        }
+    }
+    }
+}
+}
+
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a

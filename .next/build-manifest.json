@@ -21,6 +21,21 @@
     ],
     "/_polyfills": [
       "static/runtime/polyfills.js"
+<<<<<<< HEAD
+=======
+    ],
+    "/ctap": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
+    "/devops": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+>>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
     ]
   }
 }
