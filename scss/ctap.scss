@@ -12,8 +12,8 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      // width: 1000px;
       margin: 0 auto;
+      width: 100% !important;
       // width: 90%;
     }
     .pad{
@@ -84,14 +84,14 @@
     color: white;
     background: #242525;
     // background-image: url(/static/ct-bkg.png) !important;
-    height: 316px;
+    // height: 316px;
 }
 .overlay {
   h1{
     // width: 100%;
     font-size: 48px;
     width: calc(80% + 50px) !important;
-    margin: auto;
+    margin: 25px auto;
     // padding: 0px 150px;
   }
   position: relative;
@@ -117,7 +117,7 @@
 // }
  @media only screen and (max-width: 1400px) { 
    .container{
-     width: 80%;
+     width: 100%;
     .ct1 {
       width: 100%;
     }
@@ -126,6 +126,7 @@
   .overlay{
     h1 {
       width: 100%;
+      font-size: 90% !important;
     }
   }
 }
@@ -133,10 +134,20 @@
 
   @media only screen and (max-width: 800px) { 
      .container{
-     width: 90%;
+     width: 100%;
+
     .ct1 {
       flex-direction: column;
       width: 100%;
+    }
+    .pad, .pad2, .pad2 .form .group, .pad2 h1{
+      width: 90vw !important;
+      justify-self: start !important;
+      margin: auto;
+      min-width: 200px !important;
+    }
+    .overlay{
+      width: 70vw !important;
     }
   }
   }
