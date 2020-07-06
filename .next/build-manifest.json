@@ -22,13 +22,13 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/ctap": [
+    "/contacts": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/devops": [
+    "/ctap": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
