@@ -158,13 +158,9 @@ class Contact extends React.Component {
                 </div>
 
                 {this.state.web?                
-<<<<<<< HEAD
-                 <CarouselExp />
-=======
                  <CarouselExp 
                  cardImg1 ={<Card  background="/static/subexplore/img1.svg" />} 
                  cardContent1={<Card title="Ultra-Responsive Apps" subTitle={blueSemiCircle} content="We deploy blazing fast, low-code web and mobile apps and websites powered by robust business logic engines tailored to address key business challenges. Our mobile-first approach ensures a responsive user experience as today’s consumers are driven by convenient yet immersive digital interactions." link={<ArrowLink text="Work with us"/> } />} /> 
->>>>>>> 515f12cf3bff471195ac7836259fa4fa0ad06d6a
                 : null
                  }               
 
