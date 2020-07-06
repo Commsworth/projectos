@@ -8,6 +8,11 @@ const SliderWrapper = styled("div")`
     overflow: ${props => (props.overflow ? "visible" : "hidden")};
   }
   /* Slider */
+ .slick-list .carou-div {
+      display: flex;
+  }
+
+
   .slick-slider {
     margin-bottom: 8px;
 
@@ -30,7 +35,7 @@ const SliderWrapper = styled("div")`
 
   .slick-list {
     position: relative;
-
+    width
     display: block;
     margin: auto
     /* overflow: hidden; */
@@ -59,10 +64,10 @@ const SliderWrapper = styled("div")`
     position: relative;
     top: 0;
     left: 0;
-
-    display: block;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
+    width: 100%
   }
   .slick-track:before,
   .slick-track:after {
