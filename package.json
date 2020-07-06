@@ -3,14 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "dev": "next",
+    "build": "next build && next export"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@emotion/react": "^11.0.0-next.13",
-    "@emotion/styled": "^10.0.27",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "css-loader": "^3.6.0",
