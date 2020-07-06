@@ -179,7 +179,7 @@ class Contact extends React.Component {
                 {this.state.pm?
                 <div>
                     Project Management
-                </div> : null
+                </div> : null 
                  }
                      <ul className="offer-options">
                          <li onClick={this.onDisplayOffer} className={this.state.offer? "offer-options-style" : null}>Offers</li>
