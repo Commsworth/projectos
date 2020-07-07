@@ -118,7 +118,8 @@
     .overlay{
       width: 100vw !important;
       margin: auto;
-      h1 {
+      .header {
+      color: white !important;
       width: 100%;
       font-size: 90% !important;
     }
@@ -145,6 +146,7 @@
   .container{
     width: 100%;
     .header{
+      color: white !important;
       margin: 50px auto !important;
       width: 90vw !important;
       font-size: 90% !important;
