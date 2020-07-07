@@ -33,8 +33,6 @@ html, body{
     height: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background: #111517 !important;
-    scroll-behavior: smooth;
 }
 li{
     list-style-type: none;
