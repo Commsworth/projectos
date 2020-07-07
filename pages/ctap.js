@@ -43,7 +43,7 @@ this.state={
                 </div>
                
                <div  style={{paddingBottom: 200,background:"white !important"}}>
-            <div className="container">
+            <div className="container" style={{background: "white"}}>
                 <div className='ct1'>
                         <div className="pad">
                     <h1>Assess threat to your business</h1>

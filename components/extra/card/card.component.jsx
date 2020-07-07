@@ -47,17 +47,14 @@ class Card extends React.Component {
                         flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
-                        height: auto;
                     }
 
                     .card h3{
-                        font-size: 36px;
                         margin: 0px 0px;
                     }
 
                     .card    p{
                         // color: white;
-                        font-size: 15px;
                     }
   
                     .card .link{
