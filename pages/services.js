@@ -169,7 +169,7 @@ export default class Services extends Component {
                           padding: 30px;
                           
                         }
-                        }
+                        
                         .about-cards :global(.card .title){
                             position: relative;
                             bottom: 80px;
