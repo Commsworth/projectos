@@ -34,15 +34,15 @@ this.state={
                 <div className="ct">
                     <div className="ctap-head">
                         <div className="overlay">
-                            <div className='container' style={{ background: "black" }}>
-                                <h1 className="header">Cyber Threat Assessment Program</h1>
+                            <div className='wrapper'>
+                                <h1>Cyber Threat Assessment Program</h1>
                             </div>
                         </div>
                     </div>
                 </div>
                
                <div  style={{paddingBottom: 200,background:"white !important"}}>
-            <div className="container" style={{background: "white"}}>
+            <div className="wrapper">
                 <div className='ct1'>
                         <div className="pad">
                     <h1>Assess threat to your business</h1>
@@ -85,7 +85,7 @@ this.state={
 }
   
   
-  .container{
+  .wrapper{
     width: 80%;
     margin: 0px auto;
     .ct1{
@@ -176,7 +176,7 @@ this.state={
 }
 }
  @media only screen and (max-width: 700px) { 
-   .container{
+   .wrapper{
     .ct1 {
       flex-direction: column;
     }
@@ -189,7 +189,7 @@ this.state={
   }
 
  @media only screen and (max-width: 1400px) { 
-   .container{
+   .wrapper{
      width: 80% !important;
     .ct1 {
       width: 100% !important;
@@ -207,7 +207,7 @@ this.state={
 
   @media only screen and (max-width: 800px) { 
 
-      .container{
+      .wrapper{
     width: 80%;
     .ct1{
     width: 100% !important;
