@@ -12,7 +12,6 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      width: 1000px;
       margin: 0 auto;
       width: 100% !important;
       // width: 90%;
@@ -86,15 +85,8 @@
     background: #242525;
     // background-image: url(/static/ct-bkg.png) !important;
     // height: 316px;
-}
-.overlay {
-  h1{
-    width: 1000px;
-    font-size: 48px;
-    // width: calc(80% + 50px) !important;
-    margin: auto;
-    // padding: 0px 150px;
   }
+  .overlay {
   position: relative;
   width: 100%;
   display: flex;
@@ -107,7 +99,6 @@
   bottom: 0;
   background-color: rgba(0,0,0,0.8);
   z-index: 3;
-  cursor: pointer;
 }
 
   }
@@ -116,7 +107,7 @@
 //    flex-direction: column;
 // }
 // }
- @media only screen and (max-width: 1400px) { 
+ @media only screen and (min-width: 801px) and (max-width: 1023px) { 
    .container{
      width: 100%;
     .ct1 {
@@ -124,19 +115,41 @@
     }
   }
   .ct{
-  .overlay{
-    h1 {
+    .overlay{
+      width: 100vw !important;
+      margin: auto;
+      h1 {
       width: 100%;
       font-size: 90% !important;
     }
   }
 }
- }
+}
 
-  @media only screen and (max-width: 800px) { 
-     .container{
-     width: 100%;
-
+@media only screen and (min-width: 1024px) {
+  .ct{
+    .overlay{
+      width: 100vw !important;
+      margin: auto;
+        .header{
+          color: white !important;
+          font-size: 48px;
+          width: calc(80% + 50px) !important;
+          margin: 50px auto;
+          // padding: 0px 150px;
+      }
+    }
+  }
+} 
+@media only screen and (max-width: 800px) { 
+  .container{
+    width: 100%;
+    .header{
+      margin: 50px auto !important;
+      width: 90vw !important;
+      font-size: 90% !important;
+    }
+    
     .ct1 {
       flex-direction: column;
       width: 100%;
@@ -148,7 +161,7 @@
       min-width: 200px !important;
     }
     .overlay{
-      width: 70vw !important;
+      width: 90vw !important;
     }
   }
   }

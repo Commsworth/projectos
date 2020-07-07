@@ -18,22 +18,22 @@ const Ctap = () => {
             <br/>
             <br/>
             <br/>
-            <Link href="/offerland/[id]" as="/offerland/0">
+            <Link href="/offerland/off?id=0">
             <button>Ctap1</button>
             </Link>
-            <Link href="/offerland/[id]" as="/offerland/1">
+            <Link href="/offerland/off?id=1">
             <button>Ctap2</button>
             </Link>
-            <Link href="/offerland/[id]" as="/offerland/2">
+            <Link href="/offerland/off?id=2">
             <button>Ctap3</button>
             </Link>
-            <Link href="/offerland/[id]" as="/offerland/3">
+            <Link href="/offerland/off?id=3">
             <button>Ctap4</button>
             </Link>
-            <Link href="/offerland/[id]" as="/offerland/4">
+            <Link href="/offerland/off?id=4">
             <button>Ctap5</button>
             </Link>
-            <Link href="/offerland/[id]" as="/offerland/5">
+            <Link href="/offerland/off?id=5">
             <button>Ctap6</button>
             </Link>
         </div>

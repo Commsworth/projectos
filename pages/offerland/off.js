@@ -1,8 +1,8 @@
 import React, { Component, useEffect, useState } from 'react'
-import '../../../scss/ctap.scss'
-import Socials from '../../../components/extra/socials/socials.component'
+import '../../scss/ctap.scss'
+import Socials from '../../components/extra/socials/socials.component'
 import Head from 'next/head'
-import CtapForm from '../../../components/ctap-form/CtapForm.component'
+import CtapForm from '../../components/ctap-form/CtapForm.component'
 import { useRouter } from 'next/router'
 
 const OfferLanding = () => {
@@ -42,7 +42,7 @@ const OfferLanding = () => {
                 <div className="ctap-head">
                     <div className="overlay">
                         <div className='container'>
-                            <h1>{data[dataID].Header}</h1>
+                            <h1 className="header">{data[dataID].Header}</h1>
                         </div>
                     </div>
                 </div>
