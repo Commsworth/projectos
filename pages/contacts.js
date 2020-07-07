@@ -30,7 +30,7 @@ class ctap extends Component {
                 <div className="ct">
                     <div className="contact-head">
                         <div className="overlay">
-                            <div className='container'>
+                            <div className='wrapper'>
                                 <h1>Get In touch</h1>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ class ctap extends Component {
                 </div>
 
 <div  style={{paddingBottom: 200,background:"white !important"}}>
-            <div className="container">
+            <div className="wrapper">
                 <div className='ct1'>
                     <div className="pad">
                         <h1>Contact Us</h1>
@@ -117,7 +117,7 @@ a{
 }
 }
 
-  .container{
+  .wrapper{
     width: 80%;
     margin: 0px auto;
     .ct1{
@@ -210,7 +210,7 @@ a{
 }
 }
  @media only screen and (max-width: 700px) { 
-   .container{
+   .wrapper{
     .ct1 {
       flex-direction: column;
     }
@@ -223,7 +223,7 @@ a{
   }
 
  @media only screen and (max-width: 1400px) { 
-   .container{
+   .wrapper{
      width: 80% !important;
     .ct1 {
       width: 100% !important;
@@ -241,7 +241,7 @@ a{
 
   @media only screen and (max-width: 800px) { 
 
-      .container{
+      .wrapper{
     width: 80%;
     .ct1{
     width: 100% !important;
