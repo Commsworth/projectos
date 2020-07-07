@@ -36,7 +36,7 @@ this.state={
                     <div className="ctap-head">
                         <div className="overlay">
                             <div className='container'>
-                                <h1>Cyber Threat Assessment Program</h1>
+                                <h1 className="header">Cyber Threat Assessment Program</h1>
                             </div>
                         </div>
                     </div>
