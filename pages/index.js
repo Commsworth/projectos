@@ -119,7 +119,7 @@ export default class Home extends Component {
           background: #111517 !important;
         }
         .socials :global(.sc){
-          background: #111517; !important;
+          background: #111517 !important;
         }
         .socials :global(.sc .socials .follow p),.socials :global(.sc .socials .share p){
           color: #F4F4F4 !important;
