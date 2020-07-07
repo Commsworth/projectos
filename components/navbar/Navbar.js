@@ -74,8 +74,8 @@ export class Nav extends Component {
               </div>
               <FaBars onClick={this.dropDown} className="dropdown-button" />
             </li>
-            <div className="padding divide-line"><img src="pngs/navbardivide.png"/></div>
-            <li className=" page padding nav-line"><Link href="/"><a>{this.state.page}</a></Link><img className="nav-line" src="pngs/navbarline.png"/></li>
+            <div className="padding divide-line"><img src="/pngs/navbardivide.png"/></div>
+            <li className=" page padding nav-line"><Link href="/"><a>{this.state.page}</a></Link><img className="nav-line" src="/pngs/navbarline.png"/></li>
           </ul>
 
 
@@ -83,19 +83,19 @@ export class Nav extends Component {
             <li className="option padding nav-line " onClick={() => this.setState({ class: "active" })}> <Link href={this.path+"services"}>
               <a>Services</a>
             </Link>
-            <img className="nav-line" src="pngs/navbarline.png"/>
+            <img className="nav-line" src="/pngs/navbarline.png"/>
             </li>
             <li className="option1 padding nav-line" onClick={() => this.setState({ class: "active1" })}> <Link href={this.path+"portfolio"}>
               <a>Portfolio</a>
             </Link>
-            <img className="nav-line" src="pngs/navbarline.png"/>
+            <img className="nav-line" src="/pngs/navbarline.png"/>
             </li>
             <li className="option2 padding nav-line" onClick={() => this.setState({ class: "active2" })}> <Link href="#">
               <a> Blog</a>
             </Link>
-            <img className="nav-line" src="pngs/navbarline.png"/>
+            <img className="nav-line" src="/pngs/navbarline.png"/>
             </li>
-            <div className="padding divide-line"><img src="pngs/navbardivide.png"/></div>
+            <div className="padding divide-line"><img src="/pngs/navbardivide.png"/></div>
             <li> <Link href="/contacts" className="option">
               <a className="butt padding"> Contact</a>
             </Link>
