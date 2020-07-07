@@ -41,7 +41,7 @@ const OfferLanding = () => {
                 <div className="ct">
                     <div className="ctap-head">
                         <div className="overlay">
-                            <div className='container'>
+                            <div className='container' id="cont-off">
                                 <h1 className="header">{data[dataID].Header}</h1>
                             </div>
                         </div>

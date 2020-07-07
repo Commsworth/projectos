@@ -7,7 +7,10 @@
 .container{
     width: 100% !important;
     margin: 0px auto;
-    background: white !important;
+    // background: white !important;
+    #cont-off{
+      background: #111517 !important;
+    }
     .ct1{
       display: flex;
       flex-direction: row;

@@ -35,7 +35,7 @@ this.state={
                 <div className="ct">
                     <div className="ctap-head">
                         <div className="overlay">
-                            <div className='container'>
+                            <div className='container' style={{ background: "black" }}>
                                 <h1 className="header">Cyber Threat Assessment Program</h1>
                             </div>
                         </div>
