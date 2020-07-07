@@ -25,11 +25,6 @@ this.state={
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Head>
                 
-             <main className="dark-bg wrapper">
-                <br />
-                <br />
-                <br />
-                <br />
                  
                 <div className="ct">
                     <div className="ctap-head">
@@ -76,7 +71,6 @@ this.state={
                     </div>
         
                         <Socials />
-                 </main>
                  
                  <style jsx>{`
             .pad-flx{
