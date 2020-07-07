@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../scss/contact.scss'
 import Head from 'next/head'
 import Modal from '../components/modal/Modal'
 import Layout from '../components/Layout'
