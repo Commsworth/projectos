@@ -1,6 +1,7 @@
 export const events = [
   {
     img: "/static/exploreimg/offer.svg",
+    title: 'devops analytics',
     id: 1,
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
@@ -8,12 +9,14 @@ export const events = [
   {
     img: "/static/exploreimg/offer.svg",
     id: 2,
+    title: 'devops analytics',
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
   },
   {
     img: "/static/exploreimg/offer.svg",
     id: 3,
+    title: 'devops analytics',
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
   },

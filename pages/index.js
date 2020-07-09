@@ -23,13 +23,13 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Layout className="container">
+      <Layout>
         <Head>
           <title>Commsworth</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main>
+        <main className='dark-bg'>
           <div className="heading">
             <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
             <img src="/pngs/blueline.png" />
