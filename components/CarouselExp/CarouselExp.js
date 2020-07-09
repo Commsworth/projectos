@@ -13,10 +13,7 @@ class CarouselExp extends Component {
         super(props);
 
         this.state = {
-            img: "/static/subexplore/img1.svg",
-            title: "Ultra-Responsive Apps",
-            content: "We deploy blazing fast, low-code web and mobile apps and websites powered by robust business logic engines tailored to address key business challenges. Our mobile-first approach ensures a responsive user experience as today’s consumers are driven by convenient yet immersive digital interactions.",
-            index: 0,
+          
         }
     }
 
@@ -42,17 +39,18 @@ class CarouselExp extends Component {
               {this.props.cardImg1}
               {this.props.cardContent1}
           </div>
-          <div>
+          <div className="card-flx">
             {this.props.cardImg2}
               {this.props.cardContent2}
           </div>
-          <div>
+          <div className="card-flx">
            {this.props.cardImg3}
               {this.props.cardContent3}
           </div>
-          <div>
+          <div className="card-flx">
             {this.props.cardImg4}
               {this.props.cardContent4}
+
           </div>
           </Slider>
           </SlideWrapper>
