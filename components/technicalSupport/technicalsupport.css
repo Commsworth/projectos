@@ -1,0 +1,159 @@
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+.center .link {
+  padding: 31px 17px;
+}
+
+.center .link a {
+  color: #818181;
+  cursor: pointer;
+  padding-bottom: 5px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 126.5%;
+  /* identical to box height, or 23px */
+  /* Best grey */
+}
+
+.head-flx a:hover {
+  color: #818181;
+  border-bottom: 2px solid #818181;
+}
+
+.head-flx .active:hover {
+  color: #0e82f8 !important;
+  border-bottom: 2px solid #0e82f8 !important;
+}
+
+.head-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head-flx-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0px 1vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.5px solid #c9c9c9;
+}
+
+.head-flx-icons img {
+  max-width: 150px;
+  height: 100px;
+  margin: 50px 0.3vw;
+  border-right: 1px solid #c9c9c9;
+  padding: 0px 20px;
+}
+
+.head-flx-icons img:last-of-type {
+  border-right: none;
+}
+
+.divide2 {
+  border: 0.5px solid #c9c9c9;
+}
+
+.active {
+  color: #0e82f8 !important;
+  border-bottom: 2px solid #0e82f8;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 18px;
+  line-height: 126.5%;
+  /* identical to box height, or 23px */
+  /* Project OS main */
+}
+
+@media screen and (min-width: 990px) {
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .center .link {
+    padding: 25px 10px !important;
+  }
+  .center .link a {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 126.5%;
+  }
+  .center .head-flx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .center .off {
+    display: none !important;
+  }
+  .center .button {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin: 0px auto;
+    border: none;
+    background: #1c2124;
+    color: white;
+    font-size: 36px;
+    position: relative;
+    top: 30px;
+  }
+  .center .more-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .center .head-flx-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    border-bottom: none;
+  }
+  .center .head-flx-icons img {
+    border: none;
+  }
+}
+/*# sourceMappingURL=technicalsupport.css.map */

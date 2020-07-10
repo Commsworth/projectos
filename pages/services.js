@@ -24,7 +24,7 @@ export default class Services extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="dark-bg">
                 <main>
                     <div className="heading">
                         <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
@@ -169,7 +169,7 @@ export default class Services extends Component {
                           padding: 30px;
                           
                         }
-                        }
+                        
                         .about-cards :global(.card .title){
                             position: relative;
                             bottom: 80px;
@@ -253,4 +253,10 @@ export default class Services extends Component {
             </div>
         );
     }
+}
+
+function Post(props) {
+    return <div>
+        <Link href={`/post?title}`}><a>{props.title}</a></Link>
+    </div>
 }

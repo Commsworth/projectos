@@ -1,0 +1,86 @@
+.portfolio-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 323px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  margin: 1vh 0vw;
+  overflow-x: hidden;
+}
+
+.portfolio-desc .words {
+  width: 25vw;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-desc h3 {
+  width: auto;
+  text-align: start;
+}
+
+.portfolio-desc .background {
+  padding: 1rem 0px 1rem 0px;
+  position: absolute;
+  margin-top: 10px;
+  z-index: 1;
+  width: 114vw;
+  height: 310px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("/static/siwp.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/static/siwp.png");
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+.portfolio-desc .second {
+  width: 30vw;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-desc .second p,
+.portfolio-desc .second a {
+  line-height: 206.5%;
+}
+
+.portfolio-desc a {
+  font-size: 24px;
+}
+
+.portfolio-desc:hover .background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/static/siwp.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/siwp.png");
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-desc .second {
+    display: none;
+  }
+  .portfolio-desc .words {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .portfolio-desc .second {
+    width: 44vw;
+    margin-left: 8vw;
+    margin-top: 1vw;
+  }
+}
+/*# sourceMappingURL=portfoliodesc.css.map */

@@ -21,7 +21,10 @@ class Card extends React.Component {
                     {this.props.title}
                 </h3>
                 <h3 className="sub-title">
-                    {this.props.subTitle}
+                    {
+                        this.props.subIcon ? <img src={this.props.subIcon} alt=""/> : this.props.subTitle
+                    }
+                    
                 </h3>
                 <p className="content">
                     {this.props.content}
@@ -39,7 +42,7 @@ class Card extends React.Component {
                     `.card{
                         box-shadow: 0px 0px 0px 0px;
                         outline: transparent;
-                        width: 100%;
+                        width: 100%; 
                         height: 100%;
                         color: white !important;
                         display: flex;
@@ -47,6 +50,7 @@ class Card extends React.Component {
                         flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
+                        height: auto;
                     }
 
                     .card h3{

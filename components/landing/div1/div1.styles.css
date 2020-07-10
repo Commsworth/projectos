@@ -1,0 +1,191 @@
+@media only screen and (min-width: 991px) {
+  .div1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 9px;
+    margin: 2vw auto;
+    min-height: 600px;
+  }
+  .div1 .div1-large {
+    min-width: 450px;
+    width: 40%;
+    margin-right: 9px;
+  }
+  .div1 .div1-large .card p,
+  .div1 .div1-large .card h3 {
+    margin: 0px auto !important;
+    width: 80%;
+  }
+  .div1 .div1-large .card p {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw !important;
+    line-height: 200%;
+    /* or 36px */
+    letter-spacing: 0.01em;
+  }
+  .div1 .div1-large .card .content {
+    padding: 1vw 0px;
+  }
+  .div1 .div1-large .card .title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 119%;
+    /* identical to box height, or 48px */
+  }
+  .div1 .div1--second {
+    display: -ms-grid;
+    display: grid;
+    gap: 9px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    min-width: 450px;
+    width: 40%;
+  }
+  .div1 .div1--second .div1--second-top .card h3,
+  .div1 .div1--second .div1--second-top .card p {
+    padding: 0px 32px !important;
+    margin: 0;
+  }
+  .div1 .div1--second .div1--second-top .card h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 119%;
+    /* identical to box height, or 36px */
+    color: #ffffff;
+  }
+  .div1 .div1--second .div1--second-top .card .content {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw !important;
+    line-height: 208%;
+    /* or 33px */
+    letter-spacing: 0.01em;
+    color: #f4f4f4;
+  }
+  .div1 .div1--second .div1--second-top .card .content2 {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 223%;
+    font-size: 0.9vw !important;
+    /* or 31px */
+    letter-spacing: 0.01em;
+    /* Placeholder */
+    color: #f4f4f4;
+  }
+  .div1 .div1--second .div1--second-top .card .content2 .div1-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .div1 .div1--second--small {
+    display: -ms-grid;
+    display: grid;
+    gap: 9px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .div1 .div1--second--small .card {
+    padding: auto;
+  }
+  .div1 .div1--second--small .card h3,
+  .div1 .div1--second--small .card p {
+    padding: 0px 12px !important;
+    margin: 0;
+  }
+  .div1 .div1--second--small .card p {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.0vw !important;
+    line-height: 208%;
+    /* or 33px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 0.01em;
+  }
+  .div1 .div1--second--small .card .title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 119%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .div1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin: 0px 20px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    gap: 0px;
+  }
+  .div1 .card {
+    margin-bottom: 1vw;
+  }
+  .div1 .card p,
+  .div1 .card h3 {
+    padding: 0px 20px;
+  }
+  .div1 .card p {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 200%;
+    /* or 28px */
+    letter-spacing: 0.01em;
+  }
+  .div1 .div1--second {
+    gap: 0px;
+  }
+  .div1 .div1--second .card {
+    margin-bottom: 1vw;
+  }
+  .div1 .div1--second .card .content2 .div1-ul {
+    display: inline;
+  }
+  .div1 .div1--second .card .content2 .div1-ul ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px !important;
+  }
+  .div1 .div1--second .div1--second--small {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    gap: 6px;
+  }
+  .div1 .div1--second .div1--second--small .card {
+    margin-bottom: 1vw;
+  }
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 0px;
+  }
+  .list ul {
+    margin: 0px 0px 0px 0px;
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=div1.styles.css.map */

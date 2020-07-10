@@ -1,0 +1,274 @@
+.cli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 80px;
+  background: white;
+}
+
+.cli h5 {
+  color: #111517;
+  font-size: 24px;
+}
+
+.brand {
+  border-bottom: 0.5px solid #c9c9c9;
+  padding-bottom: 47px;
+}
+
+.brand img {
+  margin: 20px 100px 0px 100px;
+  width: 80px;
+  height: 50px;
+}
+
+.brand:last-of-type {
+  border-bottom: none;
+}
+
+.bor3 {
+  display: inline-block;
+  width: 0px;
+  height: 54px;
+  border-right: 1px solid #878787;
+}
+
+.div4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20vh;
+  color: white;
+}
+
+.div4 .pf1 .circle1 {
+  border: 5px solid #208fff;
+  border-radius: 50%;
+}
+
+.div4 .pf2 .circle2 {
+  border: 5px solid #208fff;
+  border-radius: 50%;
+}
+
+.div4 .pf3 .circle3 {
+  border: 5px solid #208fff;
+  border-radius: 50%;
+}
+
+.div4 .pf4 .circle4 {
+  border: 5px solid #208fff;
+  border-radius: 50%;
+}
+
+.div4 .pf5 .circle5 {
+  border: 5px solid #208fff;
+  border-radius: 50%;
+}
+
+.div4 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+}
+
+.div4 .center2 {
+  text-align: center;
+  margin: 0vh 35vw;
+}
+
+.div4 .center2 h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.div4 .center2 h4 {
+  font-size: 30px;
+  line-height: 130%;
+  font-weight: bold;
+}
+
+.div4 .center2 p {
+  font-size: 16px;
+}
+
+.pf1 {
+  position: relative;
+  top: -10rem;
+  left: -5rem;
+}
+
+.pf2 {
+  position: relative;
+  top: -10rem;
+  left: 30rem;
+}
+
+.pf3 {
+  position: relative;
+  top: 1rem;
+  left: 15rem;
+}
+
+.pf4 {
+  position: relative;
+  left: -20rem;
+  bottom: -2rem;
+}
+
+.pf5 {
+  position: relative;
+  left: -13rem;
+  top: 5rem;
+}
+
+.img-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 990px) {
+  .div4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40rem;
+    margin: 0vh 0vw;
+  }
+  .brand {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .cli {
+    padding: 0px !important;
+  }
+  .cli br {
+    display: none;
+  }
+  .more-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .more-div .off {
+    display: none !important;
+  }
+  .more-div .button {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin: 0px auto;
+    border: none;
+    background: #1c2124;
+    color: white;
+    font-size: 36px;
+    position: relative;
+    top: 30px;
+  }
+  .pf1 {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+  }
+  .pf2 {
+    position: relative;
+    top: 2.5rem;
+    left: 0rem;
+  }
+  .pf3 {
+    position: relative;
+    top: 5rem;
+    left: 0rem;
+  }
+  .pf4 {
+    position: relative;
+    left: 0rem;
+    bottom: -2.5rem;
+  }
+  .pf5 {
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+  }
+  #mission {
+    width: 90vw;
+    margin: auto;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 212%;
+    /* or 47px */
+    text-align: center;
+  }
+  #what-our-clients {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 126.5%;
+    /* or 25px */
+    text-align: center;
+  }
+  #div4-top-img {
+    width: 66px !important;
+    height: 66px !important;
+  }
+  .img-flx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 70px;
+  }
+  .img-flx img {
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+  }
+  .bor3 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=div4.css.map */

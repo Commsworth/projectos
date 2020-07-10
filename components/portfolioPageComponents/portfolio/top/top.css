@@ -1,0 +1,225 @@
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  gap: 10%;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.home .text p {
+  font-size: 18px;
+  line-height: 206.5%;
+}
+
+.home a {
+  font-size: 24px;
+  line-height: 109%;
+}
+
+.home h3 {
+  font-size: 30px;
+  line-height: 119%;
+}
+
+.home .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  cursor: pointer;
+}
+
+.home .show .simg1 img {
+  position: relative;
+  left: -190px;
+}
+
+.home .show .simg1 .first {
+  height: 200px;
+  z-index: 5;
+}
+
+.home .show .simg1 .second {
+  height: 170px;
+  z-index: 4;
+}
+
+.home .show .simg1 .third {
+  height: 140px;
+  z-index: 3;
+}
+
+.home .show .simg1 .fourth {
+  height: 100px;
+  z-index: 2;
+}
+
+.home .show .simg1 .fifth {
+  height: 60px;
+  z-index: 1;
+}
+
+.home .show .simg2 img {
+  position: relative;
+  left: -260px;
+}
+
+.home .show .simg2 .first,
+.home .show .simg2 .third {
+  height: 170px;
+  z-index: 4;
+}
+
+.home .show .simg2 .second {
+  height: 200px;
+  z-index: 5;
+}
+
+.home .show .simg2 .fourth {
+  height: 140px;
+  z-index: 3;
+}
+
+.home .show .simg2 .fifth {
+  height: 100px;
+  z-index: 2;
+}
+
+.home .show .simg3 img {
+  position: relative;
+  left: -380px;
+  position: relative;
+}
+
+.home .show .simg3 .first,
+.home .show .simg3 .fifth {
+  height: 140px;
+  z-index: 3;
+}
+
+.home .show .simg3 .second,
+.home .show .simg3 .fourth {
+  height: 170px;
+  z-index: 4;
+}
+
+.home .show .simg3 .third {
+  height: 200px;
+  z-index: 5;
+}
+
+.home .show .simg4 img {
+  position: relative;
+  left: -480px;
+}
+
+.home .show .simg4 .first {
+  height: 100px;
+  z-index: 2;
+}
+
+.home .show .simg4 .second {
+  height: 140px;
+  z-index: 3;
+}
+
+.home .show .simg4 .third,
+.home .show .simg4 .fifth {
+  height: 170px;
+  z-index: 4;
+}
+
+.home .show .simg4 .fourth {
+  height: 200px;
+  z-index: 5;
+}
+
+.home .show .simg5 img {
+  position: relative;
+  left: -530px;
+}
+
+.home .show .simg5 .first {
+  height: 60px;
+  z-index: 1;
+}
+
+.home .show .simg5 .second {
+  height: 100px;
+  z-index: 2;
+}
+
+.home .show .simg5 .third {
+  height: 140px;
+  z-index: 3;
+}
+
+.home .show .simg5 .fourth {
+  height: 170px;
+  z-index: 4;
+}
+
+.home .show .simg5 .fifth {
+  height: 200px;
+  z-index: 5;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .home .text {
+    display: none;
+  }
+  .home .show {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+  .home {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .home .bor {
+    display: none;
+  }
+  .home .text {
+    display: none;
+  }
+  .home .show {
+    padding: 1.5px;
+  }
+  .home .show img {
+    width: 200px;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=top.css.map */

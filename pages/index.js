@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/extra/card/card.component'
-import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../static/assets/svgs';
+//import { blueSemiCircle, devOps, map, businessAutomation, businessContinuity, product, managedServices, cyberSecurity, infrastructure, leftArrow, rightArrow, drawingArrow, bigBlueSemiCircle, listStyle } from '../static/assets/svgs';
 import TitleDiv from '../components/extra/titleDiv/titleDiv';
 import Layout from '../components/Layout'
 import Div4 from '../components/div4/div4'
@@ -23,13 +23,13 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Layout className="container">
+      <Layout>
         <Head>
           <title>Commsworth</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="dark-bg">
+        <main className='dark-bg'>
           <div className="heading">
             <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
             <img src="/pngs/blueline.png" />
@@ -47,7 +47,7 @@ export default class Home extends Component {
           <TitleDiv text="Featured" subText="Our latest trends tailored for you" />
           <br />
           <br />
-          <CarouselDiv leftArrow={leftArrow} rightArrow={rightArrow} blueSemiCircle={blueSemiCircle} drawingArrow={drawingArrow} />
+          <CarouselDiv leftArrow="/static/svg/left-arrow.svg" rightArrow="/static/svg/right-arrow.svg" blueSemiCircle= "/static/svgs/semi-circle.svg"  />
           <TechnicalSupport />
           <br />
           <br />
@@ -119,7 +119,7 @@ export default class Home extends Component {
           
         }
         .socials :global(.sc){
-          background: #111517; !important;
+          background: #111517 !important;
         }
         .socials :global(.sc .socials .follow p),.socials :global(.sc .socials .share p){
           color: #F4F4F4 !important;

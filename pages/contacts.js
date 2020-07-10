@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../scss/contact.scss'
 import Head from 'next/head'
 import Modal from '../components/modal/Modal'
 import Layout from '../components/Layout'
@@ -31,7 +30,7 @@ class ctap extends Component {
                 <div className="ct">
                     <div className="contact-head">
                         <div className="overlay">
-                            <div className='container'>
+                            <div className='wrapper'>
                                 <h1>Get In touch</h1>
                             </div>
                         </div>
@@ -39,7 +38,7 @@ class ctap extends Component {
                 </div>
 
 <div  style={{paddingBottom: 200,background:"white !important"}}>
-            <div className="container">
+            <div className="wrapper">
                 <div className='ct1'>
                     <div className="pad">
                         <h1>Contact Us</h1>
@@ -97,7 +96,193 @@ class ctap extends Component {
 
                 </div>
                 <Socials/>
-           
+           <style jsx>{`
+               .contacts-flx{
+    .contacts-ct{
+        width: 45%;
+    }
+    img{
+        height: 50px;
+    }
+display: flex;
+justify-content: end;
+padding-top: 25px;
+h1{
+    font-weight: bold;
+    font-size: 24px !important;
+}
+a{
+    border-bottom: 1px solid;
+    color: #0E82F8;
+}
+}
+
+  .wrapper{
+    width: 80%;
+    margin: 0px auto;
+    .ct1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px !important;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+  .pad{
+    align-self: start;
+    justify-content: end;
+    width: 50%;
+    color: white;
+        // padding-top: 20px;
+    // padding: 0px 0px 0px 116px;
+    // margin-top: 7.5rem;
+
+    h1{
+        color: black;
+        line-height: 1;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    
+    p{
+        color: black;
+        line-height: 30px;
+        padding-right: 34px;
+        margin-top: 14px !important;       
+    }
+
+}
+  }
+  .ct{
+    width: 100% !important;  
+/* contact section */
+.contact-head {
+    margin: 0px;
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    background: #242525;
+    background-image: url(/static/ct-bkg.png) !important;
+    height: 316px;
+}
+.overlay {
+  h1{
+    width: 1000px !important;
+    font-size: 48px;
+    margin: 0px auto;
+  }
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 3;
+  cursor: pointer;
+}
+
+
+  .pad2 {
+    width: 50%;
+    // padding-top: 20px;
+    h1{
+        color: black;
+        line-height: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+    }
+  }
+  }
+
+@media only screen and (max-width: 1000px) and (min-width: 700px)  {
+.contacts-flx {
+   flex-wrap: wrap;
+}
+}
+ @media only screen and (max-width: 700px) { 
+   .wrapper{
+    .ct1 {
+      flex-direction: column;
+    }
+  }
+ }
+  @media only screen and (max-width: 400px) { 
+  .contacts-flx {
+   flex-direction: column;
+}
+  }
+
+ @media only screen and (max-width: 1400px) { 
+   .wrapper{
+     width: 80% !important;
+    .ct1 {
+      width: 100% !important;
+    }
+  }
+  .ct{ 
+    width: 100% !important;
+  .overlay{
+    h1 {
+      width: 100% !important;
+    }
+  }
+}
+ }
+
+  @media only screen and (max-width: 800px) { 
+
+      .wrapper{
+    width: 80%;
+    .ct1{
+    width: 100% !important;
+}
+
+  .pad{
+    width: 100%;
+
+    h1{
+      
+    }
+    
+    p{
+      
+    }
+
+}
+  }
+    
+   .ct{
+    width: 100% !important;  
+/* contact section */
+.contact-head {
+
+}
+.overlay {
+  h1{
+    width: 100% !important;
+    font-size: 48px;
+    margin: 0px auto;
+  }
+
+
+
+  .pad2 {
+    width: 100%;
+  }
+  }
+}
+}
+               `}</style>
             </Layout>
         )
     }

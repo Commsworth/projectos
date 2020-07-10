@@ -1,0 +1,265 @@
+@media screen and (min-width: 991px) {
+  .dropdown-button {
+    display: none;
+    width: 25px;
+    height: 25px;
+  }
+  .nav-div {
+    -webkit-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+    position: fixed;
+    z-index: 9999;
+    max-height: 70px;
+  }
+  .nav-div.nav-scroll {
+    background: #1c2124;
+    -webkit-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+  }
+  .nav-div .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-height: 70px;
+    color: white;
+    width: 90vw;
+    margin: 0vh 5vw;
+  }
+  .nav-div .logo {
+    background: transparent;
+    border: none;
+  }
+  .nav-div .down {
+    background-color: #f3f3f3;
+  }
+  .nav-div .nav-lg a {
+    color: white;
+    font-family: "Nunito", "sans-serif" !important;
+    font-weight: bold;
+  }
+  .nav-div .nav-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+  }
+  .nav-div .dropdown-content {
+    display: none;
+  }
+  .nav-div .dropdown-content ul {
+    padding: 0;
+  }
+  .nav-div .dropdown-content ul li {
+    margin: 0;
+    text-align: left;
+  }
+  .nav-div .dropdown-content ul li a {
+    color: #1b1b1b;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding-left: 23px;
+    font-size: 15px;
+    line-height: 191%;
+    text-align: center;
+  }
+  .nav-div .dropdown-content ul li:hover {
+    background-color: #f3f3f3;
+  }
+  .nav-div .nav-sm .down .dropdown-content {
+    display: block;
+    position: absolute;
+    text-align: left;
+    background: #ffffff;
+    width: 237px;
+  }
+  .nav-div .nav-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    color: white;
+  }
+  .nav-div .nav-lg .option {
+    border-bottom: 3px solid transparent;
+  }
+  .nav-div .nav-lg .option .active {
+    border-bottom: 3px solid #0e82f8;
+  }
+  .nav-div .nav-lg .option:hover,
+  .nav-div .nav-lg .option1:hover,
+  .nav-div .nav-lg .option2:hover {
+    border: none;
+  }
+  .nav-div .nav-lg .option.nav-line,
+  .nav-div .nav-lg .option1.nav-line,
+  .nav-div .nav-lg .option2.nav-line {
+    width: 70px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .nav-div .nav-lg .option.nav-line img,
+  .nav-div .nav-lg .option1.nav-line img,
+  .nav-div .nav-lg .option2.nav-line img {
+    display: none;
+  }
+  .nav-div .nav-lg .option.nav-line:hover img,
+  .nav-div .nav-lg .option1.nav-line:hover img,
+  .nav-div .nav-lg .option2.nav-line:hover img {
+    display: inline-block;
+    width: inherit;
+  }
+  .nav-div .nav-lg .option1 {
+    border-bottom: 3px solid transparent;
+    width: 50px;
+  }
+  .nav-div .nav-lg .option1 .active1 {
+    border-bottom: 3px solid #0e82f8;
+  }
+  .nav-div .nav-lg .option2 {
+    border-bottom: 3px solid transparent;
+    width: 50px;
+  }
+  .nav-div .nav-lg .option2 .active2 {
+    border-bottom: 3px solid #0e82f8;
+  }
+  .nav-div .padding {
+    margin-left: 35px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Nunito", "sans-serif" !important;
+  }
+  .nav-div .padding.nav-line {
+    display: -ms-grid;
+    display: grid;
+  }
+  .nav-div .padding.nav-line img {
+    display: none;
+  }
+  .nav-div .padding.nav-line:hover img {
+    display: inline-block;
+    width: inherit;
+  }
+  .nav-div .page {
+    border-bottom: 3px solid transparent;
+    font-size: 18px !important;
+  }
+  .nav-div .page:hover {
+    border: none;
+  }
+  .nav-div .padding a {
+    color: white;
+  }
+  .nav-div .butt {
+    background-color: #0e82f8;
+    border-radius: 5px;
+    font-family: "Nunito", "sans-serif" !important;
+    font-weight: bold;
+    padding: 13px 33px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 126.5%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .nav-div .butt:hover {
+    background-color: #5cadff;
+  }
+  .nav-div .nav-lg p {
+    /* width: 25%; */
+    color: white;
+  }
+  .nav-div .none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-div {
+    -webkit-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+    position: fixed;
+    z-index: 9999;
+    background: #1c2124;
+  }
+  .nav-div.nav-scroll {
+    -webkit-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+  }
+  .nav-div .nav {
+    width: 100vw !important;
+  }
+  .nav-div .nav .divide-line {
+    display: none !important;
+  }
+  .nav-div .nav .padding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-div .nav .padding .nav-line {
+    display: none;
+  }
+  .nav-div .nav .page {
+    display: none;
+  }
+  .nav-div .nav-lg {
+    display: none;
+    background-color: #1c2124;
+    padding: 0px 0px 0px 20px;
+  }
+  .nav-div .block {
+    display: block;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+  }
+  .nav-div .nav-lg li a {
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px 0px 0px 20px;
+  }
+  .nav-div .nav-lg {
+    padding: 5px 0px 5px 0px;
+  }
+  .nav-div .nav-lg li:hover {
+    background-color: #5cadff;
+  }
+  .dropdown-button {
+    width: 30px;
+    height: 30px;
+    margin: 0vh 5vw;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

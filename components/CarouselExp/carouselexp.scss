@@ -1,34 +1,20 @@
-// .explore-cau{
-//     margin: auto;
-//     .carousel-opt{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 20px 1px 20px 1px;
-//     border-bottom: 1px solid #C0C0C0;
-//      cursor: pointer;
-// }
-// .svg{
-//     fill: #208FFF;
-//     margin: 5px;
-// }
 .carou-div {
-    // display: flex;
-    justify-content: center;
-    // cursor: pointer;
-    align-items: center;
-    // margin: 52px 60px 0px 60px;
-        .card {
-           height: 300px;
-            width: 444px;
-            justify-content: center;
+  width: 70%;
+  margin: auto;
+    .card-flx {
+        display: flex !important;
+
+        .card{
+           justify-content: center;
             margin: 30px 10px 10px 30px;
-            h3{
+           h3{
                 font-size: 34px;
                 line-height: 30px;
+                color: black;
             }
           
             p {
+                color: black;
                 font-size: 18px;
                 line-height: 28px;
                 margin: 0;
@@ -42,48 +28,11 @@
                 margin-top: 10px !important;
             }
         }
-    }
-// }
-
-
-
-// @media screen and (max-width: 800px){
-//     .container{
-//         width: 90%;
-//         margin: 0 auto;
-//     }
-// .explore-cau {
-
-// .carou-div {   
-//     flex-wrap: wrap;   
-//         .card {
-//         width: 150vw;
-//         height: 40vh;
-//           margin: 2vh 0vw;
-// }
-// }
-//     }
-// }
-
-// .carou {
-//   font-family: sans-serif;
-//   text-align: center;
-//   width: 500px;
-//   margin: auto;
-// }
-
-.carou-div {
-  width: 80%;
-  margin: auto;
-    .card-flx {
-        display: flex !important;
-        .card{
         img{
             height: auto;
         }
     }
     }
-}
 
 .button__bar {
   display: inline-block;
@@ -134,17 +83,18 @@
 
   .carou-div {
   width: 100%;
-.card-flx {
+    .card-flx {
         width: 90% !important;
         flex-wrap: wrap;
         margin: 0 auto;
-        .card{
-          height: auto;
+      .card{
+           margin: 12px 0px 0px 0px !important;
+        }
         img{
             height: 300px;
         }
     }
     }
 }
-}
+
 
