@@ -21,7 +21,10 @@ class Card extends React.Component {
                     {this.props.title}
                 </h3>
                 <h3 className="sub-title">
-                    {this.props.subTitle}
+                    {
+                        this.props.subIcon ? <img src={this.props.subIcon} alt=""/> : this.props.subTitle
+                    }
+                    
                 </h3>
                 <p className="content">
                     {this.props.content}

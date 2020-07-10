@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Card from '../extra/card/card.component';
 import './carouselexp.scss';
 import ArrowLink from '../extra/arrow';
-import {blueSemiCircle} from '../../static/assets/svgs'
+// import {blueSemiCircle} from '../../static/assets/svgs'
 import Slider from "react-slick"
 import SlideWrapper from "./SlideWrapper";
   

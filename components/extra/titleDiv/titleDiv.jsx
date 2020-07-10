@@ -1,9 +1,9 @@
-import { blueLine } from '../../../static/assets/svgs';
+
 
 const TitleDiv = (props) => (
     <div>
         <div className={`title-div ${props.position}`}>
-            {blueLine}
+            <img src="/static/svg/blue-line.svg" alt=""/>
             <div id="title-text">
                 {props.text}
             </div>

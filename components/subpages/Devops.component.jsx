@@ -1,19 +1,11 @@
 import Layout from '../Layout'
 import './devops.scss'
 import Head from 'next/head'
-// import CarouselDiv from '../landing/carouselDiv/carouselDiv.component'
-// import Explore from '../Explore/Explore'
 import Card from '../extra/card/card.component'
-import { blueSemiCircle, drawingArrow } from '../../static/assets/svgs';
 import ArrowLink from '../extra/arrow';
 import CarouselExp from '../CarouselExp/CarouselExp'
-// import Option from '../option/Option.component'
-// import Card from '../extra/card/card.component'
-// import { blueSemiCircle, drawingArrow } from '../../../static/assets/svgs';
-// import Scroll from '../CarouselOffer/Scroll'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'
-// import DevopsOffer from '../subpage-offer/devops-offer/DevopsOffer.component';
 import { FaBars } from 'react-icons/fa'
 
 
@@ -126,7 +118,7 @@ class Devops extends React.Component {
                 <div className="tp">
                     <div className="tp1">
                         <Card title="DevOps & Analytics" 
-                        subTitle={blueSemiCircle} 
+                        subIcon='/static/svg/semi-circle.svg' 
                         content=" Businesses are empowered to 
                         meet today’s industry challenges through
                          adoption of intelligent automation
@@ -159,16 +151,16 @@ class Devops extends React.Component {
                 {this.state.web?                
                  <CarouselExp 
                  cardImg1 ={<Card  background="/static/subexplore/img1.svg" />} 
-                 cardContent1={<Card title="Ultra-Responsive Apps" subTitle={blueSemiCircle} content="We deploy blazing fast, low-code web and mobile apps and websites powered by robust business logic engines tailored to address key business challenges. Our mobile-first approach ensures a responsive user experience as today’s consumers are driven by convenient yet immersive digital interactions." link={<ArrowLink text="Work with us"/> } />} 
+                 cardContent1={<Card title="Ultra-Responsive Apps" subIcon='/static/svg/semi-circle.svg' content="We deploy blazing fast, low-code web and mobile apps and websites powered by robust business logic engines tailored to address key business challenges. Our mobile-first approach ensures a responsive user experience as today’s consumers are driven by convenient yet immersive digital interactions." link={<ArrowLink text="Work with us"/> } />} 
                  
                  cardImg2 ={<Card  background="/static/subexplore/img1.svg" />} 
-                 cardContent2={<Card title="Seamless Delivery" subTitle={blueSemiCircle} content="App content delivery is auto-tuned to suit user location via a blend of traffic management metrics including caching, severless computing to provide the quickest response to web requests." link={<ArrowLink text="Work with us"/> } />}  
+                 cardContent2={<Card title="Seamless Delivery" subIcon='/static/svg/semi-circle.svg' content="App content delivery is auto-tuned to suit user location via a blend of traffic management metrics including caching, severless computing to provide the quickest response to web requests." link={<ArrowLink text="Work with us"/> } />}  
 
                  cardImg3 ={<Card  background="/static/subexplore/img1.svg" />} 
-                 cardContent3={<Card title="Application Scalability" subTitle={blueSemiCircle} content="Our Micro-services architecture enables you to securely scale your app seamlessly from zero to planet-wide in a matter of minutes." link={<ArrowLink text="Work with us"/> } />}
+                 cardContent3={<Card title="Application Scalability" subIcon='/static/svg/semi-circle.svg' content="Our Micro-services architecture enables you to securely scale your app seamlessly from zero to planet-wide in a matter of minutes." link={<ArrowLink text="Work with us"/> } />}
 
                  cardImg4 ={<Card  background="/static/subexplore/img1.svg" />} 
-                 cardContent4={<Card title="Broad Technology Stack" subTitle={blueSemiCircle} content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />} /> 
+                 cardContent4={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />} /> 
                 : null
                  }               
 
@@ -204,7 +196,7 @@ class Devops extends React.Component {
                      {this.state.offer?
                         <div>
                  <div className="offer-grid">
-                <Card title={"Game changing offers"} subTitle={blueSemiCircle} content={"Here are a few more reasons why you should choose use"}/>
+                <Card title={"Game changing offers"} subIcon='/static/svg/semi-circle.svg' content={"Here are a few more reasons why you should choose use"}/>
                                   
                 <CardOfferList events={events} />                
                 </div>

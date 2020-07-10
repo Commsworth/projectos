@@ -63,17 +63,17 @@ export default class CarouselDiv extends Component {
         return (
             <React.Fragment>
                 <div className="carousel-div">
-                    <button id="left-button" onClick={this.setOptionLeft}>{this.props.leftArrow}</button>
+                    <button id="left-button" onClick={this.setOptionLeft}><img src={this.props.leftArrow} alt="" /></button>
                     <div className="carousel-grid">
                         <Card background={this.state.img} content={
                             <div className="carousel-grid-image">
-                                <button id="inner-left-button" onClick={this.setOptionLeft}>{this.props.leftArrow}</button>
-                                <button id="inner-right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
+                                <button id="inner-left-button" onClick={this.setOptionLeft}><img src={this.props.leftArrow} alt=""/> </button>
+                                <button id="inner-right-button" onClick={this.setOptionRight}><img src={this.props.rightArrow} alt=""/></button>
                             </div>
                         } />
-                        <Card title={this.state.title} subTitle={this.props.blueSemiCircle} content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
+                        <Card title={this.state.title} subIcon= {this.props.blueSemiCircle} content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
                     </div>
-                    <button id="right-button" onClick={this.setOptionRight}>{this.props.rightArrow}</button>
+                    <button id="right-button" onClick={this.setOptionRight}><img src={this.props.rightArrow} alt=""/></button>
                 </div>
                 <div className='carousel-opt'>
 

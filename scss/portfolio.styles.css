@@ -1,0 +1,241 @@
+.container {
+  background: #111517;
+  color: black !important;
+}
+
+.container .contact-card-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0vw auto;
+  padding: 85px 0vw;
+}
+
+.container .contact-card-main .card {
+  width: 40%;
+  min-width: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 465.41px;
+  margin: auto 25px;
+}
+
+.container .contact-card-main .card h3 {
+  min-width: 450px;
+  width: 40%;
+  height: 45px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 114%;
+  /* or 55px */
+  color: #f4f4f4;
+  margin: 0;
+}
+
+.container .contact-card-main .card .content,
+.container .contact-card-main .card .content2,
+.container .contact-card-main .card .link,
+.container .contact-card-main .card .title,
+.container .contact-card-main .card .sub-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .contact-card-main .card .content {
+  height: 130px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 190%;
+  min-width: 450px;
+  width: 40%;
+  /* or 38px */
+  /* Placeholder */
+  color: #f4f4f4;
+}
+
+.container .contact-card-main .image-card {
+  min-width: 450px;
+  width: 40% !important;
+  -webkit-box-shadow: 0px 0px 5px 0px;
+          box-shadow: 0px 0px 5px 0px;
+  margin: auto 25px;
+}
+
+.container .contact-card-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black !important;
+  background: #ffffff;
+  padding: 85px 0vw;
+}
+
+.container .contact-card-div.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 85px 0vw 85px 0vw;
+}
+
+.container .contact-card-div .card {
+  min-width: 450px;
+  width: 40%;
+  color: #000000 !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 465.41px;
+  margin: auto 25px;
+}
+
+.container .contact-card-div .card .title {
+  min-width: 450px;
+  width: 40%;
+  height: 37px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 119%;
+  /* or 43px */
+  /* Text color */
+  color: #1b1b1b;
+}
+
+.container .contact-card-div .card .sub-title {
+  min-width: 450px;
+  width: 40%;
+}
+
+.container .contact-card-div .card .content {
+  min-width: 450px;
+  width: 40%;
+  height: 222px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 190%;
+  /* or 34px */
+  letter-spacing: 0.01em;
+  /* Text color */
+  color: #1b1b1b;
+}
+
+.container .contact-card-div .card .content2 {
+  display: none;
+}
+
+.container .contact-card-div .card .link {
+  min-width: 450px;
+  height: 33px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 109%;
+}
+
+.container .contact-card-div .card .content,
+.container .contact-card-div .card .content2,
+.container .contact-card-div .card .link,
+.container .contact-card-div .card .title,
+.container .contact-card-div .card .sub-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .contact-card-div .image-card {
+  min-width: 450px;
+  width: 40% !important;
+  -webkit-box-shadow: 0px 0px 5px 0px;
+          box-shadow: 0px 0px 5px 0px;
+  margin: auto 25px;
+}
+
+.container #contact-heading {
+  padding-top: 200px;
+}
+
+@media screen and (min-width: 571px) and (max-width: 1023px) {
+  .contact-card-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-card-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-card-div .card .link {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    min-width: -webkit-fit-content !important;
+    min-width: -moz-fit-content !important;
+    min-width: fit-content !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .image-card {
+    display: none;
+  }
+  .contact-card-main {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 15vw 0px !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-card-main .card, .contact-card-div .card {
+    width: 80vw;
+    min-width: 200px !important;
+    margin: 5vh auto 0vh !important;
+  }
+  .contact-card-main .card .content,
+  .contact-card-main .card .content2,
+  .contact-card-main .card .title,
+  .contact-card-main .card .link,
+  .contact-card-main .card .sub-title, .contact-card-div .card .content,
+  .contact-card-div .card .content2,
+  .contact-card-div .card .title,
+  .contact-card-div .card .link,
+  .contact-card-div .card .sub-title {
+    width: 90vw !important;
+    min-width: 200px !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+}
+/*# sourceMappingURL=portfolio.styles.css.map */
