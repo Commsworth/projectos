@@ -83,17 +83,18 @@
 
   .carou-div {
   width: 100%;
-.card-flx {
+    .card-flx {
         width: 90% !important;
         flex-wrap: wrap;
         margin: 0 auto;
-        .card{
-          height: auto;
+      .card{
+           margin: 12px 0px 0px 0px !important;
+        }
         img{
             height: 300px;
         }
     }
     }
 }
-}
+
 

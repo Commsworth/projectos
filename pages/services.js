@@ -24,7 +24,7 @@ export default class Services extends Component {
 
     render() {
         return (
-            <div className="dark-bg container">
+            <div className="dark-bg">
                 <main>
                     <div className="heading">
                         <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>

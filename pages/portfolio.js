@@ -10,7 +10,8 @@ import Socials from '../components/extra/socials/socials.component';
 export default class ContactPage extends Component {
     render() {
         return (
-            <div className="container">
+            
+            <div className=" container">
                 <div className="contact-card-main" id="contact-heading">
                     <Card title="We build"
                         subTitle="digital products"
