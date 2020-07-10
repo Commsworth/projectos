@@ -47,6 +47,7 @@ class Card extends React.Component {
                         flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
+                        height: auto;
                     }
 
                     .card h3{
