@@ -176,7 +176,7 @@ const initialState = {
                                     type="text" 
                                     value={this.state.companyName} 
                                     handleChange={this.handleChange}
-                                    label="company Name"
+                                    label="Company Name"
                                     required />
 
                                  <FormSelect 
@@ -191,7 +191,7 @@ const initialState = {
                                     id='companySize'
                                     value={this.state.companySize} 
                                     handleChange={this.handleChange}
-                                    label="company size"
+                                    label="Company Size"
                                     required />
 
                                     <FormInput 
@@ -218,7 +218,7 @@ const initialState = {
                                                 id='scope'
                                                 value={this.state.scopeSize} 
                                                 handleChange={this.handleChange}
-                                                label="CTAP Scope"
+                                                label="Request Demo"
                                                 required />
 
                                                 <FormInput 

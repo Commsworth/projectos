@@ -52,7 +52,6 @@ class Card extends React.Component {
                         background-size: cover !important;
                         justify-content: end !important;
                         align-items: end;
-                        height: 280px;
                     }
 
                     .card h3{

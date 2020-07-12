@@ -178,7 +178,7 @@ const initialState = {
                                     type="text" 
                                     value={this.state.companyName} 
                                     handleChange={this.handleChange}
-                                    label="company Name"
+                                    label="Company Name"
                                     required />
 
                                  <FormSelect 
@@ -193,7 +193,7 @@ const initialState = {
                                     id='companySize'
                                     value={this.state.companySize} 
                                     handleChange={this.handleChange}
-                                    label="company size"
+                                    label="Company Size"
                                     required />
 
                                     <FormInput 

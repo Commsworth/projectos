@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../components/extra/card/card.component';
-import { oneScreen, blueSemiCircle } from '../static/assets/svgs';
+
 
 export default class ContactPage extends Component {
     render() {
@@ -18,7 +18,7 @@ export default class ContactPage extends Component {
 
                 <div className="contact-card-div">
                     <Card title="SIWP"
-                        subTitle={blueSemiCircle}
+                        subIcom='static/svg/semi-circle.svg'
                         content="We implement network security solutions designed to dynamically adapt to the evolving IT Infrastructure in order to defend its rapidly changing attack surface. Primary focus is given to the edge of the network as every packet must be certified as non-malicious before entry to the network. "
                         link="" />
                     <Card
@@ -33,14 +33,14 @@ export default class ContactPage extends Component {
                         title={<img src='/static/assets/png/SIWP.png' />}
                         link="" />
                     <Card title="ProjectOS"
-                        subTitle={blueSemiCircle}
+                       subIcom='static/svg/semi-circle.svg'
                         content="We implement network security solutions designed to dynamically adapt to the evolving IT Infrastructure in order to defend its rapidly changing attack surface. Primary focus is given to the edge of the network as every packet must be certified as non-malicious before entry to the network. "
                         link="" />
                 </div>
 
                 <div className="contact-card-div">
                     <Card title="MealStock"
-                        subTitle={blueSemiCircle}
+                        subIcom='static/svg/semi-circle.svg'
                         content="We implement network security solutions designed to dynamically adapt to the evolving IT Infrastructure in order to defend its rapidly changing attack surface. Primary focus is given to the edge of the network as every packet must be certified as non-malicious before entry to the network. "
                         link="" />
                     <Card
