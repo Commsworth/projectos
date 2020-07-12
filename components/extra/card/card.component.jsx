@@ -11,7 +11,7 @@ class Card extends React.Component {
         }
     }
     render() {
-        const styleObject = !this.props.background?{ backgroundColor: this.props.backcolour, backgroundSize: "cover" }:{ background:`linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url(${this.props.background})`, backgroundSize: "cover" };
+        const styleObject = !this.props.background?{ backgroundColor: this.props.backcolour, backgroundSize: "cover" }:{ backgroundImage:`linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url(${this.props.background})`, backgroundSize: "cover" };
         return (
 
             <div className="card" 

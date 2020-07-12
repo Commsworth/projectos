@@ -133,9 +133,9 @@ const initialState = {
     render() {
         return (
             <React.Fragment>
-                <h1>Request a session</h1>  
+                <h1>{this.props.heading || 'Request a session'}</h1>  
             <form className='form' onSubmit={this.handleSubmit}>
-                            <FormInput 
+                            {this.props.dataID==="0" && <FormInput 
                                     id='name'
                                     validation={this.validation}
                                     valid={this.validate}
@@ -145,7 +145,7 @@ const initialState = {
                                     value={this.state.name} 
                                     handleChange={this.handleChange}                                    
                                     label="Name"
-                                    required />
+                                    required />}
                             <FormInput 
                                     id='email'
                                     validation={this.validation}
