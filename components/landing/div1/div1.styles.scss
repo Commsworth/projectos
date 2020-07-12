@@ -1,6 +1,9 @@
+$mobile-card-width: 95vw;
 @media only screen and (min-width: 991px) {
-    .div1 {
-        display: flex;
+    .div1-main{
+
+        .div1 {
+            display: flex;
         justify-content: center;
         // grid-template-columns: 1fr 1fr;
         // height: 10rem;\
@@ -11,7 +14,7 @@
         margin: 2vw auto;
         // width: 300px;
         // height: 40vw;
-        min-height: 600px;
+        // min-height: 600px;
         .div1-large {
             // background: #1C2124;
             // height: 100% !important;
@@ -65,6 +68,7 @@
             width: 40%;
             .div1--second-top {
                 .card {
+                    background-size: cover !important;
                     // padding: 15px;
                     // min-width: 300px;
                     h3,
@@ -80,7 +84,7 @@
                         font-size: 30px;
                         line-height: 119%;
                         /* identical to box height, or 36px */
-
+                        
                         color: #ffffff;
                     }
                     .content {
@@ -103,9 +107,9 @@
                         /* or 31px */
 
                         letter-spacing: 0.01em;
-
+                        
                         /* Placeholder */
-
+                        
                         color: #f4f4f4;
                         .div1-ul {
                             display: flex;
@@ -127,7 +131,7 @@
             grid-template-columns: 1fr 1fr;
             .card {
                 // width: 230px;
-                padding: auto;
+                // padding: auto;
                 h3,
                 p {
                     padding: 0px 12px !important;
@@ -157,16 +161,26 @@
             }
         }
     }
+    .indicators{
+        display: none;
+    }
+}
 }
 
 @media only screen and (max-width: 990px) {
-    .div1 {
-        display: grid;
-        grid-template-rows: 1fr;
-        // height: 1400px;
-        margin: 0px 20px;
+    .div1-main{
+        margin: 0vw auto 5vw;
+        .div1 {
+            margin: 0vw auto 5vw;
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        width: $mobile-card-width;
         .card {
+            scroll-snap-align: start;
             margin-bottom: 1vw;
+            min-width: $mobile-card-width !important;
             p,
             h3 {
                 padding: 0px 20px;
@@ -186,7 +200,9 @@
         gap: 0px;
 
         .div1--second {
+            display: flex !important;
             .card {
+                min-width: $mobile-card-width !important;
                 margin-bottom: 1vw;
                 .content2 {
                     .div1-ul {
@@ -202,9 +218,9 @@
             gap: 0px;
 
             .div1--second--small {
-                grid-template-columns: 100%;
-                gap: 6px;
+                display: grid;
                 .card {
+                    min-width: $mobile-card-width !important;
                     margin-bottom: 1vw;
                 }
             }
@@ -218,4 +234,15 @@
             padding: 1rem;
         }
     }
+}
+.indicators{
+    display: flex;
+    justify-content: center;
+    .svg{
+        fill: #208FFF;
+    }
+    svg{
+        margin: 5px;
+    }
+}
 }

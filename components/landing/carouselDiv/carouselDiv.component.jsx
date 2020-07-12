@@ -109,13 +109,10 @@ export default class CarouselDiv extends Component {
             }
 
             .carousel-grid {
-            //display: grid;
-            //grid-template-columns: 1fr 1fr !important;
-            //gap: 65px;
             display: flex;
             justify-content: center;
             //flex-wrap: wrap;
-            width: 70vw;
+            //width: 70vw;
             margin: 0 auto;
             }
             .carousel-grid-image{
@@ -125,20 +122,21 @@ export default class CarouselDiv extends Component {
             }
             .carousel-grid :global(.card) {
                 margin: 0px 1vw;
-                height: 387px;
-                width: 452px;
+                height: 20vw;
+                min-width: 452px;
                 //padding: 20px;
                 justify-content: center;
             }
             .carousel-grid :global(.card .title) {
-                width: 428px;
+                min-width: 428px;
+                width: 40vw;
                 font-weight: bold;
-                font-size: 24px;
+                font-size: 1.7vw;
                 line-height: 150%;
             }
             .carousel-grid :global(.card p) {
-                width: 452px;
-                font-size: 16px;
+                min-width: 452px !important;
+                font-size: 1.1vw;
                 line-height: 197.5%;
                 letter-spacing: 0.01em;
                 margin: 0;
@@ -166,8 +164,8 @@ export default class CarouselDiv extends Component {
                 display:none;
             }
             .carousel-grid :global(.card:first-of-type) {
-                width: 591px;
-                height: 387px;
+                min-width: 452px;
+                //min-height: 387px;
                 margin: 0px 1vw;
             }
 
@@ -194,6 +192,16 @@ export default class CarouselDiv extends Component {
                 outline: none;
                 border: none;
             }
+            .carousel-grid :global(.card p) {
+                font-size: 14px !important;
+            }
+            .carousel-grid :global(.card) {
+                height: auto !important;
+                min-height: 200px !important;
+            }
+            .carousel-grid :global(.card h3) {
+                font-size: 18px !important;
+            }
 }
 @media screen and (max-width: 570px) {
 
@@ -205,7 +213,7 @@ export default class CarouselDiv extends Component {
         }
         .carousel-grid :global(.card p),.carousel-grid :global(.card .title),.carousel-grid :global(.card .link),.carousel-grid :global(.card:first-of-type),.carousel-grid :global(.card .sub-title),.carousel-grid :global(.card){
             width: 100%;
-            //width:220px;
+            min-width:220px !important;
             margin: 0px auto;
             height: fit-content;
         }
