@@ -15,7 +15,7 @@ const OfferLanding = () => {
         { Header: "AIOPs Done Right: eBook", content1: [["As today’s enterprise systems increase in size, the benefits of digitization and cloud computing go hand in hand with technological complexity and operational risks. Download this eBook to see how AI promises to enable autonomous operations, boost innovation, and offer new modes of customer engagement by automating everything", "text"]] },
         { Header: "Five Key Considerations for Enterprise Cloud Monitoring: eBook", content1: [["Software is taking over the world. As a result, every business needs to embrace software as a core competency to ensure survival and prosperity. However, the transformation into a software company is a significant task, as building and running software today is harder than ever. ", "text"], ["This eBook outlines key considerations as you move through the journey to embrace modern software technologies, platforms and elements to truly set up to deliver your business software faster, and with higher quality, in the enterprise cloud. ", "text"]] },
         { Header: "Life made simpler with Dynatrace, through the eyes of the customer: Video", content1: [["Software is taking over the world. As a result, every business needs to embrace software as a core competency to ensure survival and prosperity. However, the transformation into a software company is a significant task, as building and running software today is harder than ever.", "text"]] },
-        { Header: "", content1: [["This eBook outlines key considerations as you move through the journey to embrace modern software technologies, platforms and elements to truly set up to deliver your business software faster, and with higher quality, in the enterprise cloud. ", "text"]] }
+        { Header: "", content1: [["This eBook outlines key considerations as you move through the journey to embrace modern software technologies, platforms and elements to truly set up to deliver your business software faster, and with higher quality, in the enterprise cloud. ", "text"]] },
     ]
     let [dataID, setDataID] = useState(data.length - 1);
     useEffect(
@@ -91,7 +91,7 @@ const OfferLanding = () => {
     
                                 <div className="pad2">
     
-                                    <CtapForm dataID={dataID} heading="Learn More" />
+                                    <CtapForm heading="Learn More" />
                                 </div>
                             </div>
                         </div>

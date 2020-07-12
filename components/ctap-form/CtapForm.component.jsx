@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import FormInput from  '../FormInput/FormInput.component'
-import FormSelect from  '../FormInput/FormSelect.component'
+import FormInput from '../FormInput/FormInput.component'
+import FormSelect from '../FormInput/FormSelect.component'
 import Modal from '../modal/Modal'
 import './ctap-form.styles.scss'
 
@@ -24,14 +24,14 @@ const initialState = {
     emailError: true,
 }
 
- class CtapForm extends Component {
-     constructor(props) {
-         super(props)
-     
-        this.state = initialState
-     }
+class CtapForm extends Component {
+    constructor(props) {
+        super(props)
 
-      showModal = () => {
+        this.state = initialState
+    }
+
+    showModal = () => {
         this.setState({
             ...this.state,
             show: !this.state.show
@@ -39,15 +39,15 @@ const initialState = {
 
     }
 
-     
+
     handleChange = event => {
         const { name, value } = event.target;
 
-             this.setState({ [name]: value });
+        this.setState({ [name]: value });
     }
 
 
-    phone  = (e) => {
+    phone = (e) => {
         const phone = document.getElementById('phone');
 
         if (e.key === "Backspace" || e.key === "Delete") return;
@@ -129,121 +129,190 @@ const initialState = {
             this.setState(initialState)
         }
     }
-     
+
     render() {
-        return (
+        return this.props.dataID ? (
             <React.Fragment>
-                <h1>{this.props.heading || 'Request a session'}</h1>  
-            <form className='form' onSubmit={this.handleSubmit}>
-                            {this.props.dataID==="0" && <FormInput 
-                                    id='name'
-                                    validation={this.validation}
-                                    valid={this.validate}
-                                    name="name" 
-                                    error={this.state.nameError}
-                                    type="text" 
-                                    value={this.state.name} 
-                                    handleChange={this.handleChange}                                    
-                                    label="Name"
-                                    required />}
-                            <FormInput 
-                                    id='email'
-                                    validation={this.validation}
-                                    valid={this.validate}
-                                    name="email" 
-                                    error={this.state.emailError}
-                                    type="email" 
-                                    value={this.state.email} 
-                                    handleChange={this.handleChange}
-                                    label="Email"
-                                    required />
-                            <FormInput 
-                                    id='phone'
-                                    phoneExp={this.phone}
-                                    validation={this.validation}
-                                    valid={this.validate}
-                                    name="phone" 
-                                    error={this.state.phoneError}
-                                    type="text" 
-                                    value={this.state.phone} 
-                                    handleChange={this.handleChange}
-                                    label="Mobile Number"
-                                    required />
-                            <FormInput 
-                                    id='companyName'
-                                    validation={this.validation}
-                                    valid={this.validate}
-                                    name="companyName" 
-                                    error={this.state.companyNameError}
-                                    type="text" 
-                                    value={this.state.companyName} 
-                                    handleChange={this.handleChange}
-                                    label="company Name"
-                                    required />
+                <h1>{this.props.heading || 'Request a session'}</h1>
+                <form className='form' onSubmit={this.handleSubmit}>
+                    <FormInput
+                        id='name'
+                        validation={this.validation}
+                        valid={this.validate}
+                        name="name"
+                        error={this.state.nameError}
+                        type="text"
+                        value={this.state.name}
+                        handleChange={this.handleChange}
+                        label="Name"
+                        required />
+                    <FormInput
+                        id='email'
+                        validation={this.validation}
+                        valid={this.validate}
+                        name="email"
+                        error={this.state.emailError}
+                        type="email"
+                        value={this.state.email}
+                        handleChange={this.handleChange}
+                        label="Email"
+                        required />
+                    <FormInput
+                        id='phone'
+                        phoneExp={this.phone}
+                        validation={this.validation}
+                        valid={this.validate}
+                        name="phone"
+                        error={this.state.phoneError}
+                        type="text"
+                        value={this.state.phone}
+                        handleChange={this.handleChange}
+                        label="Mobile Number"
+                        required />
+                    <FormInput
+                        id='companyName'
+                        validation={this.validation}
+                        valid={this.validate}
+                        name="companyName"
+                        error={this.state.companyNameError}
+                        type="text"
+                        value={this.state.companyName}
+                        handleChange={this.handleChange}
+                        label="company Name"
+                        required />
 
-                                 <FormSelect 
-                                    option1='50-100'
-                                    option2='100-500'
-                                    option3='500-1000'
-                                    option4='1000 >'
-                                    validation={this.validation}
-                                    valid={this.validate}
-                                    name="companySize" 
-                                    error={this.state.companySizeError}
-                                    id='companySize'
-                                    value={this.state.companySize} 
-                                    handleChange={this.handleChange}
-                                    label="company size"
-                                    required />
+                    <FormInput
+                        id='jobRole'
+                        validation={this.validation}
+                        valid={this.validate}
+                        name="jobRole"
+                        error={this.state.jobRoleError}
+                        type="text"
+                        value={this.state.jobRole}
+                        handleChange={this.handleChange}
+                        label=" Job Role"
+                        required />
+                    <input type="submit" value="Shoot" />
+                </form>
 
-                                    <FormInput 
-                                            id='jobRole'
-                                            validation={this.validation}
-                                            valid={this.validate}
-                                            name="jobRole" 
-                                            error={this.state.jobRoleError}
-                                            type="text" 
-                                            value={this.state.jobRole} 
-                                            handleChange={this.handleChange}
-                                            label=" Job Role"
-                                            required />
-
-                                            <FormSelect 
-                                                option1='Get a demo'
-                                                option2='Get a demo'
-                                                option3='Get a demo'
-                                                option4='Get a demo'
-                                                validation={this.validation}
-                                                valid={this.validate}
-                                                name="scope" 
-                                                error={this.state.scopeError}
-                                                id='scope'
-                                                value={this.state.scopeSize} 
-                                                handleChange={this.handleChange}
-                                                label="CTAP Scope"
-                                                required />
-
-                                                <FormInput 
-                                                    id='message'
-                                                    validation={this.validation}
-                                                    valid={this.validate}
-                                                    name="message" 
-                                                    error={this.state.messageError}
-                                                    type="text" 
-                                                    value={this.state.message} 
-                                                    handleChange={this.handleChange}
-                                                    label="Message(optional)"
-                                                     />                                       
-
-                                                <input type="submit" value="Shoot" />                                                     
-            </form>
-
-             <Modal  onclose={this.showModal} show={this.state.show}>
-                                <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
-                                <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
-                            </Modal>
+                <Modal onclose={this.showModal} show={this.state.show}>
+                    <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
+                    <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
+                </Modal>
             </React.Fragment>
-        )
+        ) : (
+                <React.Fragment>
+                    <h1>{this.props.heading || 'Request a session'}</h1>
+                    <form className='form' onSubmit={this.handleSubmit}>
+                        <FormInput
+                            id='name'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="name"
+                            error={this.state.nameError}
+                            type="text"
+                            value={this.state.name}
+                            handleChange={this.handleChange}
+                            label="Name"
+                            required />
+                        <FormInput
+                            id='email'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="email"
+                            error={this.state.emailError}
+                            type="email"
+                            value={this.state.email}
+                            handleChange={this.handleChange}
+                            label="Email"
+                            required />
+                        <FormInput
+                            id='phone'
+                            phoneExp={this.phone}
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="phone"
+                            error={this.state.phoneError}
+                            type="text"
+                            value={this.state.phone}
+                            handleChange={this.handleChange}
+                            label="Mobile Number"
+                            required />
+                        <FormInput
+                            id='companyName'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="companyName"
+                            error={this.state.companyNameError}
+                            type="text"
+                            value={this.state.companyName}
+                            handleChange={this.handleChange}
+                            label="company Name"
+                            required />
+
+                        <FormSelect
+                            option1='50-100'
+                            option2='100-500'
+                            option3='500-1000'
+                            option4='1000 >'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="companySize"
+                            error={this.state.companySizeError}
+                            id='companySize'
+                            value={this.state.companySize}
+                            handleChange={this.handleChange}
+                            label="company size"
+                            required />
+
+                        <FormInput
+                            id='jobRole'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="jobRole"
+                            error={this.state.jobRoleError}
+                            type="text"
+                            value={this.state.jobRole}
+                            handleChange={this.handleChange}
+                            label=" Job Role"
+                            required />
+
+                        <FormSelect
+                            option1='Get a demo'
+                            option2='Get a demo'
+                            option3='Get a demo'
+                            option4='Get a demo'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="scope"
+                            error={this.state.scopeError}
+                            id='scope'
+                            value={this.state.scopeSize}
+                            handleChange={this.handleChange}
+                            label="CTAP Scope"
+                            required />
+
+                        <FormInput
+                            id='message'
+                            validation={this.validation}
+                            valid={this.validate}
+                            name="message"
+                            error={this.state.messageError}
+                            type="text"
+                            value={this.state.message}
+                            handleChange={this.handleChange}
+                            label="Message(optional)"
+                        />
+
+                        <input type="submit" value="Shoot" />
+                    </form>
+
+                    <Modal onclose={this.showModal} show={this.state.show}>
+                        <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
+                        <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
+                    </Modal>
+                </React.Fragment>
+            )
     }
 }
 
