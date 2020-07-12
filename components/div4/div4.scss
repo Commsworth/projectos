@@ -218,7 +218,7 @@
 
         text-align: center;
     }
-    #div4-top-img{
+    #div4-top-img {
         width: 66px !important;
         height: 66px !important;
     }
@@ -235,6 +235,9 @@
         }
     }
     .bor3 {
-        display: none;
+        border: none;
+        // border-bottom: 1px solid #878787;
+        border-bottom: 1px solid #878787 !important;
+        width: 54px !important;
     }
 }
