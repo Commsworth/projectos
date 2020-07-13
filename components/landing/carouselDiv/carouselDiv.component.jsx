@@ -58,7 +58,6 @@ export default class CarouselDiv extends Component {
 
 
 
-
     render() {
         return (
             <React.Fragment>
