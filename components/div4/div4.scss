@@ -144,6 +144,13 @@
     .brand {
         border-bottom: none;
         padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        img{
+            border-bottom: 1px solid #878787 !important;
+            margin: 13.5px auto !important;
+            padding-bottom: 54px;
+        }
     }
     .cli {
         padding: 0px !important;
@@ -237,7 +244,7 @@
     .bor3 {
         border: none;
         // border-bottom: 1px solid #878787;
-        border-bottom: 1px solid #878787 !important;
         width: 54px !important;
+        display: none;
     }
 }

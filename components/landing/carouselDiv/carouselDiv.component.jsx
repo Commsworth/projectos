@@ -58,7 +58,6 @@ export default class CarouselDiv extends Component {
 
 
 
-
     render() {
         return (
             <React.Fragment>
@@ -112,7 +111,7 @@ export default class CarouselDiv extends Component {
             display: flex;
             justify-content: center;
             //flex-wrap: wrap;
-            //width: 70vw;
+            width: 70vw;
             margin: 0 auto;
             }
             .carousel-grid-image{
