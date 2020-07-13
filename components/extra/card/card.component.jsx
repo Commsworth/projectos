@@ -64,7 +64,6 @@ class Card extends React.Component {
                     
                     @media screen and (max-width: 800px){
                         .card {
-                            height: 300px !important;
                         }
                     }
                 `}

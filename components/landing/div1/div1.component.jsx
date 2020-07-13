@@ -46,13 +46,13 @@ const Div1 = () => {
                 </div>
             </div>
             <div className="indicators">
-                <svg className={`${scroll > 100||scroll===0 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`${scroll > 200||scroll===0 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                 </svg>
-                <svg className={`${scroll === 3 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`${scroll < 4 && scroll > 2.9 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                 </svg>
-                <svg className={`${scroll === 1.5 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`${scroll < 2 && scroll > 1 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                 </svg>
             </div>
