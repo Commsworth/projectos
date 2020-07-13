@@ -11,7 +11,7 @@ const CardOffer =({img,about,link, title}) => {
             <div className='card-offer-content'>
                 <h3>{title}</h3>
                 <p>{about}</p>
-                <a>{link}</a>
+                <a><p  className='link'>{link}</p></a>
             </div>
         </div>
        

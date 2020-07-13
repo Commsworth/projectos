@@ -50,6 +50,8 @@ class Card extends React.Component {
                         flex-direction: column;
                         background-position: center !important;
                         background-size: cover !important;
+                        justify-content: end !important;
+                        align-items: end;
                     }
 
                     .card h3{

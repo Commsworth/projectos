@@ -47,7 +47,7 @@ export default class Home extends Component {
           <TitleDiv text="Featured" subText="Our latest trends tailored for you" />
           <br />
           <br />
-          <CarouselDiv leftArrow="/static/svg/left-arrow.svg" rightArrow="/static/svg/right-arrow.svg" blueSemiCircle= "/static/svgs/semi-circle.svg"  />
+          <CarouselDiv leftArrow="/static/svg/left-arrow.svg" rightArrow="/static/svg/right-arrow.svg" blueSemiCircle= "/static/svg/semi-circle.svg"  />
           <TechnicalSupport />
           <br />
           <br />

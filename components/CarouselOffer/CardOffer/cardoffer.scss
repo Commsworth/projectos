@@ -1,26 +1,58 @@
 .card-offer{
     box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
-    width: 300px;
+    width: 90%;
     margin: auto;
+    .card-offer-content {
+      padding: 5px 25px;
+    }
    
     img{
-      width: 295px;
+      width: 100%;
       margin: auto;
     height: 100%;
     }
     h3 {
-      margin: 8px 18px;
-      font-size: 20px;
+      font-size: 100%;
     }
     p{
-        margin: 8px 18px;
+        
         font-size: 16px;
         line-height: 1.5;
+        
     }
     a{
-        margin-top: 20px;
-        margin-left: 184px;
+      .link{
+        text-align: end;
+      }
     }
+}
+// options 
+
+    .offer-circle{
+    display: flex;
+    margin-left: 15px;
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow:0px 10px 25px rgba(0, 0, 0, 0.05);
+    svg{
+        cursor: pointer;
+    }
+  }
+.circle-opt{
+    display: flex;
+    justify-content: start;
+    padding: 14px 0px 129px 0px;
+}
+
+.explore-svg{
+  fill: #0E82F8 !important;
+}
+
+.explore-svg2{
+   fill: #D3D3D3;
 }
 
 .button__bar {

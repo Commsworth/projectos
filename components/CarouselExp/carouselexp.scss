@@ -7,6 +7,7 @@
         .card{
            justify-content: center;
             margin: 30px 10px 10px 30px;
+            height: 280px;
            h3{
                 font-size: 34px;
                 line-height: 30px;
@@ -54,14 +55,14 @@
 }
 
 .button__bar li button {
-  border: none;
-  color: transparent;
-  // background-image: url('public/static/svg/left-arrow.svg');
+  // color: transparent;
   cursor: pointer;
   display: block;
   height: 15px;
   width: 15px;
   border-radius: 7.5px;
+  background-color: white;
+  border: 1.5px solid #208FFF !important;
 }
 
 .button__bar li.slick-active button {
@@ -90,9 +91,6 @@
         margin: 0 auto;
       .card{
            margin: 12px 0px 0px 0px !important;
-        }
-        img{
-            height: 300px;
         }
     }
     }
