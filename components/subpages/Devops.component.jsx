@@ -97,10 +97,10 @@ class Devops extends React.Component {
 
     render() {
         return (
-            <Layout >
+            <React.Fragment>
                 <Head>
-                      <meta   name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+                     <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     />
                 </Head>
                 
@@ -184,10 +184,9 @@ class Devops extends React.Component {
                 </div>
 
 
-                    <div>
-
                     <div style={{border:'1px solid #C0C0C0', margin: '60px 0px'}}></div>
-
+                    
+                    <div>
                      <ul className="offer-options">
                          <li onClick={this.onDisplayOffer} className={this.state.offer? "offer-options-style" : null}>Offers</li>
                          <li onClick={this.onDisplayRes} className={this.state.res? "offer-options-style" : null}>Resources</li>
@@ -206,7 +205,7 @@ class Devops extends React.Component {
 
     {this.state.res?<div>Resources</div>:null}
        </div>
-            </Layout>
+            </React.Fragment>
         )
     }
 }

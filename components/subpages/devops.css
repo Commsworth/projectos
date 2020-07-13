@@ -1,4 +1,4 @@
-.tp-wrapper {
+/* .tp-wrapper {
   width: 1000px;
   margin: 0 auto;
 }
@@ -170,7 +170,7 @@
 }
 
 .offer-grid .card {
-  width: 320px !important;
+  width: 70% !important;
   -ms-grid-column-align: end;
       justify-self: end;
 }
@@ -265,7 +265,7 @@
   .offer-grid .card {
     -ms-grid-column-align: center;
         justify-self: center;
-    width: 320px !important;
+    width: 70% !important;
   }
   .offer-grid .card p {
     color: black;
@@ -281,4 +281,4 @@
             justify-content: center;
   }
 }
-/*# sourceMappingURL=devops.css.map */
+# sourceMappingURL=devops.css.map */

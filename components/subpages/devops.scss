@@ -147,7 +147,7 @@ padding: 80px 6vw;
     margin: 0 auto;
     width: 100%;
     .card{
-       width: 320px !important;
+       width: 70% !important;
        justify-self: end;
        align-self: center;
        padding-top: 125px;
@@ -175,7 +175,6 @@ padding: 80px 6vw;
 
 }
 
-
 @media screen and (max-width: 1400px){
 
     // top 
@@ -190,13 +189,20 @@ padding: 80px 6vw;
     //  top
     .tp {
         flex-wrap: wrap;
+        .tp1 {
+            // padding: ;
+        }
+        .tp2 {
+        padding-top: 12rem;
+        }
     }
     .tp-wrapper {
-        width: 100%;
+        width: 88%;
     }
     .box{
-   padding: 150px 6vw;
-
+   padding: 96px 0vw;
+    width: 100%;
+    margin: 0 auto;
 }
 
 // card offer
@@ -207,9 +213,9 @@ padding: 80px 6vw;
   
 .card{
         justify-self: center;
-       width: 320px !important;
-    //     padding: 60px 11px 0px 53px;
-    // margin: 1px 0px 0px 19px;
+       width: 90% !important;
+       margin: auto;
+        padding-top: 5px;
     p{
         color: black;
     }
@@ -222,7 +228,7 @@ padding: 80px 6vw;
 }
 // option 
 .circle-opt{
-    justify-content: center;
+    justify-content: center !important;
 }
  }
 
