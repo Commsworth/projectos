@@ -165,20 +165,52 @@ class Devops extends React.Component {
                  }               
 
                 {this.state.devops?
-                <div>
-                devops
-                </div> : null
+                    <CarouselExp cardImg1 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent1={<Card title="DevOps" subIcon='/static/svg/semi-circle.svg' content="DevOps bridges the gap between the complex traditional Software development lifecycle and IT Operations required to provision applications through its lifetime. With DevOps you can easily test app changes in a secure environment and ship out updates with no hassles in a seamless automated process." link={<ArrowLink text="Work with us"/> } />} 
+                
+                 cardImg2 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent2={<Card title="Collaborative Development" subIcon='/static/svg/semi-circle.svg' content="With our Git powered version control workflow, all development events are well coordinated and hosted within repositories, allowing for native collaboration between engineers with easy code tracking and review in line with engineering playbooks." link={<ArrowLink text="Work with us"/> } />}
+
+                  cardImg3 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent3={<Card title="Automation and Orchestration" subIcon='/static/svg/semi-circle.svg' content="We employ simplified Continuous Integration and Continuous Delivery (CI/CD) processes which ensures seamless application build, testing deployment and shipping in a structured delivery pipeline.
+                    With Kubernetes automation, your apps are delivered in desired containerized states letting you scale from local to global in minutes with zero complexity.
+                    " link={<ArrowLink text="Work with us"/> } />}
+
+                  cardImg4 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent4={<Card title="Digital Experience Monitoring" subIcon='/static/svg/semi-circle.svg' content="Digital Experience Monitoring is an evolving approach to Application monitoring which brings the user’s experience and satisfaction to the forefront of digital performance benchmarking. 
+                    Our DEM portfolio delivers Omni-Channel insights by analyzing your customers digital behavior while interacting with your applications in real-time, thus equipping your business with proactive application optimizations to instantaneously improve business outcomes.
+                    " link={<ArrowLink text="Work with us"/> } />} />
+                : null
                  }
 
                 {this.state.analytics?
-                <div>
-                     Analytics
-                </div> : null
+                     <CarouselExp cardImg1 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent1={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />} 
+                
+                 cardImg2 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent2={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />}
+
+                  cardImg3 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent3={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />}
+
+                  cardImg4 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent4={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />} />
+                 : null
                  }
 
                 {this.state.pm?
                 <div>
-                    Project Management
+                    <CarouselExp cardImg1 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent1={<Card title="DevOps" subIcon='/static/svg/semi-circle.svg' content="DevOps bridges the gap between the complex traditional Software development lifecycle and IT Operations required to provision applications through its lifetime. With DevOps you can easily test app changes in a secure environment and ship out updates with no hassles in a seamless automated process." link={<ArrowLink text="Work with us"/> } />} 
+                
+                 cardImg2 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent2={<Card title="Collaborative Development" subIcon='/static/svg/semi-circle.svg' content="With our Git powered version control workflow, all development events are well coordinated and hosted within repositories, allowing for native collaboration between engineers with easy code tracking and review in line with engineering playbooks." link={<ArrowLink text="Work with us"/> } />}
+
+                  cardImg3 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent3={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />}
+
+                  cardImg4 ={<Card  background="/static/subexplore/img1.svg" />} 
+                 cardContent4={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />} />
                 </div> : null
                  }
                 </div>

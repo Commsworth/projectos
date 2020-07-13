@@ -7,19 +7,19 @@
         .card{
            justify-content: center;
             margin: 30px 10px 10px 30px;
-            height: 280px !important;
+            height: 370px !important;
             height: auto;
             justify-content: end !important;
            h3{
                 font-size: 34px;
-                line-height: 30px;
+                line-height: 1;
                 color: black;
             }
           
             p {
                 color: black;
-                font-size: 18px;
-                line-height: 28px;
+                font-size: 100%;
+                line-height: 1.5;
                 margin: 0;
             }
             .link {
