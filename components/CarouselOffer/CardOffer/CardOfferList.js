@@ -61,9 +61,8 @@ export class CardOfferList extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
-            // initialSlide: 2
           }
         },
         {
@@ -79,7 +78,7 @@ export class CardOfferList extends Component {
     const {events} = this.props
     return (
     <React.Fragment>
-       <div>
+       <div className='card-offer-div'>
             <SlideWrapper>
         <Slider ref={c => (this.slider = c)} {...settingsNoModules}>
     {

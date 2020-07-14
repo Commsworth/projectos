@@ -100,3 +100,12 @@
   display: block;
   margin: auto;
 }
+
+
+@media screen and (max-width: 800px){
+.card-offer-div {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+}
