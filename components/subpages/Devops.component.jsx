@@ -98,13 +98,12 @@ class Devops extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Head>
+                {/* <Head>
                      <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    />
-                </Head>
+                </Head> */}
                 
-              
+              <div style={{width: '100%'}}>
                 <div className="box  dark-bg">
                     <div className='tp-wrapper'>
                     <div id="select">
@@ -199,7 +198,7 @@ class Devops extends React.Component {
                  }
 
                 {this.state.pm?
-                <div>
+            
                     <CarouselExp cardImg1 ={<Card  background="/static/subexplore/img1.svg" />} 
                  cardContent1={<Card title="DevOps" subIcon='/static/svg/semi-circle.svg' content="DevOps bridges the gap between the complex traditional Software development lifecycle and IT Operations required to provision applications through its lifetime. With DevOps you can easily test app changes in a secure environment and ship out updates with no hassles in a seamless automated process." link={<ArrowLink text="Work with us"/> } />} 
                 
@@ -211,7 +210,7 @@ class Devops extends React.Component {
 
                   cardImg4 ={<Card  background="/static/subexplore/img1.svg" />} 
                  cardContent4={<Card title="Broad Technology Stack" subIcon='/static/svg/semi-circle.svg' content="We support a wide array of development frameworks and technologies to suit your preferred flavor and functionality across mobile, front and back ends." link={<ArrowLink text="Work with us"/> } />} />
-                </div> : null
+                : null
                  }
                 </div>
 
@@ -225,17 +224,17 @@ class Devops extends React.Component {
                      </ul>
 
                      {this.state.offer?
-                        <div>
+                        
                  <div className="offer-grid">
                 <Card title={"Game changing offers"} subIcon='/static/svg/semi-circle.svg' content={"Here are a few more reasons why you should choose use"}/>
                                   
                 <CardOfferList events={events} />                
                 </div>
-
-    </div>
      : null }
 
     {this.state.res?<div>Resources</div>:null}
+       </div>
+
        </div>
             </React.Fragment>
         )
