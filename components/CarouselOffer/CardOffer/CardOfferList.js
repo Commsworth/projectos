@@ -91,6 +91,7 @@ export class CardOfferList extends Component {
         about={events[i].about} 
         link={events[i].link} 
         img={events[i].img}
+        href={events[i].href}
         key= {i} />
         </div>
     )

@@ -5,6 +5,7 @@ export const events = [
     id: 1,
     about: 'Summary: Fully automated, intelligent monitoring for highly-dynamic Kubernetes environments.',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
@@ -12,6 +13,7 @@ export const events = [
     title: 'Kubernetes Monitoring',
     about: 'Summary: Fully automated, intelligent monitoring for highly-dynamic Kubernetes environments.',
     link: 'Learn More',
+    href: "/offerland/off?id=1"
   },
   {
     img: "/static/exploreimg/offer.svg",
@@ -19,6 +21,7 @@ export const events = [
     title: 'A Guide to Cloud Native Microservices',
     about: '',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
@@ -26,6 +29,7 @@ export const events = [
     title: 'AIOps Done Right',
     about: 'Automating the Next Generation of Enterprise Software',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
@@ -33,6 +37,7 @@ export const events = [
     title: 'Five Key Considerations for Enterprise Cloud Monitoring: eBook',
     about: '',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
@@ -40,29 +45,34 @@ export const events = [
     title: ': Life made simpler with Dynatrace, through the eyes of the customer: Video',
     about: '.',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
     id: 7,
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",   
     id: 8,
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
     id: 9,
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   },
   {
     img: "/static/exploreimg/offer.svg",
     id: 10,
     about: 'Our Core Values define our personality and guides our relationship with staff, clients and partners.',
     link: 'Learn More',
+    href: "/offerland/off?id=0"
   }
 ];

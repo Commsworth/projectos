@@ -1,7 +1,8 @@
 import React from 'react'
 import './cardoffer.scss'
+import Link from 'next/link';
 
-const CardOffer =({img,about,link, title}) => {
+const CardOffer =({img,about,link, title, href}) => {
     return (
        
         <div className="card-offer">
@@ -11,7 +12,10 @@ const CardOffer =({img,about,link, title}) => {
             <div className='card-offer-content'>
                 <h3>{title}</h3>
                 <p>{about}</p>
-                <a><p  className='link'>{link}</p></a>
+                <Link href={href}>
+                <a> <p className='link'>{link}</p>
+                </a>
+                </Link>
             </div>
         </div>
        
