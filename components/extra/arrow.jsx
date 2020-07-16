@@ -4,8 +4,8 @@ import Link from 'next/link';
 const ArrowLink = (props) => {
     return (
         <>
-            {props.href ?
-               <Post href={props.href} text={props.text} />
+            {props.sublink ?
+               <Post sublink={props.sublink} text={props.text} />
                 :
                 <div className="arrow-div">
                     {props.text}
@@ -45,7 +45,7 @@ const ArrowLink = (props) => {
 
 function Post(props) {
     return <div>
-        <Link href={`${props.href}`}>
+        <Link href={`/devops?sublink=${props.sublink}`}>
                     <div className="arrow-div">
                         {props.text}
                         <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,6 @@ function Post(props) {
                     }
                 .arrow-div:hover svg{
                     transition:transform 0.5s ease;
-                    //height: 20px;
                     transform-origin: left;
                     transform: scaleX(1.4);
                     }

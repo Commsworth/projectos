@@ -3,7 +3,7 @@ export const events = [
     img: "/static/exploreimg/offer.svg",
     title: 'Digital Experience Monitoring from Dynatrace',
     id: 1,
-    about: 'Summary: Fully automated, intelligent monitoring for highly-dynamic Kubernetes environments.',
+    about: 'Fully automated, intelligent monitoring for highly-dynamic Kubernetes environments.',
     link: 'Learn More',
     href: "/offerland/off?id=0"
   },
@@ -11,7 +11,7 @@ export const events = [
     img: "/static/exploreimg/offer.svg",
     id: 2,
     title: 'Kubernetes Monitoring',
-    about: 'Summary: Fully automated, intelligent monitoring for highly-dynamic Kubernetes environments.',
+    about: 'Fully automated, intelligent monitoring for highly-dynamic Kubernetes environments.',
     link: 'Learn More',
     href: "/offerland/off?id=1"
   },

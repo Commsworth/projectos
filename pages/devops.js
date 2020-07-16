@@ -1,4 +1,10 @@
 import Devops from '../components/subpages/Devops.component';
+import Support from '../components/subpages/Support.component';
+import BusinessContinuity from '../components/subpages/BusinessContinuity.component';
+import ProductAndDigital from '../components/subpages/ProductAndDigital.component';
+import BusinessAutomation from '../components/subpages/BusinessAutomation.component';
+import Cybersecurity from '../components/subpages/Cybersecurity.component';
+import Infastructure from '../components/subpages/Infastructure.component';
 import Head from 'next/head'
 import {withRouter} from 'next/router'
 import React from 'react'
@@ -9,9 +15,14 @@ const devops = withRouter((props) => {
         <React.Fragment>
                  <Head>
                 <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-                 {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
                 </Head>                
-                           <Devops  />
+                        {props.router.query.sublink === '/devops' ? <Devops />: null}   
+                        {props.router.query.sublink === '/support' ? <Support />: null}   
+                        {props.router.query.sublink === '/business-continuity' ? <BusinessContinuity />: null}   
+                        {props.router.query.sublink === '/product-digital' ? <ProductAndDigital />: null}   
+                        {props.router.query.sublink === '/business-automation' ? <BusinessAutomation />: null}   
+                        {props.router.query.sublink === '/cybersecurity' ? <Cybersecurity />: null}   
+                        {props.router.query.sublink === '/infrastructure' ? <Infastructure />: null}   
             </React.Fragment>
     )
 })
