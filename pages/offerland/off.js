@@ -98,7 +98,6 @@ const OfferLanding = () => {
                     </div>
     
                     <Socials />
-    
                 </main>
             </>
             // </Layout>
