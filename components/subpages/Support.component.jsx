@@ -8,7 +8,7 @@ import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
 
 
-class Devops extends React.Component {
+class Support extends React.Component {
 
     constructor(props) {
         super(props);
@@ -115,7 +115,7 @@ class Devops extends React.Component {
                     </div>
                 <div className="tp">
                     <div className="tp1">
-                        <Card title="DevOps & Analytics" 
+                        <Card title="Support" 
                         subIcon='/static/svg/semi-circle.svg' 
                         content=" Businesses are empowered to 
                         meet today’s industry challenges through
@@ -129,7 +129,7 @@ class Devops extends React.Component {
                             optimize business decisions on the go." />
                     </div>
                     <div className="tp2">
-                        <img src="/static/exploreimg/big1.svg" alt="" />
+                        <img src="/static/exploreimg/support.svg" alt="" />
                     </div>
                     </div>
                 </div>
@@ -240,6 +240,6 @@ class Devops extends React.Component {
     }
 }
 
-export default Devops;
+export default Support;
 
  

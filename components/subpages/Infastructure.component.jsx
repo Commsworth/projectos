@@ -1,5 +1,4 @@
 import './devops.scss'
-import Head from 'next/head'
 import Card from '../extra/card/card.component'
 import ArrowLink from '../extra/arrow';
 import CarouselExp from '../CarouselExp/CarouselExp'
@@ -8,7 +7,7 @@ import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
 
 
-class Devops extends React.Component {
+class Infastructure extends React.Component {
 
     constructor(props) {
         super(props);
@@ -96,12 +95,7 @@ class Devops extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-                {/* <Head>
-                     <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                </Head> */}
-                
+            <React.Fragment>                
               <div style={{width: '100%'}}>
                 <div className="box  dark-bg">
                     <div className='tp-wrapper'>
@@ -115,7 +109,7 @@ class Devops extends React.Component {
                     </div>
                 <div className="tp">
                     <div className="tp1">
-                        <Card title="DevOps & Analytics" 
+                        <Card title="Infastructure" 
                         subIcon='/static/svg/semi-circle.svg' 
                         content=" Businesses are empowered to 
                         meet today’s industry challenges through
@@ -129,7 +123,7 @@ class Devops extends React.Component {
                             optimize business decisions on the go." />
                     </div>
                     <div className="tp2">
-                        <img src="/static/exploreimg/big1.svg" alt="" />
+                        <img src="/static/exploreimg/infastructure.svg" alt="" />
                     </div>
                     </div>
                 </div>
@@ -240,6 +234,6 @@ class Devops extends React.Component {
     }
 }
 
-export default Devops;
+export default Infastructure;
 
  

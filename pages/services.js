@@ -41,42 +41,42 @@ export default class Services extends Component {
                             title={<img src="assets/svgs/devops.svg" alt="devops" />}
                             subTitle="DevOps & Analytics"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink href="/devops" text="Explore" />}
+                            link={<Arrowlink sublink="/devops" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/support.svg" alt="devops" />}
                             subTitle="Support"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink href="/devops" text="Explore" />}
+                            link={<Arrowlink sublink="/support" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/business.svg" alt="devops" />}
                             subTitle="Business Continuity"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink href="/devops" text="Explore" />}
+                            link={<Arrowlink sublink="/business-continuity" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/product.svg" alt="devops" />}
                             subTitle="Product & Digital Strategy"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink href="/devops" text="Explore" />}
+                            link={<Arrowlink sublink="/product-digital" text="Explore" />}
                         />
                         <Card
                             title={<img src="assets/svgs/businessautomation.svg" alt="devops" />}
                             subTitle="Business Automation and Productivity"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink href="/devops" text="Explore" />}
+                            link={<Arrowlink sublink="/business-automation" text="Explore" />}
                         />
                         {this.state.display ? <Card
                             title={<img src="assets/svgs/cybersecurity.svg" alt="devops" />}
                             subTitle="Cybersecurity"
                             content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink href="/devops" text="Explore" />}
+                            link={<Arrowlink sublink="/cybersecurity" text="Explore" />}
                         /> : <Card
                                 title={<img src="assets/svgs/infrastructure.svg" alt="devops" />}
                                 subTitle="Infrastructure"
                                 content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                                link={<Arrowlink href="/devops" text="Explore" />}
+                                link={<Arrowlink sublink="/infrastructure" text="Explore" />}
                             />
                         }
           </div>
@@ -253,10 +253,4 @@ export default class Services extends Component {
             </div>
         );
     }
-}
-
-function Post(props) {
-    return <div>
-        <Link href={`/post?title}`}><a>{props.title}</a></Link>
-    </div>
 }

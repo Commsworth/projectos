@@ -89,3 +89,7 @@ font-weight: bold;
 margin-right: 10px;
 font-size: 24px;
 }
+
+* {
+  box-sizing: border-box;
+}

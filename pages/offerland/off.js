@@ -26,7 +26,6 @@ const OfferLanding = () => {
     if(data[dataID]){
         
         return (
-            // <Layout>
             <>
                 <Head>
                     <meta charset="UTF-8" />
@@ -100,7 +99,6 @@ const OfferLanding = () => {
                     <Socials />
                 </main>
             </>
-            // </Layout>
         );
     }else{
         return(
