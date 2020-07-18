@@ -37,7 +37,7 @@ export class Dropdown extends Component {
                         justify-content: space-between;
                         align-items: center;                      
                         border: 2px solid #208FFF !important;
-                        color: white;
+                        color: #208FFF;
                         padding: 10px;
                         font-size: 16px;
                         border: none;
@@ -113,7 +113,8 @@ function Post(props) {
                        background-color: #ddd;
                    }
                    a{
-                       padding: 5px 10px
+                       padding: 5px 10px;
+                       color: white
                    }
                     `}</style>
                 </>)
