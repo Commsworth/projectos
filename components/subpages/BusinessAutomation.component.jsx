@@ -1,12 +1,11 @@
 import './devops.scss'
-import Head from 'next/head'
 import Card from '../extra/card/card.component'
 import ArrowLink from '../extra/arrow';
 import CarouselExp from '../CarouselExp/CarouselExp'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
-
+import Dropdownn from '../Dropdown/Dropdown.component'
 
 class ProductAndDigital extends React.Component {
 
@@ -96,23 +95,13 @@ class ProductAndDigital extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-                {/* <Head>
-                     <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                </Head> */}
-                
+            <React.Fragment>                
               <div style={{width: '100%'}}>
                 <div className="box  dark-bg">
                     <div className='tp-wrapper'>
-                    <div id="select">
-                    <select name="explore" id="explore">
-                    <option value="devops">DevOps and Analytics</option>
-                    <option value="">Cybersecurity</option>
-                    <option value="">Business Continuity</option>
-                    <option value="">Managed Services</option>
-                    </select>
-                    </div>
+
+                         <Dropdownn active="Business Automation" id='select' />
+                   
                 <div className="tp">
                     <div className="tp1">
                         <Card title="Business Automation & Productivity" 

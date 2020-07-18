@@ -4,7 +4,7 @@ import BusinessContinuity from '../components/subpages/BusinessContinuity.compon
 import ProductAndDigital from '../components/subpages/ProductAndDigital.component';
 import BusinessAutomation from '../components/subpages/BusinessAutomation.component';
 import Cybersecurity from '../components/subpages/Cybersecurity.component';
-import Infastructure from '../components/subpages/Infastructure.component';
+import Infrastructure from '../components/subpages/Infrastructure.component';
 import Head from 'next/head'
 import {withRouter} from 'next/router'
 import React from 'react'
@@ -22,7 +22,7 @@ const devops = withRouter((props) => {
                         {props.router.query.sublink === '/product-digital' ? <ProductAndDigital />: null}   
                         {props.router.query.sublink === '/business-automation' ? <BusinessAutomation />: null}   
                         {props.router.query.sublink === '/cybersecurity' ? <Cybersecurity />: null}   
-                        {props.router.query.sublink === '/infrastructure' ? <Infastructure />: null}   
+                        {props.router.query.sublink === '/infrastructure' ? <Infrastructure />: null}   
             </React.Fragment>
     )
 })

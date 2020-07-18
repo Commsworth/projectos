@@ -5,9 +5,10 @@ import CarouselExp from '../CarouselExp/CarouselExp'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
+import Dropdownn from '../Dropdown/Dropdown.component'
 
 
-class Infastructure extends React.Component {
+class Infrastructure extends React.Component {
 
     constructor(props) {
         super(props);
@@ -99,17 +100,10 @@ class Infastructure extends React.Component {
               <div style={{width: '100%'}}>
                 <div className="box  dark-bg">
                     <div className='tp-wrapper'>
-                    <div id="select">
-                    <select name="explore" id="explore">
-                    <option value="devops">DevOps and Analytics</option>
-                    <option value="">Cybersecurity</option>
-                    <option value="">Business Continuity</option>
-                    <option value="">Managed Services</option>
-                    </select>
-                    </div>
+                    <Dropdownn active="Infrastructure" id='select' />
                 <div className="tp">
                     <div className="tp1">
-                        <Card title="Infastructure" 
+                        <Card title="Infrastructure" 
                         subIcon='/static/svg/semi-circle.svg' 
                         content=" Businesses are empowered to 
                         meet today’s industry challenges through
@@ -234,6 +228,6 @@ class Infastructure extends React.Component {
     }
 }
 
-export default Infastructure;
+export default Infrastructure;
 
  

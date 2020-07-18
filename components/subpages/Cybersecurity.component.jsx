@@ -6,6 +6,7 @@ import CarouselExp from '../CarouselExp/CarouselExp'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
+import Dropdownn from '../Dropdown/Dropdown.component'
 
 
 class cybersecurity extends React.Component {
@@ -105,14 +106,7 @@ class cybersecurity extends React.Component {
               <div style={{width: '100%'}}>
                 <div className="box  dark-bg">
                     <div className='tp-wrapper'>
-                    <div id="select">
-                    <select name="explore" id="explore">
-                    <option value="devops">DevOps and Analytics</option>
-                    <option value="">Cybersecurity</option>
-                    <option value="">Business Continuity</option>
-                    <option value="">Managed Services</option>
-                    </select>
-                    </div>
+                     <Dropdownn active="Cybersecurity" id='select' />
                 <div className="tp">
                     <div className="tp1">
                         <Card title="Cyber Security" 
