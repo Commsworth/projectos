@@ -297,11 +297,11 @@ export default class Home extends Component {
           //width: 243px;
         }
         .div2 :global(.card:nth-of-type(2) .sub-title){
-          height: 64px;
+          //height: 64px;
           padding-top: 0px;
         }
         .div2 :global(.card:nth-of-type(5) .sub-title){
-          height: 64px;
+          //height: 64px;
           padding-top: 0px;
         }
         .div2 :global(.card .sub-title){
