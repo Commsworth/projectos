@@ -294,7 +294,7 @@ export default class Home extends Component {
         .div2 :global(.card h3){
           font-size: 24px;
           line-height: 119%;
-          width: 243px;
+          //width: 243px;
         }
         .div2 :global(.card:nth-of-type(2) .sub-title){
           height: 64px;
@@ -305,8 +305,8 @@ export default class Home extends Component {
           padding-top: 0px;
         }
         .div2 :global(.card .sub-title){
-          width: 243px;
-          height: 32px;
+          //width: 243px;
+          //height: 32px;
           padding-top: 32px;
 
         }
@@ -322,7 +322,7 @@ export default class Home extends Component {
         .div2 :global(.card p){
           font-size: 15px;
           line-height: 185%;
-          width: 281px;
+          //width: 281px;
           height: 77px;
           color: #f4f4f4 !important;
         }
@@ -365,7 +365,7 @@ export default class Home extends Component {
           padding: 0px 20px;
           font-size: 24px;
           line-height: 126.5%;
-          width: 152px;
+          //width: 152px;
         }
         .div3-grid :global(.card .link){
           padding: 0px 20px;
@@ -388,7 +388,7 @@ export default class Home extends Component {
           font-size: 12px;
           line-height: 145%;
           letter-spacing: 0.01em;
-          width: 216px;
+          //width: 216px;
                   }
         .div3-grid :global(.card:hover){
           background: #208FFF !important;
