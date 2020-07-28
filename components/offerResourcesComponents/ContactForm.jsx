@@ -240,6 +240,27 @@ const initialState = {
                                 <h1 style={{ fontSize: 24, color: "white", }}>Your message has been received</h1>
                                 <p style={{ fontSize: 14, color: "white", textAlign: "center", marginBottom: 10, marginTop: 10 }}>Need more information? Reach out to our sales team.</p>
                             </Modal>
+
+                <style jsx>{`
+                    input[type="submit"] {
+  width: 20%;
+  background-color: #0e82f8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  font-family: "Nunito";
+}
+
+input[type="submit"]:hover {
+  background-color: #00B3BE;
+}
+
+                    `}</style>
             </React.Fragment>
         )
     }
