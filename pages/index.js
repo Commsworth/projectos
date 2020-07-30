@@ -3,6 +3,12 @@ import Heading from '../components/extraPageComponents/Heading'
 import TitleDiv from '../components/extraPageComponents/TitleDiv';
 import CarouselDiv from '../components/landingPageComponents/CarouselDiv';
 import ArrowLink from '../components/extraPageComponents/ArrowLink';
+import AboutUs from '../components/landingPageComponents/AboutUs';
+import OurServices from '../components/landingPageComponents/OurServices';
+import TheAcademy from '../components/landingPageComponents/TheAcademy';
+import WhatOurClientsThink from '../components/landingPageComponents/WhatOurClientsThink';
+import TrustedBy from '../components/landingPageComponents/TrustedBy';
+import TechPart from '../components/landingPageComponents/TechPart';
 
 export default function Home() {
   return (
@@ -18,15 +24,15 @@ export default function Home() {
         {/* <Map/> */}
         <TitleDiv top="" bottom=""/>
         <CarouselDiv/>
-        {/* <TechPart/> */}
+        <TechPart/>
         <TitleDiv top="About Us" bottom=""/>
-        {/* <AboutUs/> */}
+        <AboutUs/>
         <ArrowLink text="Work with us"/>
         <TitleDiv top="Our Services" bottom=""/>
-        {/* <OurServices/> */}
-        {/* <TheAcademy/> */}
-        {/* <TrustedBy/> */}
-        {/* <WhatOurClientsThink/> */}
+        <OurServices/>
+        <TheAcademy/>
+        <TrustedBy/>
+        <WhatOurClientsThink/>
       </main>
 
       <style jsx>{`

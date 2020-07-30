@@ -3,11 +3,11 @@ const TitleDiv = (props) => (
         <div className={`title-div ${props.position}`}>
             <img src="/static/svg/blue-line.svg" alt=""/>
             <div id="title-text">
-                {props.text}
+                {props.top}
             </div>
         </div>
         <div id="title-subtext">
-            {props.subText}
+            {props.bottom}
         </div>
         <style jsx>{`
     .title-div{
