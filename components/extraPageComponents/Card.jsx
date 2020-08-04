@@ -61,6 +61,7 @@ class Card extends React.Component {
                         cursor: pointer;
                         width: fit-content;
                         color: #208FFF;
+                        text-decoration: none;
                     }          
                     
                     @media screen and (max-width: 800px){

@@ -11,7 +11,7 @@ const TechPart = () => {
                 <div className="link" onClick={() => setDisplay(false)}><a className={display ? null : "active"}>Business Partners</a></div>
             </div>
             {display && <div className="brand">
-                <PhotoGallery top={["/landingPageImages/svgs/partners/dell.svg","/landingPageImages/svgs/partners/hp.svg","/landingPageImages/svgs/partners/dynatrace.svg","/landingPageImages/svgs/partners/lenovo.svg","/landingPageImages/svgs/partners/fortinet.svg"]} bottom={["/landingPageImages/svgs/partners/oracle.svg","/landingPageImages/svgs/partners/symantec.svg","/landingPageImages/svgs/partners/veeam.svg","/landingPageImages/svgs/partners/microsoft.svg","/landingPageImages/svgs/partners/vmware.svg"]} />
+                <PhotoGallery top={["/landingpageimages/svgs/partners/dell.svg","/landingPageImages/svgs/partners/hp.svg","/landingPageImages/svgs/partners/dynatrace.svg","/landingPageImages/svgs/partners/lenovo.svg","/landingPageImages/svgs/partners/fortinet.svg"]} bottom={["/landingPageImages/svgs/partners/oracle.svg","/landingPageImages/svgs/partners/symantec.svg","/landingPageImages/svgs/partners/veeam.svg","/landingPageImages/svgs/partners/microsoft.svg","/landingPageImages/svgs/partners/vmware.svg"]} />
             </div>}
             {!display && <div className="brand">
                 Rien à voir au moment
@@ -25,7 +25,7 @@ const TechPart = () => {
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
+                    -ms-flex-direction: row;
                         flex-direction: column;
                 -webkit-box-pack: center;
                     -ms-flex-pack: center;

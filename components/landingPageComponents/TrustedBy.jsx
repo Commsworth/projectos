@@ -25,7 +25,6 @@ const TrustedBy = () => {
                     font-size: 24px;
                 }
                 .brand {
-                    border-bottom: 0.5px solid #c9c9c9;
                     padding-bottom: 47px;
                 }
                 @media only screen and (max-width: 990px) {

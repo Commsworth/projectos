@@ -20,7 +20,7 @@ const TheAcademy = () => {
             <style jsx>
                 {`
             .div3{
-          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 43.14%, rgba(17, 21, 23, 0) 78.53%), url('/pngs/div3Image.png');
+          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 43.14%, rgba(17, 21, 23, 0) 78.53%), url('/landingPageImages/pngs/academy.png');
           background-size: cover;
           background-position: center;
           padding: 70px;
@@ -82,7 +82,7 @@ const TheAcademy = () => {
         .div3-grid :global(.card:hover){
           background: #208FFF !important;
         }
-        .div3-grid :global(.card:hover .link){
+        .div3-grid :global(.card:hover .link .arrow-div){
           color: #ffffff !important;
         }
         .div3-grid :global(.card:hover .link svg){

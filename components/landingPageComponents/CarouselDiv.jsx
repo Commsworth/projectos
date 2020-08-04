@@ -5,7 +5,7 @@ import ArrowLink from '../extraPageComponents/ArrowLink';
 
 const options = [
     {
-        img: "/pngs/featuredImage.png",
+        img: "/landingPageImages/pngs/featuredImage.png",
         title: "NextGen App Performance Monitoring (APM) delivered through Dynatrace",
         content: "Commsworth Partners with Dynatrace to provide an AI-Powered, All-in-one platform to monitor, optimize and scale your applications autonomously with Zero-touch configuration across all stacks on any cloud.",
         index: 0,
@@ -62,17 +62,17 @@ export default class CarouselDiv extends Component {
         return (
             <React.Fragment>
                 <div className="carousel-div">
-                    <button id="left-button" onClick={this.setOptionLeft}><img src={this.props.leftArrow} alt="" /></button>
+                    <button id="left-button" onClick={this.setOptionLeft}><img src="/landingPageImages/svgs/arrows/left-arrow.svg" alt="" /></button>
                     <div className="carousel-grid">
                         <Card background={this.state.img} content={
                             <div className="carousel-grid-image">
-                                <button id="inner-left-button" onClick={this.setOptionLeft}><img src={this.props.leftArrow} alt=""/> </button>
-                                <button id="inner-right-button" onClick={this.setOptionRight}><img src={this.props.rightArrow} alt=""/></button>
+                                <button id="inner-left-button" onClick={this.setOptionLeft}><img src="/landingPageImages/svgs/arrows/left-arrow.svg" alt=""/> </button>
+                                <button id="inner-right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt=""/></button>
                             </div>
                         } />
                         <Card title={this.state.title} subIcon= {this.props.blueSemiCircle} content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
                     </div>
-                    <button id="right-button" onClick={this.setOptionRight}><img src={this.props.rightArrow} alt=""/></button>
+                    <button id="right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt=""/></button>
                 </div>
                 <div className='carousel-opt'>
 
@@ -103,7 +103,7 @@ export default class CarouselDiv extends Component {
             justify-content: center  ;
             // cursor: pointer;
             align-items: center;
-            margin: 0vh 5vw;
+            margin: 5vh auto;
             width: 90vw;
             }
 

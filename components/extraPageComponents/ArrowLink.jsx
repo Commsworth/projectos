@@ -21,7 +21,12 @@ const ArrowLink = (props) => {
                     align-items: center;
                     width: fit-content;
                     padding-right: 10px;
-                }
+                    color: #208FFF !important;
+                    justify-content: center;
+                    text-align: center !important;
+                    font-family: 'Nunito', sans-serif;
+                    cursor: pointer;
+                    }
                 svg{
                     margin-left: 10px;
                     width: 25px;

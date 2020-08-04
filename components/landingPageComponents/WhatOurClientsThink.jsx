@@ -48,7 +48,7 @@ class WhatOurClientsThink extends Component {
 	 flex-direction: column;
 	 justify-content: center;
 	 align-items: center;
-	 margin-bottom: 20vh;
+	 padding-bottom: 20vh;
 	 color: white;
 }
  .div4 .pf1 .circle1 {
