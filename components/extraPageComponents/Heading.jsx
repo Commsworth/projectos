@@ -14,39 +14,49 @@ const Heading = ({ text }) => {
                     flex-direction: column;
                 }
                 .heading-text{
-                    width: 500px;
                     position: sticky;
                     z-index: 1;
+                    width: 536px;
+                    height: 104px;
                     font-family: Nunito;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 43px;
+                    font-size: 46px;
                     line-height: 114%;
                     /* or 52px */
 
                     text-align: center;
-
                     color: #F4F4F4;
                 }
                 .heading .img{
                 width: 500px;
                 position:relative; 
-                bottom:67px;
+                bottom:70px;
+                right:20px;
                 }
                 .heading .img img{
-                //right:0px;
                 align-self: flex-start;
                 z-index:0;
-                width:210px;
+                width:220px;
                 height: 10px;
                 }
 
                 @media screen and (max-width: 990px){
-                    .heading-text, .heading .img{
-                        width: 80vw;
-                    }
+
+                }
+                @media screen and (max-width: 570px){
+                    .heading-text{
+                        width: 281px;
+                        height: 123px;
+                        font-size: 36px;
+                        line-height: 114%;
+                    } 
+                    .heading .img{
+                        left: 187px;
+                        bottom: 96px;
+                    } 
                     .heading .img img{
-                        display: none;
+                        width: 170px !important;
                     }
                 }
                 `}</style>

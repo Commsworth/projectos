@@ -5,6 +5,7 @@ import BlueButton from '../components/extraPageComponents/BlueButton';
 import { useState } from 'react';
 import ServicesWeOffer from '../components/servicesPageComponents/ServicesWeOffer';
 import { WhyChooseUs } from '../components/servicesPageComponents/WhyChooseUs';
+import Socials from '../components/extraPageComponents/Socials';
 
 export default function Services() {
   return (
@@ -20,8 +21,7 @@ export default function Services() {
         <h3 className="offer">Services on Offer</h3>
         <ServicesWeOffer/>
         <WhyChooseUs/>
-        {/* <BlueButton text="Learn More"/> */}
-
+        <Socials/>
       </main>
 
       <style jsx>{`

@@ -11,7 +11,7 @@ const Map = () => {
             justify-content: center;
           }
           .map img{
-            width: 80%;
+            //width: 80%;
           }
         @media only screen and (max-width: 990px) {
           .map{

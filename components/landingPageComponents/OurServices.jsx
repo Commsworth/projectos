@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import Card from '../extraPageComponents/Card';
 import ArrowLink from '../extraPageComponents/ArrowLink';
 
@@ -8,14 +8,22 @@ const OurServices = () => {
     return (
         <>
             <div className="our-services">
-                <Card title={<img src="/landingPageImages/pngs/icons/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingPageImages/pngs/icons/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingPageImages/pngs/icons/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingPageImages/pngs/icons/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingPageImages/pngs/icons/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />
-                {display ? <Card title={<img src="/landingPageImages/pngs/icons/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} /> :
-                    <Card title={<img src="/landingPageImages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contacts" link={<ArrowLink text="Contact Us" />} />}
+                <Card title={<img src="/landingpageimages/pngs/icons/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                <Card title={<img src="/landingpageimages/pngs/icons/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                <Card title={<img src="/landingpageimages/pngs/icons/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                <Card title={<img src="/landingpageimages/pngs/icons/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                <Card title={<img src="/landingpageimages/pngs/icons/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                {display ? <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} /> :
+                    <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                  }
+                  < div className="mobile-tablet">
+                  <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+                  </ div>
             </div>
+            <div className="mobile-tablet">
+              <p style={{fontSize: "15px", color: 'white', textAlign: 'center'}}>◀ Swipe to see more ▶</p>
+            </div>
+            <div className="desktop">
             <div className='our-services'>
                 <svg className={display ? 'our-services-svg' : ''} onClick={() => { setDisplay(true) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
@@ -24,6 +32,7 @@ const OurServices = () => {
                 <svg className={display ? ' ' : 'our-services-svg'} onClick={() => { setDisplay(false) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
                 </svg>
+            </div>
             </div>
             <style jsx>
                 {`
@@ -45,7 +54,7 @@ const OurServices = () => {
       .our-services :global(.card){
         margin: 12.5px;
         width: 360px;
-        height: 381px;
+        //height: 381px;
         background: #111517;
         border: 1px solid #208FFF;
         box-sizing: border-box;
@@ -89,7 +98,7 @@ const OurServices = () => {
         font-size: 15px;
         line-height: 185%;
         //width: 281px;
-        height: 77px;
+        //height: 77px;
         color: #f4f4f4 !important;
       }
       .our-services :global(.card:hover){
@@ -108,30 +117,28 @@ const OurServices = () => {
             line-height: 109%;
             //margin-left: 30%;
           }  
+        .our-services :global(.card),.our-services div :global(.card){
+          width: 360px !important;
+          min-width: 360px !important;
+          height: 320px !important;
+          }  
+          .our-services{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            flex-direction: row;
+            display: flex !important;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            width: 90vw;
+            margin: 2vh auto;
+          }
+
       }
       @media only screen and (max-width: 570px) {
-        @media only screen and (max-width: 570px) {
-            .map{
-              overflow: hidden;
-            }
-            .map img{
-              width: 1000px;
-              height: 300px;
-            }
-            .heading{
-              width:281px;
-              margin: auto;
-              font-size: 36px;
-            }
-            .heading img{
-            display:none;
-            }
-            .div1{
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            //display:none;
-          }
           .our-services{
-            width: 80vw !important;
+            width: 90vw !important;
             margin: 0vh auto !important;
           }
             .our-services :global(.card .title){
@@ -139,36 +146,18 @@ const OurServices = () => {
             }
             .our-services :global(.card .sub-title){
             padding: 0px !important;
-            height: 58px !important;
+            //height: 58px !important;
             }
             .our-services :global(.card p){
             width: 100% !important;
-            height: 125px !important;
+            //height: 125px !important;
             }
             .our-services :global(.card){
               //min-width: 300px;
               min-width: 100% !important;
               width: 100% !important;
-              padding: 0px 15px !important;
+              padding: 40px 15px !important;
             }
-          .div3{
-          //max-width: 320px;
-          padding: 0vw !important;
-          padding-top: 50px !important;
-          //margin: auto;
-          }
-          .div3 h3{
-              //font-size: 18px;
-            //line-height: 119%;
-            font-size: 26px !important;
-            line-height: 139% !important;
-            width: 90vw !important;
-            margin: 0vh 5vw !important;
-          }
-              .div3 :global(.card){
-                margin: 19px 0px !important;
-              }
-        }
       }
     `}
             </style>

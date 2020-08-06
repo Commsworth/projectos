@@ -35,7 +35,7 @@ class ctap extends Component {
                     </div>
                 </div>
 
-<div  style={{paddingBottom: 200,background:"white !important"}}>
+<div  style={{paddingBottom: 200,background:"white"}}>
             <div className="wrapper">
                 <div className='ct1'>
                     <div className="pad">
@@ -53,7 +53,7 @@ class ctap extends Component {
                                 <h1>Chat with Sales</h1>
                                 <p>Availablee Monday-Friday
                                 9AM to 5PM GMT+1</p>
-                                <a href="">Chat now ></a>
+                                <a href="">Chat now {">"}</a>
                                 </div>
                             <div className="contacts-ct">
                                 <img src="/static/email.svg" alt="" />

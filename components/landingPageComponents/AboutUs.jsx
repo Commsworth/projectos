@@ -15,11 +15,11 @@ const AboutUs = () => {
                 setScroll(scrollWidth / e.target.scrollLeft);
             }}>
                 <div className="about-large">
-                    <Card title="Who we are" background="/pngs/Tunnel.png" subIcon="/static/svg/big-blue-semi-circle.svg" content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
+                    <Card title="Who we are" background="/pngs/Tunnel.png" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
                 </div>
                 <div className="about--second">
                     <div className="about--second-top">
-                        <Card title="Core Values" backcolour="#212425" subIcon="/static/svg/big-blue-semi-circle.svg" content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
+                        <Card title="Core Values" backcolour="#212425" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
                             content2={
                                 <div className="about-ul">
                                     <ul>
@@ -39,8 +39,8 @@ const AboutUs = () => {
                         />
                     </div>
                     <div className="about--second--small">
-                        <Card title="Our Mission" backcolour="#205674" subIcon="/static/svg/semi-circle.svg" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-                        <Card title="Our Vision" background="/pngs/vr.png" subIcon="/static/svg/semi-circle.svg" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
+                        <Card title="Our Mission" backcolour="#205674" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
+                        <Card title="Our Vision" background="/pngs/vr.png" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
                     </div>
                 </div>
             </div>
@@ -68,35 +68,42 @@ const AboutUs = () => {
             justify-content: center;
     gap: 9px;
     margin: 2vw auto;
-    min-height: 600px;
+    height: 600px;
   }
   .about .about-large {
-    min-width: 450px;
-    width: 40%;
+    width: 500px;
     margin-right: 9px;
   }
   .about .about-large :global(.card p), .about .about-large :global(.card h3) {
     margin: 0px auto !important;
-    width: 80%;
+    width: 420px;
   }
   .about .about-large :global(.card p) {
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.2vw !important;
+    font-size: 16px;
     line-height: 200%;
-    /* or 36px */
+    /* or 32px */
     letter-spacing: 0.01em;
+    width: 420px;
   }
   .about .about-large :global(.card .content) {
     padding: 1vw 0px;
+    width: 420px;
   }
-  .about .about-large :global(.card .title) {
+  .about .about-large :global(.card h3) {
+    height: 44px;
+    left: 212px;
+    top: 2065px;
+
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 119%;
+    /* or 43px */
+    width: 420px;
     /* identical to box height, or 48px */
   }
   .about .about--second {
@@ -105,41 +112,43 @@ const AboutUs = () => {
     gap: 9px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    min-width: 450px;
-    width: 40%;
+    width: 600px;
   }
   .about .about--second .about--second-top :global(.card h3), .about .about--second .about--second-top :global(.card p) {
-    padding: 0px 32px !important;
-    margin: 0;
+    padding: 0px !important;
+    margin-left: 27px;
   }
   .about .about--second .about--second-top :global(.card h3) {
+    width: 165px;
+    height: 33px;
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 119%;
-    /* identical to box height, or 36px */
-    color: #ffffff;
   }
   .about .about--second .about--second-top :global(.card .content) {
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
-    font-size: 1vw !important;
+    font-size: 14px;
     line-height: 208%;
-    /* or 33px */
+    /* or 29px */
+
     letter-spacing: 0.01em;
+    width: 511px;
     color: #f4f4f4;
   }
   .about .about--second .about--second-top :global(.card .content2) {
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
+    font-size: 12px;
     line-height: 223%;
-    font-size: 0.9vw !important;
-    /* or 31px */
+    /* or 27px */
+
     letter-spacing: 0.01em;
-    /* Placeholder */
+    width: 420px;
     color: #f4f4f4;
   }
   .about .about--second .about--second-top :global(.card .content2 .about-ul) {
@@ -147,6 +156,11 @@ const AboutUs = () => {
     display: -ms-flexbox;
     display: flex;
   }
+  .about .about--second .about--second-top :global(.card .content2 .about-ul ul) {
+    margin: 0px;
+    list-style-type: decimal;
+    padding: 0px 20px;  
+    }
   .about .about--second--small {
     display: -ms-grid;
     display: grid;
@@ -165,9 +179,9 @@ const AboutUs = () => {
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.0vw !important;
+    font-size: 14px;
     line-height: 208%;
-    /* or 33px */
+    /* or 29px */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -180,8 +194,11 @@ const AboutUs = () => {
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 119%;
+    /* or 29px */
+
+
   }
   .indicators{
     display: none;

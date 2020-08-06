@@ -95,23 +95,23 @@ class WhatOurClientsThink extends Component {
 }
  .pf1 {
 	 position: relative;
-	 top: -10rem;
+	 top: -8rem;
 	 left: -5rem;
 }
  .pf2 {
 	 position: relative;
-	 top: -10rem;
-	 left: 30rem;
+	 top: -8rem;
+	 left: 25rem;
 }
  .pf3 {
 	 position: relative;
 	 top: 1rem;
-	 left: 15rem;
+	 left: 12rem;
 }
  .pf4 {
 	 position: relative;
-	 left: -20rem;
-	 bottom: -2rem;
+	 left: -18rem;
+	 bottom: -1rem;
 }
  .pf5 {
 	 position: relative;

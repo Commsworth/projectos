@@ -39,12 +39,12 @@ const CardDiv = ({ title, subtitle, subIcon, content, link, image, reverse, back
                     -webkit-box-pack: center;
                         -ms-flex-pack: center;
                             justify-content: center;
-                    height: 465.41px;
+                    //height: 465.41px;
                     margin: auto 25px;
                 }
                 .container .contact-card-main :global(.card h3) {
                     min-width: 450px;
-                    width: 40%;
+                    width: 80%;
                     //height: 45px;
                     font-family: Nunito;
                     font-style: normal;
@@ -74,7 +74,7 @@ const CardDiv = ({ title, subtitle, subIcon, content, link, image, reverse, back
                     font-size: 20px;
                     line-height: 190%;
                     min-width: 450px;
-                    width: 40%;
+                    width: 80%;
                     /* or 38px */
                     /* Placeholder */
                     color: #f4f4f4;
@@ -89,6 +89,7 @@ const CardDiv = ({ title, subtitle, subIcon, content, link, image, reverse, back
                     }
                     .container .contact-card-main :global(.card .link) {
                     min-width: 450px;
+                    width: 80%;
                     height: 33px;
                     font-family: Nunito;
                     font-style: normal;

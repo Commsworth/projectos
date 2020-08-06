@@ -59,6 +59,17 @@ font-weight: bold;
     overflow-x: hidden; 
 }
 
+@media only screen and (max-width: 990px) {
+    .desktop{
+        display: none !important;
+    }
+    }
+    @media only screen and (min-width: 991px) {
+    .mobile-tablet{
+        display: none !important;
+    }
+    }
+
 h1,h2,h3,h4,h5,h6{
 /* margin: 0; */
 font-family: 'Nunito', sans-serif;
