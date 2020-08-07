@@ -16,6 +16,10 @@ const TheAcademy = () => {
                 <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
                 <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
             </div>
+            <div className="mobile-tablet">
+              <p style={{fontSize: "15px", color: 'white', textAlign: 'center'}}>◀ Swipe to see more ▶</p>
+            </div>
+
 
             <style jsx>
                 {`
@@ -88,23 +92,58 @@ const TheAcademy = () => {
         .div3-grid :global(.card:hover .link svg){
           fill: #ffffff !important;
         }
+        @media only screen and (max-width: 990px) {
+          .div3{
+            padding: 0px;
+          }
+          .div3 h3{
+            width: 90vw;
+            margin: auto;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 139%;
+            /* or 42px */
+          }
+        .div3-grid{
+          width: 90vw;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          margin: 58px auto;
+          display: flex !important;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+        }
+        .div3-grid :global(.card){
+          min-width: 255px;
+          height: 238px;
+          margin: 1% 1%;
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(15px);
+          border-radius: 5px;
+          padding: 0px 0px;
+        }
+        }
         @media only screen and (max-width: 570px) {
             .div3{
             //max-width: 320px;
-            padding: 0vw !important;
-            padding-top: 50px !important;
+            //padding: 0vw !important;
+            //padding-top: 50px !important;
             //margin: auto;
             }
             .div3 h3{
             //font-size: 18px;
             //line-height: 119%;
-            font-size: 26px !important;
-            line-height: 139% !important;
-            width: 90vw !important;
-            margin: 0vh 5vw !important;
+            //font-size: 26px !important;
+            //line-height: 139% !important;
+            //width: 90vw !important;
+            //margin: 0vh 5vw !important;
             }
             .div3 :global(.card){
-              margin: 19px 0px !important;
+              //margin: 19px 0px !important;
             }
         }
             `}

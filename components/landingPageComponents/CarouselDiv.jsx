@@ -70,7 +70,7 @@ export default class CarouselDiv extends Component {
                                 <button id="inner-right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt=""/></button>
                             </div>
                         } />
-                        <Card title={this.state.title} subIcon= {this.props.blueSemiCircle} content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
+                        <Card title={this.state.title} subIcon= "/landingPageImages/pngs/icons/bluesemicircle.png" content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
                     </div>
                     <button id="right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt=""/></button>
                 </div>
@@ -121,24 +121,36 @@ export default class CarouselDiv extends Component {
             }
             .carousel-grid :global(.card) {
                 margin: 0px 1vw;
-                height: 20vw;
-                min-width: 452px;
+                height: 400px;
+                max-width: 600px;
                 //padding: 20px;
                 justify-content: center;
             }
+            .carousel-grid :global(.card .content2:nth-of-type(2)) {
+                display: none;
+            }
             .carousel-grid :global(.card .title) {
-                min-width: 428px;
-                width: 40vw;
+                width: 428px;
+                height: 72px;
+                font-family: Nunito;
+                font-style: normal;
                 font-weight: bold;
-                font-size: 1.7vw;
+                font-size: 24px;
                 line-height: 150%;
+                /* or 36px */
+
             }
             .carousel-grid :global(.card p) {
-                min-width: 452px !important;
-                font-size: 1.1vw;
+                width: 452px;
+                height: 121px;
+                font-family: Muli;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
                 line-height: 197.5%;
+                /* or 32px */
+
                 letter-spacing: 0.01em;
-                margin: 0;
             }
             .carousel-grid :global(.card .link) {
                 font-weight: bold;
@@ -174,6 +186,8 @@ export default class CarouselDiv extends Component {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 90vw;    
+            margin: auto;
         }
         .svg-margin{
             //display: none !important;
@@ -193,6 +207,7 @@ export default class CarouselDiv extends Component {
             }
             .carousel-grid :global(.card p) {
                 font-size: 14px !important;
+                width: 100%;
             }
             .carousel-grid :global(.card) {
                 height: auto !important;

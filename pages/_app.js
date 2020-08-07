@@ -3,6 +3,7 @@
 import '../public/css/global.css'
 import Head from 'next/head'
 import Navbar from '../components/extraPageComponents/Navbar'
+import Footer from '../components/extraPageComponents/Footer'
 
 export default function MyApp({ Component, pageProps }) {
     return(
@@ -22,16 +23,24 @@ export default function MyApp({ Component, pageProps }) {
         <br/>
         <br/>
         <Component {...pageProps} />
-        {/* <Footer/> */}
+        <Footer/>
 
         <style jsx>
             {`
+            @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
             .main-container{
-                background: #111517;
-                min-height: 100vh;
+              background: #111517;
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              overflow-x: hidden;
             }
             h1,h2,h3,h4,h5,h6{
               font-family: 'Nunito', 'serif';
+            }
+            p{
+              font-family: 'Muli', 'serif';
             }
             `}
         </style>

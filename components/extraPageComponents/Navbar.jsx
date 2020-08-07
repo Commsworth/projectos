@@ -25,10 +25,10 @@ const Navbar = () => {
         <div className={`navbar ${scroll > 70 ? 'scroll' : ''}`}>
             <div>
                 <ul className="navbar-left">
-                    <li onClick={()=>!dropdown?setDropdown(true):setDropdown(false)}>
-                        <img src="/extraPageImages/svgs/navbar/logo.svg" alt="logo" className="desktop" />
+                    <li>
+                        <img src="/extrapageimages/svgs/navbar/logo.svg" alt="logo" className="desktop" onClick={()=>!dropdown?setDropdown(true):setDropdown(false)} />
                         <Link href="/">
-                        <img src="/extraPageImages/svgs/navbar/logo.svg" alt="mobile-logo"  className="mobile-logo mobile-tablet" />
+                        <img src="/extrapageimages/svgs/navbar/logo.svg" alt="mobile-logo"  className="mobile-logo mobile-tablet" />
                         </Link>
                         <div id="myDropdown" className={`dropdown-content desktop ${dropdown?'': 'off'}`}>
                             <ul>
@@ -40,16 +40,17 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </li>
-                    <li className="desktop"><Link href="/"><a>{current}</a></Link><img src="extraPageImages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                    <li onClick={()=>!dropdown?setDropdown(true):setDropdown(false)} className="dropdown-button mobile-tablet">≡</li>
+                    <li className="desktop"><Link href="/"><a>{current}</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                    <li onClick={()=>setDropdown(true)} className={`dropdown-button mobile-tablet ${dropdown?'off':''}`}>≡</li>
+                    <li onClick={()=>setDropdown(false)} className={`dropdown-button mobile-tablet ${dropdown?'':'off'}`}>X</li>
                 </ul>
             </div>
-            <ul className={`navbar-right ${dropdown?'': 'off'}`}>
-                <li><Link href="/services"><a>Services</a></Link><img src="extraPageImages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li><Link href="/portfolio"><a>Portfolio</a></Link><img src="extraPageImages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li><Link href="#"><a>Blog</a></Link><img src="extraPageImages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li className="mobile-tablet"><Link href="/contact"><a>Contact</a></Link><img src="extraPageImages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li className="desktop"><Link href="/contact"><a><BlueButton text="Contact" /></a></Link><img src="extraPageImages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+            <ul className={`navbar-right ${dropdown?'': 'navbar-off'}`}>
+                <li><Link href="/services"><a>Services</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li><Link href="/portfolio"><a>Portfolio</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li><Link href="#"><a>Blog</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li className="mobile-tablet"><Link href="/contact"><a>Contact</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li className="desktop"><BlueButton text="Contact" href="/contact" /></li>
             </ul>
 
             <style jsx>
@@ -58,10 +59,10 @@ const Navbar = () => {
                 display: flex;
                 justify-content: space-around;
                 width: 100vw;
-                margin: 0px auto;
+                margin: 0px auto !important;
                 height: 70px;
                 position: fixed;
-                z-index: 2;
+                z-index: 9999;
             }
             .scroll{
                 background: #1C2124;
@@ -133,11 +134,6 @@ const Navbar = () => {
                 background: #f4f4f4;
                 width: 200px;
             }
-        @media only screen and (min-width: 991px) {
-            .mobile-tablet{
-                display: none !important;
-            }
-        }
         @media only screen and (max-width: 990px) {
             .navbar, .navbar .navbar-right{
                 flex-direction: column;
@@ -148,8 +144,12 @@ const Navbar = () => {
             .navbar{
                 height: fit-content;
             }
+            .navbar-off{
+                display: none;
+            }
             .navbar .navbar-left{
                 justify-content: space-between;
+                align-items: center;
             }
             .navbar .navbar-right li a{
                 font-size: 20px;
@@ -168,8 +168,8 @@ const Navbar = () => {
                 margin: 0px 20px;
                 height: 50px;
             }
-            .desktop{
-                display: none !important;
+            .navbar-left .dropdown-button:last-of-type{
+                font-size: 40px;
             }
         }
             `}

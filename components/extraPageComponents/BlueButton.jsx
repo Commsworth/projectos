@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';     
 
-const BlueButton = ({text}) => {
+const BlueButton = ({text, href}) => {
     return (
       <div className="blue-button">
-        <Link href="/services">
+        <Link href={href}>    
         <button className="heading-button">{text}</button>
       </Link>
       <style jsx>

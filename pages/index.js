@@ -13,6 +13,7 @@ import BlueButton from '../components/extraPageComponents/BlueButton';
 import Map from '../components/landingPageComponents/Map';
 import WorkWith from '../components/landingPageComponents/WorkWith';
 import Navbar from '../components/extraPageComponents/Navbar';
+import Socials from '../components/extraPageComponents/Socials';
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
 
       <main>
         <Heading text="Digital Solutions to accelerate your business."/>
-        <BlueButton text="Learn More"/>
+        <BlueButton text="Learn More" href="/services"/>
         <Map/>
         <TitleDiv top="" bottom="" />
         <CarouselDiv />
@@ -38,6 +39,7 @@ export default function Home() {
         <TheAcademy />
         <TrustedBy />
         <WhatOurClientsThink />
+        <Socials icons="white"/>
       </main>
 
       <style jsx>{`

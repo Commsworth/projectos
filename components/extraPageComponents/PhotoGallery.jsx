@@ -30,17 +30,16 @@ const PhotoGallery = ({top, bottom}) => {
             </div>
             <br />
             <div className="divide2"></div>
-            <div className="more-div">
-                <button onClick={handleClick} className={`button ${more ? 'off' : 'more'}`}>+</button>
-                <div className={`box ${more ? 'more' : 'off'}`}>
-                {bottom.map((each, i)=>{
-                    return(
-                        <img src={`${each}`} alt="" srcSet="" className="img" key={i} />
-                    )
-                })}
+            <div className={`more-div ${more ? 'more' : 'off'}`}>
+                <div className='box'>
+                    {bottom.map((each, i)=>{
+                        return(
+                            <img src={`${each}`} alt="" srcSet="" className="img" key={i} />
+                            )
+                        })}
                 </div>
-                <button onClick={handleClick} className={`button ${more ? 'more' : 'off'}`}>-</button>
             </div>
+                        <button onClick={handleClick} className="button"> {more ?'-':'+'}</button>
             <br />
             
             <style jsx>
@@ -50,7 +49,7 @@ const PhotoGallery = ({top, bottom}) => {
                 flex-direction: row;
                 align-items: center;
                     text-align: center;
-                    padding-bottom: 80px;
+                    padding-bottom: 160px;
                     background: white;
                 }
                 .cli h5 {
@@ -58,10 +57,10 @@ const PhotoGallery = ({top, bottom}) => {
                     font-size: 24px;
                 }
                 .img {
-                    padding: 0px 5vw;
+                    padding: 0px 100px;
                     margin: 20px 0px 0px 0px;
-                    width: 15vw;
-                    height: 50px;
+                    width: 200px;
+                    height: 100px;
                     border-right: 1px solid #878787;
                 }
                 .img:last-of-type{
@@ -86,25 +85,35 @@ const PhotoGallery = ({top, bottom}) => {
             }
                 @media only screen and (max-width: 570px) {
                     .img{
-                        width: 30vw !important;
-                        height: 25vw !important;
-                        padding: 5vw 0px !important;
+                        width: 160px !important;
+                        height: 100px !important;
+                        padding: 10px 0px !important;
                     }
                 }
                 @media only screen and (max-width: 990px) {
+                    .main-box{
+                        max-height: 4000px;
+                        overflow-y: hidden;
+                        overflow-x: hidden;
+                        //scroll-snap-type: y mandatory;
+                        margin: 2vh auto;
+                    }
                     .box {
                         border-bottom: none;
                         padding-bottom: 0;
                         display: flex;
                         flex-direction: column;
+                        width: 90vw;
+                        margin: 2vh auto;
+                        transition: display 3s ease-in-out;
                     }
                     .img {
                         border-bottom: 1px solid #878787 !important;
                         margin: 13.5px auto !important;
                         padding: 27px 0px;
                         border-right: none;
-                        width: 15vw;
-                        height: 15vw;
+                        width: 160px;
+                        height: 100px;
                     }
                     .img:last-of-type{
                         border-bottom: 0px;
@@ -120,12 +129,12 @@ const PhotoGallery = ({top, bottom}) => {
                         flex-direction: column;
                         align-items: center;
                     }
-                    .more-div .off {
+                    .off {
                         display: none !important;
                     }
-                    .more-div .button {
+                    .main-box .button {
                         width: 68px;
-                        height: 68px;
+                        height: 68px !important;
                         border-radius: 50%;
                         margin: 0px auto;
                         border: none;
@@ -133,7 +142,7 @@ const PhotoGallery = ({top, bottom}) => {
                         color: white;
                         font-size: 36px;
                         position: relative;
-                        top: 30px;
+                        top: 5px;
                     }
                     .bor3 {
                         border: none;

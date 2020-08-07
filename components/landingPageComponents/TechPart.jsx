@@ -3,17 +3,21 @@ import PhotoGallery from '../extraPageComponents/PhotoGallery';
 
 
 const TechPart = () => {
-    const [display, setDisplay] = useState(true)
+    const [display, setDisplay] = useState("1")
     return (
         <div className="center">
             <div className="head-flx">
-                <div className="link" onClick={() => setDisplay(true )}><a className={display ? "active" : null}>Technical Partners</a></div>
-                <div className="link" onClick={() => setDisplay(false)}><a className={display ? null : "active"}>Business Partners</a></div>
+                <select name="techpart" id="techpart" className="mobile-tablet" onChange={(e) => setDisplay(e.target.value)}>
+                    <option value="1">Technical Partners</option>
+                    <option value="2">Business Partners</option>
+                </select>
+                <div className="link desktop" onClick={() => setDisplay(true )}><a className={display ? "active" : ""}>Technical Partners</a></div>
+                <div className="link desktop" onClick={() => setDisplay(false)}><a className={display ? "" : "active"}>Business Partners</a></div>
             </div>
-            {display && <div className="brand">
+            {display==="1" && <div className="brand">
                 <PhotoGallery top={["/landingpageimages/svgs/partners/dell.svg","/landingPageImages/svgs/partners/hp.svg","/landingPageImages/svgs/partners/dynatrace.svg","/landingPageImages/svgs/partners/lenovo.svg","/landingPageImages/svgs/partners/fortinet.svg"]} bottom={["/landingPageImages/svgs/partners/oracle.svg","/landingPageImages/svgs/partners/symantec.svg","/landingPageImages/svgs/partners/veeam.svg","/landingPageImages/svgs/partners/microsoft.svg","/landingPageImages/svgs/partners/vmware.svg"]} />
             </div>}
-            {!display && <div className="brand">
+            {display!=="1" && <div className="brand">
                 Rien à voir au moment
             </div>}
 
@@ -69,8 +73,8 @@ const TechPart = () => {
                 display: -ms-flexbox;
                 display: flex;
                 -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
                 }
                 .active {
                 color: #0e82f8 !important;
@@ -97,6 +101,12 @@ const TechPart = () => {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
+                    }
+                    #techpart{
+                        width: 50vw;
+                        height: 40px;
+                        color: black;
+                        margin: 20px auto;
                     }
                 }
 
