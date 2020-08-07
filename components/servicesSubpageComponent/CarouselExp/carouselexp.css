@@ -1,0 +1,107 @@
+.carou-div {
+  width: 70%;
+  margin: auto;
+}
+
+.carou-div .card-flx {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.carou-div .card-flx .card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 10px 10px 30px;
+}
+
+.carou-div .card-flx .card h3 {
+  font-size: 34px;
+  line-height: 30px;
+  color: black;
+}
+
+.carou-div .card-flx .card p {
+  color: black;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.carou-div .card-flx .card .link {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 0px;
+  font-family: "Nunito";
+  margin: 0;
+  margin-top: 10px !important;
+}
+
+.carou-div .card-flx img {
+  height: auto;
+}
+
+.button__bar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.button__bar li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.button__bar li button {
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+}
+
+.button__bar li.slick-active button {
+  background-color: #208FFF;
+}
+
+.button__bar li button:hover,
+.button__bar li button:focus {
+  background: #208FFF;
+  outline: 0;
+}
+
+.slick-slide img {
+  border: 5px solid #fff;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .carou-div {
+    width: 100%;
+  }
+  .carou-div .card-flx {
+    width: 90% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .carou-div .card-flx .card {
+    margin: 12px 0px 0px 0px !important;
+  }
+  .carou-div .card-flx img {
+    /* height: 300px; */
+  }
+}
+/*# sourceMappingURL=carouselexp.css.map */

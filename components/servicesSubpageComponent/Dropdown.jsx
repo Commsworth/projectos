@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import './dropdown.style.scss'
+// import './dropdown.style.scss'
 import { FaCaretDown } from 'react-icons/fa'
 
 export class Dropdown extends Component {
