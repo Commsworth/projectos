@@ -29,7 +29,7 @@ export default function MyApp({ Component, pageProps }) {
             {`
             @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
             .main-container{
-              background: #111517;
+            
               min-height: 100vh;
               display: flex;
               flex-direction: column;
