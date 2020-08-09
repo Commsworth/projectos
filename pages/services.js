@@ -42,6 +42,9 @@ export default function Services() {
         :global(.heading){
           margin: 0px !important;
         }
+        :global(.title-div img){
+          display: none;
+        }
         :global(.title-div-main){
           margin: 0px auto 25px !important;
         }

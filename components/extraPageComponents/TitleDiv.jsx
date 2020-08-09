@@ -1,7 +1,7 @@
 const TitleDiv = (props) => (
     <div className="title-div-main">
         <div className={`title-div ${props.position}`}>
-            <img src="/static/svg/blue-line.svg" alt="" />
+            <img src="/landingPageImages/pngs/icons/blue-line.png" alt="" />
             <div id="title-text">
                 {props.top}
             </div>
@@ -17,6 +17,11 @@ const TitleDiv = (props) => (
                 display: flex;
                 justify-content: center;
                 color: white !important;
+                align-items: center;
+            }
+            .title-div img{
+                height: 4px;
+                margin: 0px 22px;
             }
             .left{
                 justify-content: flex-start !important;
