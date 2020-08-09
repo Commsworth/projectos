@@ -17,7 +17,11 @@ export default function Services() {
 
 
       <main>
+        <div className="black-margin-top services-main-div">
         <Heading text="Digital Solutions to accelerate your business."/>
+        <TitleDiv bottom="Digital Solutions tailored for your business"/>
+        <BlueButton text="Learn More" href="/services"/>
+        </div>
         <h3 className="offer">Services on Offer</h3>
         <ServicesWeOffer/>
         <WhyChooseUs/>
@@ -29,11 +33,27 @@ export default function Services() {
             background: #111517;
             min-height: 100vh;
         }
+        .services-main-div{
+          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 103.14%, rgba(17, 21, 23, 0) 78.53%),url('/servicesPageImages/pngs/servicesbackground.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        :global(.heading){
+          margin: 0px !important;
+        }
+        :global(.title-div-main){
+          margin: 0px auto 25px !important;
+        }
+        :global(.blue-button){
+          padding-bottom: 232px;
+        }
         .offer{
-            font-size: 40px;
+            font-size: 30px;
             line-height: 126.5%;
             text-align: center;
             color: #f4f4f4 !important;
+            margin: 57px auto;
             }
       `}</style>
     </div>

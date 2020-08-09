@@ -6,7 +6,7 @@ import ArrowLink from '../extraPageComponents/ArrowLink';
 const OurServices = () => {
     const [display, setDisplay] = useState(true);
     return (
-        <>
+        <div className="our-services-main">
             <div className="our-services">
                 <Card title={<img src="/landingpageimages/pngs/icons/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
                 <Card title={<img src="/landingpageimages/pngs/icons/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
@@ -37,24 +37,27 @@ const OurServices = () => {
             <style jsx>
                 {`
     .our-services svg{
-        margin: 0px 5px 0px 5px;
+        margin: 30px 5px 0px 5px;
         cursor: pointer;
             }
        .our-services-svg{
          fill: #208FFF; 
          margin-left: 10px 10px;
        }
+       .our-services-main{
+         margin: 0px auto 59px;
+       }
        .our-services{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 80vw;
-        margin: 2vh 10vw;
+        margin: 0vh 10vw;
       }
       .our-services :global(.card){
         margin: 12.5px;
         width: 360px;
-        //height: 381px;
+        min-height: 381px;
         background: #111517;
         border: 1px solid #208FFF;
         box-sizing: border-box;
@@ -161,7 +164,7 @@ const OurServices = () => {
       }
     `}
             </style>
-        </>
+        </div>
 
     );
 };

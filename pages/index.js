@@ -24,11 +24,11 @@ export default function Home() {
       </Head>
 
 
-      <main>
+      <main className="black-margin-top">
         <Heading text="Digital Solutions to accelerate your business."/>
         <BlueButton text="Learn More" href="/services"/>
         <Map/>
-        <TitleDiv top="" bottom="" />
+        <TitleDiv top="Featured" bottom="Our latest trends tailored for you" />
         <CarouselDiv />
         <TechPart />
         <TitleDiv top="About Us" bottom="" />
@@ -45,6 +45,7 @@ export default function Home() {
       <style jsx>{`
         .landing-container{
           //background: #111517;
+          background: #111517;
           //min-height: 100vh;
         }
       `}</style>

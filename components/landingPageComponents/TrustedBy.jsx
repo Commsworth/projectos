@@ -17,7 +17,7 @@ const TrustedBy = () => {
                     flex-direction: column;
                     align-items: center;
                     text-align: center;
-                    padding-bottom: 80px;
+                    //padding-bottom: 80px;
                     background: white;
                 }
                 .cli h5 {
@@ -25,7 +25,7 @@ const TrustedBy = () => {
                     font-size: 24px;
                 }
                 .brand {
-                    padding-bottom: 47px;
+                    //padding-bottom: 47px;
                 }
                 @media only screen and (max-width: 990px) {
                     .brand {

@@ -57,10 +57,10 @@ const PhotoGallery = ({top, bottom}) => {
                     font-size: 24px;
                 }
                 .img {
-                    padding: 0px 100px;
+                    padding: 0px 14px;
                     margin: 20px 0px 0px 0px;
                     width: 200px;
-                    height: 100px;
+                    height: 70px;
                     border-right: 1px solid #878787;
                 }
                 .img:last-of-type{
@@ -79,6 +79,17 @@ const PhotoGallery = ({top, bottom}) => {
                     display: flex;
                 }
                 @media screen and (min-width: 990px){
+                .box{
+                    display: flex;
+                }
+                .main-box .box:first-of-type{
+                    padding: 50px 0px !important;
+                    border-bottom: 1px solid #C9C9C9;
+                }
+                .more-div .box:first-of-type{
+                    padding: 0px 0px 120px 0px !important;
+                    border-bottom: none;
+                }
                     .button {
                     display: none;
                 }

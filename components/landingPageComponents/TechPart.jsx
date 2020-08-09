@@ -15,7 +15,7 @@ const TechPart = () => {
                 <div className="link desktop" onClick={() => setDisplay(false)}><a className={display ? "" : "active"}>Business Partners</a></div>
             </div>
             {display==="1" && <div className="brand">
-                <PhotoGallery top={["/landingpageimages/svgs/partners/dell.svg","/landingPageImages/svgs/partners/hp.svg","/landingPageImages/svgs/partners/dynatrace.svg","/landingPageImages/svgs/partners/lenovo.svg","/landingPageImages/svgs/partners/fortinet.svg"]} bottom={["/landingPageImages/svgs/partners/oracle.svg","/landingPageImages/svgs/partners/symantec.svg","/landingPageImages/svgs/partners/veeam.svg","/landingPageImages/svgs/partners/microsoft.svg","/landingPageImages/svgs/partners/vmware.svg"]} />
+                <PhotoGallery top={["/landingpageimages/svgs/partners/dell.svg","/landingpageimages/svgs/partners/hp.svg","/landingpageimages/svgs/partners/dynatrace.svg","/landingpageimages/svgs/partners/lenovo.svg","/landingpageimages/svgs/partners/fortinet.svg"]} bottom={["/landingpageimages/svgs/partners/oracle.svg","/landingpageimages/svgs/partners/symantec.svg","/landingpageimages/svgs/partners/veeam.svg","/landingpageimages/svgs/partners/microsoft.svg","/landingpageimages/svgs/partners/vmware.svg"]} />
             </div>}
             {display!=="1" && <div className="brand">
                 Rien à voir au moment
@@ -103,9 +103,11 @@ const TechPart = () => {
                     display: flex;
                     }
                     #techpart{
-                        width: 50vw;
-                        height: 40px;
-                        color: black;
+                        width: 60vw;
+                        background: linear-gradient(63deg, white, silver);
+                        height: 60px;
+                        font-size: 18px;
+                        color: #111517;
                         margin: 20px auto;
                     }
                 }

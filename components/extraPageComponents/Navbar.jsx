@@ -57,9 +57,10 @@ const Navbar = () => {
                 {`
             .navbar{
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 width: 100vw;
                 margin: 0px auto !important;
+                padding: 0px 5vw !important;
                 height: 70px;
                 position: fixed;
                 z-index: 9999;
@@ -165,7 +166,7 @@ const Navbar = () => {
                 font-size: 42px;
                 padding: 0px;
                 width: 30px;
-                margin: 0px 20px;
+                margin: 0px !important;
                 height: 50px;
             }
             .navbar-left .dropdown-button:last-of-type{

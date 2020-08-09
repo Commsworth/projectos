@@ -16,20 +16,15 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
 
       <Navbar/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <div>
         <Component {...pageProps} />
+        </div>
         <Footer/>
 
         <style jsx>
             {`
             @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
             .main-container{
-              background: #111517;
               min-height: 100vh;
               display: flex;
               flex-direction: column;

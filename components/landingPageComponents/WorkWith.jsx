@@ -8,7 +8,7 @@ const WorkWith = () => {
             <style jsx>
                 {`
                 .work-with{
-                    margin: 40px auto;
+                    margin: 80px auto 112px;
                     display: flex;
                     justify-content: center;
                 }

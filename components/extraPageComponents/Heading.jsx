@@ -12,6 +12,7 @@ const Heading = ({ text }) => {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
+                    margin-bottom: 20px;
                 }
                 .heading-text{
                     position: sticky;
@@ -27,11 +28,13 @@ const Heading = ({ text }) => {
 
                     text-align: center;
                     color: #F4F4F4;
+                    margin: 0px auto;
                 }
                 .heading .img{
+                margin: 0px;
                 width: 500px;
                 position:relative; 
-                bottom:70px;
+                bottom:24px;
                 right:20px;
                 }
                 .heading .img img{
@@ -53,7 +56,7 @@ const Heading = ({ text }) => {
                     } 
                     .heading .img{
                         left: 187px;
-                        bottom: 96px;
+                        bottom: 60px;
                     } 
                     .heading .img img{
                         width: 170px !important;

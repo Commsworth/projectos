@@ -27,32 +27,41 @@ const TheAcademy = () => {
           background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 43.14%, rgba(17, 21, 23, 0) 78.53%), url('/landingPageImages/pngs/academy.png');
           background-size: cover;
           background-position: center;
-          padding: 70px;
+          padding: 0px 70px;
+        }
+        :global(.title-div-main){
+          padding: 60px 0px 0px !important;
+          margin: 0px !important;
         }
         .div3 h3{
-          font-size: 34px;
+          margin: 0px auto !important;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 54px;
           line-height: 126.5%;
-          margin: 0;
-          font-family: 'Nunito', sans-serif;
+          /* or 68px */
+
+          /* White */
+          color: #FFFFFF;
           width: 80vw;
-          margin: 17px auto;
-          color: white;
+
         }
         .div3-grid{
           width: 80vw;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin: 58px auto;
+          margin: 58px auto 32px;
+          padding: 0px 0px 90px;
         }
         .div3-grid :global(.card){
           width: 255px;
           height: 238px;
-          margin: 1% 1%;
+          margin: 0% 1%;
           background: rgba(255, 255, 255, 0.05);
           backdrop-filter: blur(15px);
           border-radius: 5px;
-          padding: 0px 0px;
         }
         .div3-grid :global(.card h3){
           padding: 0px 20px;
@@ -102,7 +111,7 @@ const TheAcademy = () => {
             font-family: Nunito;
             font-style: normal;
             font-weight: normal;
-            font-size: 30px;
+            font-size: 40px;
             line-height: 139%;
             /* or 42px */
           }

@@ -61,28 +61,30 @@ export default class CarouselDiv extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="carousel-div">
-                    <button id="left-button" onClick={this.setOptionLeft}><img src="/landingPageImages/svgs/arrows/left-arrow.svg" alt="" /></button>
-                    <div className="carousel-grid">
-                        <Card background={this.state.img} content={
-                            <div className="carousel-grid-image">
-                                <button id="inner-left-button" onClick={this.setOptionLeft}><img src="/landingPageImages/svgs/arrows/left-arrow.svg" alt=""/> </button>
-                                <button id="inner-right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt=""/></button>
-                            </div>
-                        } />
-                        <Card title={this.state.title} subIcon= "/landingPageImages/pngs/icons/bluesemicircle.png" content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
+                <div className="carousel-div-main">
+                    <div className="carousel-div">
+                        <button id="left-button" onClick={this.setOptionLeft}><img src="/landingPageImages/svgs/arrows/left-arrow.svg" alt="" /></button>
+                        <div className="carousel-grid">
+                            <Card background={this.state.img} content={
+                                <div className="carousel-grid-image">
+                                    <button id="inner-left-button" onClick={this.setOptionLeft}><img src="/landingPageImages/svgs/arrows/left-arrow.svg" alt="" /> </button>
+                                    <button id="inner-right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt="" /></button>
+                                </div>
+                            } />
+                            <Card title={this.state.title} subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content={this.state.content} href="/services" link={<ArrowLink href={this.state.link} text="Read More" />} />
+                        </div>
+                        <button id="right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt="" /></button>
                     </div>
-                    <button id="right-button" onClick={this.setOptionRight}><img src="/landingPageImages/svgs/arrows/right-arrow.svg" alt=""/></button>
-                </div>
-                <div className='carousel-opt'>
+                    <div className='carousel-opt'>
 
 
-                    <svg className={`${this.state.index ? ' ' : 'svg'} svg-margin`} onClick={() => { this.setState(options[0]) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                    </svg>
-                    <svg className={`${this.state.index ? 'svg' : ''} svg-margin`} onClick={() => { this.setState(options[1]) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                    </svg>
+                        <svg className={`${this.state.index ? ' ' : 'svg'} svg-margin`} onClick={() => { this.setState(options[0]) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+                        </svg>
+                        <svg className={`${this.state.index ? 'svg' : ''} svg-margin`} onClick={() => { this.setState(options[1]) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+                        </svg>
+                    </div>
                 </div>
                 <style jsx>{`
             .carousel-opt{
@@ -98,13 +100,16 @@ export default class CarouselDiv extends Component {
                 margin: 5px;
                 cursor: pointer;
             }
+            .carousel-div-main {
+            margin: 10px auto 81px;
+            }
             .carousel-div {
             display: flex;
             justify-content: center  ;
             // cursor: pointer;
             align-items: center;
-            margin: 5vh auto;
             width: 90vw;
+            margin: 5vh auto;
             }
 
             .carousel-grid {

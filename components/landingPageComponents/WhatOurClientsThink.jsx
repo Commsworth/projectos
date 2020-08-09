@@ -7,10 +7,10 @@ class WhatOurClientsThink extends Component {
 
         this.state = {
             words: {
-                mission: "I like Commsworth",
-                name: "Pesky",
-                position: "Frontend Web Developer",
-                company: "Commsworth",
+                mission: "Commworth deliver Value and helped grow Microsoft in Nigeria, working with them has been a revelation",
+                name: "JAMES BOND",
+                position: "MD",
+                company: "Microsoft Nigeria",
                 class: "circle1",
             },
         }
@@ -27,18 +27,18 @@ class WhatOurClientsThink extends Component {
                         <div className="center2">
                             <br />
                             <br />
-                            <img id="div4-top-img" src="/img-div4/comma.png" alt="" srcset="" />
+                            <img id="div4-top-img" src="/landingPageImages/pngs/whatclients/yin-yang.png" alt="" srcset="" />
                             <h3 id="what-our-clients">What Our Clients Think <br /> About Us</h3>
-                            <p id="mission" style={{ fontSize: "30px", lineHeight: "130%", marginBottom: "46px", marginTop: "31px" }}>"{this.state.words.mission}"</p>
+                            <p id="mission" style={{ fontSize: "24px", lineHeight: "130%", marginBottom: "46px", marginTop: "64px", height: "120px" }}>"{this.state.words.mission}"</p>
                             <h3 id="name" style={{ fontSize: "24px", lineHeight: "178.5%", marginBottom: "0", marginTop: "46px" }}>{this.state.words.name}</h3>
-                            <p id="position" style={{ fontSize: "16px", lineHeight: "178.5%" }}>-{this.state.words.position}, {this.state.words.company}</p>
+                            <p id="position" style={{ fontSize: "16px", lineHeight: "178.5%", margin:"0px" }}>- {this.state.words.position}, {this.state.words.company}</p>
                         </div>
                         <div className="img-flx">
-                            <div className="pf1" onMouseEnter={() => this.hover({ mission: "I like Commsworth", name: "Pesky", position: "Frontend Web Developer", company: "Commsworth", class: "circle1" })}><img src="/landingPageImages/svgs/whatclients/Ellipse16.png" className={`${this.state.words.class}`} id="pf1" alt="" /></div>
-                            <div className="pf2" onMouseEnter={() => this.hover({ mission: "I love Commsworth", name: "Pesky", position: "Frontend Web Developer", company: "Commsworth", class: "circle2" })}><img src="/landingPageImages/svgs/whatclients/Ellipse17.png" className={`${this.state.words.class}`} id="pf2" alt="" /></div>
-                            <div className="pf3" onMouseEnter={() => this.hover({ mission: "I want Commsworth", name: "Pesky", position: "Frontend Web Developer", company: "Commsworth", class: "circle3" })}><img src="/landingPageImages/svgs/whatclients/Ellipse18.png" className={`${this.state.words.class}`} id="pf3" alt="" /></div>
-                            <div className="pf4" onMouseEnter={() => this.hover({ mission: "I need Commsworth", name: "Pesky", position: "Frontend Web Developer", company: "Commsworth", class: "circle4" })}><img src="/landingPageImages/svgs/whatclients/Ellipse19.png" className={`${this.state.words.class}`} id="pf4" alt="" /></div>
-                            <div className="pf5" onMouseEnter={() => this.hover({ mission: "I admire Commsworth", name: "Pesky", position: "Frontend Web Developer", company: "Commsworth", class: "circle5" })}><img src="/landingPageImages/svgs/whatclients/Ellipse19.png" className={`${this.state.words.class}`} id="pf5" alt="" /></div>
+                            <div className="pf1" onMouseEnter={() => this.hover({ mission: "Commworth deliver Value and helped grow Microsoft in Nigeria, working with them has been a revelation", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle1" })}><img src="/landingPageImages/svgs/whatclients/Ellipse16.png" className={`${this.state.words.class}`} id="pf1" alt="" /></div>
+                            <div className="pf2" onMouseEnter={() => this.hover({ mission: "I love Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle2" })}><img src="/landingPageImages/svgs/whatclients/Ellipse17.png" className={`${this.state.words.class}`} id="pf2" alt="" /></div>
+                            <div className="pf3" onMouseEnter={() => this.hover({ mission: "I want Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle3" })}><img src="/landingPageImages/svgs/whatclients/Ellipse18.png" className={`${this.state.words.class}`} id="pf3" alt="" /></div>
+                            <div className="pf4" onMouseEnter={() => this.hover({ mission: "I need Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle4" })}><img src="/landingPageImages/svgs/whatclients/Ellipse19.png" className={`${this.state.words.class}`} id="pf4" alt="" /></div>
+                            <div className="pf5" onMouseEnter={() => this.hover({ mission: "I admire Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle5" })}><img src="/landingPageImages/svgs/whatclients/Ellipse19.png" className={`${this.state.words.class}`} id="pf5" alt="" /></div>
                         </div>
                     </div>
                     <style jsx>
@@ -48,7 +48,7 @@ class WhatOurClientsThink extends Component {
 	 flex-direction: column;
 	 justify-content: center;
 	 align-items: center;
-	 padding-bottom: 20vh;
+	 padding-bottom: 174px;
 	 color: white;
 }
  .div4 .pf1 .circle1 {
@@ -127,7 +127,7 @@ class WhatOurClientsThink extends Component {
 		 flex-direction: column;
 		 justify-content: center;
 		 height: 40rem;
-		 margin: 0vh 0vw;
+		 margin: 100px 0vw 0vh;
 	}
 	 .pf1 {
 		 position: relative;
@@ -156,7 +156,6 @@ class WhatOurClientsThink extends Component {
 	}
 	 #mission {
 		 width: 90vw;
-		 margin: auto;
 		 font-family: Muli;
 		 font-style: normal;
 		 font-weight: 600;
@@ -169,7 +168,7 @@ class WhatOurClientsThink extends Component {
 		 font-family: Nunito;
 		 font-style: normal;
 		 font-weight: bold;
-		 font-size: 20px;
+		 font-size: 24px;
 		 line-height: 126.5%;
 		/* or 25px */
 		 text-align: center;
