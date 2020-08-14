@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import Card from '../../extraPageComponents/Card';
-// import './carouselexp.scss';
-import ArrowLink from '../../extraPageComponents/ArrowLink';
 import Slider from "react-slick"
 import SlideWrapper from "./SlideWrapper";
   

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FormSelect = ({id, handleChange, validation, label, error, name, option1, option2, option3, option4, ...otherprops}) => (
+const FormSelect = ({id, handleChange, validation, valid, label, error, name, option1, option2, option3, option4, ...otherprops}) => (
     <div className='group'>
         {
             label ?

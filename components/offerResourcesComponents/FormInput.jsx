@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FormInput = ({handleChange, validation, error, label, id, phoneExp, ...otherProps}) => (
+const FormInput = ({handleChange, validation, error, label, id, phoneExp, valid, ...otherProps}) => (
     <div className='group'>
         {
             label ?

@@ -207,9 +207,9 @@ class Support extends React.Component {
                 </div>
 
 
-                    <div style={{border:'1px solid #C0C0C0', backgroundColor: 'white !important', margin: '60px 0px'}}></div>
+                    <div style={{border:'1px solid #C0C0C0', margin: '60px 0px'}}></div>
                     
-                    <div style={{backgroundColor: 'white'}}>
+                    <div>
                      <ul className="offer-options">
                          <li onClick={this.onDisplayOffer} className={this.state.offer? "offer-options-style" : null}>Offers</li>
                          <li onClick={this.onDisplayRes} className={this.state.res? "offer-options-style" : null}>Resources</li>
