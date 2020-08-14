@@ -129,13 +129,13 @@ class ProductAndDigital extends React.Component {
                 </div>
 
                 <div>
-                 <ul class="topnav" id="myTopnav">
+                 <ul className="topnav" id="myTopnav">
                             <li> {this.state.active} </li>
                     <li  onClick={this.onDisplayWeb} className={this.state.web? "exp-head-style" : null}>Web | Mobile Apps</li>
                     <li onClick={this.onDisplayDevops} className={this.state.devops? "exp-head-style" : null}>DevOps</li>
                     <li onClick={this.onDisplayAnalytics} className={this.state.analytics? "exp-head-style" : null}>Analytics</li>
                     <li onClick={this.onDisplayPm} className={this.state.pm? "exp-head-style" : null}>Project Management</li>
-                    <li class="icon" onClick={this.myFunction}>
+                    <li className="icon" onClick={this.myFunction}>
                         <FaBars />
                     </li>
                     </ul>

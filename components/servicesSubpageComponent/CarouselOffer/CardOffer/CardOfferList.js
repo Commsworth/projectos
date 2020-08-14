@@ -84,16 +84,16 @@ export class CardOfferList extends Component {
     {
     events.map((user,i) =>{
     return (
-      <div>
+     
            <CardOffer
-        id={events[i].id} 
+        // id={events[i].id} 
         title={events[i].title}
         about={events[i].about} 
         link={events[i].link} 
         img={events[i].img}
         href={events[i].href}
-        key= {i} />
-        </div>
+        key={events[i].id} />
+      
     )
 })
         }
