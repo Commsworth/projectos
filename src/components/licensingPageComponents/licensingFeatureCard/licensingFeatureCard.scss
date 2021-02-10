@@ -1,0 +1,52 @@
+.licensing-feature-card {
+    display: grid;
+    place-items: center;
+    width: 450px;
+    height: 637px;
+    background: #ffffff;
+    border: 0.5px solid #77afe6;
+    box-sizing: border-box;
+    box-shadow: 0px 50px 99px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0px 30px;
+    .feature-card-point {
+        width: 80%;
+    }
+    h3 {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 109%;
+        /* or 26px */
+
+        text-align: center;
+
+        color: #2a2a2a;
+        border-bottom: 0.5px solid #77afe6;
+        // box-sizing: border-box;
+        width: 100%;
+        padding: 0px 0px 25px;
+    }
+    .btn {
+        width: 300px !important;
+        height: 67px;
+        background: #0e82f8;
+        border-radius: 5px;
+    }
+    a {
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 126.5%;
+        /* or 20px */
+
+        text-align: center;
+        text-decoration-line: underline;
+
+        /* Text color */
+
+        color: #1b1b1b;
+    }
+}

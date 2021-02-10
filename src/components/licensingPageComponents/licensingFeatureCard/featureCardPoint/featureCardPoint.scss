@@ -1,0 +1,21 @@
+.feature-card-point {
+    display: inline-flex;
+    img {
+        width: 27px;
+        height: 24px;
+    }
+    p {
+        margin: 0px 0px 0px 25px;
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 151%;
+        /* or 24px */
+
+        /* Text color */
+
+        color: #1b1b1b;
+        width: 265px;
+    }
+}

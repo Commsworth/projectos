@@ -1,0 +1,36 @@
+.about {
+    width: 100%;
+    background: #111517;
+    button {
+        margin: 30px 0px;
+    }
+    .about-cards {
+        // width: 80vw;
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 470px;
+        margin-top: -470px;
+    }
+    .about-bottom {
+        padding-top: 470px;
+        background: #ffffff;
+        .top-heading {
+            color: #1b1b1b;
+        }
+        .screen-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            .screen {
+                width: 541.23px;
+                height: 327.63px;
+                position: static;
+            }
+        }
+    }
+}

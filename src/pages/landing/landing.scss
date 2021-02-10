@@ -1,0 +1,39 @@
+.landing {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    .landing-black {
+        padding-top: 111px;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        background: #111517;
+        margin-bottom: 131px;
+        box-sizing: border-box;
+        @media screen and (max-width: 999px) {
+            margin-bottom: 0px;
+            padding-bottom: 131px;
+            // display: none;
+        }
+    }
+    .landing-white {
+        display: grid;
+        place-items: center;
+        // width: 90%;
+        margin: 20px 0px;
+        box-sizing: border-box;
+    }
+    small {
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 179%;
+        /* identical to box height, or 29px */
+
+        /* Secondary grey */
+
+        color: #d3d3d3;
+        padding: 24px 0px 72.5px;
+    }
+}

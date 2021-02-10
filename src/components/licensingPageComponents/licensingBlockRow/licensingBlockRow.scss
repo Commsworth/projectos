@@ -1,0 +1,38 @@
+.licensing-block-row {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    // width: 80%;
+    // margin: auto;
+    padding: 30px 0%;
+    justify-content: center;
+    cursor: pointer;
+    .plus {
+        width: 14px;
+        height: 14px;
+        margin: 0px 50px;
+    }
+    p {
+        margin: 0px;
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 151%;
+        /* or 27px */
+
+        text-align: center;
+
+        /* Text color */
+
+        color: #1b1b1b;
+        min-width: 200px;
+        width: 40%;
+    }
+    .option1,
+    .option2 {
+        height: 14px;
+        min-width: 150px;
+        width: 25%;
+    }
+}

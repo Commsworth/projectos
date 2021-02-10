@@ -1,37 +1,104 @@
-@font-face {
-  font-family: aribau_grotesk;
-  src: url(assets/aribau_grotesk/Aribau\ Grotesk\ Regular.otf);
-  font-weight: bold;
+.App {
+  text-align: center;
 }
-
-h1,h2,h3,h4,h5,h6,th,button {
-  font-family: 'Nunito', sans-serif;
-}
-p,small,a,td,li,select,option{
-  font-family: aribau_grotesk;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-/* @media screen and (max-width: 570px) { */
-  /* comes into effect for screens less than or equal to 320 pixels */
-/* } */
-/* @media screen and (min-width: 571px)and (max-width: 990px) { */
-    /* comes into effect for screens less than or equal to 320 pixels */
 
-/* } */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 
-/* @font-face {
-font-family: "Proxima Nova";
-src: url("CustomFont.eot");
-src: url("CustomFont.woff") format("woff"),
-url("CustomFont.otf") format("opentype"),
-url("CustomFont.svg#filename") format("svg");
-} */
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
+}
+.middle{
+  min-height: 60vh;
+  margin-bottom: 100px;
+
+}
+@media screen and (min-width: 999px) {
+.mobile-and-tablet-only{
+  display: none !important;
+}
+}
+@media screen and (max-width: 570px) {
+  .pc-and-tablet-only{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 999px) {
+  .pc-only{
+    display: none !important;
+  }
+  .App-header{
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 570px) {
+  .mobile-only{
+    display: none !important;
+  }
+}
+    
+.contact-page, .about, .licensing, .faq{
+  padding-top: 100px;
+}
+.top, .middle, .bottom{
+  width: 100vw !important;
+}
+button{
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@font-face{
+  font-family: 'Aribau Grotesk';
+  src: url('./fonts/Aribau_Grotesk/Aribau\ Grotesk\ Italic.otf');
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Aribau Grotesk';
+  src: url('./fonts/Aribau_Grotesk/Aribau\ Grotesk\ Bold.otf');
+  font-weight: 700;
+}
+@font-face{
+  font-family: 'Aribau Grotesk';
+  src: url('./fonts/Aribau_Grotesk/Aribau\ Grotesk\ Regular.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Aribau Grotesk';
+  src: url('./fonts/Aribau_Grotesk/Aribau\ Grotesk\ Medium.otf');
+  font-weight: 500;
+}
+@font-face{
+  font-family: 'Aribau Grotesk';
+  src: url('./fonts/Aribau_Grotesk/Aribau\ Grotesk\ Regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}

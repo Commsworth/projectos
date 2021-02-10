@@ -1,0 +1,9 @@
+.feature-description{
+    display: flex;
+    overflow: hidden;
+    flex: wrap;
+    .feature-description-screen{
+        position: relative;
+        left: 150px;
+    }
+}

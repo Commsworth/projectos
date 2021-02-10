@@ -1,0 +1,27 @@
+.feature-description-title {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px 40px;
+    place-items: left;
+    h1 {
+        text-align: left;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 119%;
+        /* or 38px */
+
+        /* Text color */
+
+        color: #1b1b1b;
+        margin: 5px 0px;
+    }
+    
+    img{
+        height: 5px;
+        max-width: 83px;
+        margin: 5px 0px;
+    }
+}

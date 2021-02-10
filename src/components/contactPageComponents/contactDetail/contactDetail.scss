@@ -1,0 +1,54 @@
+.contact-detail {
+    display: grid;
+    // place-items: c;
+    .title {
+        /* Address */
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 151%;
+        /* or 24px */
+        text-align: left;
+        letter-spacing: 0.02em;
+
+        /* best grey */
+        color: #818181;
+        height: 30px;
+        margin: 50px 0px 0px;
+    }
+    .content {
+        margin: 0px;
+        text-align: left;
+        /* 225, Ikorodu Crescent, Dolphin Estate, Ikoyi Lagos */
+        width: 222px;
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 145%;
+        /* or 26px */
+
+        /* Text color */
+        color: #1b1b1b;
+    }
+    .link-section{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 0px 20px;
+        .link {
+            // width: 100px;
+            height: 15px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 109%;
+            /* or 15px */
+            text-align: left;
+    
+            color: #0e82f8;
+            margin: 0px;
+        }
+    }
+}

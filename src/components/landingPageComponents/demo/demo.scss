@@ -1,0 +1,60 @@
+.demo {
+    background: #0e82f8;
+    border-radius: 10px;
+    width: 662px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    
+    .demo-input{
+        height: 60px;    
+        border-right: 3px solid #ffffff;
+        display: flex;
+        align-items: center;
+        input {
+            background: transparent;
+            font-family: Aribau Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            width: 400px;
+            border: none;
+            margin: 0px 0px 0px 0px;
+            padding: 20px;
+            font-size: 20px;
+            outline: none;
+            color: #ffffff;
+            &::placeholder {
+                font-family: Aribau Grotesk;
+                font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 109%;
+            /* or 17px */
+            
+            // text-align: center;
+            letter-spacing: 0.075em;
+            
+            color: #ffffff;
+            
+            opacity: 0.5;
+        }
+    }
+    
+        }
+    
+    button {
+        border: none;
+        margin: 0px 0px 0px 54px;
+        background: transparent;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 151%;
+        /* or 36px */
+        
+        text-align: center;
+        
+        color: #ffffff;
+    }
+}

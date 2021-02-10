@@ -1,0 +1,43 @@
+.about-card {
+    width: 334px;
+    height: 292px;
+    background: #ffffff;
+    box-shadow: 0px 25px 96px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 27px;
+    display: grid;
+    box-sizing: border-box;
+    padding: 27px;
+    
+    img {
+        height: 50px;
+        width: 30px;
+    }
+    h5,
+    p {
+        text-align: left;
+    }
+    h5 {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 119%;
+        /* identical to box height, or 24px */
+
+        color: #2a2a2a;
+    }
+    p {
+        margin: 0px;
+        font-family: Aribau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 163%;
+        /* or 23px */
+
+        /* best grey */
+
+        color: #818181;
+    }
+}

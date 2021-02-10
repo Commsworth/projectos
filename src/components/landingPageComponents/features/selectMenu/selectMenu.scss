@@ -1,0 +1,31 @@
+.select-menu {
+    margin: 20px 50px 0px;
+    border-bottom: 1px solid #e6e6e6;
+    button {
+        padding: 10px;
+        margin: 0px 5px 0px;
+        width: 220px;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid transparent;
+        font-family: Nunito;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 600;
+        color: #818181;
+        line-height: 151%;
+        /* or 27px */
+        
+        text-align: center;
+        
+    }
+    button:active,
+    button:focus,
+    button:hover {
+        font-weight: bold;
+        color: #2a2a2a;
+        border-bottom: 3px solid #0e82f8;
+        border-radius: 200px 200px 0px 0px;
+    }
+}

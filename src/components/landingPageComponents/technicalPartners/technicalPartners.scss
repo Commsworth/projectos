@@ -1,0 +1,21 @@
+.technical-partners{
+    .technical-partners-img{
+        img{
+            width: 160px;
+            margin: 10px 35px;
+        }
+    }
+    .technical-partners-switch{
+        button{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 0px;
+            background-color: #ECEBED;
+            margin: 0px 5px;
+            &.active{
+                background-color: #0E82F8;
+            }
+        }
+    }
+}

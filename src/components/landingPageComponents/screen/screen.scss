@@ -1,0 +1,15 @@
+.screen {
+    width: 60vmax;
+    max-width: 860px;
+    height: 523px;
+    background: #ffffff;
+    box-shadow: 0px 70px 99px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+    top: 131px;
+    margin-top: -70px;
+
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
+}

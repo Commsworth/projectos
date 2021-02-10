@@ -1,0 +1,52 @@
+.contact-page {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    .contact-page-left {
+        width: 30%;
+        min-width: 300px;
+        // display: grid;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        h1 {
+            width: 144px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 109%;
+            /* identical to box height, or 44px */
+            
+            /* Text color */
+            color: #1b1b1b;
+            margin: 50px 0px 0px;
+        }
+        .contact-page-left-flex {
+            display: flex;
+        }
+        small {
+            font-family: Aribau Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 179%;
+            /* or 18px */
+            
+            color: #c5c5c5;
+            text-align: left;
+        }
+    }
+    .contact-page-right {
+        width: 40%;
+        min-width: 500px;
+        display: grid;
+        // place-items: end;
+
+        button{
+            margin-top: 70px;
+
+        }
+    }
+}

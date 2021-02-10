@@ -1,0 +1,66 @@
+.licensing {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    .licensing-heading{
+        // padding-top: 111px;
+        width: 418px;
+    }
+    .block {
+        width: 80%;
+        margin: 100px auto;
+        box-shadow: 0px 7px 39px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        .block-heading {
+            padding: 50px 0px 30px 0px;
+            display: inline-flex;
+            // margin-left: 50%;
+            width: 100%;
+            justify-content: flex-end;
+            h3 {
+                width: 25% !important;
+                min-width: 150px;
+                margin: 0px;
+            }
+        }
+        .block-subheading{
+            padding-left: 25%;
+            border: 1px solid #DEDEDE;
+            border-left: none;
+            border-right: none;
+            h3{
+                text-align: left;
+            }
+            // display: inline-flex;
+        }
+        .btn {
+            width: 20% !important;
+            min-width: 150px;
+            margin: 0px 20px;
+        }
+    }
+    h3 {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 151%;
+        /* or 36px */
+
+        text-align: center;
+
+        /* Text color */
+
+        color: #1b1b1b;
+    }
+    .top-heading{
+        color: #2A2A2A;
+    }
+    .top-subheading{
+        color: #1b1b1b;
+    }
+    .feature-cards{
+        display: flex;
+        // justify-content: space-between;
+    }
+}
