@@ -1,4 +1,5 @@
 
+
 # Frontend Build
 docker build -t commsworthdevops/commsworth:latest -t commsworthdevops/commsworth:$SHA -f  ./Dockerfile .
 
@@ -10,6 +11,6 @@ docker push commsworthdevops/commsworth:$SHA
 
 # Apply kubernetes configuration
 kubectl apply -f  k8s
-kubectl set image deployments/projectos-deployment client=commsworthdevops/commsworth:$SHA
+kubectl set image deployments/commsworth-deployment commsworth=commsworthdevops/commsworth:$SHA
 
 
