@@ -18,7 +18,7 @@ import Prismic from 'prismic-javascript';
 import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
 export default function Home({ landing }) {
-  console.log(landing[3], "landing")
+  // console.log(landing[3], "landing")
   const [
     header,
     carousel,
@@ -70,7 +70,7 @@ export async function getServerSideProps() {
     Prismic.Predicates.at("document.type", "landing")
   )
 
-  console.log(landing.results[0].data.body);
+  // console.log(landing.results[0].data.body);
 
   return {
     props: {
