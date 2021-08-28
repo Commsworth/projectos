@@ -6,8 +6,10 @@ import { useState } from 'react';
 import ServicesWeOffer from '../components/servicesPageComponents/ServicesWeOffer';
 import { WhyChooseUs } from '../components/servicesPageComponents/WhyChooseUs';
 import Socials from '../components/extraPageComponents/Socials';
+import Prismic from 'prismic-javascript';
+import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
-export default function Services() {
+export default function Services({solutions, offers, why}) {
   return (
     <div className="landing-container">
       <Head>
@@ -18,13 +20,13 @@ export default function Services() {
 
       <main>
         <div className="black-margin-top services-main-div">
-        <Heading text="Digital Solutions to accelerate your business."/>
-        <TitleDiv bottom="Digital Solutions tailored for your business"/>
-        <BlueButton text="Learn More" href="/services"/>
+        <Heading text={solutions.primary.heading[0].text}/>
+        <TitleDiv bottom={solutions.primary.text[0].text}/>
+        <BlueButton text={solutions.primary.link_text} href="/services"/>
         </div>
         <h3 className="offer">Services on Offer</h3>
-        <ServicesWeOffer/>
-        <WhyChooseUs/>
+        <ServicesWeOffer offers={offers} />
+        <WhyChooseUs why={why} />
         <Socials/>
       </main>
 
@@ -62,3 +64,18 @@ export default function Services() {
     </div>
   )
 }
+
+export async function getServerSideProps() {
+  const solutions = await Client().query(
+    Prismic.Predicates.at("document.type", "solutions")
+  )
+
+  // console.log(solutions.results[0].data.body[1])
+
+  return {
+    props: {
+      solutions: solutions.results[0].data.body[0],
+      offers: solutions.results[0].data.body[1].items,
+      why: solutions.results[0].data.body[2]
+    }
+  }}

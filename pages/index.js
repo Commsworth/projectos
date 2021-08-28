@@ -18,7 +18,7 @@ import Prismic from 'prismic-javascript';
 import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
 export default function Home({ landing }) {
-  console.log(landing[6], "landing")
+  // console.log(landing[6], "landing")
   const [
     header,
     carousel,

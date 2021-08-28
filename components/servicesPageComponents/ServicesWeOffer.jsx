@@ -3,51 +3,52 @@ import ArrowLink from '../extraPageComponents/ArrowLink';
 import Card from '../extraPageComponents/Card';
 
 
-const ServicesWeOffer = () => {
+const ServicesWeOffer = ({offers}) => {
+    // console.log(offers[0].text[0].text)
     const [display, setDisplay] = useState(true);
     return (
         <div>
                     <div className="about-cards ">
                         <Card
-                            title={<img src="/servicesPageImages/svgs/cards/devops.svg" alt="devops" />}
-                            subTitle="DevOps & Analytics"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/devops" text="Explore" />}
+                            title={<img src={offers[0].icon.url} alt="devops" />}
+                            subTitle={offers[0].heading[0].text}
+                            content={offers[0].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[0].link_text} />}
                         />
                         <Card
-                            title={<img src="/servicesPageImages/svgs/cards/support.svg" alt="devops" />}
-                            subTitle="Support"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/support" text="Explore" />}
+                            title={<img src={offers[1].icon.url} alt="devops" />}
+                            subTitle={offers[1].heading[0].text}
+                            content={offers[1].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[1].link_text} />}
                         />
                         <Card
-                            title={<img src="/servicesPageImages/svgs/cards/business.svg" alt="devops" />}
-                            subTitle="Business Continuity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/business-continuity" text="Explore" />}
+                            title={<img src={offers[2].icon.url} alt="devops" />}
+                            subTitle={offers[2].heading[0].text}
+                            content={offers[2].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[2].link_text} />}
                         />
                         <Card
-                            title={<img src="/servicesPageImages/svgs/cards/product.svg" alt="devops" />}
-                            subTitle="Product & Digital Strategy"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/product-digital" text="Explore" />}
+                            title={<img src={offers[3].icon.url} alt="devops" />}
+                            subTitle={offers[3].heading[0].text}
+                            content={offers[3].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[3].link_text} />}
                         />
                         <Card
-                            title={<img src="/servicesPageImages/svgs/cards/businessautomation.svg" alt="devops" />}
-                            subTitle="Business Automation and Productivity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/business-automation" text="Explore" />}
+                            title={<img src={offers[4].icon.url} alt="devops" />}
+                            subTitle={offers[4].heading[0].text}
+                            content={offers[4].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[4].link_text} />}
                         />
                         {display ? <Card
-                            title={<img src="/servicesPageImages/svgs/cards/cybersecurity.svg" alt="devops" />}
-                            subTitle="Cybersecurity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/cybersecurity" text="Explore" />}
+                            title={<img src={offers[5].icon.url} alt="devops" />}
+                            subTitle={offers[5].heading[0].text}
+                            content={offers[5].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[5].link_text} />}
                         /> : <Card
-                                title={<img src="/servicesPageImages/svgs/cards/infrastructure.svg" alt="devops" />}
-                                subTitle="Infrastructure"
-                                content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                                link={<ArrowLink sublink="/infrastructure" text="Explore" />}
+                            title={<img src={offers[6].icon.url} alt="devops" />}
+                            subTitle={offers[6].heading[0].text}
+                            content={offers[6].text[0].text}
+                            link={<ArrowLink sublink="/devops" text={offers[6].link_text} />}
                             />
                         }
           </div>

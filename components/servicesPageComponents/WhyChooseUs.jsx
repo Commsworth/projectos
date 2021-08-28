@@ -4,42 +4,52 @@
 // import sup from 'pngs/sup.png'
 // import './why.scss';
 
-export const WhyChooseUs =()=>(
+export const WhyChooseUs =({why})=>(
 
     <div className="center-div">
-<h1 className="h1">Why Choose Us?</h1>
+         {console.log(why.items[0].text[0].text)}
+<h1 className="h1">{why.primary.heading[0].text}</h1>
 <div className="why">
     <div className="why0">
         <div className="why1">
-        <div className="bkg"><img src="/servicesPageImages/pngs/icons/exp.png" alt="" /></div>
+        <div className="bkg"><img src={why.items[0].icon.url} alt="" /></div>
         <div>
-            <h4>Extensive Competencies</h4>
-            <p>Our Multi-faceted management team is powered by top-tier industry experts with 100+ years of experience across various ICT domains.
+            <h4>
+                {why.items[0].heading[0].text}
+            </h4>
+            <p>
+                {why.items[0].text[0].text}
             </p>
         </div>
         </div>
 
         <div className="why1">
-        <div className="bkg"><img src="/servicesPageImages/pngs/icons/exp.png" alt="" /></div>
+        <div className="bkg"><img src={why.items[1].icon.url} alt="" /></div>
         <div className="text">
-            <h4>Disruptive Initiatives </h4>
-            <p>Commsworth’s expertise delivers game-changing technology initiatives as key business enablers to digitally disrupt industries.
+            <h4>
+            {why.items[1].heading[0].text}
+            </h4>
+            <p>
+            {why.items[1].text[0].text}
             </p>
         </div>
         </div>
 
         <div className="why1">
-        <div className="bkg"><img src="/servicesPageImages/pngs/icons/sup.png" alt="" /></div>
+        <div className="bkg"><img src={why.items[2].icon.url} alt="" /></div>
         <div>
-            <h4>Premiere Support</h4>
-            <p>Our Multi-faceted management team is powered by top-tier industry experts with 100+ years of experience across various ICT domains.
+            <h4>
+            {why.items[2].heading[0].text}
+            </h4>
+            <p>
+            {why.items[2].text[0].text}
             </p>
         </div>
         </div>
     </div>
 
     <div className="why2">
-    <img src="/servicesPageImages/pngs/whychooseus/big.png" alt=""/>
+    <img src={why.primary.image.url} alt=""/>
     </div>
 
 </div>
