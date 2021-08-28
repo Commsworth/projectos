@@ -18,7 +18,7 @@ import Prismic from 'prismic-javascript';
 import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
 export default function Home({ landing }) {
-  // console.log(landing[3], "landing")
+  console.log(landing[6], "landing")
   const [
     header,
     carousel,
@@ -48,9 +48,9 @@ export default function Home({ landing }) {
         <WorkWith href={PRISMIC_link(about.primary)} text={PRISMIC_link_text(about.primary)} />
         <TitleDiv top={PRISMIC_heading(about.primary)} bottom="" />
         <OurServices cards={services.items} />
-        <TheAcademy />
-        <TrustedBy />
-        <WhatOurClientsThink />
+        <TheAcademy primary={academy.primary} cards={academy.items} />
+        <TrustedBy primary={trusted.primary} images={trusted.items} />
+        <WhatOurClientsThink  primary={clients.primary} items={clients.items}/>
         <Socials icons="white" />
       </main>
 

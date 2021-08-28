@@ -2,27 +2,33 @@ import React from 'react';
 import TitleDiv from '../extraPageComponents/TitleDiv';
 import Card from '../extraPageComponents/Card';
 import ArrowLink from '../extraPageComponents/ArrowLink';
+import { PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text, PRISMIC_text } from '../../prismic-configuration';
 
 
-const TheAcademy = () => {
-    return (
-        <div className="div3">
-            <h3><TitleDiv top="The Academy" position="left" /></h3>
-            <h3 style={{ fontWeight: "normal" }}>Learn from the best at</h3>
-            <h3 style={{ fontWeight: "bold" }}>Commsworth Academy</h3>
-            <div className="div3-grid">
-                <Card title="Learn" subTitle="Web Design" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-                <Card title="Learn" subTitle="FrontEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-                <Card title="Learn" subTitle="BackEnd Dev" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-                <Card title="Learn" subTitle="Python" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit." link={<ArrowLink text="Enroll" />} />
-            </div>
-            <div className="mobile-tablet">
-              <p style={{fontSize: "15px", color: 'white', textAlign: 'center'}}>◀ Swipe to see more ▶</p>
-            </div>
+const TheAcademy = ({ primary, cards }) => {
+  return (
+    <div className="div3">
+      <h3><TitleDiv top={PRISMIC_heading(primary)} position="left" /></h3>
+      <h3 style={{ fontWeight: "normal" }}>{PRISMIC_heading2(primary).split("\n")[0]}</h3>
+      <h3 style={{ fontWeight: "bold" }}>{PRISMIC_heading2(primary).split("\n")[1] && PRISMIC_heading2(primary).split("\n")[1]}</h3>
+      <div className="div3-grid">
+        {cards.map(item => {
+          return <Card
+            title={PRISMIC_heading(item)}
+            subTitle={PRISMIC_heading2(item)}
+            content={PRISMIC_text(item)}
+            href={PRISMIC_link(item)}
+            link={<ArrowLink text={PRISMIC_link_text(item)} />} />
+        })
+        }
+      </div>
+      <div className="mobile-tablet">
+        <p style={{ fontSize: "15px", color: 'white', textAlign: 'center' }}>◀ Swipe to see more ▶</p>
+      </div>
 
 
-            <style jsx>
-                {`
+      <style jsx>
+        {`
             .div3{
           background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 43.14%, rgba(17, 21, 23, 0) 78.53%), url('/landingPageImages/pngs/academy.png');
           background-size: cover;
@@ -156,9 +162,9 @@ const TheAcademy = () => {
             }
         }
             `}
-            </style>
-        </div>
-    );
+      </style>
+    </div>
+  );
 };
 
 export default TheAcademy;
