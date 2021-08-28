@@ -1,11 +1,13 @@
 import React from 'react';
-import Link from 'next/link';     
+import Link from 'next/link';
 
-const BlueButton = ({text, href}) => {
-    return (
-      <div className="blue-button">
-        <Link href={href}>    
+const BlueButton = ({ text, href }) => {
+  return (
+    <div className="blue-button">
+      <Link href={href}>
+        <a>
         <button className="heading-button">{text}</button>
+        </a>
       </Link>
       <style jsx>
         {`
@@ -34,9 +36,9 @@ const BlueButton = ({text, href}) => {
           background-color: #5cadff;
         }
         `}
-        </style>
-      </div>
-    );
+      </style>
+    </div>
+  );
 };
 
 export default BlueButton;
