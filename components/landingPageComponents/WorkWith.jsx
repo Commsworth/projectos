@@ -1,10 +1,15 @@
+import Link from 'next/link';
 import React from 'react';
 import ArrowLink from '../extraPageComponents/ArrowLink';
 
-const WorkWith = () => {
+const WorkWith = ({ href="", text }) => {
     return (
         <div className="work-with">
-        <ArrowLink text="Work with us" />
+            <Link href={href}>
+                <a>
+                    <ArrowLink text={text} />
+                </a>
+            </Link>
             <style jsx>
                 {`
                 .work-with{

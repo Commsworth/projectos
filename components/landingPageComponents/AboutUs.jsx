@@ -1,63 +1,79 @@
 import React, { useEffect, useState } from 'react';
+import { PRISMIC_heading, PRISMIC_image, PRISMIC_text } from '../../prismic-configuration';
 import Card from '../extraPageComponents/Card';
-import { element } from 'prop-types';
+// import { element } from 'prop-types';
 
-const AboutUs = () => {
-    const [scroll, setScroll] = useState(0);
-    const [scrollWidth, setScrollWidth] = useState(0);
-    const eff = useEffect(() => {
-    })
-    return (
-        <div className="about-main">
+const AboutUs = ({ cards }) => {
+  const [scroll, setScroll] = useState(0);
+  const [scrollWidth, setScrollWidth] = useState(0);
+  const eff = useEffect(() => {
+  })
+  return (
+    <div className="about-main">
 
-            <div className="about" onScroll={e => {
-                setScrollWidth(e.target.scrollWidth);
-                setScroll(scrollWidth / e.target.scrollLeft);
-            }}>
-                <div className="about-large">
-                    <Card title="Who we are" background="/landingPageImages/pngs/Tunnel.png" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="Commsworth is a premium ICT consultancy partner with dedicated specialty in delivering end to end tech-driven business initiatives and solutions to her teeming clients." content2="The Commsworth arsenal comprises of a school of top-tier ICT experts with seasoned competencies across various technologies, including Infrastructure, Cybersecurity, DevOps and Analytics, Business Automation and Productivity, Business Continuity, Product and Digital Strategy, and Managed Services." />
+      <div className="about" onScroll={e => {
+        setScrollWidth(e.target.scrollWidth);
+        setScroll(scrollWidth / e.target.scrollLeft);
+      }}>
+        <div className="about-large">
+          <Card title={cards[0].heading[0]?.text || ""} background={cards[0].image?.url || ""} subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content={cards[0].text[0]?.text || ""} content2={cards[0].text[1]?.text || ""} />
+        </div>
+        <div className="about--second">
+          <div className="about--second-top">
+            <Card title={cards[1].heading[0]?.text || ""} backcolour={cards[1].image?.url || "#212425"} subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content={cards[1].text[0]?.text || ""}
+              content2={
+                <div className="about-ul">
+                  <ul key={Math.random()}>
+                    {cards[1].text.slice(0, Math.round(cards[1].text.length / 2)).filter(e => e.type === "list-item").map(item => {
+                      return (
+                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>{item?.text || " "}</li>
+                      )
+
+                    }
+                    )}
+                  </ul>
+                  <ul key={Math.random()}>
+                    {cards[1].text.slice(Math.round(cards[1].text.length / 2)).filter(e => e.type === "list-item").map(item => {
+                      return (
+                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>{item?.text || " "}</li>
+                      )
+
+                    }
+                    )}
+                  </ul>
                 </div>
-                <div className="about--second">
-                    <div className="about--second-top">
-                        <Card title="Core Values" backcolour="#212425" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="Our Core Values define our personality and guides our relationship with staff, clients and partners. These include;​"
-                            content2={
-                                <div className="about-ul">
-                                    <ul>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Customer Driven</li>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Value Centric</li>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Detail Oriented</li>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Quality of Service</li>
-                                    </ul>
-                                    <ul>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Teamwork and Collaboration</li>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Driving mental productivity</li>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Innovation Driven</li>
-                                        <li style={{ listStyleImage: "url('/landingPageImages/pngs/liststyle.png')" }}>Integrity</li>
-                                    </ul>
-                                </div>
-                            }
-                        />
-                    </div>
-                    <div className="about--second--small">
-                        <Card title="Our Mission" backcolour="#205674" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets​" />
-                        <Card title="Our Vision" background="/landingPageImages/pngs/vr.png" subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" content="To enable our partners maximize best-in-class technology in attaining business goals at the minimal budgets" />
-                    </div>
-                </div>
-            </div>
-            <div className="indicators">
-                <svg className={`${scroll > 200||scroll===0 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                </svg>
-                <svg className={`${scroll < 4 && scroll > 2.9 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                </svg>
-                <svg className={`${scroll < 2 && scroll > 1 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                </svg>
-            </div>
+              }
+            />
+          </div>
+          <div className="about--second--small">
+            <Card 
+            title={PRISMIC_heading(cards[2])} 
+            backcolour={PRISMIC_image(cards[2],"#205674")} 
+            subIcon="/landingPageImages/pngs/icons/bluesemicircle.png" 
+            content={PRISMIC_text(cards[2])} 
+            />
+            <Card 
+            title={PRISMIC_heading(cards[3])} 
+            background={PRISMIC_image(cards[3])} 
+            subIcon={"/landingPageImages/pngs/icons/bluesemicircle.png" }
+            content={PRISMIC_text(cards[3])} />
+          </div>
+        </div>
+      </div>
+      <div className="indicators">
+        <svg className={`${scroll > 200 || scroll === 0 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+        </svg>
+        <svg className={`${scroll < 4 && scroll > 2.9 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+        </svg>
+        <svg className={`${scroll < 2 && scroll > 1 ? 'svg' : ''} svg-margin`} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+        </svg>
+      </div>
 
-            <style jsx>
-                {`
+      <style jsx>
+        {`
                 @media only screen and (min-width: 991px) {
   .about{
     display: -webkit-box;
@@ -291,9 +307,9 @@ const AboutUs = () => {
 
 }
                 `}
-            </style>
-        </div>
-    );
+      </style>
+    </div>
+  );
 };
 
 export default AboutUs;
