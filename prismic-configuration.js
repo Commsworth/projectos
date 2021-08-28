@@ -27,11 +27,20 @@ export const PRISMIC_heading = (item, index) => {
 export const PRISMIC_heading2 = (item, index) => {
     return item?.heading2[index = 0]?.text || " "
 }
+export const PRISMIC_name = (item, index) => {
+    return item?.name[index = 0]?.text || " "
+}
 export const PRISMIC_text = (item, index) => {
     return item?.text[index = 0]?.text || " "
 }
+export const PRISMIC_message = (item, index) => {
+    return item?.message[index = 0]?.text || " "
+}
 export const PRISMIC_link_text = (item, index) => {
     return item?.link_text || " "
+}
+export const PRISMIC_role = (item, index) => {
+    return item?.role || " "
 }
 export const PRISMIC_link = (item, index) => {
     return item?.link?.url || " "

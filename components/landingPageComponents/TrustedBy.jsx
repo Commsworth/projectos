@@ -1,13 +1,16 @@
 import React from 'react';
+import { PRISMIC_heading, PRISMIC_image } from '../../prismic-configuration';
 import PhotoGallery from '../extraPageComponents/PhotoGallery';
 
 
-const TrustedBy = () => {
+const TrustedBy = ({primary,images}) => {
     return (
         <div className="cli">
-            <h5>Trusted by top brands across various industries, <br /> just to name a few</h5>
+            <h5>{PRISMIC_heading(primary)}</h5>
             <div className="brand">
-                <PhotoGallery top={["/landingPageImages/svgs/trustedby/7up.svg","/landingPageImages/svgs/trustedby/mo.svg","/landingPageImages/svgs/trustedby/wa.svg","/landingPageImages/svgs/trustedby/ap.svg"]} bottom={["/landingPageImages/svgs/trustedby/waec.svg","/landingPageImages/svgs/trustedby/ns.svg","/landingPageImages/svgs/trustedby/nm.svg","/landingPageImages/svgs/trustedby/home.svg"]} />
+                <PhotoGallery 
+                top={images.slice(0,Math.round(images.length/2)).map(item=>PRISMIC_image(item))} 
+                bottom={images.slice(Math.round(images.length/2)).map(item=>PRISMIC_image(item))} />
             </div>
 
             <style jsx>
@@ -23,6 +26,7 @@ const TrustedBy = () => {
                 .cli h5 {
                     color: #111517;
                     font-size: 24px;
+                    max-width:550px
                 }
                 .brand {
                     //padding-bottom: 47px;
