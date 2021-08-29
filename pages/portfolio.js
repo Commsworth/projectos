@@ -3,8 +3,11 @@ import Heading from '../components/extraPageComponents/Heading';
 import CardDiv from '../components/portfolioPageComponents/CardDiv';
 import ArrowLink from '../components/extraPageComponents/ArrowLink';
 import Socials from '../components/extraPageComponents/Socials';
+import Prismic from 'prismic-javascript';
+import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
-export default function Portfolio() {
+
+export default function Portfolio({portfolio}) {
   const data = [
     {
       title:"Business Continuity Assessment Program (BCAP)",
@@ -34,23 +37,23 @@ export default function Portfolio() {
 
       <main className="black-margin-top">
           <CardDiv
-          title="We build"
-          subtitle="digital products"
-          content="We are focused on developing data-oriented applications tailored to solve a vast array of business requirements."
+          title={portfolio.items[0].heading[0].text}
+          // subtitle={}
+          content={portfolio.items[0].text[0].text}
           link=""
-          image="/portfolioPageImages/pngs/imagecard/SIWP.png"
+          image={portfolio.items[0].image.url}
           />
-          {data.map(each=>{
-            return(
+          {portfolio.items.map((each, i)=>{
+                if(portfolio.items.indexOf(each) > 0){ return(
           <CardDiv
-          title={each.title}
+          title={each.heading[0].text}
           subIcon="/portfolioPageImages/pngs/carddiv/semicircle.png"
-          content={each.content}
-          link={<ArrowLink sublink={each.link} text="Visit Web App"/>}
-          image="/portfolioPageImages/pngs/imagecard/SIWP.png"
+          content={each.text[0].text}
+          link={<ArrowLink sublink={""} text={each.link_text}/>}
+          image={each.image.url}
           background="white"
           />
-            )
+            )}
           })}
           <Socials/>
       </main>
@@ -64,3 +67,16 @@ export default function Portfolio() {
     </div>
   )
 }
+
+export async function getServerSideProps() {
+  const portfolio = await Client().query(
+    Prismic.Predicates.at("document.type", "portfolio")
+  )
+
+  // console.log(portfolio.results[0].data.body[0].items[0])
+
+  return {
+    props: {
+      portfolio: portfolio.results[0].data.body[0]
+    }
+  }}
