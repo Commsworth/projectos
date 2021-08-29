@@ -7,27 +7,33 @@ import ServicesWeOffer from '../components/servicesPageComponents/ServicesWeOffe
 import { WhyChooseUs } from '../components/servicesPageComponents/WhyChooseUs';
 import Socials from '../components/extraPageComponents/Socials';
 import Prismic from 'prismic-javascript';
-import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
+import { Client, PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
-export default function Services({solutions, offers, why}) {
+export default function Services({ solutions }) {
+  console.log(solutions[2], "landing")
+  const [
+    header,
+    services,
+    choose
+  ] = solutions;
   return (
     <div className="landing-container">
       <Head>
-        <title>Commsworth Services Page</title>
+        <title>Commsworth || Services Page</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
 
       <main>
         <div className="black-margin-top services-main-div">
-        <Heading text={solutions.primary.heading[0].text}/>
-        <TitleDiv bottom={solutions.primary.text[0].text}/>
-        <BlueButton text={solutions.primary.link_text} href="/services"/>
+          <Heading text={PRISMIC_heading(header.primary)} />
+          <TitleDiv bottom={PRISMIC_heading2(header.primary)} />
+          <BlueButton text={PRISMIC_link_text(header.primary)} href={PRISMIC_link(header.primary)} />
         </div>
-        <h3 className="offer">Services on Offer</h3>
-        <ServicesWeOffer offers={offers} />
-        <WhyChooseUs why={why} />
-        <Socials/>
+        <h3 className="offer">{PRISMIC_heading(services.primary)}</h3>
+        <ServicesWeOffer cards={services.items} />
+        <WhyChooseUs primary={choose.primary} cards={choose.items} />
+        <Socials />
       </main>
 
       <style jsx>{`
@@ -70,12 +76,11 @@ export async function getServerSideProps() {
     Prismic.Predicates.at("document.type", "solutions")
   )
 
-  // console.log(solutions.results[0].data.body[1])
+  console.log(solutions.results[0].data.body);
 
   return {
     props: {
-      solutions: solutions.results[0].data.body[0],
-      offers: solutions.results[0].data.body[1].items,
-      why: solutions.results[0].data.body[2]
+      solutions: solutions.results[0].data.body
     }
-  }}
+  }
+}

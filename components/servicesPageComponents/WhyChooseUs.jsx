@@ -4,55 +4,34 @@
 // import sup from 'pngs/sup.png'
 // import './why.scss';
 
-export const WhyChooseUs =({why})=>(
+import { PRISMIC_heading, PRISMIC_icon, PRISMIC_image, PRISMIC_text } from "../../prismic-configuration";
+
+export const WhyChooseUs = ({ primary, cards }) => (
 
     <div className="center-div">
-<h1 className="h1">{why.primary.heading[0].text}</h1>
-<div className="why">
-    <div className="why0">
-        <div className="why1">
-        <div className="bkg"><img src={why.items[0].icon.url} alt="" /></div>
-        <div>
-            <h4>
-                {why.items[0].heading[0].text}
-            </h4>
-            <p>
-                {why.items[0].text[0].text}
-            </p>
-        </div>
-        </div>
+        <h1 className="h1">{PRISMIC_heading(primary)}</h1>
+        <div className="why">
+            <div className="why0">
+                {
+                    cards.map(item => {
+                        return <div className="why1">
+                            <div className="bkg"><img src={PRISMIC_icon(item)} alt="reason-icon" /></div>
+                            <div>
+                                <h4>{PRISMIC_heading(item)}</h4>
+                                <p>{PRISMIC_text(item)}
+                                </p>
+                            </div>
+                        </div>
+                    })
+                }
+            </div>
 
-        <div className="why1">
-        <div className="bkg"><img src={why.items[1].icon.url} alt="" /></div>
-        <div className="text">
-            <h4>
-            {why.items[1].heading[0].text}
-            </h4>
-            <p>
-            {why.items[1].text[0].text}
-            </p>
-        </div>
-        </div>
+            <div className="why2">
+                <img src={PRISMIC_image(primary)} alt="" />
+            </div>
 
-        <div className="why1">
-        <div className="bkg"><img src={why.items[2].icon.url} alt="" /></div>
-        <div>
-            <h4>
-            {why.items[2].heading[0].text}
-            </h4>
-            <p>
-            {why.items[2].text[0].text}
-            </p>
         </div>
-        </div>
-    </div>
-
-    <div className="why2">
-    <img src={why.primary.image.url} alt=""/>
-    </div>
-
-</div>
-<style jsx>{`
+        <style jsx>{`
     .center-div{
         width: 100vw;
         //padding: 0vh 10vw;
@@ -193,6 +172,6 @@ export const WhyChooseUs =({why})=>(
     }
     `}
 
-</style>
-</div>
+        </style>
+    </div>
 )

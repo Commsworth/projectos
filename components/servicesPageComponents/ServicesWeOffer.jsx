@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { PRISMIC_heading, PRISMIC_icon, PRISMIC_link, PRISMIC_link_text, PRISMIC_text } from '../../prismic-configuration';
 import ArrowLink from '../extraPageComponents/ArrowLink';
 import Card from '../extraPageComponents/Card';
 
@@ -7,63 +8,31 @@ const ServicesWeOffer = ({offers}) => {
     const [display, setDisplay] = useState(true);
     return (
         <div>
-                    <div className="about-cards ">
-                        <Card
-                            title={<img src={offers[0].icon.url} alt="devops" />}
-                            subTitle={offers[0].heading[0].text}
-                            content={offers[0].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[0].link_text} />}
+            <div className="about-cards ">
+                {
+                    cards.map(item => {
+                        return <Card
+                            title={<img src={PRISMIC_icon(item)} alt="service icon" />}
+                            subTitle={PRISMIC_heading(item)}
+                            content={PRISMIC_text(item)}
+                            link={<ArrowLink sublink={PRISMIC_link(item)} text={PRISMIC_link_text(item)} />}
                         />
-                        <Card
-                            title={<img src={offers[1].icon.url} alt="devops" />}
-                            subTitle={offers[1].heading[0].text}
-                            content={offers[1].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[1].link_text} />}
-                        />
-                        <Card
-                            title={<img src={offers[2].icon.url} alt="devops" />}
-                            subTitle={offers[2].heading[0].text}
-                            content={offers[2].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[2].link_text} />}
-                        />
-                        <Card
-                            title={<img src={offers[3].icon.url} alt="devops" />}
-                            subTitle={offers[3].heading[0].text}
-                            content={offers[3].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[3].link_text} />}
-                        />
-                        <Card
-                            title={<img src={offers[4].icon.url} alt="devops" />}
-                            subTitle={offers[4].heading[0].text}
-                            content={offers[4].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[4].link_text} />}
-                        />
-                        {display ? <Card
-                            title={<img src={offers[5].icon.url} alt="devops" />}
-                            subTitle={offers[5].heading[0].text}
-                            content={offers[5].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[5].link_text} />}
-                        /> : <Card
-                            title={<img src={offers[6].icon.url} alt="devops" />}
-                            subTitle={offers[6].heading[0].text}
-                            content={offers[6].text[0].text}
-                            link={<ArrowLink sublink="/devops" text={offers[6].link_text} />}
-                            />
-                        }
-          </div>
-                    <div className='serv'>
-                        <svg className={display ? 'services-svg' : ''} onClick={() =>setDisplay(true )} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                        </svg>
+                    })
+                }
+            </div>
+            <div className='serv'>
+                <svg className={display ? 'services-svg' : ''} onClick={() => setDisplay(true)} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+                </svg>
 
-                        <svg className={display ? ' ' : 'services-svg'} onClick={() =>setDisplay(false )} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                        </svg>
+                <svg className={display ? ' ' : 'services-svg'} onClick={() => setDisplay(false)} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+                </svg>
 
 
-                    </div>
-                    <style jsx>
-                        {`
+            </div>
+            <style jsx>
+                {`
                         .about-cards{
                         display: flex;
                         flex-wrap: wrap;
@@ -154,7 +123,7 @@ const ServicesWeOffer = ({offers}) => {
                         }
                         }
                         `}
-                    </style>            
+            </style>
         </div>
     );
 };

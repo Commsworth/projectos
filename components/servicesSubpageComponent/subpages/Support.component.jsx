@@ -3,6 +3,7 @@ import Card from '../../extraPageComponents/Card'
 import ArrowLink from '../../extraPageComponents/ArrowLink';
 import CarouselExp from '../CarouselExp/CarouselExp'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
+import React from 'react';
 import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
 import Dropdownn from '../Dropdown'
