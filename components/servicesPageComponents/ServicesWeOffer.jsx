@@ -4,7 +4,6 @@ import Card from '../extraPageComponents/Card';
 
 
 const ServicesWeOffer = ({offers}) => {
-    // console.log(offers[0].text[0].text)
     const [display, setDisplay] = useState(true);
     return (
         <div>

@@ -7,7 +7,6 @@
 export const WhyChooseUs =({why})=>(
 
     <div className="center-div">
-         {console.log(why.items[0].text[0].text)}
 <h1 className="h1">{why.primary.heading[0].text}</h1>
 <div className="why">
     <div className="why0">
