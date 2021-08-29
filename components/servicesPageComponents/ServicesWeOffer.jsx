@@ -1,69 +1,38 @@
 import React, { useState } from 'react';
+import { PRISMIC_heading, PRISMIC_icon, PRISMIC_link, PRISMIC_link_text, PRISMIC_text } from '../../prismic-configuration';
 import ArrowLink from '../extraPageComponents/ArrowLink';
 import Card from '../extraPageComponents/Card';
 
 
-const ServicesWeOffer = () => {
+const ServicesWeOffer = ({ cards }) => {
     const [display, setDisplay] = useState(true);
     return (
         <div>
-                    <div className="about-cards ">
-                        <Card
-                            title={<img src="/servicesPageImages/svgs/cards/devops.svg" alt="devops" />}
-                            subTitle="DevOps & Analytics"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/devops" text="Explore" />}
+            <div className="about-cards ">
+                {
+                    cards.map(item => {
+                        return <Card
+                            title={<img src={PRISMIC_icon(item)} alt="service icon" />}
+                            subTitle={PRISMIC_heading(item)}
+                            content={PRISMIC_text(item)}
+                            link={<ArrowLink sublink={PRISMIC_link(item)} text={PRISMIC_link_text(item)} />}
                         />
-                        <Card
-                            title={<img src="/servicesPageImages/svgs/cards/support.svg" alt="devops" />}
-                            subTitle="Support"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/support" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="/servicesPageImages/svgs/cards/business.svg" alt="devops" />}
-                            subTitle="Business Continuity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/business-continuity" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="/servicesPageImages/svgs/cards/product.svg" alt="devops" />}
-                            subTitle="Product & Digital Strategy"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/product-digital" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="/servicesPageImages/svgs/cards/businessautomation.svg" alt="devops" />}
-                            subTitle="Business Automation and Productivity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/business-automation" text="Explore" />}
-                        />
-                        {display ? <Card
-                            title={<img src="/servicesPageImages/svgs/cards/cybersecurity.svg" alt="devops" />}
-                            subTitle="Cybersecurity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<ArrowLink sublink="/cybersecurity" text="Explore" />}
-                        /> : <Card
-                                title={<img src="/servicesPageImages/svgs/cards/infrastructure.svg" alt="devops" />}
-                                subTitle="Infrastructure"
-                                content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                                link={<ArrowLink sublink="/infrastructure" text="Explore" />}
-                            />
-                        }
-          </div>
-                    <div className='serv'>
-                        <svg className={display ? 'services-svg' : ''} onClick={() =>setDisplay(true )} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                        </svg>
+                    })
+                }
+            </div>
+            <div className='serv'>
+                <svg className={display ? 'services-svg' : ''} onClick={() => setDisplay(true)} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+                </svg>
 
-                        <svg className={display ? ' ' : 'services-svg'} onClick={() =>setDisplay(false )} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                        </svg>
+                <svg className={display ? ' ' : 'services-svg'} onClick={() => setDisplay(false)} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+                </svg>
 
 
-                    </div>
-                    <style jsx>
-                        {`
+            </div>
+            <style jsx>
+                {`
                         .about-cards{
                         display: flex;
                         flex-wrap: wrap;
@@ -154,7 +123,7 @@ const ServicesWeOffer = () => {
                         }
                         }
                         `}
-                    </style>            
+            </style>
         </div>
     );
 };

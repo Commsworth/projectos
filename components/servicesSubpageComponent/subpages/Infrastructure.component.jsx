@@ -1,6 +1,7 @@
 // import './devops.scss'
 import Card from '../../extraPageComponents/Card'
 import ArrowLink from '../../extraPageComponents/ArrowLink';
+import React from 'react';
 import CarouselExp from '../CarouselExp/CarouselExp'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'

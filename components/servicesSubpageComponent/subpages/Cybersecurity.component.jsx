@@ -4,6 +4,7 @@ import ArrowLink from '../../extraPageComponents/ArrowLink';
 import CarouselExp from '../CarouselExp/CarouselExp'
 import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'
+import React from 'react';
 import { FaBars } from 'react-icons/fa'
 import Dropdownn from '../Dropdown'
 
