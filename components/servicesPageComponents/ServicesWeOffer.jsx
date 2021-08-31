@@ -4,7 +4,7 @@ import ArrowLink from '../extraPageComponents/ArrowLink';
 import Card from '../extraPageComponents/Card';
 
 
-const ServicesWeOffer = ({offers}) => {
+const ServicesWeOffer = ({cards}) => {
     const [display, setDisplay] = useState(true);
     return (
         <div>
