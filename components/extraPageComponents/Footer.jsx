@@ -1,39 +1,46 @@
 import Link from "next/link";
+import { PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text } from '../../prismic-configuration';
 
-const Footer = ()=>{
- 
+
+const Footer = ({footer})=>{
+//  console.log(footer[0].items[0].link_text)
+ const [
+  one,
+  two,
+  three
+] = footer;
     return(
          <div>
   
         <div className="foot">
         <div className="footer">
           <ul>
-            <Link href="#"><a>CUSTOMER SERVICE</a></Link>
-            <li><Link href="#"><a>FAQs</a></Link></li>
-            <li><Link href="#"><a>Customer Service</a></Link></li>
+            <Link href="#"><a>{footer[0].primary.footer_section_title[0].text}</a></Link>
+            <li><Link href="#"><a>{footer[0].items[0].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[0].items[1].link_text}</a></Link></li>
           </ul>
   
           <ul>
-            <Link href="#"><a>BUSINESS</a></Link>
-            <li><Link href="#"><a>Careers</a></Link></li>
-            <li><Link href="#"><a>Partner with Us</a></Link></li>
-            <li><Link href="#"><a>Investor Relations</a></Link></li>
+            <Link href="#"><a>{footer[1].primary.footer_section_title[0].text}</a></Link>
+            <li><Link href="#"><a>{footer[1].items[0].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[1].items[1].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[1].items[2].link_text}</a></Link></li>
           </ul>
   
           <ul>
-            <Link href="#"><a>COMPANY</a></Link>
-            <li><Link href="#"><a>About Us</a></Link></li>
-            <li><Link href="#"><a>Services</a></Link></li>
-            <li><Link href="#"><a>Partners</a></Link></li>
-            <li><Link href="#"><a>Customer Stories</a></Link></li>
-            <li><Link href="#"><a>Contact Us</a></Link></li>
+            <Link href="#"><a>{footer[2].primary.footer_section_title[0].text}</a></Link>
+            <li><Link href="#"><a>{footer[2].items[0].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[2].items[1].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[2].items[2].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[2].items[3].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[2].items[4].link_text}</a></Link></li>
           </ul>
   
           <ul>
-            <Link href="#"><a>PORTFOLIO</a></Link>
-            <li><Link href="#"><a>SIWP</a></Link></li>
-            <li><Link href="#"><a>ProjectOS</a></Link></li>
-            <li><Link href="#"><a>MealStock</a></Link></li>
+            <Link href="#"><a>{footer[3].primary.footer_section_title[0].text}</a></Link>
+            <li><Link href="#"><a>{footer[3].items[0].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[3].items[1].link_text}</a></Link></li>
+            <li><Link href="#"><a>{footer[3].items[2].link_text}</a></Link></li>
           </ul>
         </div>      
         </div>

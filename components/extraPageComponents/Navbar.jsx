@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import BlueButton from './BlueButton';
 import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = ({navigation}) => {
+    // console.log(navigation.items[0].link_text[0].text)
     const current = "ProjectOS"
     const [scroll, setScroll] = useState(0);
     const [dropdown, setDropdown] = useState(false);
@@ -26,17 +27,17 @@ const Navbar = () => {
             <div>
                 <ul className="navbar-left">
                     <li>
-                        <img src="/extrapageimages/svgs/navbar/logo.svg" alt="logo" className="desktop" onClick={()=>!dropdown?setDropdown(true):setDropdown(false)} />
+                        <img src={navigation.primary.logo.url} alt="logo" className="desktop" onClick={()=>!dropdown?setDropdown(true):setDropdown(false)} />
                         <Link href="/">
-                        <img src="/extrapageimages/svgs/navbar/logo.svg" alt="mobile-logo"  className="mobile-logo mobile-tablet" />
+                        <img src={navigation.primary.logo.url} alt="mobile-logo"  className="mobile-logo mobile-tablet" />
                         </Link>
                         <div id="myDropdown" className={`dropdown-content desktop ${dropdown?'': 'off'}`}>
                             <ul>
-                                <li><Link href="/">Academy</Link></li>
-                                <li><Link href="#about">Store</Link></li>
-                                <li ><Link href="#contact">ProjectOS</Link></li>
-                                <li ><Link href="commsworth/contact">MealStock</Link></li>
-                                <li ><Link href="#contact">Liveizy</Link></li>
+                                <li><Link href="/">{navigation.items[0].link_text[0].text}</Link></li>
+                                <li><Link href="#about">{navigation.items[1].link_text[0].text}</Link></li>
+                                <li ><Link href="#contact">{navigation.items[2].link_text[0].text}</Link></li>
+                                <li ><Link href="commsworth/contact">{navigation.items[3].link_text[0].text}</Link></li>
+                                <li ><Link href="#contact">{navigation.items[4].link_text[0].text}</Link></li>
                             </ul>
                         </div>
                     </li>
@@ -46,10 +47,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <ul className={`navbar-right ${dropdown?'': 'navbar-off'}`}>
-                <li><Link href="/services"><a>Services</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li><Link href="/portfolio"><a>Portfolio</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li><Link href="#"><a>Blog</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
-                <li className="mobile-tablet"><Link href="/contact"><a>Contact</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li><Link href="/services"><a>{navigation.items[5].link_text[0].text}</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li><Link href="/portfolio"><a>{navigation.items[6].link_text[0].text}</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li><Link href="#"><a>{navigation.items[7].link_text[0].text}</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
+                <li className="mobile-tablet"><Link href="/contact"><a>{navigation.items[8].link_text[0].text}</a></Link><img src="extrapageimages/svgs/navbar/navbarline.png" alt="" className="navbar-underline desktop" /></li>
                 <li className="desktop"><BlueButton text="Contact" href="/contact" /></li>
             </ul>
 

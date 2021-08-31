@@ -10,7 +10,7 @@ import Prismic from 'prismic-javascript';
 import { Client, PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
 export default function Services({ solutions }) {
-  console.log(solutions[2], "landing")
+  // console.log(solutions[2], "landing")
   const [
     header,
     services,
@@ -76,7 +76,7 @@ export async function getServerSideProps() {
     Prismic.Predicates.at("document.type", "solutions")
   )
 
-  console.log(solutions.results[0].data.body);
+  // console.log(solutions.results[0].data.body);
 
   return {
     props: {

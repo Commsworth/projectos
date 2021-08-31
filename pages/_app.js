@@ -4,8 +4,11 @@ import '../public/css/global.css'
 import Head from 'next/head'
 import Navbar from '../components/extraPageComponents/Navbar'
 import Footer from '../components/extraPageComponents/Footer'
+import Prismic from 'prismic-javascript';
+import { Client } from '../prismic-configuration';
 
-export default function MyApp({ Component, pageProps }) {
+
+export default function App({ Component, pageProps, footer, navigation, social }) {
     return(
       <div className="main-container">
         {/* <Nav/> */}
@@ -15,11 +18,11 @@ export default function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <Navbar/>
+      <Navbar navigation={navigation} />
         <div>
-        <Component {...pageProps} />
+        <Component {...pageProps} social={social} />
         </div>
-        <Footer/>
+        <Footer footer={footer}/>
 
         <style jsx>
             {`
@@ -42,3 +45,23 @@ export default function MyApp({ Component, pageProps }) {
       </div>
       )
   }
+
+  App.getInitialProps = async () => {
+    const navigation = await Client().query(
+        Prismic.Predicates.at("document.type", "navigation")
+    )
+
+    const footer = await Client().query(
+        Prismic.Predicates.at("document.type", "footer")
+    )
+
+    const social = await Client().query(
+        Prismic.Predicates.at("document.type", "social")
+    )
+
+    return {
+        navigation: navigation.results[0].data.body[0],
+        footer: footer.results[0].data.body,
+        social: social.results[0].data.body
+    }
+}
