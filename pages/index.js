@@ -17,8 +17,8 @@ import Socials from '../components/extraPageComponents/Socials';
 import Prismic from 'prismic-javascript';
 import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
-export default function Home({ landing }) {
-  // console.log(landing[6], "landing")
+export default function Home({ landing, social }) {
+  console.log(social)
   const [
     header,
     carousel,

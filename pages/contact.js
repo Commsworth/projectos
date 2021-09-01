@@ -2,12 +2,11 @@ import React, { Component } from 'react'
 import Head from 'next/head'
 import Socials from '../components/extraPageComponents/Socials'
 import ContactForm from '../components/offerResourcesComponents/ContactForm'
+import Prismic from 'prismic-javascript';
+import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
 
-
-
-
-class ctap extends Component {
+class contact extends Component {
     constructor(props) {
         super(props)
 
@@ -18,6 +17,7 @@ class ctap extends Component {
 
     
     render() {
+		// console.log( this.props.contact)
         return (
             <React.Fragment>
                 <Head>
@@ -29,7 +29,7 @@ class ctap extends Component {
                     <div className="contact-head">
                         <div className="overlay">
                             <div className='wrapper'>
-                                <h1>Get In touch</h1>
+                                <h1>{this.props.contact[0].primary.heading[0].text}</h1>
                             </div>
                         </div>
                     </div>
@@ -39,43 +39,50 @@ class ctap extends Component {
             <div className="wrapper">
                 <div className='ct1'>
                     <div className="pad">
-                        <h1>Contact Us</h1>
+                        <h1>
+							{this.props.contact[0].items[0].heading[0].text}
+						</h1>
                         
-                        <p>Got questions about our services? 
-                            Fill out the form to the right and a Commsworth 
-                            representative will contact you. Alternatively, 
-                            you can reach out to us accross our Omni-channel 
-                            platforms below. </p>
+                        <p>
+							{this.props.contact[0].items[0].text[0].text} 
+						</p>
 
                         <div className="contacts-flx">
                             <div className="contacts-ct">
-                                <img src="/static/sales.svg" alt=""/>
-                                <h1>Chat with Sales</h1>
-                                <p>Availablee Monday-Friday
-                                9AM to 5PM GMT+1</p>
-                                <a href="">Chat now {">"}</a>
+                                <img src={this.props.contact[0].items[1].icon.url} alt=""/>
+                                <h1>
+								{this.props.contact[0].items[1].heading[0].text}					
+								</h1>
+                                <p>
+								{this.props.contact[0].items[1].text[0].text} 
+								</p>
+                                <a href="">{this.props.contact[0].items[1].link_text}</a>
                                 </div>
                             <div className="contacts-ct">
-                                <img src="/static/email.svg" alt="" />
-                                <h1>Write Us</h1>
-                                <p>Availablee Monday-Friday
-                                9AM to 5PM GMT+1</p>
-                                <a href="">care@commsworth.com</a>
+                                <img src={this.props.contact[0].items[2].icon.url} alt="" />
+                                <h1>
+								{this.props.contact[0].items[2].heading[0].text}								
+								</h1>
+                                <p>							
+									{this.props.contact[0].items[2].text[0].text} 
+								</p>
+                                <a href="">{this.props.contact[0].items[2].link_text}</a>
                             </div>
                         </div>
                       
                         <div className="contacts-flx">
                             <div className="contacts-ct">
-                                <img src="/static/tel.svg" alt=""/>
-                                <h1>Ring Us</h1>
-                                <p>Availablee Monday-Friday
-                                9AM to 5PM GMT+1</p>
-                                <a href="">+2349084810110</a>
+                                <img src={this.props.contact[0].items[3].icon.url} alt=""/>
+                                <h1>{this.props.contact[0].items[3].heading[0].text}</h1>
+                                <p>
+									{this.props.contact[0].items[3].text[0].text} 
+								</p>
+                                <a href="">{this.props.contact[0].items[3].link_text}</a>
                                 </div>
                             <div className="contacts-ct">
-                                <img src="/static/visit.svg" alt="" />
-                                <h1>Pay us a Visit</h1>
-                                <p>225, Ikorodu Crescent, Dolphin Estate, Ikoyi Lagos</p>
+                                <img src={this.props.contact[0].items[4].icon.url} alt="" />
+                                <h1>{this.props.contact[0].items[4].heading[0].text}</h1>
+                                <p>{this.props.contact[0].items[4].text[0].text}</p>
                             
                             </div>
                         </div>
@@ -85,7 +92,7 @@ class ctap extends Component {
 
                     <div className="pad2">
                             <h1>We'd love to hear from you</h1>                          
-                            <ContactForm />
+                            <ContactForm options = {this.props.contact} />
                     </div>
                     </div>
                     
@@ -248,4 +255,19 @@ class ctap extends Component {
     }
 }
 
-export default ctap
+export default contact
+
+export async function getServerSideProps() {
+	const contact = await Client().query(
+	  Prismic.Predicates.at("document.type", "contact")
+	)
+  
+	// console.log(contact.results[0].data.body);
+  
+	return {
+	  props: {
+		contact: contact.results[0].data.body
+	  }
+	}
+  }
+  

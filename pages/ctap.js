@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Socials from '../components/extraPageComponents/Socials'
 import Head from 'next/head'
 import CtapForm from '../components/offerResourcesComponents/CtapForm'
+import Prismic from 'prismic-javascript';
+import { Client, PRISMIC_heading, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
+
 
 
 
@@ -16,6 +19,7 @@ this.state={
 
 
     render() {
+        console.log(this.props.CtapFormOptions)
         return (
             <React.Fragment>
                  <Head>
@@ -28,7 +32,7 @@ this.state={
                     <div className="ctap-head">
                         <div className="overlay">
                             <div className='wrapper'>
-                                <h1>Cyber Threat Assessment Program</h1>
+                                <h1>{this.props.ctap.primary.heading[0].text}</h1>
                             </div>
                         </div>
                     </div>
@@ -38,21 +42,17 @@ this.state={
             <div className="wrapper">
                 <div className='ct1'>
                         <div className="pad">
-                    <h1>Assess threat to your business</h1>
+                    <h1>{this.props.ctap.items[0].heading[0].text}</h1>
                         <div className="pad-flx"> <svg width="32" height="4" viewBox="0 0 32 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2H30" stroke="#076fd9" strokeWidth="4" strokeLinecap="round" />
                         </svg>
-                        <p>Powered by Fortinet</p></div>
-                        <p>The Cyber Threat Assessment Program (CTAP) is 
-                            designed to help you during greenfield and renewal 
-                            opportunities to convert prospects and expand your 
-                            business by giving customers an in-depth view of the
-                            urrent state of their network.</p> <p>After deploying a
-                            FortiGate to monitor your network for a short period of
-                            time, a report is generated that provides visibility
-                            into your network risks, and allows you to position a
-                            clear path forward that will quickly gain buy-in from
-                              key technical and business decision makers. </p>
+                        <p>{this.props.ctap.items[0].link_text}</p></div>
+                        <p>
+                            {this.props.ctap.items[0].text[0].text}
+                        </p> 
+                        <p>
+                            {this.props.ctap.items[0].text[1].text}
+                        </p>
 
 
 
@@ -61,7 +61,7 @@ this.state={
 
                     <div className="pad2">                     
                     <h1>Request a Session</h1>
-                                <CtapForm />                      
+                                <CtapForm options={this.props.CtapFormOptions} />                      
                         </div>
                         </div>
                         </div>
@@ -199,3 +199,19 @@ this.state={
 }
 
 export default ctap
+
+export async function getServerSideProps() {
+	const ctap = await Client().query(
+	  Prismic.Predicates.at("document.type", "contact")
+	)
+  
+	// console.log(contact.results[0].data.body);
+  
+	return {
+	  props: {
+		ctap: ctap.results[2].data.body[0],
+        CtapFormOptions: ctap.results[2].data.body
+	  }
+	}
+  }
+  
