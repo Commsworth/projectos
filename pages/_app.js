@@ -1,180 +1,64 @@
-import Link from "next/link";
-import { PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text } from '../../prismic-configuration';
+// import Nav from '../components/navbar/Navbar';
+// import Footer from '../components/footer/Footer';
+import '../public/css/global.css'
+import Head from 'next/head'
+import Navbar from '../components/extraPageComponents/Navbar'
+import Footer from '../components/extraPageComponents/Footer'
 
-
-const Footer = ({footer})=>{
-//  console.log(footer[0].items[0].link_text)
- const [
-  one,
-  two,
-  three
-] = footer;
+export default function App({ Component, pageProps, footer, navigation, social }) {
     return(
-         <div>
-  
-        <div className="foot">
-        <div className="footer">
-          <ul>
-            <Link href="#"><a>{footer[0].primary.footer_section_title[0].text}</a></Link>
-            <li><Link href="#"><a>{footer[0].items[0].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[0].items[1].link_text}</a></Link></li>
-          </ul>
-  
-          <ul>
-            <Link href="#"><a>{footer[1].primary.footer_section_title[0].text}</a></Link>
-            <li><Link href="#"><a>{footer[1].items[0].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[1].items[1].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[1].items[2].link_text}</a></Link></li>
-          </ul>
-  
-          <ul>
-            <Link href="#"><a>{footer[2].primary.footer_section_title[0].text}</a></Link>
-            <li><Link href="#"><a>{footer[2].items[0].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[2].items[1].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[2].items[2].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[2].items[3].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[2].items[4].link_text}</a></Link></li>
-          </ul>
-  
-          <ul>
-            <Link href="#"><a>{footer[3].primary.footer_section_title[0].text}</a></Link>
-            <li><Link href="#"><a>{footer[3].items[0].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[3].items[1].link_text}</a></Link></li>
-            <li><Link href="#"><a>{footer[3].items[2].link_text}</a></Link></li>
-          </ul>
-        </div>      
+      <div className="main-container">
+        {/* <Nav/> */}
+        <Head>
+        <title>Commsworth</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"></link>
+      </Head>
+
+      <Navbar navigation={navigation} />
+        <div>
+        <Component {...pageProps} social={social} />
         </div>
+        <Footer footer={footer}/>
+
         <style jsx>
             {`
-            .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #111517;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90vw;
-  margin: auto;
-}
-
-.foot {
-  background-color: #111517;
-  width: 100%;
-}
-
-.footer-brand {
-  display: block;
-}
-
-.footer ul a {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 139%;
-  /* or 22px */
-  letter-spacing: 0.19em;
-  color: #ffffff;
-}
-
-.footer li a {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal !important;
-  font-size: 16px;
-  line-height: 139%;
-  /* or 22px */
-  letter-spacing: 0.02em;
-  color: #bbbbbb;
-}
-
-.footer ul {
-  width: 19%;
-  padding: 2rem 0rem 2rem 0rem;
-  line-height: 30px;
-}
-
-.pda {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* margin: auto;
-    width: 60%; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 30px 0rem 30px 0rem;
-}
-
-.pda li a {
-  color: white;
-  margin: 50px;
-}
-
-.pda-border {
-  border-top: 2px solid white;
-}
-
-@media only screen and (max-width: 570px) {
-  .footer {
-    /* margin: 0vh 5vw; */
-    display: -ms-grid;
-    display: grid;
-    background-color: #111517;
-    /* padding: 2rem; */
-    /* width: 70%; */
-    margin: 0;
-  }
-  .socials {
-    /* width: 15rem; */
-    display: -ms-grid;
-    display: grid;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-  }
-  .follow,
-  .share {
-    margin: 0vh 5vw;
-  }
-  .footer ul {
-    width: 50%;
-    padding: 2rem;
-  }
-  .footer ul a {
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .footer li a {
-    color: grey;
-    line-height: 3rem;
-  }
-  .pda {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .pda li a {
-    color: white;
-    margin: 5px;
-  }
-}
+            @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
+            .main-container{
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              overflow-x: hidden;
+            }
+            h1,h2,h3,h4,h5,h6{
+              font-family: 'Nunito', 'serif';
+            }
+            p{
+              font-family: 'Muli', 'serif';
+            }
             `}
         </style>
-        </div>
-  
-    );
+      </div>
+      )
   }
-  
-  export default Footer;
+
+  App.getInitialProps = async () => {
+    const navigation = await Client().query(
+        Prismic.Predicates.at("document.type", "navigation")
+    )
+
+    const footer = await Client().query(
+        Prismic.Predicates.at("document.type", "footer")
+    )
+
+    const social = await Client().query(
+        Prismic.Predicates.at("document.type", "social")
+    )
+
+    return {
+        navigation: navigation.results[0].data.body[0],
+        footer: footer.results[0].data.body,
+        social: social.results[0].data.body
+    }
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PhotoGallery from '../extraPageComponents/PhotoGallery';
 
 
-const TechPart = () => {
+const TechPart = ({images=[]}) => {
     const [display, setDisplay] = useState("1")
     return (
         <div className="center">
@@ -15,7 +15,7 @@ const TechPart = () => {
                 <div className="link desktop" onClick={() => setDisplay(false)}><a className={display ? "" : "active"}>Business Partners</a></div>
             </div>
             {display==="1" && <div className="brand">
-                <PhotoGallery top={["/landingpageimages/svgs/partners/dell.svg","/landingpageimages/svgs/partners/hp.svg","/landingpageimages/svgs/partners/dynatrace.svg","/landingpageimages/svgs/partners/lenovo.svg","/landingpageimages/svgs/partners/fortinet.svg"]} bottom={["/landingpageimages/svgs/partners/oracle.svg","/landingpageimages/svgs/partners/symantec.svg","/landingpageimages/svgs/partners/veeam.svg","/landingpageimages/svgs/partners/microsoft.svg","/landingpageimages/svgs/partners/vmware.svg"]} />
+                <PhotoGallery top={images.slice(0,Math.round(images.length/2)).map(item=>item?.icon?.url)} bottom={images.slice(Math.round(images.length/2)).map(item=>item?.icon?.url)} />
             </div>}
             {display!=="1" && <div className="brand">
                 Rien à voir au moment

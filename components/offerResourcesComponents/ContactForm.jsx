@@ -130,6 +130,7 @@ class ContactForm extends Component {
     }
 
     render() {
+       console.log(this.props.options[2].items[0].message)
         return this.props.dataID ? (
             <React.Fragment>
                 <h1>{this.props.heading || 'Request a session'}</h1>
@@ -271,10 +272,10 @@ input[type="submit"]:hover {
                             required />
 
                         <FormSelect
-                            option1='50-100'
-                            option2='100-500'
-                            option3='500-1000'
-                            option4='1000 >'
+                            option1={this.props.options[1].items[0].message}
+                            option2={this.props.options[1].items[1].message}
+                            option3={this.props.options[1].items[2].message}
+                            option4={this.props.options[1].items[3].message}
                             validation={this.validation}
                             valid={this.validate}
                             name="companySize"
@@ -298,10 +299,10 @@ input[type="submit"]:hover {
                             required />
 
                         <FormSelect
-                            option1='Get a demo'
-                            option2='Get a demo'
-                            option3='Get a demo'
-                            option4='Get a demo'
+                            option1={this.props.options[2].items[0].message}
+                            option2={this.props.options[2].items[1].message}
+                            option3={this.props.options[2].items[2].message}
+                            option4={this.props.options[2].items[3].message}
                             validation={this.validation}
                             valid={this.validate}
                             name="scope"

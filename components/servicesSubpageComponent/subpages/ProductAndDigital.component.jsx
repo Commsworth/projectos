@@ -6,6 +6,7 @@ import CardOfferList from '../CarouselOffer/CardOffer/CardOfferList'
 import {events} from '../CarouselOffer/events'
 import { FaBars } from 'react-icons/fa'
 import Dropdownn from '../Dropdown'
+import React from 'react';
 
 
 class ProductAndDigital extends React.Component {

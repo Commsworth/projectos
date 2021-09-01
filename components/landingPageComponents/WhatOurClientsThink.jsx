@@ -1,48 +1,58 @@
 import React, { Component } from 'react'
+import { PRISMIC_heading, PRISMIC_message, PRISMIC_name, PRISMIC_role, PRISMIC_text } from '../../prismic-configuration';
 
 class WhatOurClientsThink extends Component {
 
-    constructor(props) {
-        super(props);
+	constructor(props) {
+		super(props);
 
-        this.state = {
-            words: {
-                mission: "Commworth deliver Value and helped grow Microsoft in Nigeria, working with them has been a revelation",
-                name: "JAMES BOND",
-                position: "MD",
-                company: "Microsoft Nigeria",
-                class: "circle1",
-            },
-        }
-    }
-    hover = (object) => {
-        this.setState({ words: object })
-    }
+		this.state = {
+			words: {
+				mission: PRISMIC_message(props.items[0]),
+				name: PRISMIC_name(props.items[0]),
+				position: PRISMIC_name(props.items[0]),
+				company: PRISMIC_role(props.items[0]).split(",")[1] && PRISMIC_role(props.items[0]).split(",")[1] || "",
+				class: "circle1",
+			},
+		}
+	}
+	hover = (object) => {
+		this.setState({ words: object })
+	}
 
-    render() {
+	render(props) {
 
-        return (
-            <div>
-                    <div className="div4">
-                        <div className="center2">
-                            <br />
-                            <br />
-                            <img id="div4-top-img" src="/landingPageImages/pngs/whatclients/yin-yang.png" alt="" srcset="" />
-                            <h3 id="what-our-clients">What Our Clients Think <br /> About Us</h3>
-                            <p id="mission" style={{ fontSize: "24px", lineHeight: "130%", marginBottom: "46px", marginTop: "64px", height: "120px" }}>"{this.state.words.mission}"</p>
-                            <h3 id="name" style={{ fontSize: "24px", lineHeight: "178.5%", marginBottom: "0", marginTop: "46px" }}>{this.state.words.name}</h3>
-                            <p id="position" style={{ fontSize: "16px", lineHeight: "178.5%", margin:"0px" }}>- {this.state.words.position}, {this.state.words.company}</p>
-                        </div>
-                        <div className="img-flx">
-                            <div className="pf1" onMouseEnter={() => this.hover({ mission: "Commworth deliver Value and helped grow Microsoft in Nigeria, working with them has been a revelation", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle1" })}><img src="/landingPageImages/svgs/whatclients/Ellipse16.png" className={`${this.state.words.class}`} id="pf1" alt="" /></div>
-                            <div className="pf2" onMouseEnter={() => this.hover({ mission: "I love Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle2" })}><img src="/landingPageImages/svgs/whatclients/Ellipse17.png" className={`${this.state.words.class}`} id="pf2" alt="" /></div>
-                            <div className="pf3" onMouseEnter={() => this.hover({ mission: "I want Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle3" })}><img src="/landingPageImages/svgs/whatclients/Ellipse18.png" className={`${this.state.words.class}`} id="pf3" alt="" /></div>
-                            <div className="pf4" onMouseEnter={() => this.hover({ mission: "I need Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle4" })}><img src="/landingPageImages/svgs/whatclients/Ellipse19.png" className={`${this.state.words.class}`} id="pf4" alt="" /></div>
-                            <div className="pf5" onMouseEnter={() => this.hover({ mission: "I admire Commsworth", name: "JAMES BOND", position: "MD", company: "Microsoft Nigeria", class: "circle5" })}><img src="/landingPageImages/svgs/whatclients/Ellipse19.png" className={`${this.state.words.class}`} id="pf5" alt="" /></div>
-                        </div>
-                    </div>
-                    <style jsx>
-                        {`
+		return (
+			<div>
+				<div className="div4">
+					<div className="center2">
+						<br />
+						<br />
+						<img id="div4-top-img" src="/landingPageImages/pngs/whatclients/yin-yang.png" alt="" srcset="" />
+						<h3 id="what-our-clients">{PRISMIC_heading(this.props.primary)}</h3>
+						<p id="mission" style={{ fontSize: "24px", lineHeight: "130%", marginBottom: "46px", marginTop: "64px", height: "120px" }}>"{this.state.words.mission}"</p>
+						<h3 id="name" style={{ fontSize: "24px", lineHeight: "178.5%", marginBottom: "0", marginTop: "46px" }}>{this.state.words.name}</h3>
+						<p id="position" style={{ fontSize: "16px", lineHeight: "178.5%", margin: "0px" }}>- {this.state.words.position}, {this.state.words.company}</p>
+					</div>
+					<div className="img-flx">
+						{this.props.items.map((item, index) => {
+							return <div className={`pf${index+1}`} onMouseEnter={() => this.hover({
+								mission: PRISMIC_message(item),
+								name: PRISMIC_name(item),
+								position: PRISMIC_name(item),
+								company: PRISMIC_role(item).split(",")[1] && PRISMIC_role(item).split(",")[1] || "",
+								class: `circle${index+1}`,
+							})}><img src="/landingPageImages/svgs/whatclients/Ellipse16.png"
+								className={`${this.state.words.class}`}
+								id={`pf${index}`}
+								alt="" />
+							</div>
+						})}
+
+					</div>
+				</div>
+				<style jsx>
+					{`
  .div4 {
 	 display: flex;
 	 flex-direction: column;
@@ -192,10 +202,10 @@ class WhatOurClientsThink extends Component {
  
                         `}
 
-                    </style>
-                </div>
-        )
-    }
+				</style>
+			</div>
+		)
+	}
 }
 
 export default WhatOurClientsThink;

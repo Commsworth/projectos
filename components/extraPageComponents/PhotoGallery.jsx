@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 
-const PhotoGallery = ({top, bottom}) => {
+const PhotoGallery = ({ top, bottom }) => {
     const [more, setMore] = useState(false);
-    const handleClick=()=>{
-        if(more){
+    const handleClick = () => {
+        if (more) {
             setMore(false);
-        }else{
+        } else {
             setMore(true);
         }
     }
@@ -21,29 +21,29 @@ const PhotoGallery = ({top, bottom}) => {
                 <img src="/img-div4/wa.svg" alt="" srcset="" />
                 <div className="bor3"></div>
             <img src="/img-div4/ap.svg" alt="" srcset="" /> */}
-            {top.map((each, i)=>{
-                return(
-                    <img src={each} alt="" srcSet="" className="img" key={i} />
-                )
-            }
-            )}
+                {top.map((each, i) => {
+                    return (
+                        <img src={each} alt="partner" className="img" key={Math.random()} />
+                    )
+                }
+                )}
             </div>
             <br />
             <div className="divide2"></div>
             <div className={`more-div ${more ? 'more' : 'off'}`}>
                 <div className='box'>
-                    {bottom.map((each, i)=>{
-                        return(
-                            <img src={`${each}`} alt="" srcSet="" className="img" key={i} />
-                            )
-                        })}
+                    {bottom.map((each, i) => {
+                        return (
+                            <img src={`${each}`} alt="part" className="img" key={Math.random()} />
+                        )
+                    })}
                 </div>
             </div>
-                        <button onClick={handleClick} className="button"> {more ?'-':'+'}</button>
+            <button onClick={handleClick} className="button"> {more ? '-' : '+'}</button>
             <br />
-            
+
             <style jsx>
-            {`
+                {`
             .cli {
                 display: flex;
                 flex-direction: row;
@@ -165,7 +165,7 @@ const PhotoGallery = ({top, bottom}) => {
                 `}
             </style>
         </div>
-        );
+    );
 };
 
 export default PhotoGallery;

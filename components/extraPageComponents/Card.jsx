@@ -1,6 +1,7 @@
 // import arrow from '../../../asset/svg/arrow.svg';
 
 import Link from "next/link";
+import React from "react";
 
 class Card extends React.Component {
 

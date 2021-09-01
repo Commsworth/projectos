@@ -1,41 +1,47 @@
 import React, { useState, Fragment } from 'react';
 import Card from '../extraPageComponents/Card';
 import ArrowLink from '../extraPageComponents/ArrowLink';
+import { PRISMIC_heading, PRISMIC_icon, PRISMIC_link, PRISMIC_link_text, PRISMIC_text } from '../../prismic-configuration';
 
 
-const OurServices = () => {
-    const [display, setDisplay] = useState(true);
-    return (
-        <div className="our-services-main">
-            <div className="our-services">
-                <Card title={<img src="/landingpageimages/pngs/icons/devops.png" />} subTitle="DevOps & Analytics" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingpageimages/pngs/icons/businessAutomation.png" />} subTitle="Business Automation and Productivity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingpageimages/pngs/icons/businessContinuity.png" />} subTitle="Business Continuity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingpageimages/pngs/icons/managedServices.png" />} subTitle="Managed Services" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                <Card title={<img src="/landingpageimages/pngs/icons/product.png" />} subTitle="Product and Digital Strategy" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                {display ? <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} /> :
-                    <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                  }
-                  < div className="mobile-tablet">
-                  <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
-                  </ div>
-            </div>
-            <div className="mobile-tablet">
-              <p style={{fontSize: "15px", color: 'white', textAlign: 'center'}}>◀ Swipe to see more ▶</p>
-            </div>
-            <div className="desktop">
-            <div className='our-services'>
-                <svg className={display ? 'our-services-svg' : ''} onClick={() => { setDisplay(true) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                </svg>
+const OurServices = ({ cards=[] }) => {
+  const [display, setDisplay] = useState(true);
+  return (
+    <div className="our-services-main">
+      <div className="our-services">
+        {cards.map((item,index) => {
+          return <Card
+            title={<img src={PRISMIC_icon(item)} />}
+            subTitle={PRISMIC_heading(item)}
+            content={PRISMIC_text(item)}
+            href={PRISMIC_link(item)}
+            link={<ArrowLink text={PRISMIC_link_text(item)} />} />
+        })}
 
-                <svg className={display ? ' ' : 'our-services-svg'} onClick={() => { setDisplay(false) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                </svg>
-            </div>
-            </div>
-            <style jsx>
-                {`
+
+        {/* {display ? <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Cybersecurity" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} /> :
+          <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+        } */}
+        < div className="mobile-tablet">
+          <Card title={<img src="/landingpageimages/pngs/icons/cyberSecurity.png" />} subTitle="Infrastructure" content="Our Core Values define our personality and guides our relationship with staff, clients and partners." href="/contact" link={<ArrowLink text="Contact Us" />} />
+        </ div>
+      </div>
+      <div className="mobile-tablet">
+        <p style={{ fontSize: "15px", color: 'white', textAlign: 'center' }}>◀ Swipe to see more ▶</p>
+      </div>
+      <div className="desktop">
+        <div className='our-services'>
+          <svg className={display ? 'our-services-svg' : ''} onClick={() => { setDisplay(true) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+          </svg>
+
+          <svg className={display ? ' ' : 'our-services-svg'} onClick={() => { setDisplay(false) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
+          </svg>
+        </div>
+      </div>
+      <style jsx>
+        {`
     .our-services svg{
         margin: 30px 5px 0px 5px;
         cursor: pointer;
@@ -163,10 +169,10 @@ const OurServices = () => {
             }
       }
     `}
-            </style>
-        </div>
+      </style>
+    </div>
 
-    );
+  );
 };
 
 export default OurServices;

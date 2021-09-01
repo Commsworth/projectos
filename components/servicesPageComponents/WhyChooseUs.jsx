@@ -4,46 +4,34 @@
 // import sup from 'pngs/sup.png'
 // import './why.scss';
 
-export const WhyChooseUs =()=>(
+import { PRISMIC_heading, PRISMIC_icon, PRISMIC_image, PRISMIC_text } from "../../prismic-configuration";
+
+export const WhyChooseUs = ({ primary, cards }) => (
 
     <div className="center-div">
-<h1 className="h1">Why Choose Us?</h1>
-<div className="why">
-    <div className="why0">
-        <div className="why1">
-        <div className="bkg"><img src="/servicesPageImages/pngs/icons/exp.png" alt="" /></div>
-        <div>
-            <h4>Extensive Competencies</h4>
-            <p>Our Multi-faceted management team is powered by top-tier industry experts with 100+ years of experience across various ICT domains.
-            </p>
-        </div>
-        </div>
+        <h1 className="h1">{PRISMIC_heading(primary)}</h1>
+        <div className="why">
+            <div className="why0">
+                {
+                    cards.map(item => {
+                        return <div className="why1">
+                            <div className="bkg"><img src={PRISMIC_icon(item)} alt="reason-icon" /></div>
+                            <div>
+                                <h4>{PRISMIC_heading(item)}</h4>
+                                <p>{PRISMIC_text(item)}
+                                </p>
+                            </div>
+                        </div>
+                    })
+                }
+            </div>
 
-        <div className="why1">
-        <div className="bkg"><img src="/servicesPageImages/pngs/icons/exp.png" alt="" /></div>
-        <div className="text">
-            <h4>Disruptive Initiatives </h4>
-            <p>Commsworth’s expertise delivers game-changing technology initiatives as key business enablers to digitally disrupt industries.
-            </p>
-        </div>
-        </div>
+            <div className="why2">
+                <img src={PRISMIC_image(primary)} alt="" />
+            </div>
 
-        <div className="why1">
-        <div className="bkg"><img src="/servicesPageImages/pngs/icons/sup.png" alt="" /></div>
-        <div>
-            <h4>Premiere Support</h4>
-            <p>Our Multi-faceted management team is powered by top-tier industry experts with 100+ years of experience across various ICT domains.
-            </p>
         </div>
-        </div>
-    </div>
-
-    <div className="why2">
-    <img src="/servicesPageImages/pngs/whychooseus/big.png" alt=""/>
-    </div>
-
-</div>
-<style jsx>{`
+        <style jsx>{`
     .center-div{
         width: 100vw;
         //padding: 0vh 10vw;
@@ -184,6 +172,6 @@ export const WhyChooseUs =()=>(
     }
     `}
 
-</style>
-</div>
+        </style>
+    </div>
 )
