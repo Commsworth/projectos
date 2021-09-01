@@ -68,7 +68,7 @@ this.state={
                                            
                     </div>
         
-                        <Socials />
+                        {/* <Socials /> */}
                  
                  <style jsx>{`           
         .wrapper {

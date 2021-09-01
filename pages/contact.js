@@ -100,7 +100,7 @@ class contact extends Component {
                 </div>
 
                 </div>
-                <Socials/>
+                {/* <Socials/> */}
            <style jsx>{`
               .contacts-flx {
 	 display: flex;
