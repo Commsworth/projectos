@@ -1,23 +1,24 @@
-const Socials = ({icons}) => {
+const Socials = ( {social, icons} ) => {
+  console.log(social[0].items)
     return (
         icons==="white"?
         <div className="sc" style={{background: "#111517"}}>
           <div className="socials">
         <div className="follow">
           <p>Follow us:</p>
-          <img src="/extraPageImages/svgs/socials/whitetwitter.svg" alt="twitter"/>
-          <img src="/extraPageImages/svgs/socials/whitefacebook.svg" alt="facebook"/>
-          <img src="/extraPageImages/svgs/socials/whitelinkedin.svg" alt="linkedin"/>
+          <img src={social[0].items[0].social_icon.url} alt="twitter"/>
+          <img src={social[0].items[1].social_icon.url} alt="facebook"/>
+          <img src={social[0].items[2].social_icon.url} alt="linkedin"/>
         </div>
         <div className="share">
           <p>Share on:</p>
-          <img src="/extraPageImages/svgs/socials/whitetwitter.svg" alt="twitter"/>
-          <img src="/extraPageImages/svgs/socials/whitefacebook.svg" alt="facebook"/>
-          <img src="/extraPageImages/svgs/socials/whitelinkedin.svg" alt="linkedin"/>
+          <img src={social[1].items[0].social_icon.url} alt="twitter"/>
+          <img src={social[1].items[1].social_icon.url} alt="facebook"/>
+          <img src={social[1].items[2].social_icon.url} alt="linkedin"/>
         </div>
       </div>
       <style jsx>{`
-          .sc {
+    .sc {
   border-top: 1px solid  #C1C1C1;
   border-bottom: 1px solid  #C1C1C1;
   background: white;

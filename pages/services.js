@@ -33,7 +33,7 @@ export default function Services({ solutions }) {
         <h3 className="offer">{PRISMIC_heading(services.primary)}</h3>
         <ServicesWeOffer cards={services.items} />
         <WhyChooseUs primary={choose.primary} cards={choose.items} />
-        <Socials />
+        {/* <Socials /> */}
       </main>
 
       <style jsx>{`

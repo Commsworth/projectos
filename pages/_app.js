@@ -2,11 +2,11 @@
 // import Footer from '../components/footer/Footer';
 import '../public/css/global.css'
 import Head from 'next/head'
+import Socials from '../components/extraPageComponents/Socials'
 import Navbar from '../components/extraPageComponents/Navbar'
 import Footer from '../components/extraPageComponents/Footer'
 import Prismic from 'prismic-javascript';
 import { Client } from '../prismic-configuration';
-
 
 export default function App({ Component, pageProps, footer, navigation, social }) {
     return(
@@ -20,8 +20,9 @@ export default function App({ Component, pageProps, footer, navigation, social }
 
       <Navbar navigation={navigation} />
         <div>
-        <Component {...pageProps} social={social} />
+        <Component {...pageProps} />
         </div>
+        <Socials social={social} />
         <Footer footer={footer}/>
 
         <style jsx>

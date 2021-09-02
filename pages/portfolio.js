@@ -55,7 +55,7 @@ export default function Portfolio({portfolio}) {
           />
             )}
           })}
-          <Socials/>
+          {/* <Socials/> */}
       </main>
 
       <style jsx>{`
