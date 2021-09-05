@@ -1,5 +1,5 @@
 const Socials = ( {social, icons} ) => {
-  console.log(social[0].items)
+  // console.log(social[0].items)
     return (
         icons==="white"?
         <div className="sc" style={{background: "#111517"}}>
@@ -111,15 +111,15 @@ const Socials = ( {social, icons} ) => {
           <div className="socials">
         <div className="follow">
           <p>Follow us:</p>
-          <img src="/extraPageImages/svgs/socials/twitter.svg" alt="twitter"/>
-          <img src="/extraPageImages/svgs/socials/facebook.svg" alt="facebook"/>
-          <img src="/extraPageImages/svgs/socials/linkedin.svg" alt="linkedin"/>
+          <img src={social[0].items[0].social_icon.url} alt="twitter"/>
+          <img src={social[0].items[1].social_icon.url} alt="facebook"/>
+          <img src={social[0].items[2].social_icon.url} alt="linkedin"/>
         </div>
         <div className="share">
           <p>Share on:</p>
-          <img src="/extraPageImages/svgs/socials/twitter.svg" alt="twitter"/>
-          <img src="/extraPageImages/svgs/socials/facebook.svg" alt="facebook"/>
-          <img src="/extraPageImages/svgs/socials/linkedin.svg" alt="linkedin"/>
+          <img src={social[1].items[0].social_icon.url} alt="twitter"/>
+          <img src={social[1].items[1].social_icon.url} alt="facebook"/>
+          <img src={social[1].items[2].social_icon.url} alt="linkedin"/>
         </div>
       </div>
       <style jsx>{`

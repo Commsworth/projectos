@@ -2,6 +2,7 @@ import CardOffer from './CardOffer'
 import React, { Component } from 'react'
 import SlideWrapper from "./SlideWrapper";
 import Slider from "react-slick"
+import { PRISMIC_link, PRISMIC_link_text, PRISMIC_heading, PRISMIC_text, PRISMIC_image, PRISMIC_icon } from '../../../../prismic-configuration';
 
 
 export class CardOfferList extends Component {
@@ -75,24 +76,26 @@ export class CardOfferList extends Component {
       ]
         };  
 
-    const {events} = this.props
+    const {events, offers} = this.props
+    // console.log(offers)
     return (
     <React.Fragment>
+
        <div className='card-offer-div'>
             <SlideWrapper>
         <Slider ref={c => (this.slider = c)} {...settingsNoModules}>
     {
-    events.map((user,i) =>{
+    offers.map((item,i) =>{
     return (
      
            <CardOffer
         // id={events[i].id} 
-        title={events[i].title}
-        about={events[i].about} 
-        link={events[i].link} 
-        img={events[i].img}
-        href={events[i].href}
-        key={events[i].id} />
+        title={PRISMIC_heading(item)}
+        about={PRISMIC_text(item)} 
+        link={PRISMIC_link(item)} 
+        img={PRISMIC_icon(item)}
+        href={PRISMIC_link_text(item)}
+        key={i} />
       
     )
 })

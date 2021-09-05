@@ -231,4 +231,4 @@ class Devops extends React.Component {
 
 export default Devops;
 
- 
+{/* <li className={ "exp-head-style" } onClick={() => setTab(item.id)}>{item.title}</li> */}

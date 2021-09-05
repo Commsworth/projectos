@@ -9,7 +9,7 @@ import Socials from '../components/extraPageComponents/Socials';
 import Prismic from 'prismic-javascript';
 import { Client, PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
 
-export default function Services({ solutions }) {
+export default function Services({ solutions, cards }) {
   // console.log(solutions[2], "landing")
   const [
     header,
@@ -31,7 +31,7 @@ export default function Services({ solutions }) {
           <BlueButton text={PRISMIC_link_text(header.primary)} href={PRISMIC_link(header.primary)} />
         </div>
         <h3 className="offer">{PRISMIC_heading(services.primary)}</h3>
-        <ServicesWeOffer cards={services.items} />
+        <ServicesWeOffer cards={cards} />
         <WhyChooseUs primary={choose.primary} cards={choose.items} />
         {/* <Socials /> */}
       </main>
@@ -75,12 +75,21 @@ export async function getServerSideProps() {
   const solutions = await Client().query(
     Prismic.Predicates.at("document.type", "solutions")
   )
+  const serviceCards = await Client().query(
+    Prismic.Predicates.at("document.type", "solutions_subpage")
+  )
 
-  // console.log(solutions.results[0].data.body);
+  // console.log(serviceCards.results);
+  const cards = serviceCards.results.map(item=>{
+    // console.log(item.data.body[0].primary)
+  return {...item.data.body[0].primary,id:item.id}
+  })
+  // console.log(cards)
 
   return {
     props: {
-      solutions: solutions.results[0].data.body
+      solutions: solutions.results[0].data.body,
+      cards: cards
     }
   }
 }
