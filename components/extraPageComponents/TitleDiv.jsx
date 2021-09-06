@@ -2,7 +2,7 @@ const TitleDiv = (props) => (
     <div className="title-div-main">
         <div className={`title-div ${props.position}`}>
             <img src="/landingPageImages/pngs/icons/blue-line.png" alt="" />
-            <div id="title-text">
+            <div style={props.color&&{color:"black"}} id="title-text">
                 {props.top}
             </div>
         </div>
