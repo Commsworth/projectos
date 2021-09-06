@@ -130,8 +130,8 @@ class ContactForm extends Component {
     }
 
     render() {
-       console.log(this.props.options[2].items[0].message)
-        return this.props.dataID ? (
+    //    console.log(this.props.options[2].items[0].message)
+        return this.props.isContact ? (
             <React.Fragment>
                 <h1>{this.props.heading || 'Request a session'}</h1>
                 <form onSubmit={this.handleSubmit}>

@@ -1,5 +1,5 @@
 const Socials = ( {social, icons} ) => {
-  console.log(social[0].items)
+  // console.log(social[0].items)
     return (
         icons==="white"?
         <div className="sc" style={{background: "#111517"}}>
