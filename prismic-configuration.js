@@ -24,6 +24,9 @@ export const Client = (req = null) => {
 export const PRISMIC_heading = (item, index) => {
     return item?.heading[index = 0]?.text || " "
 }
+export const PRISMIC_title = (item, index) => {
+    return item?.title[index = 0]?.text || " "
+}
 export const PRISMIC_heading2 = (item, index) => {
     return item?.heading2[index = 0]?.text || " "
 }
@@ -32,6 +35,9 @@ export const PRISMIC_name = (item, index) => {
 }
 export const PRISMIC_text = (item, index) => {
     return item?.text[index = 0]?.text || " "
+}
+export const PRISMIC_text2 = (item, index) => {
+    return item?.text[index = 1]?.text || " "
 }
 export const PRISMIC_message = (item, index) => {
     return item?.message[index = 0]?.text || " "
