@@ -8,7 +8,6 @@
 # testing
 /coverage
 
-<<<<<<< HEAD
 # production
 /build
 .next
@@ -33,7 +32,6 @@ yarn-error.log*
 .next/static/development/pages/_app.js
 .next/static/development/pages/index.js
 .next/static/runtime/webpack.js
-=======
 # next.js
 /.next/
 /out/
@@ -55,4 +53,3 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 Thumbs.db
->>>>>>> 68cf0c322d753edae5fea235adf210bef24dc8fd
