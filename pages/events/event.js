@@ -178,7 +178,7 @@ const Event = ({ event, contact }) => {
           .event_flx {
             flex-wrap: wrap;
           min-width: 320px;
-          }
+          }}
         @media only screen and (max-width: 700px) {
           .wrapper .ct1 {
             flex-direction: column;
