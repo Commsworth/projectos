@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;EAEV,cAAc,EAAE,KAAK;EACrB,MAAM,EAAE,OAAO;CAGlB",
-    "sources": [
-        "roundButton.styles.scss"
-    ],
-    "names": [],
-    "file": "roundButton.styles.css"
-}
