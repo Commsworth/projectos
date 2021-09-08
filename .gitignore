@@ -8,6 +8,7 @@
 # testing
 /coverage
 
+<<<<<<< HEAD
 # production
 /build
 .next
@@ -32,3 +33,26 @@ yarn-error.log*
 .next/static/development/pages/_app.js
 .next/static/development/pages/index.js
 .next/static/runtime/webpack.js
+=======
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+Thumbs.db
+>>>>>>> 68cf0c322d753edae5fea235adf210bef24dc8fd

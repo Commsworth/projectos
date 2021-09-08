@@ -1,9 +1,8 @@
 import React, { Component, useEffect, useState } from 'react'
-import '../../scss/off.scss'
-import Socials from '../../components/extra/socials/socials.component'
 import Head from 'next/head'
-import CtapForm from '../../components/ctap-form/CtapForm.component'
 import { useRouter } from 'next/router'
+import ContactForm from '../../components/offerResourcesComponents/ContactForm'
+import Socials from '../../components/extraPageComponents/Socials'
 
 const OfferLanding = () => {
     const router = useRouter()
@@ -33,11 +32,6 @@ const OfferLanding = () => {
                 </Head>
     
                 <main className="dark-bg wrapper">
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-    
                     <div className="ct">
                         <div className="ctap-head">
                             <div className="overlay">
@@ -89,7 +83,7 @@ const OfferLanding = () => {
     
                                 <div className="pad2">
     
-                                    <CtapForm dataID={dataID} heading={data[dataID].heading} />
+                                    <ContactForm dataID={dataID} heading={data[dataID].heading} />
                                 </div>
                             </div>
                         </div>
@@ -97,21 +91,171 @@ const OfferLanding = () => {
                     </div>
     
                     <Socials />
+                    <style jsx>
+                        {`
+                        .pad-flx {
+	 display: flex;
+	 align-items: center;
+}
+ .container {
+	 width: 100% !important;
+	 margin: 0px auto;
+}
+.container br{
+    background: #111517 !important;
+}
+ .container #cont-off {
+	 background: #111517 !important;
+}
+ .container .ct1 {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: center;
+	 flex-wrap: wrap;
+	 margin: 0 auto;
+	 width: 100% !important;
+}
+ .container .pad {
+	 width: 500px;
+	 min-width: 400px;
+	 align-self: start;
+	 justify-content: end;
+	 color: white;
+	 padding-top: 20px;
+	 margin: 25px 50px;
+}
+ .container .pad h1 {
+	 color: black;
+	 line-height: 1;
+	 font-family: Nunito;
+	 font-style: normal;
+	 font-weight: bold;
+	 font-size: 34px;
+}
+ .container .pad p {
+	 color: black;
+	 line-height: 190%;
+	 padding-right: 0px;
+	 margin-top: 14px !important;
+}
+ .container .pad2 {
+	 padding-top: 20px;
+	 margin: 25px 50px;
+	 width: 500px !important;
+	 min-width: 400px !important;
+}
+ .container .pad2 h1 {
+	 color: black;
+	 line-height: 100%;
+	 font-family: Nunito;
+	 font-style: normal;
+	 font-weight: bold;
+	 font-size: 34px;
+}
+ .container .pad2 :global(form .group) {
+	 width: 100% !important;
+	 min-width: 400px !important;
+}
+ .container .pad2 :global(form input), .container .pad2 :global(form label), .container .pad2 :global(form select) {
+}
+ .ct {
+	/* contact section */
+}
+ .ct .ctap-head {
+	 margin: 0px;
+	 font-weight: 900;
+	 font-size: 48px;
+	 color: white;
+	 background: #242525;
+}
+ .ct .overlay {
+	 position: relative;
+	 width: 100%;
+	 display: flex;
+	 justify-content: start;
+	 align-items: center;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 background-color: rgba(0, 0, 0, 0.8);
+	 z-index: 3;
+}
+ @media only screen and (min-width: 801px) and (max-width: 1023px) {
+	 .container {
+		 width: 100%;
+	}
+	 .container .ct1 {
+		 width: 100%;
+	}
+	 .ct .overlay {
+		 width: 100vw !important;
+		 margin: auto;
+	}
+	 .ct .overlay .header {
+		 color: white !important;
+		 width: 100%;
+	}
+}
+ @media only screen and (min-width: 1024px) {
+	 .ct .overlay {
+		 margin: auto;
+	}
+	 .ct .overlay .header {
+		 color: white !important;
+		 font-size: 48px;
+		 width: calc(80% + 50px) !important;
+		 margin: 50px auto;
+	}
+}
+ @media only screen and (max-width: 800px) {
+	 .container {
+		 width: 100%;
+	}
+	 .container .header {
+		 color: white !important;
+		 margin: 50px auto !important;
+		 width: 90vw !important;
+		 font-size: 90% !important;
+	}
+	 .container .ct1 {
+		 flex-direction: column;
+		 width: 100%;
+	}
+	 .container .pad, .container .pad2, .container .pad2 :global(form .group), .container .pad2 h1 {
+		 width: 90vw !important;
+		 justify-self: start !important;
+		 margin: auto;
+		 min-width: 200px !important;
+	}
+    .pad2 :global(form input[type="submit"]){
+        width: fit-content !important;
+    }
+	 .container .overlay {
+		 width: 90vw !important;
+	}
+}
+                        `}
+                    </style>
                 </main>
             </>
         );
     }else{
         return(
+            <div>
             <div className="main-div">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <h1>Offer does not exist!</h1>
+            </div>
+            <Socials/>
+            <style jsx>
+            {`
+            .main-div{
+                background: white;
+                min-height: 40vh;
+            }
+            `}
+            </style>
             </div>
         )
     }

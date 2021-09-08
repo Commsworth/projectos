@@ -1,256 +1,95 @@
-import Card from '../components/extra/card/card.component';
-// import DevOps from 'assets/svgs/devops.svg'
-// import Support from 'assets/svgs/support.svg'
-// import Business from 'assets/svgs/business.svg'
-// import Product from 'assets/svgs/product.svg'
-// import Strategy from 'assets/svgs/strategy.svg'
-import Link from 'next/link';
-import { Why } from '../components/services/why';
-// import AboutHero from '../../asset/img/aboutHero.png'
+import Head from 'next/head';
+import Heading from '../components/extraPageComponents/Heading'
+import TitleDiv from '../components/extraPageComponents/TitleDiv';
+import BlueButton from '../components/extraPageComponents/BlueButton';
+import { useState } from 'react';
+import ServicesWeOffer from '../components/servicesPageComponents/ServicesWeOffer';
+import { WhyChooseUs } from '../components/servicesPageComponents/WhyChooseUs';
+import Socials from '../components/extraPageComponents/Socials';
+import Prismic from 'prismic-javascript';
+import { Client, PRISMIC_heading, PRISMIC_heading2, PRISMIC_link, PRISMIC_link_text } from '../prismic-configuration';
+
+export default function Services({ solutions, cards }) {
+  // console.log(solutions[2], "landing")
+  const [
+    header,
+    services,
+    choose
+  ] = solutions;
+  return (
+    <div className="landing-container">
+      <Head>
+        <title>Commsworth || Services Page</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
 
 
-import React, { Component } from 'react';
-import Arrowlink from '../components/extra/arrow';
-import Socials from '../components/extra/socials/socials.component';
+      <main>
+        <div className="black-margin-top services-main-div">
+          <Heading text={PRISMIC_heading(header.primary)} />
+          <TitleDiv bottom={PRISMIC_heading2(header.primary)} />
+          <BlueButton text={PRISMIC_link_text(header.primary)} href={PRISMIC_link(header.primary)} />
+        </div>
+        <h3 className="offer">{PRISMIC_heading(services.primary)}</h3>
+        <ServicesWeOffer cards={cards} />
+        <WhyChooseUs primary={choose.primary} cards={choose.items} />
+        {/* <Socials /> */}
+      </main>
 
-export default class Services extends Component {
-    constructor(props) {            
-        super(props)
-
-        this.state = {
-            display: true,
+      <style jsx>{`
+        .landing-container{
+            background: #111517;
+            min-height: 100vh;
         }
-    }
-
-    render() {
-        return (
-            <div className="dark-bg">
-                <main>
-                    <div className="heading">
-                        <h3 className="heading-text">Digital Solutions to <br /> accelerate your business.</h3>
-                        <img src="/pngs/blueline.png" />
-                        {/* <button className="heading-button">Learn More</button> */}
-                    </div>
-                    <br />
-                    <br />
-                    <h3 className="offer">Services on Offer</h3>
-                    <br />
-                    <br />
-                    <div className="about-cards ">
-                        <Card
-                            title={<img src="assets/svgs/devops.svg" alt="devops" />}
-                            subTitle="DevOps & Analytics"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink sublink="/devops" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="assets/svgs/support.svg" alt="devops" />}
-                            subTitle="Support"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink sublink="/support" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="assets/svgs/business.svg" alt="devops" />}
-                            subTitle="Business Continuity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink sublink="/business-continuity" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="assets/svgs/product.svg" alt="devops" />}
-                            subTitle="Product & Digital Strategy"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink sublink="/product-digital" text="Explore" />}
-                        />
-                        <Card
-                            title={<img src="assets/svgs/businessautomation.svg" alt="devops" />}
-                            subTitle="Business Automation and Productivity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink sublink="/business-automation" text="Explore" />}
-                        />
-                        {this.state.display ? <Card
-                            title={<img src="assets/svgs/cybersecurity.svg" alt="devops" />}
-                            subTitle="Cybersecurity"
-                            content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                            link={<Arrowlink sublink="/cybersecurity" text="Explore" />}
-                        /> : <Card
-                                title={<img src="assets/svgs/infrastructure.svg" alt="devops" />}
-                                subTitle="Infrastructure"
-                                content="Our Core Values define our personality and guides our relationship with staff, clients and partners. "
-                                link={<Arrowlink sublink="/infrastructure" text="Explore" />}
-                            />
-                        }
-          </div>
-                    <div className='serv'>
-                        <svg className={this.state.display ? 'services-svg' : ''} onClick={() => { this.setState({ display: true }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                        </svg>
-
-                        <svg className={this.state.display ? ' ' : 'services-svg'} onClick={() => { this.setState({ display: false }) }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="#208FFF" />
-                        </svg>
-
-
-                    </div>
-                    <Why />
-                    <Socials/>
-                </main>
-                <style jsx>
-                    {`
-                    .container {
-                        min-height: 100vh;
-                        // padding: 0 0.5rem;
-                        max-width: 100vw;
-                        background: #111517;
-                        color: #f4f4f4 !important;
-                      }
-                      .offer{
-                        font-size: 40px;
-                        line-height: 126.5%;
-                        text-align: center;
-                        color: #f4f4f4 !important;
-                      }
-                      .map{
-                        display: flex;
-                        justify-content: center;
-                      }
-                      .heading{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        padding-top: 150px;
-                        padding-bottom: 200px;
-                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('pngs/servicesbackground.png');
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                      }
-                      .heading-text{
-                        text-align: center;
-                        font-weight: bold;
-                        font-size: 36px;
-                        line-height: 114%;
-                        text-align: center;
-                        position:relative;
-                        z-index:10;
-                        color: #f4f4f4 !important;
-                        color: #f4f4f4 !important;
-                      }
-                      .heading img{
-                        position:relative; 
-                        right:124px;
-                        bottom:52px;
-                        z-index:0;
-                        width:170px;
-                      }
-                      .about-hero{
-                        display: flex;
-                        justify-content: center;
-                      }
-                      .about-hero img{
-                        width: 80%;
-                      }
-                      .about-cards{
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        width: 80vw;
-                        margin: 0vh 10vw;
-                      }
-                      .about-cards :global(.card){
-                          text-align: center;
-                          align-items: center;
-                          margin: 1.65%;
-                          width: 355px;
-                          height: 347px;
-                          background: #1C2124 !important;
-                          // border: 1px solid #208FFF;
-                          box-sizing: border-box;
-                          color: white;
-                          padding: 30px;
-                          
-                        }
-                        
-                        .about-cards :global(.card .title){
-                            position: relative;
-                            bottom: 80px;
-                            height: 100px;
-                            
-                        }
-                        .about-cards :global(.card .sub-title){
-                            width: 243px;
-                            height: 62px;
-                            left: 1008px;
-                            top: 1141px;
-    
-                            font-family: Nunito;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 24px;
-                            line-height: 130%;
-                            /* identical to box height, or 29px */
-    
-    
-                            /* White */
-    
-                            color: #FFFFFF;
-    
-                        }
-                        .about-cards :global(.card .content){
-                            width: 281.07px;
-                            height: 98.13px;
-                            font-family: Muli;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 15px;
-                            line-height: 190%;
-                            /* or 28px */
-    
-                            text-align: center;
-    
-                            color: #FFFFFF;
-                        }
-                        .about-cards :global(.card .content2){
-                            display:none;
-                        }
-                        .about-cards :global(.card .link){
-                            align-self: flex-end;
-                            height: 20px;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 109%;
-                        }
-                        .serv{
-                            display:flex;
-                            justify-content: center;
-                            padding: 60px 0px;
-                        }
-                        .serv svg{
-       margin: 0px 5px 0px 5px;
-       cursor: pointer;
-           }
-      .services-svg{
-        fill: #208FFF; 
-        margin-left: 10px 10px;
-      }
-      @media only screen and (max-width: 570px) {
-        .about-cards :global(.card){
-            width: 300px;
-            margin: 5vw auto;
-        }          
-        .heading-text{
-            //width: 300px;
-            font-size: 8vw;
+        .services-main-div{
+          background: linear-gradient(29.74deg, #111517 0.11%, rgba(17, 21, 23, 0.89) 20.95%, rgba(17, 21, 23, 0.78) 103.14%, rgba(17, 21, 23, 0) 78.53%),url('/servicesPageImages/pngs/servicesbackground.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        :global(.heading){
+          margin: 0px !important;
+        }
+        :global(.title-div img){
+          display: none;
+        }
+        :global(.title-div-main){
+          margin: 0px auto 25px !important;
+        }
+        :global(.blue-button){
+          padding-bottom: 232px;
         }
         .offer{
-            font-size: 10vw;
-        }
-      }
-        .heading img{
-            display: none;
-        }
-                    `}
-                </style>
-            </div>
-        );
+            font-size: 30px;
+            line-height: 126.5%;
+            text-align: center;
+            color: #f4f4f4 !important;
+            margin: 57px auto;
+            }
+      `}</style>
+    </div>
+  )
+}
+
+export async function getServerSideProps() {
+  const solutions = await Client().query(
+    Prismic.Predicates.at("document.type", "solutions")
+  )
+  const serviceCards = await Client().query(
+    Prismic.Predicates.at("document.type", "solutions_subpage")
+  )
+
+  // console.log(serviceCards.results);
+  const cards = serviceCards.results.map(item=>{
+    // console.log(item.data.body[0].primary)
+  return {...item.data.body[0].primary,id:item.id}
+  })
+  // console.log(cards)
+
+  return {
+    props: {
+      solutions: solutions.results[0].data.body,
+      cards: cards
     }
+  }
 }
